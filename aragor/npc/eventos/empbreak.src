@@ -1,0 +1,31 @@
+-	script	aBreakemp	-1,{
+
+OnInit:
+	hideonnpc "aBreakemp";
+	end;
+	
+OnBreakemp:
+set $@r,rand(1,2);
+	if($@r == 1){pvpoff "pvp_n_2-5";announce "Sera sin PVP.",bc_all,0x00ffff;}
+	if($@r == 2){pvpon "pvp_n_2-5";announce "Sera con PVP.",bc_all,0x00ffff;}
+	
+set $@r,rand(1,10);
+	if($@r == 1){monster "pvp_n_2-5",99,100,"Neutral Emperium",22051,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 2){monster "pvp_n_2-5",99,100,"Earth Emperium",22055,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 3){monster "pvp_n_2-5",99,100,"Wind Emperium",22057,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 4){monster "pvp_n_2-5",99,100,"Water Emperium",22056,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 5){monster "pvp_n_2-5",99,100,"Fire Emperium",22053,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 6){monster "pvp_n_2-5",99,100,"Ghost Emperium",22054,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 7){monster "pvp_n_2-5",99,100,"Shadow Emperium",22052,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 8){monster "pvp_n_2-5",99,100,"Holy Emperium",22060,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 9){monster "pvp_n_2-5",99,100,"Undead Emperium",22058,1,"aBreakemp::OnBreakempkill"; end;}
+	if($@r == 10){monster "pvp_n_2-5",99,100,"Poison Emperium",22059,1,"aBreakemp::OnBreakempkill"; end;}
+	end;
+	
+OnBreakempkill:
+	donpcevent "aPortal::OnEmpclose";
+	getitem 7539,rand(1,40);
+	announce "Break Emperium: El jugador "+strcharinfo(0)+" a roto el Emperium Elemental, Felicidades.",bc_all,0x00ffff;
+	mapwarp "pvp_n_2-5","prontera",155,182;
+	end;
+}

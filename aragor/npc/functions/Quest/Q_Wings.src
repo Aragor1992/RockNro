@@ -1,0 +1,30 @@
+function	script	Q_wings	{
+	bonus bMaxHPrate,5;
+	bonus bMatkRate,5;
+	bonus bAtkRate,5;
+	bonus bAllStats,5;
+	bonus bHit,50;
+	bonus2 bSubEle,Ele_Neutral,15;
+	bonus2 bSubEle,Ele_Poison,15;
+	bonus2 bSubEle,Ele_Holy,15;
+	bonus2 bSubEle,Ele_Dark,15;
+	bonus2 bSubEle,Ele_Fire,15;
+	bonus2 bSubEle,Ele_Water,15;
+	bonus2 bSubEle,Ele_Wind,15;
+	bonus2 bSubEle,Ele_Earth,15;
+	bonus2 bSubEle,Ele_Undead,15;
+	bonus2 bSubEle,Ele_Ghost,15;
+if(isequipped(Q_Novice_Shield) || isequipped(Q_Valkyries_Shield) || isequipped(Q_Angelic_Guard)){
+	bonus2 bSubEle,Ele_Neutral,-10;
+	bonus2 bSubEle,Ele_Poison,-10;
+	bonus2 bSubEle,Ele_Holy,-10;
+	bonus2 bSubEle,Ele_Dark,-10;
+	bonus2 bSubEle,Ele_Fire,-10;
+	bonus2 bSubEle,Ele_Water,-10;
+	bonus2 bSubEle,Ele_Wind,-10;
+	bonus2 bSubEle,Ele_Earth,-10;
+	bonus2 bSubEle,Ele_Undead,-10;
+	bonus2 bSubEle,Ele_Ghost,-10;
+	}
+return;
+}

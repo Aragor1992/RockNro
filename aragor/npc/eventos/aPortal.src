@@ -1,0 +1,288 @@
+prontera,155,232,0	script	aPortal	WARPNPC,1,1,{
+OnAtcommand:
+OnTouch:
+
+	if($ap == 1){
+	warp "quiz_01",55,90; //Portal Evento Casillas.
+	end;
+	}
+
+	if($ap == 2){	
+//	setriding 0; //Desmonta de peco peco, grand peco.
+	atcommand "@storeall"; //Guarda todo el inventario en storage para evitar trampas.
+	sc_end -1; //Cancela todo tipo de Buffs para evitar trampas.
+	warp "force_1-3",19,189; //Portal Evento Laberinto.
+	end;
+	}
+
+	if($ap == 3){
+	if(BaseLevel == 1 && JobLevel == 1 && Class == 0){ //Detecta Nivel Base, Nivel Job y Clase.
+	atcommand "@storeall"; //Guarda todo el inventario en storage para evitar trampas.
+	sc_end -1; //Cancela todo tipo de Buffs para evitar trampas.
+//	sc_start 33,600000,10; //Disminuye velocidad para caminar para dificultar mas el evento.
+	warp "que_temsky",48,136; //Portal Evento Novice vs Zombie.
+	end;
+	}
+	mes "Solo pueden entrar Novices Nivel 1/1 a este evento.";
+	close;
+	}
+
+	if($ap == 4){
+	warp "evt_poring",102,101; //Portal Evento Poring.
+	sc_end -1; //Cancela todo tipo de Buffs para evitar trampas.
+	end;
+	}
+
+	if($ap == 5){ //Portal Evento Emperium.
+	warp "pvp_n_2-5",0,0;
+	end;
+	}
+
+	if($ap == 6){end;}
+	if($ap == 7){end;}
+	if($ap == 8){end;}
+
+	if($ap == 9){
+		percentheal 100,100;
+		warp "guild_vs5",0,0;
+		end;
+	}
+	
+end;
+
+OnInit:
+	hideonnpc "aPortal";
+	end;
+
+OnCas:
+	if(agitcheck() && agitcheck2()) end;
+	set $ap,1;
+	hideoffnpc "aPortal";
+	announce "Casillas: El evento de las Casillas va a comenzar.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Casillas: Tienen menos de 2 minutos para entrar por el portal que se encuentra al norte de la plaza de prontera.",bc_npc,0x00ffff;
+	sleep 25000;
+	announce "Casillas: Queda 1 minuto y 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Casillas: Queda 1 minuto para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Casillas: Quedan 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "Casillas: Quedan 10 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Casillas: 5 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Casillas: 4 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Casillas: 3 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Casillas: 2 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Casillas: 1 segundo.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Casillas: El portal para el evento de las Casillas ha sido cerrado.",bc_npc,0x00ffff;
+	hideonnpc "aPortal";
+	set $ap,0;
+	donpcevent "aCasillas::OnCasillas";
+	end;
+	
+OnLab:
+	if(agitcheck() && agitcheck2()) end;
+	set $ap,2;
+	hideoffnpc "aPortal";
+	hideonnpc "aLaberinto";
+	hideonnpc "labwarp";
+	hideonnpc "aLabWarps#02";
+	hideonnpc "aLabWarps#03";
+	hideonnpc "aLabWarps#04";
+	hideonnpc "aLabWarps#05";
+	hideonnpc "aLabWarps#06";
+	hideonnpc "aLabWarps#07";
+	hideonnpc "aLabWarps#08";
+	hideonnpc "aLabWarps#09";
+	hideonnpc "aLabWarps#10";
+	hideonnpc "aLabWarps#11";
+	hideonnpc "aLabWarps#12";
+	hideonnpc "aLabWarps#13";
+	hideonnpc "aLabWarps#14";
+	hideonnpc "aLabWarps#15";
+	hideonnpc "aLabWarps#16";
+	hideonnpc "aLabWarps#17";
+	hideonnpc "aLabWarps#18";
+	hideonnpc "aLabWarps#19";
+	hideonnpc "aLabWarps#20";
+	hideonnpc "aLabWarps#21";
+	hideonnpc "aLabWarps#22";
+	hideonnpc "aLabWarps#23";
+	hideonnpc "aLabWarps#24";
+	hideonnpc "aLabWarps#25";
+	announce "Laberinto: El evento del Laberinto va a comenzar.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Laberinto: Tienen menos de 2 minutos para entrar por el portal que se encuentra al norte de la plaza de prontera.",bc_npc,0x00ffff;
+	sleep 25000;
+	announce "Laberinto: Queda 1 minuto y 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Laberinto: Queda 1 minuto para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Laberinto: Quedan 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "Laberinto: Quedan 10 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Laberinto: 5 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Laberinto: 4 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Laberinto: 3 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Laberinto: 2 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Laberinto: 1 segundo.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Laberinto: El portal para el evento del Laberinto ha sido cerrado.",bc_npc,0x00ffff;
+	hideonnpc "aPortal";
+	set $ap,0;
+	donpcevent "aLaberinto::OnLaberinto";
+	end;
+	
+OnNov:
+	if(agitcheck() && agitcheck2()) end;
+	set $ap,3;
+	killmonsterall "que_temsky";
+	hideoffnpc "aPortal";
+	announce "Novice vs Zombie: El evento de Novice vs Zombie va a comenzar.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Novice vs Zombie: En este evento solo pueden participar Novices de Nivel Base 1 y Nivel Job 1.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Novice vs Zombie: Tienen menos de 2 minutos para entrar por el portal que esta al norte de la plaza de prontera.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "Novice vs Zombie: Queda 1 minuto y 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Novice vs Zombie: Queda 1 minuto para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Novice vs Zombie: Quedan 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "Novice vs Zombie: Quedan 10 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Novice vs Zombie: 5 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Novice vs Zombie: 4 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Novice vs Zombie: 3 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Novice vs Zombie: 2 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Novice vs Zombie: 1 segundo.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Novice vs Zombie: El portal para el evento de Novice vs Zombie ha sido cerrado.",bc_npc,0x00ffff;
+	hideonnpc "aPortal";
+	set $ap,0;
+	donpcevent "aNovice::OnNovice";
+	end;
+	
+OnPor:
+	if(agitcheck() && agitcheck2()) end;
+	set $ap,4;
+	killmonsterall "evt_poring";
+	hideoffnpc "aPortal";
+	announce "Poring: El evento de los Poring falsos va a comenzar.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Poring: Tienen menos de 2 minutos para entrar por el portal que esta al norte de la plaza de prontera.",bc_npc,0x00ffff;
+	sleep 25000;
+	announce "Poring: Queda 1 minuto y 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Poring: Queda 1 minuto para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Poring: Quedan 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "Poring: Quedan 10 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Poring: 5 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Poring: 4 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Poring: 3 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Poring: 2 segundos.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Poring: 1 segundo.",bc_npc,0x00ffff;
+	sleep 1000;
+	donpcevent "aPoring::OnPoring";
+	end;
+
+OnPorkill:
+announce "Poring: El portal para el evento de los Poring falsos ha sido cerrado.",bc_npc,0x00ffff;
+hideonnpc "aPortal";
+set $ap,0;
+end;
+
+OnEmpBreak:
+	if(agitcheck() && agitcheck2()) end;
+	set $ap,5;
+	killmonsterall "pvp_n_2-5";
+	hideoffnpc "aPortal";
+	announce "Empe Break: El evento Emperium Break a comenzado.",bc_npc,0x00ffff;
+	sleep 1000;
+	announce "Empe Break: Entren por el portal que esta al norte de la plaza de prontera.",bc_npc,0x00ffff;
+	donpcevent "aBreakemp::OnBreakemp";
+	end;
+
+OnEmpclose:
+	set $ap,0;
+	killmonsterall "pvp_n_2-5";
+	hideonnpc "aPortal";
+	end;
+	
+OnAquaDemons:
+	if(agitcheck() && agitcheck2()) end;
+	killmonsterall "amatsu";
+	announce "Lluvia torrenciales arrasan la ciudad de Amatsu.",bc_npc,0x00ffff;
+	sleep 25000;
+	announce "Los cinco demonios del Aqua han escapado misteriosamente de su prisión en las mazmorras del Castillo.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "La ciudad es ahora un caos de infinitas burbujas azules que lo arrasan todo.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "El Señor de Amatsu ofrece una gran recompensa por cada una de las perturbadas almas de los demonios del Aqua.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "La vida de la ciudad de Amatsu está colgando de un hilo. Si nadie hace nada, pronto desaparecerá de los mapas.",bc_npc,0x00ffff;
+	sleep 5000;
+	donpcevent "Aqua_demons::OnAquademonstart";
+	end;
+	
+OnSpawnMorocc:
+	donpcevent "Satan_invacion::OnSpawnMorocc";
+	end;
+
+OnRunorDie:
+	if(agitcheck() && agitcheck2()) end;
+	set $ap,9;
+	killmonsterall "guild_vs5";
+	hideoffnpc "aPortal";
+	announce "Run Or Die!!!: ¿Estás listo para unirte al evento Run Or Die?.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Run Or Die!!!: Tienen menos de 2 minutos para entrar por el portal que esta al norte de la plaza de prontera.",bc_npc,0x00ffff;
+	sleep 25000;
+	announce "Run Or Die!!!: Queda 1 minuto y 30 segundos para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Run Or Die!!!: Queda 1 minuto para que el portal que esta al norte de la plaza de prontera se cierre.",bc_npc,0x00ffff;
+	sleep 30000;
+	announce "Run Or Die!!!: Ultimos 30 segundos.",bc_npc,0x00ffff;
+	sleep 20000;
+	announce "Run Or Die!!!: Últimos 10 segundos para unirse. el portal que esta al norte de la plaza de prontera se cerrara.",bc_npc,0x00ffff;
+	sleep 5000;
+	announce "Run Or Die: 5", bc_all;
+	sleep 1000;
+	announce "Run Or Die: 4", bc_all;
+	sleep 1000;
+	announce "Run Or Die: 3", bc_all;
+	sleep 1000;
+	announce "Run Or Die: 2", bc_all;
+	sleep 1000;
+	announce "Run Or Die: 1", bc_all;
+	sleep 1000;
+	announce "Run Or Die: Se acabó el tiempo ... Portal cerrado hasta la proxima..", bc_all;
+	set $ap,0;
+	hideonnpc "aPortal";
+	donpcevent "runordie::OnRunordiestart";
+	end;
+OnInit:bindatcmd "joinevent",strnpcinfo(3)+"::OnAtcommand",0,99;end;
+}

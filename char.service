@@ -1,0 +1,15 @@
+[Unit]
+Description=Hercules character server
+After=syslog.target network.target mariadb.service login.service
+
+[Service]
+WorkingDirectory=/home/aragor/Hercules/
+User=aragor
+ExecStart=/home/aragor/Hercules/char-server
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target

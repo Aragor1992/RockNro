@@ -1,0 +1,161 @@
+// =================== Tipo Black Helm  ATK HAT====================
+function	script	Q_BlackHelm	{
+	bonus bAgi,5;
+	bonus bVit,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus bAtkRate,5;
+return;
+}
+// =================== Tipo Dragon Helm  HIT HAT===================
+function	script	Q_DragonHelm	{
+	bonus bDex,5;
+	bonus bAgi,5;
+	bonus bVit,5;
+	bonus bHit,50;
+	bonus bAspdRate,5;
+	bonus bMaxHPrate,20;
+return;
+}
+// =================== Tipo True Valkyrie Helm =================
+function	script	Q_ValkyHelm	{
+	bonus bAgi,5;
+	bonus bDex,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus bFlee2,7;
+	bonus2 bSubRace,RC_DemiHuman,5;
+}
+function	script	P_ValkyHelm	{
+	bonus bAgi,5;
+	bonus bDex,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus bFlee2,7;
+	bonus2 bSubRace,RC_DemiHuman,5;
+}
+
+function	script	P_BlackValkyHelm	{
+	bonus bInt,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,10;
+	/*Delay After Cast -10%
+	Curación de Heal, sanctuary y slim potion +10%*/
+}
+// ====================== Tipo Maya Hat ===========================
+function	script	Q_MayaHat	{
+	bonus bInt,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,10;
+}
+// =================== Tipo Penacho de Moktezuma ==================
+function	script	Q_PMoktezuma	{
+	if(Class==Job_Paladin||Class==Job_Crusader) {
+		bonus bShortWeaponDamageReturn,5;
+	}
+	else {
+		bonus bShortWeaponDamageReturn,10;
+	}
+	bonus bStr,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+}
+// =================== Fox hat ==================
+function	script	Q_fox	{
+	bonus bAgi,10;
+	bonus bMaxHPrate,10;
+	bonus bSpeedRate,5;
+	bonus bFlee,20;
+	if(isequipped(Fox_tailW)) {
+		bonus bFlee,140;
+	}
+}
+// =================== Tipo Airth Goat ==================
+function	script	Q_AirthGoat	{
+	bonus bDex,5;
+	bonus bStr,5;
+	bonus bLuk,5;
+	bonus bMaxHPrate,20;
+	bonus bAspdRate,10;
+	bonus bFlee,10;
+	bonus bSplashRange,2;
+return;
+}
+// =================== Tipo Archangel Helm ==================
+function	script	Q_ArchangelHelm	{
+	bonus bInt,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,5;
+	bonus3 bMagicDamageReturn2,100,1,10;
+	bonus3 bMagicDamageReturn2,100,0,10;
+return;
+}
+// =================== Tipo Black Valkyrie Helm =============
+function	script	Q_BValkyHelm	{
+	bonus bInt,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,5;
+	bonus4 bAutoSpellWhenHit,83,2,20,0;
+	bonus2 bSubEle,Ele_Fire,5;
+	bonus2 bSPRegenRate,5,1000;
+return;
+}
+// =================== Tipo Ice Wolf Hat ==================
+function	script	Q_IceWolfHat	{
+	bonus bInt,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,5;
+	bonus4 bAutoSpellWhenHit,89,2,20,0;
+	bonus2 bSubEle,Ele_Water,5;
+	bonus2 bSPRegenRate,5,1000;
+return;
+}
+// =================== Lucifer Hat ==================
+function	script	Q_LuciferHat	{
+	bonus bAgi,5;
+	bonus bVit,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus bAtkRate,2;
+	bonus2 bAddEle,Ele_Holy,5;
+	bonus2 bAddEle,Ele_Dark,5;
+	bonus2 bAddEff,Eff_Stun,200;
+	bonus2 bAddEff,Eff_Curse,200;
+	bonus2 bAddEff,Eff_Silence,200;
+	bonus2 bAddEff,Eff_Poison,200;
+	bonus2 bAddEff,Eff_Bleeding,200;
+	bonus2 bAddEff,Eff_Stone,200;
+	bonus2 bAddEff,Eff_Confusion,200;
+	bonus2 bAddEff,Eff_Freeze,200;
+	bonus2 bAddEff,Eff_Sleep,200;
+return;
+}
+// =================== Tipo Morriganes Helm ==================
+function	script	Q_MorriganesHelm	{
+	bonus bStr,10;
+	bonus bLuk,5;
+	bonus bMaxHPrate,20;
+	bonus bCritical,15;
+	bonus bCritAtkRate,10;
+return;
+}
+// =================== Tipo Samurai Helm ==================
+function	script	Q_SamuraiHelm	{
+	bonus bAgi,5;
+	bonus bVit,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+return;
+}

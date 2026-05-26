@@ -1,0 +1,111 @@
+function	script	SuperMid	{
+	if(getarg(0) == 2009){ //Mid 2009
+		setarray .@b[0],b1Mid2009,b2Mid2009,b3Mid2009,0;
+	}
+	else if(getarg(0) == 2010){ //Mid 2010
+		setarray .@b[0],b1Mid2010,b2Mid2010,b3Mid2010,b4Mid2010;
+	}
+	else if(getarg(0) == 2011){ //Mid2011
+		setarray .@b[0],b1Mid2011,b2Mid2011,b3Mid2011,b4Mid2011;
+	}
+	else if(getarg(0) == 2014){ //Mid2014
+		setarray .@b[0],b1Mid2014,b2Mid2014,b3Mid2014,b4Mid2014;
+	}
+	else return;
+	for(set .@i,0;.@i<4;set .@i,.@i+1){
+		switch(.@b[.@i]){
+			case 1:bonus bAllStats,10;break;
+			case 2:bonus bAtkRate,10;break;
+			case 3:bonus bMatkRate,10;break;
+			case 4:bonus bFlee,100;break;
+			case 5:bonus bFlee2,5;break;
+			case 6:bonus bHit,100;break;
+			case 7:bonus bPerfectHitRate,5;break;
+			case 8:bonus bCritical,25;break;
+			case 9:skill MO_TRIPLEATTACK,5;break;
+			case 10:bonus5 bAutoSpellWhenHit,PF_MINDBREAKER,3,30,BF_WEAPON|BF_MAGIC|BF_MISC,0;break;
+			//Mid2010
+			case 11:skill 546,5;break;
+			case 12:bonus bAtkRange,1;break;
+			case 13:bonus2 bAddRace,RC_DemiHuman,10;break;
+			case 14:bonus bMagicAtkDef,10;break;
+			case 15:bonus bNoGemStone,0; bonus bUseSPrate,-30;break;
+			case 16:bonus bMaxHPrate,10;bonus bMaxSPrate,10;break;
+			case 17:bonus bDef,7; bonus bMdef,7;break;
+			case 18:bonus bDelayrate,-5;break;
+			//Mid2014
+			case 19: bonus bNearAtkDef,10; break;
+			case 20: bonus bHPrecovRate,10; break;
+			case 21: bonus bMagicFlee,200; break;
+		}
+	}
+	return;
+}
+
+function	script	listaBonus	{
+		switch(getarg(0)){
+			case 1: mes "1.-^0000DF +10 All Stats ^000000";break;
+			case 2: mes "2.-^0000DF +10% Atk ^000000";break;
+			case 3: mes "3.-^0000DF +10% Matk ^000000";break;
+			case 4: mes "4.-^0000DF +100 de Flee ^000000";break;
+			case 5: mes "5.-^0000DF +5 de Perfect Flee ^000000";break;
+			case 6: mes "6.-^0000DF +100 de Hit ^000000";break;
+			case 7: mes "7.-^0000DF +5% de Perfect Hit ^000000";break;
+			case 8: mes "8.-^0000DF +25 de Critico ^000000";break;
+			case 9: mes "9.-^0000DF Triple Attack lvl 5 ^000000";break;
+			case 10: mes "10.-^0000DF 3% de Chance de Autocastear Mind Breaker lvl 3 cuando recibes daño ^000000";break;
+			//Mids 2010
+			case 11: mes "11.-^0000DF Dark Jupitel Thunder lvl 5 ^000000";break;
+			case 12: mes "12.-^0000DF Rango de Ataque +1 ^000000";break;
+			case 13: mes "13.-^0000DF Daño a Demi-Humans +10% ^000000";break;
+			case 14: mes "14.-^0000DF Reduccion de daño de ataques magicos en 10% ^000000";break;
+			case 15: mes "15.-^0000DF Los skills no consumen gemas y gastan 30% menos SP ^000000";break;
+			case 16: mes "16.-^0000DF +10% de HP & SP ^000000";break;
+			case 17: mes "17.-^0000DF +7 de Def & Mdef ^000000"; break;
+			case 18: mes "18.-^0000DF Delay After Cast -5% ^000000";	break;
+			//Mids 2014
+			case 19: mes "19.-^0000DF Reduccion de daño de ataques corto rango en 10% ^000000"; break;
+			case 20: mes "20.-^0000DF HP recovery +20% ^000000"; break;
+			case 21: mes "21.-^0000DF 2 % de esquivar ataques mágicos ^000000"; break;
+		}
+		return;
+	}
+	
+function	script	validarBonus	{
+		//El bonus seleccionado esta entre 1 y 10(mid 2009), 1 y 18 (mid 2010) ?
+		if( @bopcion<1 || @bopcion > @listabonus ){
+			next;
+			mes "^FF0000[Mighty Sage]^000000";
+			mes "^FF0000Has seleccionado un numero incorrecto.^000000";
+			next;
+			mes "^FF0000[Mighty Sage]^000000";
+			for(set .@j,1;.@j<=@listabonus;set .@j,.@j+1)
+				listaBonus(.@j);
+			return 0;
+		}
+		//El bonus seleccionado es igual a un bonus seleccionado anteriormente?
+		for(set .@c,0; .@c<getarg(0);set .@c,.@c+1){
+			if(@bonus[.@c] == @bopcion){
+				next;
+				mes "^FF0000[Mighty Sage]^000000";
+				mes "^FF0000Ya has seleccionado este bonus.^000000";
+				next;
+				mes "^FF0000[Mighty Sage]^000000";
+				for(set .@j,1;.@j<=@listabonus;set .@j,.@j+1)
+					listaBonus(.@j);
+				return 0;
+			}
+			//Los bonus ATK y daño a demi no pueden ser seleccionados al mismo tiempo.
+			if((@bonus[.@c] == 2 && @bopcion == 13)||(@bonus[.@c] == 13 && @bopcion == 2)){
+				next;
+				mes "^FF0000[Mighty Sage]^000000";
+				mes"^FF0000No puedes seleccionar atk y daño a demihuman juntos.^000000";
+				next;
+				mes "^FF0000[Mighty Sage]^000000";
+				for(set .@j,1;.@j<=@listabonus;set .@j,.@j+1)
+					listaBonus(.@j);
+				return 0;
+			}
+		}
+		return 1;
+	}

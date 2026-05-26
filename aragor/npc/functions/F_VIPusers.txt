@@ -1,0 +1,57 @@
+-	script	vip	HIDDEN_NPC,{ 
+	OnInit: 
+		setarray $@vip_boost[1],40,70,100,150,175,200; // EXP Boost per Rank
+		setarray $@vip_ranks$[0],  "NORMAL","BRONZE","SILVER","GOLD","PLATINUM"; // Ranks Array
+		set $@vip_boost[99], 300;
+		set $@vip_ranks$[99], "ADMINISTRATOR";
+	end;
+	
+	OnPCLoginEvent:
+			query_sql("SELECT DATE_FORMAT(`vip_until`, '%Y %m %d') FROM login WHERE `account_id` = "+getcharid(3)+";",.@expirationDate$);	// Get expiration date
+		if (gettimestr("%Y %m %d",21) >= .@expirationDate$)
+		{	if (getgroupid() < 80) // Prevent admins to be downgraded
+			query_sql("UPDATE `login` SET `group_id` = 0 WHERE account_id = "+getcharid(3)+";");
+		} else if ((getstatus(SC_CASH_PLUSEXP,5) && getstatus(SC_CASH_PLUSEXP,5) < 1800000)) goto L_Show; // Try to prevent the boosted battle manual overrides.
+		else sc_start SC_CASH_PLUSEXP,86400000,$@vip_boost[getgroupid()];
+		L_Show:
+		dispbottom "----------------------------------------------------------------------";
+		dispbottom "Rank:            "+$@vip_ranks$[getgroupid()];
+		dispbottom "Status:                           "+((getgroupid())?"ACTIVO":"INACTIVO");
+		dispbottom "Expires:                     "+.@expirationDate$;
+		dispbottom "EXP Boost:                     "+getstatus(SC_CASH_PLUSEXP,1)+"%";
+		dispbottom "Cash:                              "+#CASHPOINTS;
+		dispbottom "----------------------------------------------------------------------";
+	end;
+}
+
+function	script	bEXPi3	{ // You need to add your rank numbers here.. and match them.
+							  // This is recommended so the script doesn't just overlaps into all existing boosts, instead the manual gets added to the total % of SC_CASH_PLUSEXP
+switch(getgroupid()){ 
+		case 1:  sc_start SC_CASH_PLUSEXP,getarg(0),($@vip_boost[1]+getarg(1)); break;
+		case 2:  sc_start SC_CASH_PLUSEXP,getarg(0),($@vip_boost[2]+getarg(1)); break;
+		case 3:  sc_start SC_CASH_PLUSEXP,getarg(0),($@vip_boost[3]+getarg(1)); break;
+		case 4:  sc_start SC_CASH_PLUSEXP,getarg(0),($@vip_boost[4]+getarg(1)); break;
+		case 99: sc_start SC_CASH_PLUSEXP,getarg(0),($@vip_boost[99]+getarg(1)); break;
+		default: sc_start SC_CASH_PLUSEXP,getarg(0),getarg(1); break;
+	} return;
+}
+
+/*SQL
+ALTER TABLE `login`	ADD COLUMN `vip_until` DATE NOT NULL AFTER `group_id`;
+SQL*/
+
+	Id: 14545
+	AegisName: "Battle_Manual_X3"
+	Name: "Field Manual 300%"
+	Type: 2
+	Weight: 10
+		Trade: {
+		nodrop: false
+		notrade: false
+		noselltonpc: false
+		nocart: false
+		nogstorage: false
+		nomail: false
+		noauction: false
+	}
+	Script: <" callfunc("bEXPi3", 1800000,300); ">

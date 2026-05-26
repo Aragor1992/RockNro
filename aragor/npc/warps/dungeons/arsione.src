@@ -1,0 +1,14 @@
+intro_01,22,6,0	warp	arsf#0	1,1,ars_fild01,14,259
+ars_fild01,4,260,0	warp	arsf#1-0	1,1,intro_01,22,9
+ars_fild01,296,245,0	warp	arsf#1-5	1,1,ars_fild05,76,392
+ars_fild05,76,396,0	warp	arsf#5-1	1,1,ars_fild01,290,245
+ars_fild05,369,4,0	warp	arsf#5-8	1,1,ars_fild08,9,171
+ars_fild08,6,171,0	warp	arsf#8-5	1,1,ars_fild05,369,6
+ars_fild08,391,288,0	warp	arsf#8-16	1,1,ars_fild16,9,371
+ars_fild16,6,371,0	warp	arsf#16-8	1,1,ars_fild08,388,288
+ars_fild16,372,349,0	warp	ars#16-20	1,1,ars_fild20,289,85
+ars_fild20,286,85,0	warp	ars#20-16	1,1,ars_fild16,369,348
+
+ars_dun01,123,32,0	warp	arsd#1-1	1,1,ars_fild01,180,25
+ars_fild01,180,22,0	warp	arsf#1-1	1,1,ars_dun01,123,35
+//ars_fild04,?,?,0	warp	arsd#4-1	1,1,ars_fild01,

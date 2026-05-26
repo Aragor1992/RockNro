@@ -1,0 +1,159 @@
+prontera,143,178,7	script	Clasificación MVP	1_F_MARIA,{
+	mes "[Clasificación MVP]";
+	mes "¡Hola!";
+	mes "¿Qué estás haciendo aquí?";
+	next;
+	switch(select("Consultar clasificaciones.:Mis estadísticas.:Clasificación del mes anterior")) {
+	case 1:
+		mes "[Clasificación MVP]";
+		mes "Clasificación :->";
+		.@nb = query_sql( "select name, mvp_rank from `char` where mvp_rank > 0 order by mvp_rank desc limit 10", .@name$, .@count );
+		if ( !.@nb ) {
+			mes "No hay entrada";
+			close;
+		}
+		for ( .@i = 0; .@i < .@nb; ++.@i )
+			mes ( .@i +1 )+". "+ .@name$[.@i] +" -> "+ .@count[.@i] +" puntos";
+		close;
+	case 2:
+		query_sql "select mvp_rank from `char` where char_id = "+ getcharid(0), .@killed;
+		mes "[Clasificación MVP]";
+		mes "Has matado "+ .@killed +" MVPs";
+		close;
+	case 3:
+		mes "[Clasificación MVP]";
+		mes "Ranking del mes pasado";
+		if ( gettime(GETTIME_MONTH) > 10 )
+			.@store_date$ = gettime(GETTIME_YEAR) +"-"+( gettime(GETTIME_MONTH) -1 )+"-00 00:00:00";
+		else if ( gettime(GETTIME_MONTH) > 1 )
+			.@store_date$ = gettime(GETTIME_YEAR) +"-0"+( gettime(GETTIME_MONTH) -1 )+"-00 00:00:00";
+		else
+			.@store_date$ = ( gettime(GETTIME_YEAR) -1 ) +"-12-00 00:00:00";
+		.@nb = query_sql( "select name, points from mvp_rank_archive where `date` = '"+ .@store_date$ +"' order by pos", .@name$, .@count );
+		if ( !.@nb ) {
+			mes "No hay entrada";
+			close;
+////case 4:
+////	mes "[Clasificación MVP]";
+////	mes "esta es la lista de mvps.";
+////	next;
+////	mes "^0000FF Osiris ^000000-^FF0000 moc_pryd04 ^000000";
+////	mes "^0000FF Baphomet ^000000-^FF0000 prt_maze03 ^000000";
+////	mes "^0000FF Doppelganger ^000000-^FF0000 gef_dun02 ^000000";	
+////	mes "^0000FF Misstress ^000000-^FF0000 mjolnir_04 ^000000";
+////	mes "^0000FF Golden Thief Bug ^000000-^FF0000 prt_sewb4 ^000000";
+////	mes "^0000FF Drake ^000000-^FF0000 treasure02 ^000000";
+////	mes "^0000FF Orc Hero ^000000-^FF0000 gef_fild02, gef_fild14^000000";
+////	next;
+////	mes "^0000FF Eddga ^000000-^FF0000 pay_fild11 ^000000";
+////	mes "^0000FF Maya ^000000-^FF0000 anthell02 ^000000";	
+////	mes "^0000FF Moonlight Flower ^000000-^FF0000 pay_dun04 ^000000";	
+////	mes "^0000FF Pharao ^000000-^FF0000 in_sphinx5 ^000000";
+////	mes "^0000FF Phreeoni ^000000-^FF0000 moc_fild17 ^000000";
+////	mes "^0000FF Orc Lord ^000000-^FF0000 gef_fild10 ^000000";
+////	mes "^0000FF Stormy Knight ^000000-^FF0000 xmas_dun02 ^000000";
+////	next;
+////	mes "^0000FF Garm ^000000-^FF0000 xmas_fild01 ^000000";
+////	mes "^0000FF Dark Lord ^000000-^FF0000 gef_dun03, gl_chyard ^000000";	
+////	mes "^0000FF Turtle General ^000000-^FF0000 tur_dun04 ^000000";	
+////	mes "^0000FF Lord of Dead ^000000-^FF0000 niflheim ^000000";	
+////	mes "^0000FF Dracula ^000000-^FF0000 gef_dun01 ^000000";	
+////	mes "^0000FF Evil Snake Lord ^000000-^FF0000 gon_dun03 ^000000";	
+////	mes "^0000FF Incantacion Samurai ^000000-^FF0000 ama_dun03 ^000000";
+////	next;
+////	mes "^0000FF Amon Ra ^000000-^FF0000 moc_pryd06 ^000000";
+////	mes "^0000FF Tao Gunka ^000000-^FF0000 beach_dun ^000000";	
+////	mes "^0000FF Rsx-0806 ^000000-^FF0000 ein_dun02 ^000000";	
+////	mes "^0000FF Bacsojin ^000000-^FF0000 lou_dun03 ^000000";	
+////	mes "^0000FF Lord Knight Seyren ^000000-^FF0000 lhz_dun03 ^000000";
+////	mes "^0000FF Whitesmith Harword ^000000-^FF0000 lhz_dun03 ^000000";
+////	mes "^0000FF Assassin Cross Eremes ^000000-^FF0000 lhz_dun03^000000";
+////	next;
+////	mes "^0000FF High Priest Magaleta ^000000-^FF0000 lhz_dun03 ^000000";
+////	mes "^0000FF Sniper Shecil ^000000-^FF0000 lhz_dun03 ^000000";
+////	mes "^0000FF High Wizard Katrinn ^000000-^FF0000 lhz_dun03 ^000000";
+////	mes "^0000FF Ygnizem ^000000-^FF0000 lhz_dun02 ^000000";
+////	mes "^0000FF Vesper ^000000-^FF0000 jupe_core ^000000";
+////	mes "^0000FF Lady Tanee ^000000-^FF0000 ayo_dun02 ^000000";
+////	mes "^0000FF Detale ^000000-^FF0000 abyss_03 ^000000";
+////	next;
+////	mes "^0000FF Kiel D-01 ^000000-^FF0000 kh_dun02 ^000000";	
+////	mes "^0000FF Valkyrie Randgris ^000000-^FF0000 odin_tem03 ^000000";
+////	mes "^0000FF Gloom Under Night ^000000-^FF0000 ra_san05 ^000000";	
+////	mes "^0000FF Ktullanux ^000000-^FF0000 ice_dun03 ^000000";	
+////	mes "^0000FF ifrit ^000000-^FF0000 thor_v03 ^000000";	
+////	mes "^0000FF Fallen Bishop ^000000-^FF0000 abbey02 ^000000";	
+////	mes "^0000FF Beelzebub ^000000-^FF0000 abbey03 ^000000";
+////	next;
+////	mes "^0000FF Gopinich ^000000-^FF0000 mosk_dun03 ^000000";
+////	mes "^0000FF Wounded Morroc ^000000-^FF0000 moc_fild22 ^000000";
+////	mes "^0000FF Boitata ^000000-^FF0000 jupe_core ^000000";	
+////	mes "^0000FF Nidhoggr's Shadow ^000000-^FF0000 nyd_dun01 ^000000";
+////	next;
+////	mes "^0000FF Atroce ^000000";
+////	mes "^FF0000 ra_fild02 ^000000";
+////	mes "^FF0000 ra_fild03 ^000000";
+////	mes "^FF0000 ra_fild04 ^000000";
+////	mes "^FF0000 ve_fild01 ^000000";
+////	mes "^FF0000 ve_fild02 ^000000";
+////	next;
+////	mes "^0000FF Memory of Thanatos - ^FF0000 thana_boss ^000000";
+////	mes "este ultimo solo haciendo la repectiva quest";
+////	close;
+		}
+		for ( .@i = 0; .@i < .@nb; ++.@i )
+			mes ( .@i +1 )+". "+ .@name$[.@i] +" -> "+ .@count[.@i] +" puntos";
+		close;
+	}
+	close;
+OnInit:
+	if ( $mvp_ladder_last_given == atoi( gettime(GETTIME_YEAR) +""+ gettime(GETTIME_MONTH) ) ) end;
+	goto L_give;
+OnClock0000:
+	if ( gettime(GETTIME_DAYOFMONTH) != 1 ) end;
+L_give:
+	.@nb = query_sql( "select char_id, name, mvp_rank from `char` where mvp_rank > 0 order by mvp_rank desc limit 10", .@cid, .@name$, .@killed );
+	if ( !.@nb ) end;
+	setarray .@reward, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510;
+	setarray .@amount, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1;
+	for ( .@i = 0; .@i < .@nb; ++.@i )
+	
+		rodex_sendmail(
+		.@cid[.@i], "[Clasificación MVP]", "Felicidades No. "+( .@i +1 )+"", "Felicidades por ganar la posición No. "+( .@i +1 )+" en la clasificación de MVP. Aquí está tu recompensa.",
+		0,
+		.@reward[.@i],.@amount[.@i]
+		);
+		
+	if ( gettime(GETTIME_MONTH) > 10 )
+		.@store_date$ = gettime(GETTIME_YEAR) +"-"+( gettime(GETTIME_MONTH) -1 )+"-00 00:00:00";
+	else if ( gettime(GETTIME_MONTH) > 1 )
+		.@store_date$ = gettime(GETTIME_YEAR) +"-0"+( gettime(GETTIME_MONTH) -1 )+"-00 00:00:00";
+	else
+		.@store_date$ = ( gettime(GETTIME_YEAR) -1 ) +"-12-00 00:00:00";
+	for ( .@i = 0; .@i < .@nb; ++.@i )
+		.@store$[.@i] = "( '"+ .@store_date$ +"', "+( .@i +1 )+", "+ .@cid[.@i] +", '"+ escape_sql( .@name$[.@i] ) +"', "+ .@killed[.@i] +" )";
+	query_sql "insert into mvp_rank_archive values "+ implode( .@store$, "," );
+	query_sql "update `char` set mvp_rank = 0"; // reset the rank
+	$mvp_ladder_last_given = atoi( gettime(GETTIME_YEAR) +""+ gettime(GETTIME_MONTH) );
+	end;
+OnNPCKillEvent:
+	if ( getmonsterinfo( killedrid, MOB_MVPEXP ) ) {
+		query_sql "update `char` set mvp_rank = mvp_rank +1 where char_id = "+ getcharid(0);
+		query_sql "select mvp_rank from `char` where char_id = "+ getcharid(0), .@killed;
+		dispbottom "~ You've killed "+ .@killed +" MVP. ~";
+		set #CASHPOINTS, #CASHPOINTS + 1;
+		specialeffect(EF_HEAL2, AREA, playerattached());
+	}
+	end;
+	
+OnMinute00:
+OnMinute15:
+OnMinute30:
+OnMinute45:
+query_sql( "select name, mvp_rank from `char` where mvp_rank > 0 order by mvp_rank desc limit 1", .@name$, .@count );
+while( 1 ){
+	delwaitingroom;
+	waitingroom "#1 "+.@name$,0;
+	end;
+}
+}

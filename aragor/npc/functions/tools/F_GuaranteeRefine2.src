@@ -1,0 +1,65 @@
+//===== eAthena Script =======================================
+//= Guarantee Refine Ticket
+//===== By: ==================================================
+//= Euphy / GM Takumirai
+//===== Current Version: =====================================
+//= 1.1a
+//===== Description: =========================================
+//= Uses [Guarantee Refine Ticket] to refine weapons/armor.
+//============================================================
+
+function	script	GuaranteeRefine	{
+	
+	set .@CleanEquip,1;	// Only refine +0 equipment? (1:yes / 0:no)
+
+	if (!getarg(1)) {
+		message strcharinfo(0)," ~~ Guarantee Refine Ticket +"+getarg(0)+" ~~ ";
+		for(set .@i,1; .@i<=10; set .@i,.@i+1) {
+			if (getequipisequiped(.@i) && !getiteminfo(getequipid(.@i),13)) set .@menu$,.@menu+getequipname(.@i);
+			set .@menu$, .@menu$+":";
+		}
+		set .@s, select(.@menu$);
+	}else set .@s, getarg(1);
+	if (!getequipisequiped(.@s)) {
+		dispbottom "Nothing is equipped!";
+		end;
+	}
+	if (!getequipisenableref(.@s)) {
+		dispbottom getequipname(.@s)+" cannot be refined.";
+		end;
+	}
+	if (getequiprefinerycnt(.@s) >= 10 || (.@CleanEquip && getequiprefinerycnt(.@s))) {
+		dispbottom "+"+getequiprefinerycnt(.@s)+" "+getequipname(.@s)+" cannot be refined any further.";
+		end;
+	}
+	if (getarg(1)) message strcharinfo(0)," ~~ Guarantee Refine Ticket +"+getarg(0)+" ~~ ";
+
+	if(select("^0055FF Refine + "+getequiprefinerycnt(.@s)+" "+getequipname(.@s)+":^777777Cancel^000000")==2)
+
+	end;
+
+	//pcblockmove getcharid(3),1;
+
+	//specialeffect2 348;
+
+	//progressbar "",2;
+
+	if (!countitem(getarg(2))) {
+		dispbottom "Refine failed. Ticket not found.";
+		end;
+	}
+
+	for(set .@i,0; .@i<getarg(0); set .@i,.@i+1) {
+
+		if (getequiprefinerycnt(.@s) >= 10) end;
+
+		successrefitem .@s;
+	}
+
+	delitem getarg(2),1;
+
+	//pcblockmove getcharid(3),0;
+
+	end;
+}
+ /*Copy the following into dbitem_db2.txt:6228,Guarantee_Weapon_9Up,Guarantee Weapon 9Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",9,4,6228; },{},{}6229,Guarantee_Weapon_8Up,Guarantee Weapon 8Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",8,4,6229; },{},{}6230,Guarantee_Weapon_7Up,Guarantee Weapon 7Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",7,4,6230; },{},{}6231,Guarantee_Weapon_6Up,Guarantee Weapon 6Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",6,4,6231; },{},{}6232,Guarantee_Armor_9Up,Guarantee Armor 9Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",9,0,6232; },{},{}6233,Guarantee_Armor_8Up,Guarantee Armor 8Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",8,0,6233; },{},{}6234,Guarantee_Armor_7Up,Guarantee Armor 7Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",7,0,6234; },{},{}6235,Guarantee_Armor_6Up,Guarantee Armor 6Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",6,0,6235; },{},{}6238,Guarantee_Weapon_10Up,Guarantee Weapon 10Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",10,4,6238; },{},{}6239,Guarantee_Armor_10Up,Guarantee Armor 10Up,11,50,,70,,,,,0xFFFFFFFF,7,2,,,,,,{ callfunc "GuaranteeRefine",10,0,6239; },{},{}*/

@@ -1,0 +1,344 @@
+function	script	Q_Garmet	{
+	bonus bMdef,getrefine();
+switch(getarg(0)+1){
+	case 1:
+		bonus2 bSubEle,Ele_Neutral,15;
+		if(isequipped(Q_Shoes_Neutral) && (isequipped(P_Armor_Neutral) || isequipped(QM_Armor_Neutral)|| isequipped(QA_Armor_Neutral))) {
+			bonus bHit,70;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Neutral,20;
+			bonus2 bResEff,Eff_Bleeding,10000;
+		}	break;
+	case 2:
+		bonus2 bSubEle,Ele_Water,15;
+		if(isequipped(Q_Shoes_Water) && (isequipped(P_Armor_Water) || isequipped(QM_Armor_Water)|| isequipped(QA_Armor_Water))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bHPRegenRate,1000,500;
+			bonus2 bSPRegenRate,50,1000;
+			bonus2 bAddEle,Ele_Water,20;
+			bonus2 bResEff,Eff_Sleep,10000;
+		}	break;
+	case 3:
+		bonus2 bSubEle,Ele_Earth,15;
+		if(isequipped(Q_Shoes_Earth) && (isequipped(P_Armor_Earth) || isequipped(QM_Armor_Earth)|| isequipped(QA_Armor_Earth))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bSubSize,Size_Small,10;
+			bonus2 bSubSize,Size_Medium,10;
+			bonus2 bAddEle,Ele_Earth,10;
+			bonus2 bResEff,Eff_Poison,10000;
+		}	break;
+	case 4:
+		bonus2 bSubEle,Ele_Fire,15;
+		if(isequipped(Q_Shoes_Fire) && (isequipped(P_Armor_Fire) || isequipped(QM_Armor_Fire)|| isequipped(QA_Armor_Fire))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddMagicDamageClass,Class_All,10;
+			bonus2 bAddRace, RC_All,10;
+			bonus2 bMagicAddRace,10,RC_DemiHuman+RC_Player;
+			bonus2 bAddEle,Ele_Fire,20;
+			bonus2 bResEff,Eff_Stone,10000;
+		}	break;
+	case 5:
+		bonus2 bSubEle,Ele_Wind,15;
+		if(isequipped(Q_Shoes_Wind) && (isequipped(P_Armor_Wind) || isequipped(QM_Armor_Wind)|| isequipped(QA_Armor_Wind))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus bAtkRange,3;
+			bonus2 bAddEle,Ele_Wind,20;
+			bonus2 bResEff,Eff_Freeze,10000;
+		}	break;
+	case 6:
+		bonus2 bSubEle,Ele_Poison,15;
+		if(isequipped(Q_Shoes_Poison) && (isequipped(P_Armor_Poison) || isequipped(QM_Armor_Poison)|| isequipped(QA_Armor_Poison))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus bCritical,10;
+			bonus bCritAtkRate,10;
+			bonus2 bAddEle,Ele_Poison,20;
+			bonus2 bResEff,Eff_Stone,10000;
+		}	break;
+	case 7:
+		bonus2 bSubEle,Ele_Holy,15;
+		if(isequipped(Q_Shoes_Holy) && (isequipped(P_Armor_Holy) || isequipped(QM_Armor_Holy)|| isequipped(QA_Armor_Holy))) {
+			bonus bMaxHPrate,5;
+			bonus bMaxSPrate,5;
+			bonus bHPrecovRate,5;
+			bonus bSPrecovRate,5;
+			bonus2 bSubEle,Ele_Earth,5;
+			bonus2 bSubSize,Size_Small,10;
+			bonus2 bSubSize,Size_Medium,10;
+			bonus2 bAddEle,Ele_Earth,20;
+			bonus2 bResEff,Eff_Poison,10000;
+		}	break;
+	case 8:
+		bonus2 bSubEle,Ele_Dark,15;
+		if(isequipped(Q_Shoes_Dark) && (isequipped(P_Armor_Dark) || isequipped(QM_Armor_Dark)|| isequipped(QA_Armor_Dark))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus bSplashRange,2;
+			bonus2 bAddEle,Ele_Holy,15;
+			bonus2 bAddEle,Ele_Dark,20;
+			bonus2 bResEff,Eff_Poison,10000;
+		}	break;
+	case 9:
+		bonus2 bSubEle,Ele_Ghost,15;
+		if(isequipped(Q_Shoes_Ghost) && (isequipped(P_Armor_Ghost) || isequipped(QM_Armor_Ghost)|| isequipped(QA_Armor_Ghost))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bHPVanishRate,50,10;
+			bonus2 bSPRegenRate,20,1000;
+			bonus2 bAddEle,Ele_Ghost,20;
+			bonus2 bResEff,Eff_Sleep,10000;
+		}	break;
+	case 10:
+		bonus2 bSubEle,Ele_Undead,15;
+		if(isequipped(Q_Shoes_Undead) && (isequipped(P_Armor_Undead) || isequipped(QM_Armor_Undead)|| isequipped(QA_Armor_Undead))) {
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bHPDrainRate,50,20;
+			bonus2 bAddEle,Ele_Undead,20;
+			bonus2 bResEff,Eff_Stone,10000;
+		}	break;
+}	return;	}
+
+function	script	P_Garmet	{
+	bonus bMdef,getrefine();
+switch(getarg(0)+1){
+	case 1:
+		bonus2 bSubEle,Ele_Neutral,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Neutral) || isequipped(QM_Armor_Neutral)|| isequipped(QA_Armor_Neutral))) {
+			bonus bHit,70;
+			bonus2 bAddEle,Ele_Neutral,20;
+			bonus2 bResEff,Eff_Bleeding,10000;
+		}
+		break;
+	case 2:
+		bonus2 bSubEle,Ele_Water,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Water) || isequipped(QM_Armor_Water)|| isequipped(QA_Armor_Water))) {
+			bonus2 bHPRegenRate,1000,500;
+			bonus2 bSPRegenRate,50,1000;
+			bonus2 bAddEle,Ele_Water,20;
+			bonus2 bResEff,Eff_Sleep,10000;
+		}
+		break;
+	case 3:
+		bonus2 bSubEle,Ele_Earth,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Earth) || isequipped(QM_Armor_Earth)|| isequipped(QA_Armor_Earth))) {
+			bonus2 bSubSize,Size_Small,10;
+			bonus2 bSubSize,Size_Medium,10;
+			bonus2 bAddEle,Ele_Earth,10;
+			bonus2 bResEff,Eff_Poison,10000;
+		}
+		break;
+	case 4:
+		bonus2 bSubEle,Ele_Fire,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Fire) || isequipped(QM_Armor_Fire)|| isequipped(QA_Armor_Fire))) {
+			bonus2 bAddMagicDamageClass,Class_All,10;
+			bonus2 bAddRace, RC_All,10;
+			bonus2 bMagicAddRace,10,RC_DemiHuman+RC_Player;
+			bonus2 bAddEle,Ele_Fire,20;
+			bonus2 bResEff,Eff_Stone,10000;
+		}
+		break;
+	case 5:
+		bonus2 bSubEle,Ele_Wind,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Wind) || isequipped(QM_Armor_Wind)|| isequipped(QA_Armor_Wind))) {
+			bonus bAtkRange,3;
+			bonus2 bAddEle,Ele_Wind,20;
+			bonus2 bResEff,Eff_Freeze,10000;
+		}
+		break;
+	case 6:
+		bonus2 bSubEle,Ele_Poison,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Poison) || isequipped(QM_Armor_Poison)|| isequipped(QA_Armor_Poison))) {
+			bonus bCritical,10;
+			bonus bCritAtkRate,10;
+			bonus2 bAddEle,Ele_Poison,20;
+			bonus2 bResEff,Eff_Stone,10000;
+		}
+		break;
+	case 7:
+		bonus2 bSubEle,Ele_Holy,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Neutral) || isequipped(QM_Armor_Neutral)|| isequipped(QA_Armor_Neutral))) {
+			bonus bHPrecovRate,5;
+			bonus bSPrecovRate,5;
+			bonus2 bSubEle,Ele_Earth,5;
+			bonus2 bSubSize,Size_Small,10;
+			bonus2 bSubSize,Size_Medium,10;
+			bonus2 bAddEle,Ele_Earth,20;
+			bonus2 bResEff,Eff_Poison,10000;
+		}
+		break;
+	case 8:
+		bonus2 bSubEle,Ele_Dark,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Dark) || isequipped(QM_Armor_Dark)|| isequipped(QA_Armor_Dark))) {
+			bonus bSplashRange,2;
+			bonus2 bAddEle,Ele_Holy,15;
+			bonus2 bAddEle,Ele_Dark,20;
+			bonus2 bResEff,Eff_Poison,10000;
+		}
+		break;
+	case 9:
+		bonus2 bSubEle,Ele_Ghost,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Ghost) || isequipped(QM_Armor_Ghost)|| isequipped(QA_Armor_Ghost))) {
+			bonus2 bHPVanishRate,50,10;
+			bonus2 bSPRegenRate,20,1000;
+			bonus2 bAddEle,Ele_Ghost,20;
+			bonus2 bResEff,Eff_Sleep,10000;
+		}
+		break;
+	case 10:
+		bonus2 bSubEle,Ele_Undead,25;
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Undead) || isequipped(QM_Armor_Undead)|| isequipped(QA_Armor_Undead))) {
+			bonus2 bHPDrainRate,50,20;
+			bonus2 bAddEle,Ele_Undead,20;
+			bonus2 bResEff,Eff_Stone,10000;
+		}
+		break;
+}
+return;
+}
+
+function	script	Q_SkelGarmet	{
+	bonus bMdef,getrefine();
+	bonus bStr,20;
+	bonus bVit,20;
+	bonus bDex,20;
+	bonus bLuk,20;
+	bonus bAgi,20;
+}
+
+function	script	Novice_Manteau	{
+switch(Q_Novice_Manteau){
+	case 1:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Neutral) || isequipped(QM_Armor_Neutral)|| isequipped(QA_Armor_Neutral))) {
+			bonus2 bSubEle,Ele_Neutral,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Neutral,20;
+			bonus bHit,70;
+			bonus2 bResEff,Eff_Bleeding,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Neutral,15;
+	break;
+	
+	case 2:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Water) || isequipped(QM_Armor_Water)|| isequipped(QA_Armor_Water))) {
+			bonus2 bSubEle,Ele_Water,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Water,20;
+			bonus2 bHPRegenRate,1000,500;
+			bonus2 bSPRegenRate,50,1000;
+			bonus2 bResEff,Eff_Sleep,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Water,15;
+	break;
+	
+	case 3:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Earth) || isequipped(QM_Armor_Earth)|| isequipped(QA_Armor_Earth))) {
+			bonus2 bSubEle,Ele_Earth,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Earth,20;
+			bonus2 bSubSize,1,10;
+			bonus2 bSubSize,0,10;
+		}
+		else
+			bonus2 bSubEle,Ele_Earth,15;
+	break;
+	
+	case 4:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Fire) || isequipped(QM_Armor_Fire)|| isequipped(QA_Armor_Fire))) {
+			bonus2 bSubEle,Ele_Fire,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Fire,20;
+			bonus2 bAddRace,RC_NonBoss,10;
+			bonus2 bAddRace,RC_Boss,10;
+			bonus2 bAddRace2,5,10; //guardians
+			bonus2 bMagicAddRace,RC_DemiHuman,10;
+			bonus2 bResEff,Eff_Stone,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Fire,15;
+	break;
+	
+	case 5:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Wind) || isequipped(QM_Armor_Wind)|| isequipped(QA_Armor_Wind))) {
+			bonus2 bSubEle,Ele_Wind,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Wind,20;
+			bonus bAtkRange,3;
+			bonus2 bResEff,Eff_Freeze,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Wind,15;
+	break;
+	
+	case 6:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Poison) || isequipped(QM_Armor_Poison)|| isequipped(QA_Armor_Poison))) {
+			bonus2 bSubEle,Ele_Poison,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Poison,20;
+			bonus bCritical,10;
+			bonus bCritAtkRate,10;
+			bonus2 bResEff,Eff_Stone,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Poison,15;
+	break;
+	
+	case 7:
+	bonus2 bSubEle,Ele_Holy,15;
+	break;
+	
+	case 8:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Dark) || isequipped(QM_Armor_Dark)|| isequipped(QA_Armor_Dark))) {
+			bonus2 bSubEle,Ele_Dark,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Dark,20;
+			bonus2 bAddEle,Ele_Holy,15;
+			bonus bSplashAddRange,2;
+		}
+		else
+			bonus2 bSubEle,Ele_Dark,15;
+	break;
+	
+	case 9:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Ghost) || isequipped(QM_Armor_Ghost)|| isequipped(QA_Armor_Ghost))) {
+			bonus2 bSubEle,Ele_Ghost,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Ghost,20;
+			bonus2 bSPVanishRate,50,10;
+			bonus2 bSPRegenRate,20,1000;
+			bonus2 bResEff,Eff_Sleep,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Ghost,15;
+	break;
+	
+	case 10:
+	if(isequipped(Q_Novice_Shoes) && (isequipped(P_Armor_Undead) || isequipped(QM_Armor_Undead)|| isequipped(QA_Armor_Undead))) {
+			bonus2 bSubEle,Ele_Undead,20;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus2 bAddEle,Ele_Undead,20;
+			bonus2 bHPDrainRate,200,5;
+			bonus2 bResEff,Eff_Stone,10000;
+		}
+		else
+			bonus2 bSubEle,Ele_Undead,15;
+	break;
+}
+return;
+}

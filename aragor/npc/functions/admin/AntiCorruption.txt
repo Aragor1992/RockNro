@@ -1,0 +1,29 @@
+//=============================================
+//= v3.0 Aragor Hercules
+//= Script AntiCorrupcion
+// saca a los GM durante las War of Emperium
+// banea a usuarios con status alterados STR AGI VIT INT DEX LUK
+//=============================================
+-	script	AntiCorrupt	FAKE_NPC,{
+OnPCLoginEvent:
+OnPCLoadMapEvent:
+OnAgitStart:
+	if(agitcheck() && getgmlevel() >= 10 || agitcheck2() && getgmlevel() >= 10) {atcommand "@kick "+strcharinfo(0)+"";}
+///	else if( getgmlevel() >= 10) {end;}//ignora GM igual o superiores a 10 
+//puntos que debe tener segun el Base nivel + trabajo(Job)
+.@should_have = callfunc("read_statpoint_table",(BaseLevel))+(Class&EAJ_UPPERMASK?52:0);
+.@nbStr = callfunc("pc_need_status_point",(readparam( bStr )));//puntos usados en STR
+.@nbAgi = callfunc("pc_need_status_point",(readparam( bAgi )));//puntos usados en AGI
+.@nbVit = callfunc("pc_need_status_point",(readparam( bVit )));//puntos usados en VIT
+.@nbDex = callfunc("pc_need_status_point",(readparam( bDex )));//puntos usados en DEX
+.@nbInt = callfunc("pc_need_status_point",(readparam( bInt )));//puntos usados en INT
+.@nbLuk = callfunc("pc_need_status_point",(readparam( bLuk )));//puntos usados en LUK
+.@actual_statpoint = .@nbStr+.@nbAgi+.@nbVit+.@nbDex+.@nbInt+.@nbLuk+StatusPoint;// Suma de todos los puntos
+// Suma de todos los puntos y ver si coincide con lvl+trabajo de lo contrario lo resetea y banea por 2 horas
+if (.@actual_statpoint > .@should_have){
+	atcommand "@reset "+strcharinfo(0)+"";// resetea al usuario alterado
+	atcommand "@ban 2h "+strcharinfo(0)+"";// banea al usuario alterado por 2 horas
+	announce "El Usuario "+strcharinfo(0)+" a sido baneado por status alterados",bc_all,0xff8000;
+	}end;
+}
+guild_vs1	mapflag	loadevent

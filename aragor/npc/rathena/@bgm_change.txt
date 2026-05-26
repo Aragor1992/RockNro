@@ -1,0 +1,20 @@
+-	script	atcmd_example	-1,{
+OnInit:
+	bindatcmd "bgm",strnpcinfo(3)+"::OnAtcommand";
+	end;
+OnAtcommand:
+	if ( .can_play ) {
+		initnpctimer;
+		.can_play = 0;
+		playbgm .@atcmd_parameters$[0];
+	}
+	else {
+		dispbottom "Please try again later.";
+	}
+	end;
+	
+OnTimer300000:	// 5 minute
+	stopnpctimer;
+	.can_play = 1;
+	end;
+}

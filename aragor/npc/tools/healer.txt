@@ -1,0 +1,91 @@
+-	script	Healer	FAKE_NPC,{
+	specialeffect(EF_HEAL2, AREA, playerattached()); percentheal 100,100;
+if (!agitcheck() && !agitcheck2()){//no woe
+	if (F_AgiBuff) {callfunc("F_AgiBuff");}
+	if (F_BlessBuff) {callfunc("F_BlessBuff");}
+	if (F_FPBuff) {callfunc("F_FPBuff");}
+	if (F_SoulBuff) {callfunc("F_SoulBuff");}
+}//end no woe
+	if (F_AidKit) {callfunc("F_AidKit");}
+	if (F_Repairall) {callfunc("F_Repairall");}
+	if (F_Identify) {callfunc("F_Identify");}
+	dispbottom"use @healer para configurar";
+	end;
+}
+
+-	script	Healerconf	FAKE_NPC,{
+OnAtcommand:
+if(F_AgiBuff){mes "Increase Agi - ^669900[Activado]^000000";}else{mes "Increase Agi - ^CC3300[Deactivado]^000000";}
+if(F_BlessBuff){mes "Blessing - ^669900[Activado]^000000";}else{mes "Blessing - ^CC3300[Deactivado]^000000";}
+if(F_FPBuff){mes "Chemical Protection - ^669900[Activado]^000000";}else{mes "Chemical Protection - ^CC3300[Deactivado]^000000";}
+if(F_SoulBuff){mes "Soul Linker Buff - ^669900[Activado]^000000";}else{mes "Soul Linker Buff - ^CC3300[Deactivado]^000000";}
+if(F_AidKit){mes "Estados Alterados - ^669900[Activado]^000000";}else{mes "Estados Alterados - ^CC3300[Deactivado]^000000";}
+if(F_Repairall){mes "Reparar equipo - ^669900[Activado]^000000";}else{mes "Reparar equipo - ^CC3300[Deactivado]^000000";}
+if(F_Identify){mes "Identificar items - ^669900[Activado]^000000";}else{mes "Identificar items - ^CC3300[Deactivado]^000000";}
+mes "-----------------------------------";
+mes "Durante Las Woes no habra Buff como increase Agi, blessing, Full Chemical Protection y Soul Link";
+next;
+switch(select("increase Agi:Blessing:Full Chemical Protection:Soul Link:Estados Alterados:Reparar:Identificar:Nada")) {
+case 1:switch(select("Activar:Desactivar")) {case 1:set F_AgiBuff,1;close;case 2:set F_AgiBuff,0;close;}
+case 2:switch(select("Activar:Desactivar")) {case 1:set F_BlessBuff,1;close;case 2:set F_BlessBuff,0;close;}
+case 3:switch(select("Activar:Desactivar")) {case 1:set F_FPBuff,1;close;case 2:set F_FPBuff,0;close;}
+case 4:switch(select("Activar:Desactivar")) {case 1:set F_SoulBuff,1;close;case 2:set F_SoulBuff,0;close;}
+case 5:switch(select("Activar:Desactivar")) {case 1:set F_AidKit,1;close;case 2:set F_AidKit,0;close;}
+case 6:switch(select("Activar:Desactivar")) {case 1:set F_Repairall,1;close;case 2:set F_Repairall,0;close;}
+case 7:switch(select("Activar:Desactivar")) {case 1:set F_Identify,1;close;case 2:set F_Identify,0;close;}
+case 8: close;
+}
+OnInit: //The script starts when loaded
+bindatcmd "healer",strnpcinfo(3)+"::OnAtcommand",0,99;
+end;
+}
+
+//Rock and ro 4_M_DOMINO
+//aldebaran,132,123,6	duplicate(Healer)	Healer#4	4_M_DOMINO
+//alberta,120,60,6	duplicate(Healer)	Healer#12	4_M_DOMINO
+//prontera,147,175,6	duplicate(Healer)	Healer#h1-1	4_M_DOMINO
+//alberta,120,53,6	duplicate(Healer)	Healer#h1-7	4_M_DOMINO
+//amatsu,200,80,6	duplicate(Healer)	Healer#h1-12	4_M_DOMINO
+//prontera,145,174,6	duplicate(Healerconf)	Healerconf#prt	4_F_DOMINO
+
+// Duplicates
+//============================================================
+alberta,25,240,6	duplicate(Healer)	Healer#alb	4_F_NURSE
+aldebaran,135,118,6	duplicate(Healer)	Healer#alde	4_F_NURSE
+amatsu,200,79,4	duplicate(Healer)	Healer#ama	4_F_NURSE
+ayothaya,207,169,6	duplicate(Healer)	Healer#ayo	4_F_NURSE
+comodo,184,158,6	duplicate(Healer)	Healer#com	4_F_NURSE
+einbech,57,36,6	duplicate(Healer)	Healer#einbe	4_F_NURSE
+einbroch,57,202,6	duplicate(Healer)	Healer#einbr	4_F_NURSE
+geffen,115,72,6	duplicate(Healer)	Healer#gef	4_F_NURSE
+gonryun,156,122,6	duplicate(Healer)	Healer#gon	4_F_NURSE
+hugel,89,150,6	duplicate(Healer)	Healer#hug	4_F_NURSE
+izlude,125,118,5	duplicate(Healer)	Healer#izl	4_F_NURSE
+jawaii,250,139,4	duplicate(Healer)	Healer#jaw	4_F_NURSE
+lighthalzen,152,100,6	duplicate(Healer)	Healer#lhz	4_F_NURSE
+louyang,226,103,4	duplicate(Healer)	Healer#lou	4_F_NURSE
+manuk,272,144,6	duplicate(Healer)	Healer#man	4_F_NURSE
+mid_camp,203,289,6	duplicate(Healer)	Healer#mid	4_F_NURSE
+moc_ruins,72,164,4	duplicate(Healer)	Healer#moc	4_F_NURSE
+morocc,153,97,6	duplicate(Healer)	Healer#mor	4_F_NURSE
+moscovia,220,191,4	duplicate(Healer)	Healer#mos	4_F_NURSE
+niflheim,212,182,5	duplicate(Healer)	Healer#nif	4_F_NURSE
+payon,179,106,4	duplicate(Healer)	Healer#pay	4_F_NURSE
+prontera,146,173,6	duplicate(Healer)	Healer#prt	4_F_NURSE
+rachel,125,116,6	duplicate(Healer)	Healer#rac	4_F_NURSE
+splendide,201,153,4	duplicate(Healer)	Healer#spl	4_F_NURSE
+thor_camp,249,74,4	duplicate(Healer)	Healer#thor	4_F_NURSE
+umbala,105,148,3	duplicate(Healer)	Healer#umb	4_F_NURSE
+veins,217,121,4	duplicate(Healer)	Healer#ve	4_F_NURSE
+xmas,143,136,4	duplicate(Healer)	Healer#xmas	4_F_NURSE
+yuno,164,45,4	duplicate(Healer)	Healer#yuno	4_F_NURSE
+
+// Duplicates (Renewal)
+//============================================================
+brasilis,194,221,6	duplicate(Healer)	Healer#bra	4_F_NURSE
+dewata,195,187,4	duplicate(Healer)	Healer#dew	4_F_NURSE
+dicastes01,201,194,4	duplicate(Healer)	Healer#dic	4_F_NURSE
+ecl_in01,45,60,4	duplicate(Healer)	Healer#ecl	4_F_NURSE
+malangdo,132,114,6	duplicate(Healer)	Healer#mal	4_F_NURSE
+malaya,205,205,6	duplicate(Healer)	Healer#ma	4_F_NURSE
+mora,55,152,4	duplicate(Healer)	Healer#mora	4_F_NURSE

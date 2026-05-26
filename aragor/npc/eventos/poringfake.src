@@ -1,0 +1,81 @@
+-	script	aPoring	-1,{
+
+end;
+
+OnInit:
+	hideonnpc "aPoring";
+	end;
+	
+OnPoring:
+	sleep 5000;
+	mapannounce "evt_poring","Poring: Bienvenido al evento de los Poring falsos.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "evt_poring","Poring: Antes de comenzár, explicare brevemente de que trata el evento.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "evt_poring","Poring: El evento consiste en que se invocarán una infinidad de porings en esta zona.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "evt_poring","Poring: Y entre esos porings hay uno solo que es el original, lo sabrán por su nombre.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "evt_poring","Poring: Quien encuentre y mate al poring original será el ganador.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "evt_poring","Poring: Eso es todo, ojalá se diviertan y que gane el de mejor vista.",bc_map,0xff8000;
+	sleep 10000;
+	if(getmapusers("evt_poring") == 0){
+	announce "Todos los participantes del evento Poring Falso se han retirado del mapa por lo que el evento queda nulo.",bc_all,0x00ffff;
+	donpcevent "aPortal::OnPorkill";
+	killmonsterall "evt_poring";
+	set $pt,0;
+	end;
+	}	
+	mapannounce "evt_poring","Poring: Se han invocado los porings, tienen como maximo 5 minutos para encontrar al original.",bc_map,0xff8000;
+	monster "evt_poring",0,0,"P0r1ng",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Pouring",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Puring",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Paring",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Poryng",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Poringd",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Piring",1002,25,"aPoring::OnFakePoringDeath";
+	monster "evt_poring",0,0,"Poring",1002,1,"aPoring::OnRealPoringDeath";
+	set $pt,1;
+	sleep 300000;
+	if($pt == 1){
+	mapannounce "evt_poring","Poring: Se ha acabado el tiempo, el evento ha terminado. Vuelve a participar en otra ocasión.",bc_map,0xff8000;
+	killmonsterall "evt_poring";
+	set $pt,0;
+	sleep 5000;
+	mapwarp "evt_poring","prontera",155,182;
+	announce "Poring: Lastima, nadie ha ganado el evento de los Porings falsos.",bc_npc,0x00ffff;	
+	end;
+	}
+	end;
+	
+OnFakePoringDeath:
+	dispbottom "Ese no era el Poring original!";
+	end;
+	
+OnRealPoringDeath:
+	donpcevent "aPortal::OnPorkill";
+	killmonsterall "evt_poring";
+	mapannounce "evt_poring","Poring: ¡El Poring original ha muerto!",bc_map,0xff8000;
+	sleep2 1000;
+	mes "Ten tu premio.";
+	getitem 7539,rand(20,40);
+	set $pt, 0;
+	announce "Poring: El ganador del evento de los Poring falsos es "+strcharinfo(0)+", Felicidades.",bc_all,0x00ffff;
+	sleep2 3000;
+	mapwarp "evt_poring","prontera",155,182;
+	end;
+}
+
+evt_poring	mapflag	noskill
+evt_poring	mapflag	nobranch
+evt_poring	mapflag	nomemo
+evt_poring	mapflag	pvp	off
+evt_poring	mapflag	noteleport
+evt_poring	mapflag	nosave	SavePoint
+evt_poring	mapflag	novending
+evt_poring	mapflag	nowarpto
+evt_poring	mapflag	nodrop
+evt_poring	mapflag	noloot
+evt_poring	mapflag	noexp
+evt_poring	mapflag	noexppenalty

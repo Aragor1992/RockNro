@@ -1,0 +1,298 @@
+-	script	armor_shop	FAKE_NPC,{
+function Add; function Chk; function Slot; function A_An;
+OnInit:
+	freeloop(1);
+
+// -----------------------------------------------------------
+//  Basic shop settings.
+// -----------------------------------------------------------
+
+	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .ShowID,1;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
+	set .MaxStack,100;	// Max number of quest items purchased at one time.
+
+// -----------------------------------------------------------
+//  Points variable -- optional quest requirement.
+//	setarray .Points$[0],"<variable name>","<display name>";
+// -----------------------------------------------------------
+
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+// -----------------------------------------------------------
+//  Shop IDs -- to add shops, copy dummy data at bottom of file.
+//	setarray .Shops$[1],"<Shop 1>","<Shop 2>"{,...};
+// -----------------------------------------------------------
+
+	setarray .Shops$[1],
+	"Armadura Mágica","Armadura Fisica","Armadura Dual","Garment","Footgears","Shields","Novice Armor","Accesorios";
+
+// -----------------------------------------------------------
+//  Quest items -- do NOT use a reward item more than once!
+//	Add(<shop ID>,<reward ID>,<reward amount>,
+//	    <Zeny cost>,<point cost>,
+//	    <required item ID>,<required item amount>{,...});
+// -----------------------------------------------------------
+// ================================== Armors ==================================
+//Armors Con Autocast == Magicos
+	Add(1,M_Armor_Neutral,1,0,0,999,100);//Neutral
+	Add(1,M_Armor_Fire,1,0,0,999,100);//Fire
+	Add(1,M_Armor_Water,1,0,0,999,100);//Water
+	Add(1,M_Armor_Wind,1,0,0,999,100);//Wind
+	Add(1,M_Armor_Earth,1,0,0,999,100);//Earth
+	Add(1,M_Armor_Dark,1,0,0,999,100);//Dark
+	Add(1,M_Armor_Holy,1,0,0,999,100);//Holy
+	Add(1,M_Armor_Ghost,1,0,0,999,100);//Ghost
+	Add(1,M_Armor_Undead,1,0,0,999,100);//Undead
+	Add(1,M_Armor_Poison,1,0,0,999,100);//Poison
+//Armors Sin Autocast == Fisicos
+	Add(2,A_Armor_Neutral,1,0,0,999,100);//Neutral
+	Add(2,A_Armor_Fire,1,0,0,999,100);//Fire
+	Add(2,A_Armor_Water,1,0,0,999,100);//Water
+	Add(2,A_Armor_Wind,1,0,0,999,100);//Wind
+	Add(2,A_Armor_Earth,1,0,0,999,100);//Earth
+	Add(2,A_Armor_Dark,1,0,0,999,100);//Dark
+	Add(2,A_Armor_Holy,1,0,0,999,100);//Holy
+	Add(2,A_Armor_Ghost,1,0,0,999,100);//Ghost
+	Add(2,A_Armor_Undead,1,0,0,999,100);//Undead
+	Add(2,A_Armor_Poison,1,0,0,999,100);//Poison
+//armor plus duales 2015
+	Add(3,P_Armor_Poison,1,0,0,A_Armor_Poison,1,M_Armor_Poison,1);//Poison
+	Add(3,P_Armor_Water,1,0,0,A_Armor_Water,1,M_Armor_Water,1);//Water
+	Add(3,P_Armor_Neutral,1,0,0,A_Armor_Neutral,1,M_Armor_Neutral,1);//Neutral
+	Add(3,P_Armor_Dark,1,0,0,A_Armor_Dark,1,M_Armor_Dark,1);//Dark
+	Add(3,P_Armor_Ghost,1,0,0,A_Armor_Ghost,1,M_Armor_Ghost,1);//Ghost
+	Add(3,P_Armor_Undead,1,0,0,A_Armor_Undead,1,M_Armor_Undead,1);//Undead
+	Add(3,P_Armor_Holy,1,0,0,A_Armor_Holy,1,M_Armor_Holy,1);//Holy
+	Add(3,P_Armor_Wind,1,0,0,A_Armor_Wind,1,M_Armor_Wind,1);//Wind
+	Add(3,P_Armor_Fire,1,0,0,A_Armor_Fire,1,M_Armor_Fire,1);//Fire
+	Add(3,P_Armor_Earth,1,0,0,A_Armor_Earth,1,M_Armor_Earth,1);//Earth
+// ================================== Garment =================================
+//	Add(4,18011,1,0,0,999,100);//Manteau v2
+//	Add(4,18013,1,0,0,999,100);//Survivor's Manteau v2
+//	Add(4,18014,1,0,0,999,100);//Somber Novice Hood v2
+	Add(4,Q_Skeleton_manteau,1,0,0,999,100);//Skeleton Manteau v2
+//	Add(4,18017,1,0,0,999,100);//Pauldron v2
+//	Add(4,18018,1,0,0,999,100);//Eagle Wing v2
+//	Add(4,18019,1,0,0,999,100);//Falcon Muffler v2
+//	Add(4,18021,1,0,0,999,100);//Morpheus's Shawl v2
+//	Add(4,18022,1,0,0,999,100);//Morrigane's Manteau v2
+//	Add(4,18023,1,0,0,999,100);//Goibne's Spaulders v2
+//	Add(4,18025,1,0,0,999,100);//Happy Birthday Gaby
+	
+// Elemental Quest	
+	Add(4,Q_Garment_Neutral,1,0,0,999,100);//Neutral
+	Add(4,Q_Garment_Earth,1,0,0,999,100);//Earth
+	Add(4,Q_Garment_Fire,1,0,0,999,100);//Fire
+	Add(4,Q_Garment_Wind,1,0,0,999,100);//Wind
+	Add(4,Q_Garment_Water,1,0,0,999,100);//Water
+	Add(4,Q_Garment_Ghost,1,0,0,999,100);//Ghost
+//	Add(4,Q_Garment_Holy,1,0,0,999,1000);//Holy
+	Add(4,Q_Garment_Dark,1,0,0,999,100);//Dark
+	Add(4,Q_Garment_Undead,1,0,0,999,100);//Undead
+	Add(4,Q_Garment_Poison,1,0,0,999,100);//Poison
+// ================================== Footgears ===============================
+//	Add(5,18051,1,0,0,999,100);//Sandals Plus
+//	Add(5,18052,1,0,0,999,100);//Shoes Plus
+//	Add(5,18053,1,0,0,999,100);//Boots Plus
+	Add(5,Q_Sleipnir,1,0,0,999,100);//Sleipnir Plus
+//	Add(5,18055,1,0,0,999,100);//Greaves Plus
+//	Add(5,18056,1,0,0,999,100);//Safety Boots Plus
+//	Add(5,18057,1,0,0,999,100);//Novice Slippers Plus
+//	Add(5,18059,1,0,0,999,100);//Freyr's Shoes Plus
+
+// Elemental Quest
+	Add(5,Q_Shoes_Neutral,1,0,0,999,100);//Combat Greaves
+	Add(5,Q_Shoes_Fire,1,0,0,999,100);//Fire - Ifrit's Shoes
+	Add(5,Q_Shoes_Water,1,0,0,999,100);//Water - Aqua Boots
+	Add(5,Q_Shoes_Wind,1,0,0,999,100);//Wind - Sky Walker
+	Add(5,Q_Shoes_Earth,1,0,0,999,100);//Earth - Stone Age
+//	Add(5,Q_Shoes_Holy,1,0,0,999,100);//Holy - God's Slippers
+	Add(5,Q_Shoes_Dark,1,0,0,999,100);//Dark - Boots of Doom
+	Add(5,Q_Shoes_Undead,1,0,0,999,100);//Freddy - Kruger Shackle's
+	Add(5,Q_Shoes_Poison,1,0,0,999,100);//Poison - Arbok Boots
+	Add(5,Q_Shoes_Ghost,1,0,0,999,100);//Gengar's Shoes
+
+	
+// ================================== Shields 6=================================
+	Add(6,Q_Mirror_Shield,1,0,0,999,100);
+	Add(6,Q_Holy_Guard,1,0,0,999,100);
+	Add(6,Q_Sacred_Mission,1,0,0,999,100);
+	Add(6,Q_Valkyrie_Shield,1,0,0,999,100);
+	Add(6,Q_Angelic_Guard,1,0,0,999,100);
+	Add(6,Q_Ahura_Mazdah,1,0,0,999,100);
+// ============================ Novice Super Novice=================================	
+//Novice Special Garmet
+	Add(7,Q_Novice_Manteau,1,0,0,999,100);
+	Add(7,Q_Novice_Shoes,1,0,0,999,100);
+	Add(7,Q_Novice_Armlet,1,0,0,Novice_Armlet,1,Desert_Wolf_Card,2,Agav_Card,2,Rotten_Meat,60,Shoulder_Protection,60,Spawn,60,Pill,60,Olivine,5);
+	Add(7,Q_Novice_Shield,1,0,0,999,100);
+	
+// ============================ Accesorios =================================
+	Add(8,Q_Critical_Ring,1,0,0,Critical_Ring,1,Kobold_Card,2,Kukre_Card,2,Nose_Ring,60,Grit,60,Dragon_Scale,60,Candy_Striper,60,Biotite,5);//Master Critical Ring
+	Add(8,Q_Bow_Thimble,1,0,0,Thimble_Of_Archer,1,Galion_Card,2,Worm_Tail_Card,2,Sharp_Leaf,60,Chilli,60,Black_Bears_Skin,60,Illusion_Flower,60,Rose_Quartz,5);//Master Bow Thimble
+	Add(8,Q_Megingjard,1,0,0,Magingiorde,1,Andre_Card,2,Echio_Card,2,Golden_Hair,60,Sand_Lump,60,Moustache_Of_Mole,60,Bitter_Herb,60,Pyroxene,5);//Master Megingjard
+	Add(8,Q_Brisingamen,1,0,0,Brysinggamen,1,Aliza_Card,2,Desert_Wolf_Babe_Card,2,Transparent_Cloth,60,Worm_Peelings,60,Porcupine_Spike,60,Cursed_Seal,60,Agate,5);//Master Brisingamen
+	Add(8,Q_Celebration_Ring,1,0,0,First_Age_Ring,1,Anolian_Card,2,Hyegun_Card,2,Rat_Tail,60,Cyfar,60,Spoon_Stub,60,Anolian_Skin,60,Phlogopite,5);//Master Celebration Ring
+	Add(8,Q_The_Sign,1,0,0,The_Sign,1,Dancing_Dragon_Card,2,Archdam_Card,2,Hard_Peach,60,Tiger_Skin_Panties,60,Nail_Of_Orc,60,Amulet,60,Citrine,5);//Master The Sign
+	Add(8,Q_Glove,1,0,0,Glove,1,Observation_Card,2,Drops_Card,2,White_Mask,60,Burnt_Parts,60,Manacles,60,Headlamp,60,Mithril,5);//Master Glove
+	Add(8,Q_Brooch,1,0,0,Brooch,1,Chonchon_Card,2,Roween_Card,2,Nail_Of_Mole,60,Piece_Of_Egg_Shell,60,Turtle_Shell,60,Hinalle,60,Muscovite,5);//Master Brooch
+	Add(8,Q_Nile_Rose,1,0,0,Nile_Rose,1,Muka_Card,2,Ferus__Card,2,Mould_Powder,60,Lizard_Scruff,60,Old_White_Cloth,60,White_Jewel,60,Turquoise,5);//Master Nile Rose
+	Add(8,Q_Icarus_Wing,1,0,0,Clip,1,Ragged_Zombie_Card,2,Assulter_Card,2,Reptile_Tongue,2,Stem,60,Piece_Of_Crest1,60,Transparent_Plate01,60,Tri_Headed_Dragon_Head,5);//Icarus Wing
+// -----------------------------------------------------------
+
+	freeloop(0);
+	set .menu$,"";
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1) {
+		set .menu$, .menu$+.Shops$[.@i]+":";
+		npcshopdelitem "ashop"+.@i,909;
+	}
+	end;
+
+OnMenu:
+	set .@size, getarraysize(@i);
+	if (!.@size) set .@i, select(.menu$);
+	else if (.@size == 1) set .@i, @i[0];
+	else {
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1)
+			set .@menu$, .@menu$+.Shops$[@i[.@j]]+":";
+		set .@i, @i[select(.@menu$)-1];
+	}
+	deletearray @i[0],getarraysize(@i);
+	if (.Shops$[.@i] == "") {
+		message strcharinfo(PC_NAME),"An error has occurred.";
+		end;
+	}
+	dispbottom "Select one item at a time.";
+	callshop "ashop"+.@i,1;
+	npcshopattach "ashop"+.@i;
+	end;
+
+OnBuyItem:
+	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
+	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
+	copyarray .@q[3],getd(".q_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+.@q[0]));
+	set .@q[2],.@q[1]*.@q[3];
+	if (!.@q[2] || .@q[2] > 30000) {
+		message strcharinfo(PC_NAME),"You can't purchase that many "+getitemname(.@q[0])+".";
+		end;
+	}
+	mes "[Quest Shop]";
+	mes "Reward: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requirements:";
+	if (.@q[4]) mes " > "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
+	if (.@q[5]) mes " > "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
+	if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
+	next;
+	setarray @qe[1], getiteminfo(.@q[0], ITEMINFO_LOC), getiteminfo(.@q[0], ITEMINFO_VIEWSPRITE);
+	if (@qe[2] > 0 && ((@qe[1] & EQP_HEAD_LOW) || (@qe[1] & EQP_HEAD_TOP) || (@qe[1] & EQP_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_TOP) || (@qe[1] & EQP_COSTUME_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_LOW) || (@qe[1] & EQP_GARMENT) || (@qe[1] & EQP_COSTUME_GARMENT)))
+		set .@preview,1;
+	addtimer 1000, strnpcinfo(NPC_NAME)+"::OnEnd";
+	while(1) {
+		switch(select(" ~ Purchase ^0055FF"+ getitemname(.@q[0]) +"^000000", ((.@preview && !@qe[7])?" ~ Preview...": ""), " ~ ^777777Cancel^000000")) {
+		case 1:
+			if (@qe[0]) {
+				mes "[Quest Shop]";
+				mes "You're missing one or more quest requirements.";
+				close;
+			}
+			if (!checkweight(.@q[0],.@q[2])) {
+				mes "[Quest Shop]";
+				mes "^FF0000You need "+(((.@q[2] * getiteminfo(.@q[0], ITEMINFO_WEIGHT)) + Weight - MaxWeight) / 10)+" additional weight capacity to complete this trade.^000000";
+				close;
+			}
+			if (.@q[4]) Zeny -= (.@q[4]*.@q[1]);
+			if (.@q[5]) setd .Points$[0], getd(.Points$[0])-(.@q[5]*.@q[1]);
+			if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+				delitem .@q[.@i],.@q[.@i+1]*.@q[1];
+			getitem .@q[0],.@q[2];
+			if (.Announce) announce strcharinfo(PC_NAME)+" has created "+((.@q[2] > 1)?.@q[2]+"x "+getitemname(.@q[0]):A_An(getitemname(.@q[0])))+"!",0;
+			specialeffect(EF_FLOWERLEAF, AREA, playerattached());
+			close;
+		case 2:
+			setarray @qe[3], getlook(LOOK_HEAD_BOTTOM), getlook(LOOK_HEAD_TOP), getlook(LOOK_HEAD_MID), getlook(LOOK_ROBE), 1;
+			if ((@qe[1] & 1) || (@qe[1] & 4096)) changelook LOOK_HEAD_BOTTOM, @qe[2];
+			else if ((@qe[1] & 256) || (@qe[1] & 1024)) changelook LOOK_HEAD_TOP, @qe[2];
+			else if ((@qe[1] & 512) || (@qe[1] & 2048)) changelook LOOK_HEAD_MID, @qe[2];
+			else if ((@qe[1] & 4) || (@qe[1] & 8192)) changelook LOOK_ROBE, @qe[2];
+			break;
+		case 3:
+			close;
+		}
+	}
+
+OnEnd:
+	if (@qe[7]) {
+		changelook LOOK_HEAD_BOTTOM, @qe[3];
+		changelook LOOK_HEAD_TOP, @qe[4];
+		changelook LOOK_HEAD_MID, @qe[5];
+		changelook LOOK_ROBE, @qe[6];
+	}
+	deletearray @qe[0],8;
+	end;
+
+function Add {
+	if (getitemname(getarg(1)) == "null") {
+		consolemes(CONSOLEMES_WARNING, "Quest reward #"+getarg(1)+" invalid (skipped).");
+		return;
+	}
+	setarray .@j[0],getarg(2),getarg(3),getarg(4);
+	for(set .@i,5; .@i<getargcount(); set .@i,.@i+2) {
+		if (getitemname(getarg(.@i)) == "null") {
+			consolemes(CONSOLEMES_WARNING,  "Quest requirement #"+getarg(.@i)+" invalid (skipped).");
+			return;
+		} else
+			setarray .@j[.@i-2],getarg(.@i),getarg(.@i+1);
+	}
+	copyarray getd(".q_"+getarg(1)+"[0]"),.@j[0],getarraysize(.@j);
+	npcshopadditem "ashop"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return;
+}
+
+function Chk {
+	if (getarg(0) < getarg(1)) {
+		set @qe[0],1;
+		return "^FF0000";
+	} else
+		return "^00FF00";
+}
+
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot) {
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0), ITEMINFO_TYPE) == IT_WEAPON || getiteminfo(getarg(0), ITEMINFO_TYPE) == IT_ARMOR) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$;
+	}
+}
+
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0);
+}
+}
+
+function	script	ashop	{
+	deletearray @i[0],getarraysize(@i);
+	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
+		set @i[.@i],getarg(.@i);
+	doevent "armor_shop::OnMenu";
+	end;
+}
+
+
+// Dummy shop data -- copy as needed.
+//============================================================
+-	shop	ashop1	FAKE_NPC,909:-1
+-	shop	ashop2	FAKE_NPC,909:-1
+-	shop	ashop3	FAKE_NPC,909:-1
+-	shop	ashop4	FAKE_NPC,909:-1
+-	shop	ashop5	FAKE_NPC,909:-1
+-	shop	ashop6	FAKE_NPC,909:-1
+-	shop	ashop7	FAKE_NPC,909:-1
+-	shop	ashop8	FAKE_NPC,909:-1

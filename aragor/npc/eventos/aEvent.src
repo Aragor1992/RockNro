@@ -1,0 +1,90 @@
+//================= aEvent =========================================
+-	script	aEvent	FAKE_NPC ,{
+
+// OnMinute03:
+//if(agitcheck() && agitcheck2()) end;
+// set $@aPort,rand(1,8);
+// if($@aPort == 1){donpcevent "aPortal::OnCas"; end;}
+// if($@aPort == 2){donpcevent "aPortal::OnLab"; end;}
+// if($@aPort == 3){donpcevent "aPortal::OnNov"; end;}
+// if($@aPort == 4){donpcevent "aPortal::OnPor"; end;}
+// if($@aPort == 5){donpcevent "aPortal::OnEmpBreak"; end;}
+// if($@aPort == 6){donpcevent "aPortal::OnPor"; end;}
+//	if($@aPort == 7){donpcevent "aPortal::OnAquaDemons"; end;}
+//	if($@aPort == 8){donpcevent "aPortal::OnSpawnMorocc"; end;}
+// end;
+
+OnWhisperGlobal:
+	if(@whispervar0$ == "open" && getgmlevel() > 10){
+	
+set .@n$,"^ff8000[ aEvent System ]^000000";
+
+mes "selecciona el evento a iniciar";
+switch(select("Casillas:Laberinto:Novice vs Zombie:Poring:Emperium Breaker:Poring Race:Demonios del Agua:Invacion Satan Morocc:Run or Die:cancelar")){
+				case 1:
+					next;
+					mes .@n$;
+					mes "Evento Casillas Iniciado";
+					close2;
+					donpcevent "aPortal::OnCas";
+					end;
+				case 2:
+					next;
+					mes .@n$;
+					mes "Evento Laberinto Iniciado";
+					close2;
+					donpcevent "aPortal::OnLab";
+					end;
+				case 3:
+					next;
+					mes .@n$;
+					mes "Evento Novice vs Zombie Iniciado";
+					close2;
+					donpcevent "aPortal::OnNov";
+					end;
+				case 4:
+					next;
+					mes .@n$;
+					mes "Evento Porings Iniciado";
+					close2;
+					donpcevent "aPortal::OnPor";
+					end;
+				case 5:
+					next;
+					mes .@n$;
+					mes "Evento Emperium Break a Iniciado";
+					close2;
+					donpcevent "aPortal::OnEmpBreak";
+					end;
+				case 6:
+					next;
+					mes .@n$;
+					mes "Evento Porings Race a Iniciado";
+					close2;
+					donpcevent "aPortal::OnPoringRace";
+					end;
+				case 7:
+					next;
+					mes .@n$;
+					mes "Evento Demonios Del Agua a Iniciado";
+					close2;
+					donpcevent "aPortal::OnAquaDemons";
+					end;
+				case 8:
+					next;
+					mes .@n$;
+					mes "Evento Invacion Satan a Iniciado";
+					close2;
+					donpcevent "aPortal::OnSpawnMorocc";
+					end;
+				case 9:
+					next;
+					mes .@n$;
+					mes "Evento Run or die a Iniciado";
+					close2;
+					donpcevent "aPortal::OnRunorDie";
+					end;					
+				close;
+			}
+}
+}

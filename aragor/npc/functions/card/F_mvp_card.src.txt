@@ -1,0 +1,17 @@
+function	script	F_Phreeoni_C	{
+return;
+}
+
+function	script	F_Moonlight_Flower	{
+	if( callfunc("contar_cartas",EQI_SHOES,Moonlight_Flower_Card) == 1){
+		bSpeedRate,20;//en Woe bonus bSpeedRate,15;
+	}
+	else {
+		message strcharinfo(0),"You can only equip 1x "+getitemname(Moonlight_Flower_Card)+"! Additional card(s) has been disabled.";
+	}
+return;
+}
+
+function	script	F_Orc_Lord	{
+return;
+}

@@ -1,0 +1,90 @@
+function	script	Q_Rod	{
+	bonus bHit,300;
+	bonus bAspd,30;
+	bonus bAllStats,10;
+	bonus bMatkRate,30;
+	skill PF_DOUBLECASTING,2;
+switch(getarg(0)+1){
+
+case 1:	bonus bAtkEle,Ele_Neutral;
+		bonus2 bMagicAtkEle,Ele_Neutral,10;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		break;
+		
+case 2:	bonus bAtkEle,Ele_Water;
+		bonus2 bMagicAtkEle,Ele_Water,10;
+		bonus2 bMagicAtkEle,Ele_Water,10;
+		break;	
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		bonus2 bMagicAtkEle,Ele_Earth,10;
+		skill 90,5;
+		bonus5 bAutoSpell,90,3,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		bonus2 bMagicAtkEle,Ele_Fire,10;
+		break;	
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		bonus2 bMagicAtkEle,Ele_Wind,10;
+		break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		bonus2 bMagicAtkEle,Ele_Poison,10;
+		skill NSC_VENOMBOLT,10;
+		bonus5 bAutoSpell,NSC_VENOMBOLT,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		bonus2 bMagicAtkEle,Ele_Holy,10;
+		skill NSC_HOLYBOLT,10;
+		bonus5 bAutoSpell,NSC_HOLYBOLT,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus2 bMagicAtkEle,Ele_Dark,10;
+		skill NPC_DARKSTRIKE,10;
+		bonus5 bAutoSpell,NPC_DARKSTRIKE,7,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus2 bMagicAtkEle,Ele_Ghost,10;
+		break;	
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus2 bMagicAtkEle,Ele_Undead,10;
+		skill HW_NAPALMVULCAN,5;
+		bonus5 bAutoSpell,HW_NAPALMVULCAN,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;
+}
+//if(isequipped(Novice_Spirit)|| isequipped(Spirit_Of_Spirits)){
+//	bonus2 bMagicAtkEle,getarg(0),10;
+//	bonus bBaseAtk,readparam(bInt)*10;
+//	bonus bMatkRate,10;
+//	bonus bDelayRate,-10;
+//	bonus2 bSkillHeal,AL_HEAL,20;
+//	bonus bMaxHPrate,10;
+//}
+return;
+}/* callfunc("Q_Rod",Ele_Neutral); : callfunc("Q_Rod",Ele_Dark); : callfunc("Q_Rod",Ele_Earth); : callfunc("Q_Rod",Ele_Holy); : callfunc("Q_Rod",Ele_Poison); */
+
+function	script	Q_Mini_Ballista	{
+		bonus bAspd,100;
+		bonus bUnstripableWeapon,0;
+		bonus5 bAutoSpell,CH_PALMSTRIKE,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill AC_DOUBLE,10;
+		bonus2 bSkillAtk,AC_DOUBLE,20;
+		bonus bHit,200;
+		bonus bDex,20;
+		skill MO_TRIPLEATTACK,5;
+//		if(isequipped(Novice_Spirit)|| isequipped(Spirit_Of_Spirits)){
+//			skill CH_CHAINCRUSH,3;
+//			if(!isequipped(Twilight_Wings) && !isequipped(Champion_Card))bonus2 bSkillAtk,CH_CHAINCRUSH,-50;
+//			bonus bAtkRate,10;
+//			bonus bDelayrate,-10;
+//			bonus bMaxHPrate,10;
+//		}
+return;		
+}/*callfunc "Q_Mini_Ballista";*/

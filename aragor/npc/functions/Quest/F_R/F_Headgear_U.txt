@@ -1,0 +1,53 @@
+// =================== Tipo Black Helm ====================
+function	script	F_HQ_BlackHelm	{
+	bonus bAgi,5;
+	bonus bVit,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus bAtkRate,5;
+}
+// =================== Tipo Dragon Helm ===================
+function	script	F_HQ_DragonHelm	{
+	bonus bDex,5;
+	bonus bAgi,5;
+	bonus bVit,5;
+	bonus bHit,50;
+	bonus bAspdRate,5;
+	bonus bMaxHPrate,20;
+}
+// =================== Tipo True Valkyrie Helm =================
+function	script	F_HQ_ValkyHelm	{
+	bonus bAgi,5;
+	bonus bDex,5;
+	bonus bStr,5;
+	bonus bMaxHPrate,20;
+	bonus bFlee2,7;
+	bonus2 bSubRace,RC_DemiHuman,5;
+}
+// ====================== Tipo Maya Hat ===========================
+function	script	F_HQ_MayaHat	{
+	bonus bInt,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,10;
+}
+// =================== Tipo Penacho de Moktezuma ==================
+function	script	F_HQ_PMoktezuma	{
+if(Class==Job_Paladin||Class==Job_Crusader) {bonus bShortWeaponDamageReturn,5;}
+else {bonus bShortWeaponDamageReturn,10;}
+	bonus bStr,5;
+	bonus bDex,5;
+	bonus bVit,5;
+	bonus bMaxHPrate,20;
+}
+// =================== Fox hat ==================
+function	script	F_HQ_fox	{
+	bonus bAgi,10;
+	bonus bMaxHPrate,10;
+	bonus bSpeedRate,5;
+	bonus bFlee,20;
+	if(isequipped(9671)) {
+		bonus bFlee,140;
+	}
+}

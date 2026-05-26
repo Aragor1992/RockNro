@@ -1,0 +1,4 @@
+function	script	F_look_boody	{
+setlook(LOOK_BODY2,getarg(0));
+return;
+}

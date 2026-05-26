@@ -1,0 +1,78 @@
+/*QUEST ACCESORY*/
+function	script	Q_Critical_Ring	{
+	bonus bCritical,10;
+	bonus bCritAtkRate,10;
+	bonus bAgi,10;
+	bonus bLuk,10;
+return;
+}
+
+function	script	Q_Bow_Thimble	{
+	if(Class==3||Class==11||Class==4012||Class==17||Class==4018) {
+		bonus bLongAtkRate,10;
+		bonus bHit,50;
+	}
+return;
+}
+
+function	script	Q_Novice_Armlet	{
+	bonus bFlee2,5;
+	bonus bAtkRate,10;
+	bonus bMatkRate,10;
+return;
+}
+
+function	script	Q_Megingjard	{
+	bonus bStr,30;
+	bonus bAtkRate,3;
+return;
+}
+
+function	script	Q_Brisingamen	{
+	bonus bVit,10;
+	bonus bInt,10;
+	bonus bMatkRate,10;
+	bonus2 bMagicAddRace,RC_DemiPlayer,5;
+return;
+}
+
+function	script	Q_Celebration	{
+	bonus bAllStats,10;
+return;
+}
+
+function	script	Q_Icarus_Wing	{
+	bonus bFlee2,5;
+	bonus2 bAddRace,RC_DemiHuman,7;
+return;
+}
+
+function	script	Q_The_Sign	{
+	if(Class==24) {
+		bonus bAtkRate,10;
+		bonus bDex,10;
+		bonus bAgi,10;
+	}
+return;
+}
+
+function	script	Q_Brooch	{
+	bonus bDex,25;
+	bonus bAgi,10;
+	bonus bFlee,2;
+return;
+}
+
+function	script	Q_Nile_Rose	{
+	bonus bMaxHPrate,10;
+	bonus bMaxSPrate,10;
+	bonus bSPrecovRate,10;
+	bonus bHPrecovRate,10;
+return;
+}
+
+function	script	Q_Glove	{
+	bonus bDex,25;
+	bonus bAgi,10;
+return;
+}

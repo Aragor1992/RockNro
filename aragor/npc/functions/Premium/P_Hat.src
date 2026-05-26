@@ -1,0 +1,191 @@
+// =================== Penacho de Moktezuma ==================
+function	script	P_PMoktezuma	{
+	if(Class==Job_Paladin||Class==Job_Crusader) {
+		bonus bShortWeaponDamageReturn,-10;
+	}
+	bonus bShortWeaponDamageReturn,20;
+	bonus bStr,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMaxHPrate,30;
+	bonus bAtkRate,5;
+	bonus bUnstripableHelm,0;
+return;
+}
+// =================== Archangel Helm ==================
+function	script	P_ArchangelHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bInt,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,10;
+	if(isequipped(P_Heart_Wings)) {
+		bonus3 bMagicDamageReturn2,100,1,-10;
+		bonus3 bMagicDamageReturn2,100,0,-10;
+	}
+	bonus3 bMagicDamageReturn2,100,1,20;
+	bonus3 bMagicDamageReturn2,100,0,20;
+return;
+}
+// =================== Airth Goat ==================
+function	script	P_AirthGoat	{
+	bonus bUnstripableHelm,0;
+	bonus bDex,10;
+	bonus bStr,10;
+	bonus bLuk,10;
+	bonus bMaxHPrate,20;
+	bonus bAspdRate,20;
+	bonus bFlee,50;
+	bonus bSplashRange,4;
+return;
+}
+// =================== Black Helm ====================
+function	script	P_BlackHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bAgi,10;
+	bonus bVit,10;
+	bonus bStr,10;
+	bonus bMaxHPrate,20;
+	bonus bAspdRate,5;
+	bonus bAtkRate,20;
+return;
+}
+// =================== Samurai Helm ==================
+function	script	P_SamuraiHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bAgi,10;
+	bonus bVit,10;
+	bonus bStr,10;
+	bonus bMaxHPrate,20;
+	bonus2 bIgnoreDefRate,RC_DemiHuman,50;
+return;
+}
+// =================== Valkyrie Helm =================
+function	script	P_ValkyHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bInt,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,10;
+	bonus bCastrate,-10;
+	bonus bHealPower,10;
+	/*bonus2 bSkillHeal,AL_HEAL,10;
+	bonus2 bSkillHeal,PR_SANCTUARY,10;
+	bonus2 bSkillHeal,CR_SLIMPITCHER,10;
+	Delay After Cast -10%
+	Curación de Heal, sanctuary y slim potion +10%*/
+}
+// =================== Valky Helm Hades =================
+function	script	P_HadesHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bAgi,10;
+	bonus bDex,10;
+	bonus bStr,10;
+	bonus bMaxHPrate,20;
+	bonus bFlee2,15;
+	bonus2 bSubRace,RC_DemiHuman,10;
+}
+// ====================== Maya Hat ===========================
+// =================== Black randgris Helm =============
+function	script	P_RandgrisHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bInt,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,20;
+	bonus bCastrate,-5;
+return;
+}
+// =================== BLOODY GARM HELM ============
+function	script	P_BGarmHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bMaxHPrate,20;
+	bonus bInt,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMatkRate,10;
+	bonus2 bSubEle,Ele_Fire,10;
+	bonus2 bSPRegenRate,5,1000;
+	bonus4 bAutoSpellWhenHit,WZ_METEOR,5,50,0;
+return;
+}
+// =================== CHINESE HELM =================
+function	script	P_ChineseHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bMaxHPrate,20;
+	bonus bAgi,10;
+	bonus bVit,10;
+	bonus bLuk,10;
+	if(isequipped(P_Ikki_Wings)||isequipped(P_ArchAngel_wings)) {
+		bonus bLongWeaponDamageReturn,-10;
+	}
+	bonus bLongWeaponDamageReturn,20;
+return;
+}
+// =================== Dragon Helm ===================
+function	script	P_DragonHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bAgi,10;
+	bonus bVit,10;
+	bonus bDex,10;	
+	bonus bHit,100;
+	bonus bPerfectHitRate,10;
+	bonus bAspdRate,10;
+	bonus bMaxHPrate,20;
+	if(isequipped(P_red_fallenW) || isequipped(P_Pink_FallenW)) {
+		bonus bHit,50;
+		bonus bAtkRate,5;
+	}
+return;
+}
+// =================== Ice Wolf Hat ==================
+function	script	P_IceWolfHat	{
+	if(isequipped(P_artic_wings)) {
+		bonus bUnstripableHelm,0;
+		bonus2 bSubEle,Ele_Water,20;
+		bonus4 bAutoSpellWhenHit, NPC_ICEBREATH, 5, 100, 1;
+	}
+	bonus bInt,10;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bMaxHPrate,20;
+	bonus bMatkRate,10;
+	bonus4 bAutoSpellWhenHit,89,5,50,0;
+	bonus2 bSubEle,Ele_Water,10;
+	bonus2 bSPRegenRate,10,1000;
+return;
+}
+// =================== Lucifer Hat ==================
+function	script	P_LuciferHat	{
+	bonus bUnstripableHelm,0;
+	bonus bAgi,10;
+	bonus bVit,10;
+	bonus bStr,10;
+	bonus bMaxHPrate,20;
+	bonus bAtkRate,5;
+	bonus2 bAddEle,Ele_Holy,10;
+	bonus2 bAddEle,Ele_Dark,10;
+	bonus2 bAddEff,Eff_Stun,500;
+	bonus2 bAddEff,Eff_Curse,500;
+	bonus2 bAddEff,Eff_Silence,500;
+	bonus2 bAddEff,Eff_Poison,500;
+	bonus2 bAddEff,Eff_Bleeding,500;
+	bonus2 bAddEff,Eff_Stone,500;
+	bonus2 bAddEff,Eff_Confusion,500;
+	bonus2 bAddEff,Eff_Freeze,500;
+	bonus2 bAddEff,Eff_Sleep,500;
+return;
+}
+// =================== Morriganes Helm ==================
+function	script	P_MorriganesHelm	{
+	bonus bUnstripableHelm,0;
+	bonus bStr,20;
+	bonus bLuk,10;
+	bonus bMaxHPrate,20;
+	bonus bCritical,30;
+	bonus bCritAtkRate,20;
+return;
+}

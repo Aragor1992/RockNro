@@ -1,0 +1,86 @@
+//quiz_02,243,387,4	trader	Card DamageWeapon	4_M_MOCASS2,{
+//	OnInit:
+//	tradertype(NST_CASH);
+//	sellitem Morpheus_s_Armlet,2000;
+//	end;
+//}
+//quiz_02,243,387,4	trader	Card Magic Weapon	4_M_MOCASS2,{
+//	OnInit:
+//	tradertype(NST_CASH);
+//	sellitem Morpheus_s_Armlet,2000;
+//	end;
+//}
+
+quiz_02,243,387,4	trader	Card Armor	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Steel_Chonchon_Card,500;
+	sellitem Morpheus_s_Armlet,500;
+	sellitem Tatacho_Card,500;
+	sellitem Aqua_Elemental_Card,500;
+	sellitem Draco_Card,500;
+	sellitem Luciola_Vespa_Card,500;
+	sellitem Centipede_Card,500;
+	sellitem Cornus_Card,500;
+	sellitem Dark_Shadow_Card,500;
+	sellitem Pinguicula_Dark_Card,500;
+	end;
+}
+
+quiz_02,243,387,4	trader	Card Valis	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Daydric_Card,500;
+	sellitem Orc_Zombie_Card,500;
+	sellitem Myst_Card,500;
+	sellitem Marse_Card,500;
+	sellitem Marionette_Card,500;
+	sellitem Jakk_Card,500;
+	sellitem Isis_Card,500;
+	sellitem Hode_Card,500;
+	sellitem Dustiness_Card,500;
+	end;
+}
+
+quiz_02,243,387,4	trader	Card Hat	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Deviruchi_Card,500;
+	sellitem Permeter_Card,500;
+	sellitem Gibbet_Card,500;
+	sellitem Giearth_Card,500;
+	sellitem Ghoul_Card,500;
+	sellitem Giant_Honet_Card,500;
+	sellitem Leib_Olmai_Card,500;
+	sellitem Leaf_Cat_Card,500;
+	sellitem Elder_Wilow_Card,500;
+	end;
+}
+
+quiz_02,243,387,4	trader	Card Shield	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Thara_Frog_Card,500;
+	sellitem Teddy_Bear_Card,500;
+	sellitem Parasite_Card,500;
+	sellitem Munak_Card,500;
+	sellitem Hodremlin_Card,500;
+	sellitem Anubis_Card,500;
+	sellitem Khalitzburg_Card,500;
+	sellitem Medusa_Card,500;
+	sellitem Petit__Card,500;
+	sellitem Rafflesia_Card,500;
+	sellitem Scorpion_Card,500;
+	sellitem Orc_Warrior_Card,500;
+	sellitem BigFoot_Card,500;
+	sellitem Rafflesia_Card,500;
+	sellitem Increase_Soil_Card,500;
+	sellitem Penomena_Card,500;
+	sellitem Tamruan_Card,500;
+	
+	sellitem Tirfing_Card,1000;
+	sellitem Mysteltainn_Card,1000;
+	sellitem Executioner_Card,1000;
+	sellitem Zherlthsh_Card,1000;
+	end;
+}

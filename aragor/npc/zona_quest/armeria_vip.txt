@@ -1,0 +1,197 @@
+//==================================ARMERIA VIP==================================
+//quiz_02,123,353,6	shop	Puños#quiz	1_M_SIGNMONK2,1802:-1,1804:-1,1806:-1,1808:-1,1810:-1,1812:-1,1813:-1,1814:-1,1815:-1
+//quiz_02,123,350,4	shop	Music & whips#quiz	2_M_BARD_ORIENT,1902:-1,1904:-1,1906:-1,1908:-1,1910:-1,1912:-1,1913:-1,1914:-1,1915:-1,1916:-1,1917:-1,1918:-1,1951:-1,1952:-1,1953:-1,1955:-1,1957:-1,1958:-1,1962:-1,1963:-1,1964:-1,1965:-1,1966:-1,1967:-1,1968:-1,1969:-1,1975:-1
+//quiz_02,123,347,4	shop	Escudos#quiz	4_M_JOB_KNIGHT2,2102:-1,2104:-1,2106:-1,2108:-1,2110:-1,2111:-1,2112:-1,2113:-1,2114:-1,2116:-1,2118:-1,2120:-1
+//quiz_02,123,344,3	shop	Espadas#quiz	4_M_JOB_KNIGHT1,1102:-1,1105:-1,1108:-1,1111:-1,1114:-1,1117:-1,1120:-1,1125:-1,1128:-1,1127:-1,1131:-1,1130:-1,1132:-1,1133:-1,1134:-1,1135:-1,1136:-1,1137:-1,1138:-1,1139:-1,1140:-1,1141:-1,1142:-1,1143:-1,1144:-1,1145:-1,1147:-1,1148:-1,1129:-1,1152:-1,1155:-1,1158:-1,1160:-1,1162:-1,1165:-1,1166:-1,1164:-1,1168:-1,1169:-1,1170:-1
+quiz_02,123,341,6	shop	Zapatos#quiz	2_M_SWORDMASTER,2402:-1,2404:-1,2406:-1,2407:-1,2408:-1,2409:-1,2410:-1,2412:-1,2413:-1,2414:-1,2415:-1,2416:-1,2417:-1,2418:-1,2419:-1,2420:-1
+quiz_02,123,338,6	shop	Garmet#quiz	1_M_MOC_LORD,2502:-1,2504:-1,2506:-1,2507:-1,2508:-1,2509:-1,2510:-1,2511:-1,2512:-1,2513:-1,2514:-1,2515:-1,2517:-1,2518:-1,2519:-1,2520:-1,2521:-1,2523:-1
+quiz_02,126,338,6	shop	Accesorios#quiz	1_M_KNIGHTMASTER,2601:-1,2602:-1,2603:-1,2604:-1,2625:-1,2607:-1,2608:-1,2609:-1,2610:-1,2611:-1,2612:-1,2613:-1,2614:-1,2615:-1,2616:-1,2617:-1,2618:-1,2619:-1,2620:-1,2621:-1,2622:-1,2623:-1,2624:-1,2625:-1,2626:-1,2627:-1,2628:-1,2629:-1,2630:-1,2631:-1,2636:-1,2637:-1,2638:-1,2639:-1,2640:-1,2641:-1,2642:-1,2643:-1,2644:-1,2645:-1,2646:-1,2647:-1,2648:-1,2649:-1,2650:-1,2651:-1,2652:-1,2653:-1,2654:-1,2655:-1,2656:-1,2657:-1,2658:-1,2659:-1,2660:-1,2661:-1,2662:-1,2663:-1,2664:-1,2665:-1,2666:-1,2667:-1,2669:-1
+quiz_02,129,338,1	shop	Armaduras#quiz	4_M_CRU_OLD,2302:-1,2304:-1,2306:-1,2308:-1,2310:-1,2311:-1,2313:-1,2315:-1,2317:-1,2319:-1,2320:-1,2322:-1,2324:-1,2326:-1,2327:-1,2329:-1,2331:-1,2333:-1,2334:-1,2337:-1,2339:-1,2340:-1,2342:-1,2343:-1,2345:-1,2347:-1,2349:-1,2351:-1,2352:-1,2353:-1,2354:-1,2355:-1,2356:-1,2364:-1
+quiz_02,132,338,4	shop	Hachas#quiz	2_M_OLDBLSMITH,1302:-1,1304:-1,1305:-1,1306:-1,1307:-1,1352:-1,1355:-1,1358:-1,1361:-1,1363:-1,1364:-1,1365:-1,1366:-1,1367:-1,1368:-1,1369:-1
+quiz_02,135,338,3	shop	Armas de Ninja#quiz	8_M_JPNMASTER,13006:-1,13008:-1,13009:-1,13011:-1,13013:-1,13015:-1,13251:-1,13252:-1,13253:-1,13254:-1,13255:-1,13256:-1,13257:-1,13258:-1,13259:-1,13300:-1,13301:-1,13302:-1,13303:-1
+quiz_02,138,338,6	shop	Armas de Gunz#quiz	4_M_JOB_BLACKSMITH,13101:-1,13103:-1,13105:-1,13106:-1,13150:-1,13152:-1,13153:-1,13154:-1,13155:-1,13156:-1,13157:-1,13159:-1,13162:-1,13200:-1
+quiz_02,141,338,6	shop	Dagas#quiz	2_M_THIEFMASTER,2601:-1
+quiz_02,144,338,6	shop	Maces y Books#quiz	4_M_JPNOJI,2601:-1
+quiz_02,144,341,6	shop	Staff's#quiz	4_M_JOB_WIZARD,2601:-1
+quiz_02,144,345,6	shop	Lanzas#quiz	4_M_CHNGENERL,2601:-1
+quiz_02,144,348,6	shop	Katares#quiz	4_M_BARBER,2601:-1
+quiz_02,144,351,6	shop	Arcos y Flechas#quiz	4_M_REIDIN_KURS,2601:-1
+//==================================ITEMS Y POTS==================================
+
+quiz_02,123,353,6	trader	Puños#quiz	1_M_SIGNMONK2,{
+OnInit:
+//	sellitem Waghnakh;
+	sellitem Waghnakh_;
+//	sellitem Knuckle_Duster
+	sellitem Knuckle_Duster_;
+//	sellitem Hora
+	sellitem Hora_;
+//	sellitem Fist
+	sellitem Fist_;
+//	sellitem Claw
+	sellitem Claw_;
+//	sellitem Finger
+	sellitem Finger_;
+	sellitem Kaiser_Knuckle;
+	sellitem Berserk;
+	sellitem Claw_Of_Garm;
+//	sellitem Berserk_;
+//	sellitem Kaiser_Knuckle_C;
+//	sellitem Magma_Fist;
+//	sellitem Icicle_Fist;
+//	sellitem Electric_Fist;
+//	sellitem Seismic_Fist;
+//	sellitem Combo_Battle_Glove;
+//	sellitem BF_Knuckle1;
+//	sellitem BF_Knuckle2;
+//	sellitem Horn_Of_Hilthrion;
+//	sellitem Krieger_Knuckle1;
+//	sellitem Krieger_Knuckle2;
+//	sellitem Monk_Knuckle;
+//	sellitem Fist_C;
+}
+
+quiz_02,123,350,4	trader	Music & whips#quiz	2_M_BARD_ORIENT,{
+OnInit:
+	sellitem Violin_;
+	sellitem Mandolin_;
+	sellitem Lute_;
+	sellitem Guitar_;
+	sellitem Harp_;
+	sellitem Guh_Moon_Goh_;
+	sellitem Electronic_Guitar;
+	sellitem Guitar_Of_Passion;
+	sellitem Guitar_Of_Blue_Solo;
+	sellitem Guitar_Of_Vast_Land;
+	sellitem Guitar_Of_Gentle_Breeze;
+	sellitem Oriental_Lute;
+
+	sellitem Rope_;
+	sellitem Line;
+	sellitem Line_;
+	sellitem Wire_;
+	sellitem Rante_;
+	sellitem Tail;
+	sellitem Lariat;
+	sellitem Rapture_Rose;
+	sellitem Chemeti;
+	sellitem Whip_Of_Red_Flame;
+	sellitem Whip_Of_Ice_Piece;
+	sellitem Whip_Of_Earth;
+	sellitem Jump_Rope;
+	sellitem Bladed_Whip;
+	sellitem Queen_Is_Whip;
+}
+
+quiz_02,123,347,4	trader	Escudos#quiz	4_M_JOB_KNIGHT2,{
+OnInit:
+	sellitem 2102;
+	sellitem 2104;
+	sellitem 2106;
+	sellitem 2108;
+	sellitem 2110;
+	sellitem 2111;
+	sellitem 2112;
+	sellitem 2113;
+	sellitem 2114;
+	sellitem 2116;
+	sellitem 2118;
+	sellitem 2120;
+}
+
+quiz_02,123,344,3	trader	Espadas#quiz	4_M_JOB_KNIGHT1,{
+OnInit:
+	sellitem 1102;
+	sellitem 1105;
+	sellitem 1108;
+	sellitem 1111;
+	sellitem 1114;
+	sellitem 1117;
+	sellitem 1120;
+	sellitem 1125;
+	sellitem 1128;
+	sellitem 1127;
+	sellitem 1131;
+	sellitem 1130;
+	sellitem 1132;
+	sellitem 1133;
+	sellitem 1134;
+	sellitem 1135;
+	sellitem 1136;
+	sellitem 1137;
+	sellitem 1138;
+	sellitem 1139;
+	sellitem 1140;
+	sellitem 1141;
+	sellitem 1142;
+	sellitem 1143;
+	sellitem 1144;
+	sellitem 1145;
+	sellitem 1147;
+	sellitem 1148;
+	sellitem 1129;
+	sellitem 1152;
+	sellitem 1155;
+	sellitem 1158;
+	sellitem 1160;
+	sellitem 1162;
+	sellitem 1165;
+	sellitem 1166;
+	sellitem 1164;
+	sellitem 1168;
+	sellitem 1169;
+	sellitem 1170;
+}
+
+
+quiz_02,165,358,4	trader	Alchemist#quiz	4_M_ALCHE_B,{
+OnInit:
+	sellitem 683,50000;
+	sellitem 905,3000;
+	sellitem 1013,3000;
+	sellitem 7140,50000;
+	sellitem 7224,50000;
+	sellitem 947,500;
+	sellitem 7419,50000;
+	sellitem 946,2000;
+	sellitem 7127;
+	sellitem 904,5000;
+	sellitem 7128;
+	sellitem 7129;
+	sellitem 7130;
+	sellitem 7131;
+	sellitem 7132;
+	sellitem 7133;
+	sellitem 7144;
+	sellitem 7134,8;
+	sellitem 7141,20000;
+	sellitem 7143,5000;
+	sellitem 1093,10;
+	sellitem 713,6;
+	sellitem 1093;
+	sellitem 911,160;
+	sellitem 952,82;
+	sellitem 1061,484;
+	sellitem 906,582;
+	sellitem 929,374;
+	sellitem 1059,306;
+	sellitem 1050,220;
+	sellitem 1051,450;
+	sellitem 1025,600;
+	sellitem 950,550;
+	sellitem 1032,196;
+	sellitem 1044,264;
+	sellitem 708,500;
+	sellitem 704,500;
+	sellitem 937,9800;
+	sellitem 939,9900;
+	sellitem 7033,9000;
+	sellitem 657,3000;
+	sellitem 970,9000;
+	sellitem 972,9000;
+	sellitem 12125,125000;
+	sellitem 12126,125000;
+	sellitem 12127,150000;
+	sellitem 12128,150000;
+	sellitem 12129,180000;
+}

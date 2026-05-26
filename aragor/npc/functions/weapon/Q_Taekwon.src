@@ -1,0 +1,140 @@
+function	script	Q_Taekwon	{
+skill "MO_TRIPLEATTACK",10;
+if (BaseJob == Job_Taekwon) {
+bonus bSpeedRate,20;
+bonus bAspd,80;
+bonus bHit,200;
+	if (taekfisico || !taekfisico && !taekmagico) {
+		dispbottom"Build Fisica";
+		bonus bStr,readparam(bStr)/2;
+		bonus bBaseAtk,300;
+		bonus bAtkRate,25;
+		}
+	if (taekmagico) {
+		dispbottom"Build Magica";
+		bonus2 bMagicAddRace,RC_DemiHuman,-20;
+		bonus bInt,readparam(bInt)/5;
+		bonus bAtkRate,-40;
+		bonus bBaseAtk,-900;
+		skill AL_HEAL,8;
+	}
+}/*==============TAEKWON==========*/
+
+if (BaseJob == Job_Star_Gladiator) {
+	bonus bHit,200;
+	bonus bSpeedRate,20;
+	bonus bAspdRate,70;
+	bonus bAtkRange,2;	
+}/*==============START GLADIATOR==========*/
+
+if (BaseJob == Job_Soul_Linker) {
+	bonus bSpeedRate,20;
+	bonus bMaxHPrate,10;
+	bonus bHit,200;
+	bonus bMatkRate,30;
+	bonus bAspdRate,readparam(bStr)/5;
+	bonus bBaseAtk,(readparam(bInt)/1)*10;
+	bonus4 bAutoSpellOnSkill,"SL_STIN","SL_SMA",10,1000;
+	bonus4 bAutoSpellOnSkill,"SL_STUN","SL_SMA",10,1000;
+	bonus3 bAutoSpell,"SL_SMA",1,50;	
+}/*==============SOUL LINKER==========*/
+
+switch(getarg(0)+1){
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus2 bSkillAtk,TK_JUMPKICK,40;bonus3 bAutoSpell,"HW_MAGICCRASHER",1,150;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill SL_STUN,1;
+			bonus5 bAutoSpellWhenHit,HW_MAGICCRASHER,1,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+			bonus4 bAutoSpellOnSkill,SL_STUN,SL_SMA,10,1000;
+			bonus5 bAutoSpell,SL_SMA,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 2:	bonus bAtkEle,Ele_Water;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus2 bHPDrainRate,100,50;
+			skill LK_TENSIONRELAX,1;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill MG_COLDBOLT,7;
+			bonus5 bAutoSpell,MG_COLDBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 3:	bonus bAtkEle,Ele_Earth;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus2 bAddRace,RC_DemiHuman,10;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill WZ_EARTHSPIKE,3;
+			bonus5 bAutoSpell,WZ_EARTHSPIKE,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 4:	bonus bAtkEle,Ele_Fire;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			skill MC_MAMMONITE,6;
+			bonus5 bAutoSpell,MC_MAMMONITE,4,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill MG_FIREBOLT,7;
+			bonus5 bAutoSpell,MG_FIREBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 5:	bonus bAtkEle,Ele_Wind;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus bSplashRange,3;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill MG_LIGHTNINGBOLT,7;
+			bonus5 bAutoSpell,MG_LIGHTNINGBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 6:	bonus bAtkEle,Ele_Poison;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			skill TF_POISON,7;
+			bonus2 bSkillAtk,TF_POISON,30;
+			bonus5 bAutoSpell,TF_POISON,7,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill NSC_VENOMBOLT,7;
+			bonus5 bAutoSpell,NSC_VENOMBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 7:	bonus bAtkEle,Ele_Holy;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus bMagicAtkDef,20;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill NSC_HOLYBOLT,7;
+			bonus5 bAutoSpell,NSC_HOLYBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 8:	bonus bAtkEle,Ele_Dark;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus2 bSPVanishRate,100,5;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill NPC_DARKSTRIKE,7;
+			bonus5 bAutoSpell,NPC_DARKSTRIKE,6,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 9:	bonus bAtkEle,Ele_Ghost;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus2 bAddRace,RC_Boss,40;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill MG_SOULSTRIKE,8;
+			bonus5 bAutoSpell,MG_SOULSTRIKE,6,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+		
+case 10:	bonus bAtkEle,Ele_Undead;
+		if (BaseJob == Job_Star_Gladiator || BaseJob == Job_Taekwon && (taekfisico || !taekfisico && !taekmagico) ) {
+			bonus5 bAutoSpell,NPC_STOP,1,10,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}
+		if (BaseJob == Job_Soul_Linker || BaseJob == Job_Taekwon && taekmagico) {
+			skill HW_NAPALMVULCAN,3;bonus5 bAutoSpell,HW_NAPALMVULCAN,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+	}
+return;
+}

@@ -1,0 +1,132 @@
+function	script	Q_Revolvers	{
+bonus bUnbreakableWeapon,0;
+if (getrefine()>9) bonus bAtkRate,3;
+	bonus bAspdRate,20;
+	bonus2 bAddSkillBlow,GS_MAGICALBULLET,5;
+	skill 263,10;
+	skill 45,5;
+	bonus bHit,readparam(bDex)/3;
+	bonus2 bSkillAtk,GS_TRIPLEACTION,35;
+	bonus2 bSkillAtk,GS_BULLSEYE,40;
+	bonus2 bSkillAtk,GS_MAGICALBULLET,100;
+	bonus2 bSkillAtk,GS_TRACKING,-30;
+	bonus2 bSkillAtk,GS_PIERCINGSHOT,60;
+	bonus2 bSkillAtk,GS_RAPIDSHOWER,30;
+	bonus2 bSkillAtk,GS_DESPERADO,-30;
+	bonus2 bSkillAtk,GS_FULLBUSTER,-40;
+if(getskilllv(GS_GLITTERING)>0) bonus3 bAutoSpell,GS_GLITTERING,getskilllv(GS_GLITTERING),100;
+
+if (getarg(0)== Fenrir){bonus5 bAutoSpell,HT_SKIDTRAP,1,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+if (getarg(0)== Darkness){bonus5 bAutoSpell,HT_ANKLESNARE,1,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+if (getarg(0)== Infernal){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
+if (getarg(0)== vandal){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;bonus bUnstripableWeapon,0;}
+return;
+}/* item script : callfunc("Q_Revolvers",Fenrir); : callfunc("Q_Revolvers",Darkness); : callfunc("Q_Revolvers",Infernal);  : callfunc("Q_Revolvers",vandal); */
+
+function	script	Q_Rifles	{
+bonus bUnbreakableWeapon,0;
+if (getrefine()>9) bonus bAtkRate,3;
+bonus2 bAddSkillBlow,507,5;
+bonus bAspdRate,20;
+skill MO_TRIPLEATTACK,10;
+skill AC_CONCENTRATION,5;
+bonus bHit,readparam(bDex)/3;
+bonus2 bSkillAtk,GS_TRIPLEACTION,35;
+bonus2 bSkillAtk,GS_BULLSEYE,40;
+bonus2 bSkillAtk,GS_MAGICALBULLET,100;
+bonus2 bSkillAtk,GS_TRACKING,-30;
+bonus2 bSkillAtk,GS_PIERCINGSHOT,60;
+bonus2 bSkillAtk,GS_DESPERADO,-30;
+bonus2 bSkillAtk,GS_FULLBUSTER,-40;
+if(getskilllv(GS_GLITTERING)>0) bonus3 bAutoSpell,GS_GLITTERING,getskilllv(GS_GLITTERING),100;
+bonus5 bAutoSpell,SN_SHARPSHOOTING,2,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+
+if (getarg(0)== Tiamat){bonus5 bAutoSpell,HT_SKIDTRAP,1,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+if (getarg(0)== Judgment){bonus5 bAutoSpell,ASC_BREAKER,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+if (getarg(0)== Infernal){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
+if (getarg(0)== Poison){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+return;
+}/* item script : callfunc("Q_Rifles",Tiamat); : callfunc("Q_Rifles",Judgment); : callfunc("Q_Rifles",Infernal); : callfunc("Q_Rifles",Poison); */
+
+function	script	Q_shotguns	{
+bonus bUnbreakableWeapon,0;
+if (getrefine()>9) bonus bAtkRate,3;
+bonus bSplashRange,2;
+bonus2 bAddSkillBlow,GS_MAGICALBULLET,5;
+skill MO_TRIPLEATTACK,10;
+skill AC_CONCENTRATION,5;
+bonus bHit,readparam(bDex)/3;
+bonus2 bSkillAtk,MO_TRIPLEATTACK,-30;
+bonus2 bSkillAtk,GS_TRIPLEACTION,35;
+bonus2 bSkillAtk,GS_BULLSEYE,40;
+bonus2 bSkillAtk,GS_MAGICALBULLET,100;
+bonus2 bSkillAtk,GS_TRACKING,-30;
+bonus2 bSkillAtk,GS_FULLBUSTER,-40;
+bonus2 bSkillAtk,GS_DESPERADO,-40;
+bonus2 bSkillAtk,GS_SPREADATTACK,40;
+bonus5 bAutoSpell,GS_SPREADATTACK,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+
+if (getarg(0)== Beowulf){bonus2 bHPDrainRate,50,40; bonus5 bAutoSpell,GS_MAGICALBULLET,1,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1; }
+if (getarg(0)== Chaos){bonus5 bAutoSpell,GS_RAPIDSHOWER,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+	bonus2 bAddEff,Eff_Stun,500; bonus2 bAddEff,Eff_Curse,500; bonus2 bAddEff,Eff_Silence,500;
+	bonus2 bAddEff,Eff_Poison,500; bonus2 bAddEff,Eff_Bleeding,500; bonus2 bAddEff,Eff_Freeze,500;
+	bonus2 bAddEff,Eff_Stone,500; bonus2 bAddEff,Eff_Sleep,500; bonus2 bAddEff,Eff_Confuse,500; bonus2 bAddEff,Eff_Blind,500;
+	}
+if (getarg(0)== Blackrose){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
+if (getarg(0)== Gatekeeper){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+return;
+}/* item script : callfunc("Q_shotguns",Beowulf); : callfunc("Q_shotguns",Chaos); : callfunc("Q_shotguns",Blackrose); : callfunc("Q_shotguns",Gatekeeper); */
+
+function	script	Q_Gatling	{
+bonus bUnstripableWeapon,0;
+if (getrefine()>9) bonus bAtkRate,3;
+bonus bAspdRate,30;
+skill AC_CONCENTRATION,5;
+bonus2 bAddSkillBlow,GS_MAGICALBULLET,5;
+bonus bCritical,50;
+bonus bCritAtkRate,10;
+bonus bHit,readparam(bDex)/3;
+bonus2 bSkillAtk,GS_TRIPLEACTION,35;
+bonus2 bSkillAtk,GS_BULLSEYE,40;
+bonus2 bSkillAtk,GS_MAGICALBULLET,100;
+bonus2 bSkillAtk,GS_TRACKING,-30;
+bonus2 bSkillAtk,GS_DESPERADO,-30;
+bonus2 bSkillAtk,GS_FULLBUSTER,-40;
+bonus5 bAutoSpell,CH_PALMSTRIKE,2,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+
+if (getarg(0)== Cerberus){bonus2 bAddRace,RC_NonBoss,15;bonus2 bAddRace,RC_Boss,15;}
+if (getarg(0)== Calamity){
+	bonus2 bAddEff,Eff_Stun,500; bonus2 bAddEff,Eff_Curse,500; bonus2 bAddEff,Eff_Silence,500;
+	bonus2 bAddEff,Eff_Poison,500; bonus2 bAddEff,Eff_Bleeding,500; bonus2 bAddEff,Eff_Freeze,500; 
+	bonus2 bAddEff,Eff_Stone,500; bonus2 bAddEff,Eff_Sleep,500; bonus2 bAddEff,Eff_Confuse,500; bonus2 bAddEff,Eff_Blind,500;
+	}
+if (getarg(0)== Infernal){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
+if (getarg(0)== vandal){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+return;
+}/* item script : callfunc("Q_Gatling",Cerberus); : callfunc("Q_Gatling",Calamity); : callfunc("Q_Gatling",Infernal); : callfunc("Q_Gatling",vandal); */
+
+function	script	Q_Granade	{
+bonus bUnbreakableWeapon,0;
+if (getrefine()>9) bonus bAtkRate,3;
+bonus bSplashRange,3;
+skill AC_CONCENTRATION,5;
+bonus bHit,readparam(bDex)/3;
+bonus2 bSkillAtk,GS_TRACKING,-50;
+bonus2 bSkillAtk,GS_DESPERADO,-50;
+bonus2 bSkillAtk,GS_FULLBUSTER,-50;
+bonus2 bSkillAtk,GS_GROUNDDRIFT,40;
+bonus2 bSkillAtk,GS_RAPIDSHOWER,-20;
+bonus2 bAddSkillBlow,GS_GROUNDDRIFT,2;
+bonus bNoSizeFix,0;
+bonus5 bAutoSpell,CH_PALMSTRIKE,1,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+
+if (getarg(0)== Dragon){bonus bBreakArmorRate,200;}
+if (getarg(0)== Catastrophe){
+	bonus2 bAddEff,Eff_Stun,500; bonus2 bAddEff,Eff_Curse,500; bonus2 bAddEff,Eff_Silence,500;
+	bonus2 bAddEff,Eff_Poison,500; bonus2 bAddEff,Eff_Bleeding,500; bonus2 bAddEff,Eff_Freeze,500;
+	bonus2 bAddEff,Eff_Stone,500; bonus2 bAddEff,Eff_Sleep,500; bonus2 bAddEff,Eff_Confuse,500; bonus2 bAddEff,Eff_Blind,500;
+}
+if (getarg(0)== Inferno){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
+if (getarg(0)== Destroyer){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
+return;
+}/* item script : callfunc("Q_Granade",Dragon); : callfunc("Q_Granade",Catastrophe); : callfunc("Q_Granade",Inferno); : callfunc("Q_Granade",Destroyer); */

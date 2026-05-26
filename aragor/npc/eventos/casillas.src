@@ -1,0 +1,114 @@
+quiz_01,55,98,4	script	aCasillas	4_M_PIERROT,{
+
+set .@n$,"^ff8000[ aCasillas ]^000000";
+
+	if($@w == 1 && $@wt > gettimetick(2)){
+	set $@w,0;
+	set $@wt,0;
+	set $@cn$,strcharinfo(0);
+	
+	mes .@n$;
+	mes "Que suerte has tenido "+strcharinfo(0)+"!";
+	mes "Tienes bien merecido el premio.";
+	getitem 7539,rand(20,40);
+	close2;
+		announce "Casillas: El ganador del evento Casillas ha sido "+$@cn$+", Felicidades.",bc_all,0x00ffff;
+	hideonnpc "aCasillas";
+	warp "prontera",155,182;
+	end;
+	}
+	end;
+	
+OnCasillas:
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Bienvenido al evento de las Casillas.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Antes de comenzár, explicaré brevemente de que trata el evento.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: El evento consiste en que debes elejir y posicionarte sobre una de las Casillas con números.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Se elijirá un número entre 1 y 4 al azár. El número que sea anunciado, será el perdedor.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Todas las personas que se encuentren dentro de las Casillas perdedoras, serán descalificados y retornados a la ciudad.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Si al momento de anunciar el número ganador estas fuera de una Casilla, serás descalificado automáticamente.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Repetiré una y otra vez la elección de números hasta que solo quede una persona en el mapa.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Eso es todo, ojalá se diviertan y que gane el más suertudo!",bc_map,0xff8000;
+	sleep 10000;
+	
+S_Number:
+	if(getmapusers("quiz_01") == 1){
+	mapannounce "quiz_01","Casillas: Muy bien, has ganado! Habla con el NPC que está en el centro para reclamar tu premio.",bc_map,0xff8000;
+	hideoffnpc "aCasillas";
+	set $@w,1;
+	set $@wt,gettimetick(2)+125;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: El premio será anulado si no lo reclamas antes de 2 minutos.",bc_map,0xff8000;
+	sleep 120000;
+	if($@w == 1){
+	mapannounce "quiz_01","Casillas: Premio anulado.",bc_map,0xff8000;
+	set $@w,0;
+	set $@wt,0;
+	hideonnpc "aCasillas";
+	sleep 5000;
+	mapwarp "quiz_01","prontera",155,182;
+	announce "Casillas: Nadie ha reclamado el premio del evento de las Casillas por lo que ha sido anulado.",bc_npc,0x00ffff;
+	end;
+	}
+	end;
+	}
+	if(getmapusers("quiz_01") < 1){
+	announce "Casillas: Lastima, nadie ha ganado el evento de las Casillas.",bc_npc,0x00ffff;
+	end;
+	}
+	if(getmapusers("quiz_01") > 1){
+	mapannounce "quiz_01","Casillas: Se esta escojiendo un número al azár. Tienen 5 segundos para elejir Casillas.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Ya se cual XD.",bc_map,0xff8000;
+	sleep 500;	
+	mapannounce "quiz_01","Casillas: 5 segundos.",bc_map,0xff8000;
+	sleep 1000;
+	mapannounce "quiz_01","Casillas: 4 segundos.",bc_map,0xff8000;
+	sleep 1000;
+	mapannounce "quiz_01","Casillas: 3 segundos.",bc_map,0xff8000;
+	sleep 1000;
+	mapannounce "quiz_01","Casillas: 2 segundos.",bc_map,0xff8000;
+	sleep 1000;
+	mapannounce "quiz_01","Casillas: 1 segundo.",bc_map,0xff8000;
+	sleep 1000;
+	set $@r,rand(1,4);
+	mapannounce "quiz_01","Casillas: La Casilla perdedora es la número "+$@r+"!",bc_map,0xff8000;
+	if($@r == 1){areawarp "quiz_01",33,81,41,59,"prontera",155,182;goto Cont;}
+	if($@r == 2){areawarp "quiz_01",45,81,53,59,"prontera",155,182;goto Cont;}
+	if($@r == 3){areawarp "quiz_01",57,81,65,59,"prontera",155,182;goto Cont;}
+	if($@r == 4){areawarp "quiz_01",69,81,77,59,"prontera",155,182;goto Cont;}
+
+Cont:
+	areawarp "quiz_01",32,94,78,86,"prontera",155,182;	//Zona Centro
+	areawarp "quiz_01",36,85,38,82,"prontera",155,182;	//Entrada 1
+	areawarp "quiz_01",48,85,50,82,"prontera",155,182;	//Entrada 2
+	areawarp "quiz_01",60,85,62,82,"prontera",155,182;	//Entrada 3
+	areawarp "quiz_01",72,85,74,82,"prontera",155,182;	//Entrada 4
+	sleep 5000;
+	mapannounce "quiz_01","Casillas: Quedan "+getmapusers("quiz_01")+" participantes en el mapa.",bc_map,0xff8000;
+	sleep 5000;
+	goto S_Number;
+	end;
+	}
+
+OnInit:
+	hideonnpc "aCasillas";
+	end;
+
+}
+
+quiz_01	mapflag	noskill
+quiz_01	mapflag	nobranch
+quiz_01	mapflag	nomemo
+quiz_01	mapflag	pvp	off
+quiz_01	mapflag	noteleport
+quiz_01	mapflag	nosave	SavePoint
+quiz_01	mapflag	novending
+quiz_01	mapflag	nowarpto

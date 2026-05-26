@@ -1,0 +1,99 @@
+function	script	Q_Staff	{
+	bonus2 bMagicAddRace,RC_DemiHuman,10;
+	bonus bDelayrate,-5;
+	bonus2 bSkillAtk,WZ_METEOR,-20;
+	bonus2 bSkillAtk,WZ_STORMGUST,-40;
+	bonus2 bSkillAtk,WZ_VERMILION,70;
+	bonus2 bSkillAtk,NPC_STORMGUST2,150;
+	bonus bMatkRate,30;
+	bonus bHit,100;
+	bonus2 bSkillHeal,AL_HEAL,20;
+	
+if(Class==9||Class==4010||Class==4032){
+	bonus bMatkRate,60;
+	bonus bMaxHPrate,10;
+	bonus bHit,200;
+	bonus bDex,20;
+	bonus2 bSkillAtk,484,900;
+	
+//	if(isequipped(18203)|| isequipped(18208)){
+//		bonus bAspdRate,readparam(bInt)/5;
+//		bonus bMaxHPrate,10;
+//		bonus bMatkRate,10;
+//		bonus2 bSkillAtk,WZ_METEOR,20;
+//		bonus2 bSkillAtk,WZ_VERMILION,20;
+//		bonus2 bSkillAtk,WZ_STORMGUST,20;
+//		bonus2 bSkillAtk,WZ_HEAVENDRIVE,20;
+//		bonus2 bSkillAtk,549,20;
+//		bonus2 bSkillAtk,548,20;
+//		}
+}
+/*======================================================================================*/
+switch(getarg(0)+1){	
+/*Beast Neutral*/
+case 1:	bonus4 bAutoSpellOnSkill,SL_STIN,SL_SMA,3,1000;
+		skill SL_STIN,7;
+		skill AM_ACIDTERROR,2;
+		bonus2 bSkillHeal,PR_SANCTUARY,150;
+		bonus bMaxHPrate,10;
+		bonus bHit,200;
+		break;		
+	
+case 2:bonus bAtkEle,Ele_Water;break;
+	
+case 3:bonus bAtkEle,Ele_Earth;break;
+	
+case 4:bonus bAtkEle,Ele_Fire;break;
+	
+case 5:bonus bAtkEle,Ele_Wind;break;
+	
+case 6: /*Poison Staff*/
+		bonus bAtkEle,Ele_Poison;
+		skill NSC_VENOMBOLT,7;
+		bonus5 bAutoSpell,NSC_VENOMBOLT,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnstripableWeapon,0;
+		bonus2 bSkillHeal,PR_SANCTUARY,150;
+	break;
+/*Soul Holy*/
+case 7:	bonus bAtkEle,Ele_Holy;
+		skill NSC_HOLYBOLT,7;
+		bonus5 bAutoSpell,NSC_HOLYBOLT,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnbreakableWeapon,0;
+		bonus2 bSkillHeal,PR_SANCTUARY,150;
+	break;
+/*Wizardry Dark*/
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus5 bAutoSpell,SL_SMA,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnstripableWeapon,0;
+		bonus2 bSkillHeal,PR_SANCTUARY,150;
+		bonus2 bSkillAtk,WZ_METEOR,20;
+		bonus2 bSkillAtk,WZ_VERMILION,20;
+		bonus2 bSkillAtk,WZ_STORMGUST,20;
+		bonus2 bSkillAtk,WZ_HEAVENDRIVE,20;
+		bonus2 bSkillAtk,NPC_STORMGUST2,20;
+		bonus2 bSkillAtk,NSC_HOLYHEAVENDRIVE,20;
+	break;
+/*Unbreakable Ghost*/	
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus bUnbreakableWeapon,0;
+		skill AL_HEAL,6;
+		skill PR_SANCTUARY,6;
+		skill LK_TENSIONRELAX,1;
+		bonus4 bAutoSpellWhenHit,AL_HEAL,5,20,0;
+		bonus bShortWeaponDamageReturn,10;
+		//bonus3 bMagicDamageReturn2,100,1,10;
+		//bonus3 bMagicDamageReturn2,100,0,10;
+		bonus2 bSkillHeal,AL_HEAL,25;
+		bonus2 bSkillHeal,PR_SANCTUARY,200;
+	break;
+/*Infernal Undead*/
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus5 bAutoSpell,NPC_DARKSTRIKE,7,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill NSC_DARKJUPITEL,10;
+		skill NPC_DARKSTRIKE,10;
+		bonus bUnbreakableWeapon,0;
+		bonus2 bSkillHeal,70,150;
+	break;
+	}
+return;
+}

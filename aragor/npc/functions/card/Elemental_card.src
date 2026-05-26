@@ -1,0 +1,31 @@
+/*Cartas Armadura*/
+function	script	Tatacho_Card	{bonus2 bSubEle,Ele_Neutral,10;}
+function	script	Aqua_Elemental_Card	{bonus2 bSubEle,Ele_Water,10;}
+function	script	Draco_Card	{bonus2 bSubEle,Ele_Fire,10;}
+function	script	Luciola_Vespa_Card	{bonus2 bSubEle,Ele_Wind,10;}
+function	script	Centipede_Card	{bonus2 bSubEle,Ele_Poison,10;}
+function	script	Cornus_Card	{bonus2 bSubEle,Ele_Holy,10;}
+function	script	Dark_Shadow_Card	{bonus2 bSubEle,Ele_Dark,10;}
+function	script	Pinguicula_Dark_Card	{bonus2 bSubEle,Ele_Undead,10;}
+/*Cartas Valis*/
+function	script	Dustiness_Card	{bonus2 bSubEle,Ele_Wind,30; bonus bFlee,5;}
+function	script	Hode_Card	{bonus2 bSubEle,Ele_Earth,30; bonus bFlee,5;}
+function	script	Isis_Card	{bonus2 bSubEle,Ele_Dark,30; bonus bFlee,5;}
+function	script	Jakk_Card	{bonus2 bSubEle,Ele_Fire,30; bonus bFlee,5;}
+function	script	Marionette_Card	{bonus2 bSubEle,Ele_Ghost,30; bonus bFlee,5;}
+function	script	Marse_Card	{bonus2 bSubEle,Ele_Water,30; bonus bFlee,5;}
+function	script	Myst_Card	{bonus2 bSubEle,Ele_Poison,30; bonus bFlee,5; bonus2 bResEff,Eff_Poison,2000;}
+function	script	Orc_Zombie_Card	{bonus2 bSubEle,Ele_Undead,30; bonus bFlee,5;}
+function	script	Daydric_Card	{bonus2 bSubEle,Ele_Neutral,30; bonus bFlee,5;}
+/*Cartas Alas HAT Mid*/
+function	script	Elder_Wilow_Card	{bonus2 bSubEle,Ele_Neutral,10;}
+function	script	Leaf_Cat_Card	{bonus2 bSubEle,Ele_Water,10;bonus3 bAddMonsterDropItem,Crystal_Blue,RC_Fish,100;}
+function	script	Leib_Olmai_Card	{bonus2 bSubEle,Ele_Fire,10;bonus3 bAddMonsterDropItem,Boody_Red,RC_Brute,100;}
+function	script	Giant_Honet_Card	{bonus2 bSubEle,Ele_Wind,10; bonus3 bAddMonsterDropItem,Wind_Of_Verdure,RC_Insect,100;}
+function	script	Ghoul_Card	{bonus2 bSubEle,Ele_Poison,10; bonus2 bResEff,Eff_Poison,1000;}
+function	script	Giearth_Card	{bonus2 bSubEle,Ele_Earth,10;}
+function	script	Gibbet_Card	{bonus2 bSubEle,Ele_Ghost,10;}
+function	script	Permeter_Card	{bonus2 bSubEle,Ele_Dark,10;}
+function	script	Deviruchi_Card	{bonus2 bSubEle,Ele_Undead,10;}
+/*Cartas ViP Elementales*/
+function	script	Dark_Snake_Lord_Card	{bonus2 bSubEle,Ele_Ghost,15;bonus2 bResEff,Eff_Bleeding,10000;}

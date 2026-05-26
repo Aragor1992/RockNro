@@ -1,0 +1,75 @@
+function	script	Q_HUUMA	{
+	bonus bMaxHPrate,15;
+	bonus bAspdRate,readparam(bDex)/2;
+	bonus bMatkRate,getrefine()/2;
+	if (getrefine()>9) bonus bAtkRate,3;
+	skill TF_HIDING,5;
+	skill RG_TUNNELDRIVE,5;
+	skill RG_PLAGIARISM,10;
+	skill ST_PRESERVE,1;
+if(ninjafisico==1){
+		skill ASC_METEORASSAULT,8;
+		bonus bDelayrate,-10;
+		bonus bBaseAtk,300;
+		bonus bAtkRate,80;
+		bonus bHit,200;
+		bonus2 bSkillAtk,NJ_SYURIKEN,50;
+		bonus2 bSkillAtk,NJ_KUNAI,20;
+		bonus2 bSkillAtk,NJ_HUUMA,10;
+		bonus2 bSkillAtk,NJ_ZENYNAGE,150;
+		bonus2 bSkillAtk,NJ_KIRIKAGE,10;
+		bonus2 bSkillAtk,NJ_ISSEN,50;
+		bonus2 bSkillAtk,NJ_KASUMIKIRI,200;
+		bonus4 bAutoSpellOnSkill,NJ_KUNAI,NJ_KUNAI,5,150;
+	}
+if(ninjamagico==1){
+		bonus bAspdRate,100;
+		bonus bMatkRate,30;
+		bonus2 bSkillAtk,NJ_HYOUSYOURAKU,90;
+		bonus2 bSkillAtk,NJ_HYOUSENSOU,10;
+		bonus2 bSkillAtk,NJ_KOUENKA,10;
+		bonus2 bSkillAtk,NJ_KAENSIN,350;
+		bonus2 bSkillAtk,NJ_BAKUENRYU,90;
+		bonus2 bSkillAtk,NJ_RAIGEKISAI,90;
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+}
+
+switch(getarg(0)+1){
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		if(ninjamagico==1){
+			skill SL_STUN,7;
+			bonus2 bSkillAtk,SL_SMA,-50;
+			bonus4 bAutoSpellOnSkill,SL_STUN,SL_SMA,10,1000;
+			bonus5 bAutoSpell,SL_SMA,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+			}	break;	
+
+case 2:	bonus bAtkEle,Ele_Water;
+		if(ninjamagico==1){	skill ASC_METEORASSAULT,8;	}	break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		if(ninjamagico==1){	skill WZ_HEAVENDRIVE,3;	skill WZ_EARTHSPIKE,5;	}	break;		
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		break;
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		if(ninjamagico==1){	skill NSC_VENOMBOLT,7;	}	break;		
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		if(ninjamagico==1){	skill NSC_HOLYBOLT,7;	}	break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		if(ninjamagico==1){	skill NPC_DARKSTRIKE,0;	}	break;		
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		if(ninjamagico==1){	skill MG_SOULSTRIKE,7;	}	break;		
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		if(ninjamagico==1){	skill HW_NAPALMVULCAN,5;	}	break;
+}
+return;
+}

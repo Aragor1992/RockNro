@@ -1,0 +1,94 @@
+que_temsky,48,136,4	script	aNovice	4_F_NOVICE,{
+	
+set .@n$, "^ff8000[ aNovice ]^000000";
+
+	mes .@n$;
+	mes "Muy bien hecho "+strcharinfo(0)+"!";
+	mes "Te mereces este premio.";
+	announce "Novice vs Zombie: El ganador del evento de Novice vs Zombie ha sido "+strcharinfo(0)+", Felicidades.",bc_all,0x00ffff;
+	next;
+	mes .@n$;
+	mes "Ahi tienes!";
+	mes "Bye bye!";
+	getitem 7539,rand(20,40);
+	set $nz,0;
+	close2;
+	hideonnpc "aNovice";
+	warp "prontera",155,182;
+	end;
+	
+OnNovice:
+	set $nz,0;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: Bienvenido al evento de Novices vs Zombies.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: Antes de partir, explicaré brevemente de que trata el evento.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: El evento consiste en que se irán incovado Zombies en esta zona, cada 15 segundos se irá invocando un nuevo Zombie.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: Ustedes deberán de evitar la muerte esquivando a los Zombies.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: Los muertos serán descalificados y enviados a la cuidad inmediatamente.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: El ganador será el ultimo en sobrevivir.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "que_temsky","Novice vs Zombie: Eso es todo, ojalá se diviertan y que gane el más escurridiso!",bc_map,0xff8000;
+	sleep 10000;
+	
+I_Zombie:
+	if($nz == 1){
+	end;
+	}
+	if(getmapusers("que_temsky") == 1){
+	killmonsterall "que_temsky";
+	set $nz,1;
+	mapannounce "que_temsky","Novice vs Zombie: Muy bien! has ganado, habla con el NPC en el centro para reclamar tu premio.",bc_map,0xff8000;
+	hideoffnpc "aNovice";
+	end;
+	}
+	if(getmapusers("que_temsky") == 0){
+	announce "Todos los participantes del evento Novice vs Zombie se han retirado del mapa por lo que el evento queda nulo.",bc_all,0x00ffff;
+	killmonsterall "que_temsky";
+	set $nz,0;
+	end;
+	}	
+	mapannounce "que_temsky","Novice vs Zombie: Se ha invocado un Zombie en la zona!",bc_map,0xff8000;	
+	set $@r,rand(1,5);
+	if($@r == 1){monster "que_temsky",43,132,"Zombie",1015,1;sleep 7500;goto I_Zombie;end;}
+	if($@r == 2){monster "que_temsky",53,136,"Zombie",1015,1;sleep 7500;goto I_Zombie;end;}
+	if($@r == 3){monster "que_temsky",49,148,"Zombie",1015,1;sleep 7500;goto I_Zombie;end;}
+	if($@r == 4){monster "que_temsky",41,142,"Zombie",1015,1;sleep 7500;goto I_Zombie;end;}
+	if($@r == 5){monster "que_temsky",62,140,"Zombie",1015,1;sleep 7500;goto I_Zombie;end;}
+	
+OnPCDieEvent:
+	getmapxy .@mapnvz$,.@xnvz,.@ynvz,0;
+	if(.@mapnvz$ == "que_temsky"){
+	sc_end -1;	
+	warp "prontera",155,182;
+	dispbottom "Has muerto!";
+	mapannounce "que_temsky","Novice vs Zombie: Quedan "+getmapusers("que_temsky")+" Participantes.",bc_map,0xff8000;
+	}
+	sleep2 1000;
+	if(.@mapnvz$ == "que_temsky" && getmapusers("que_temsky") == 1){
+	killmonsterall "que_temsky";
+	set $nz, 1;
+	mapannounce "que_temsky","Novice vs Zombie: Muy bien! has ganado, habla con el NPC en el centro para reclamar tu premio.",bc_map,0xff8000;
+	sc_end -1;
+	hideoffnpc "aNovice";
+	}
+	end;
+
+OnInit:
+	hideonnpc "aNovice";
+	end;
+}
+
+que_temsky	mapflag	noskill
+que_temsky	mapflag	nocommand
+que_temsky	mapflag	nobranch
+que_temsky	mapflag	nomemo
+que_temsky	mapflag	pvp	off
+que_temsky	mapflag	noteleport
+que_temsky	mapflag	nosave	SavePoint
+que_temsky	mapflag	novending
+que_temsky	mapflag	nowarpto

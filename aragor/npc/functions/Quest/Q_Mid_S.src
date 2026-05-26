@@ -1,0 +1,23 @@
+function	script	S_Mid_Hit	{
+	bonus bAllStats,10;
+	skill 263,5;
+	bonus bHit,100;
+	bonus bPerfectHitAddRate,5;
+return;
+}
+function	script	S_Mid_Demi	{
+	bonus2 bAddRace,RC_DemiHuman,10;
+	bonus bAllStats,10;
+	bonus bNoGemStone,0;
+	bonus bUseSPrate,-30;
+	bonus bAtkRange,1;
+return;
+}
+function	script	S_Mid_Cast	{
+	bonus bAllStats,10;
+	bonus5 bAutoSpellWhenHit,PF_MINDBREAKER,3,30,BF_WEAPON|BF_MAGIC|BF_SHORT|BF_LONG|BF_MISC,0;
+	bonus bNoGemStone,0;
+	skill NSC_DARKJUPITEL,5;
+	skill WZ_JUPITEL,5;
+return;
+}

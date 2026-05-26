@@ -1,0 +1,63 @@
+function	script	A_Armor	{
+	bonus bMdef,getrefine();
+	bonus bBaseAtk,50;
+	bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+	bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+switch(getarg(0)+1){
+
+case 1:	bonus2 bSubEle,Ele_Neutral,25;
+		bonus2 bResEff,Eff_Sleep,10000;
+		skill "LK_AURABLADE",5;
+		bonus bUnstripableArmor,0;
+		bonus bUnbreakableArmor,0;
+		bonus bBaseAtk,50;
+		break;		
+	
+case 2:	bonus2 bSubEle,Ele_Water,25;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		break;
+
+case 3:	bonus2 bSubEle,Ele_Earth,25;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		break;
+
+case 4:	bonus2 bSubEle,Ele_Fire,25;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		break;
+
+case 5:	bonus2 bSubEle,Ele_Wind,25;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		break;
+
+case 6:	bonus2 bSubEle,Ele_Poison,25;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		break;
+
+case 7:	bonus2 bSubEle,Ele_Holy,25;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		break;
+
+case 8:	bonus2 bSubEle,Ele_Dark,25;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Freeze,10000;
+		break;
+
+case 9:	bonus2 bSubEle,Ele_Ghost,25;
+		bonus2 bResEff,Eff_Stone,10000;
+		break;
+
+case 10:	bonus2 bSubEle,Ele_Undead,25;
+		bonus2 bResEff,Eff_Freeze,10000;
+		break;
+	}
+return;
+}

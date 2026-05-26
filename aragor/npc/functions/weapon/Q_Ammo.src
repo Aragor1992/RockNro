@@ -1,0 +1,18 @@
+function	script	Q_Ammo	{
+switch(getarg(0)+1){
+case 1:bonus2 bAddEff,Eff_Stun,500;break;
+case 2:bonus bAtkEle,Ele_Water;bonus2 bAddEff,Eff_Freeze,500;break;
+case 3:bonus bAtkEle,Ele_Earth;bonus2 bAddEff,Eff_Stone,500;break;
+case 4:bonus bAtkEle,Ele_Fire;bonus2 bAddEff,Eff_Bleeding,500;break;
+case 5:bonus bAtkEle,Ele_Wind;bonus2 bAddEff,Eff_Sleep,500;break;
+case 6:bonus bAtkEle,Ele_Poison;bonus2 bAddEff,Eff_Poison,500;break;
+case 7:bonus bAtkEle,Ele_Holy;bonus2 bAddEff,Eff_Blind,500;break;
+case 8:bonus bAtkEle,Ele_Dark;bonus2 bAddEff,Eff_Silence,500;break;
+case 9:bonus bAtkEle,Ele_Ghost;bonus2 bAddEff,Eff_Confuse,500;break;
+case 10:bonus bAtkEle,Ele_Undead;bonus2 bAddEff,Eff_Curse,500;break;
+	}
+return;
+}
+/* item script
+callfunc "Q_Ammo","Ele_Neutral";
+*/

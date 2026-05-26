@@ -1,0 +1,19 @@
+function	script	cnt_card	{
+.@gcid = getequipcardid;
+	if (.@gcid (getarg(0),0) == getarg(1)){.@slt0=1;}
+	if (.@gcid (getarg(0),1) == getarg(1)){.@slt1=1;}
+	if (.@gcid (getarg(0),2) == getarg(1)){.@slt2=1;}
+	if (.@gcid (getarg(0),3) == getarg(1)){.@slt3=1;}
+return .@slt0+.@slt1+.@slt2+.@slt3;
+}
+
+// 1	Upper Headgear		EQI_HEAD_TOP
+// 2	Armor				EQI_ARMOR
+// 3	Left Hand			EQI_HAND_L
+// 4	Right Hand			EQI_HAND_R
+// 5	Garment				EQI_GARMENT
+// 6	Foot Gear			EQI_SHOES
+// 7	Accessory 1			EQI_ACC_L
+// 8	Accessory 2			EQI_ACC_R
+// 9	Middle Headgear		EQI_HEAD_MID
+// 10	Lower Headgear		EQI_HEAD_LOW

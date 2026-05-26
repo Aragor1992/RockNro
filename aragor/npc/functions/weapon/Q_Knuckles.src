@@ -1,0 +1,97 @@
+function	script	Q_Knuckle	{
+	bonus2 bSkillAtk,MO_EXTREMITYFIST,-40;
+	bonus2 bAddRace,RC_NonBoss,30;
+	bonus2 bAddRace,RC_Boss,-30;
+	bonus bAgi,readparam(bStr)/8;
+	bonus bAspd,25;
+	bonus bHit,100;	
+	bonus bSPDrainValue,15;	
+	bonus4 bAutoSpellOnSkill,MO_FINGEROFFENSIVE,CH_SOULCOLLECT,1,1000;
+	bonus5 bAutoSpell,MO_CHAINCOMBO,5,100,BF_SHORT+BF_WEAPON,1;
+	bonus5 bAutoSpell,MO_COMBOFINISH,5,100,BF_SHORT+BF_WEAPON,1;
+	bonus5 bAutoSpell,CH_TIGERFIST,5,100,BF_SHORT+BF_WEAPON,1;
+	bonus5 bAutoSpell,CH_CHAINCRUSH,5,100,BF_SHORT+BF_WEAPON,1;	
+switch(getarg(0)+1){
+case 1:	bonus bAtkEle,Ele_Neutral;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		if(readparam(bInt)>149) {
+			bonus5 bAutoSpell,SL_SMA,3,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50; 
+			bonus bMatk,4000;
+			}	break;	
+
+case 2:	bonus bAtkEle,Ele_Water;
+		if(readparam(bInt)>149) {
+			skill MG_COLDBOLT,5; 
+			bonus5 bAutoSpell,NJ_HYOUSENSOU,5,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50; 
+			bonus bMatk,4000;
+			}	break;	
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		if(readparam(bInt)>149) {
+			skill WZ_EARTHSPIKE,5;
+			bonus5 bAutoSpell,WZ_EARTHSPIKE,3,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;
+	
+case 4:	bonus bAtkEle,Ele_Fire;
+		if(readparam(bInt)>149) {
+			skill MG_FIREBOLT,5;
+			bonus5 bAutoSpell,MG_FIREBOLT,5,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;	
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		if(readparam(bInt)>149) {
+			skill MG_LIGHTNINGBOLT,5;
+			bonus5 bAutoSpell,MG_LIGHTNINGBOLT,5,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		if(readparam(bInt)>149) {
+			skill NSC_VENOMBOLT,5;
+			bonus5 bAutoSpell,NSC_VENOMBOLT,3,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;	
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		if(readparam(bInt)>149) {
+			skill NSC_HOLYBOLT,5;
+			bonus5 bAutoSpell,NSC_HOLYBOLT,5,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		if(readparam(bInt)>149) {
+			skill NPC_DARKSTRIKE,7;
+			bonus5 bAutoSpell,NPC_DARKSTRIKE,6,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;	
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		if(readparam(bInt)>149) {
+			skill MG_SOULSTRIKE,8;
+			bonus5 bAutoSpell,MG_SOULSTRIKE,6,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+			}	break;	
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		if(readparam(bInt)>149) {
+			skill HW_NAPALMVULCAN,3;
+			bonus5 bAutoSpell,HW_NAPALMVULCAN,3,100,BF_MAGIC+BF_SHORT+BF_WEAPON+BF_MISC,1;
+			bonus2 bSkillHeal2,AL_HEAL,50;
+			bonus bMatk,4000;
+		}	break;	
+	}
+return;
+}

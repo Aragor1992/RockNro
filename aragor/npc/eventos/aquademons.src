@@ -1,0 +1,87 @@
+-	script	Aqua_demons	FAKE_NPC,{
+
+OnAquademonstart:
+	setmapflag "amatsu",mf_sakura;
+	enablenpc "Señor de Amatsu";
+	monster "amatsu",0,0,"Aqua",1242,200,"Aqua::OnAqua1";
+	monster "amatsu",0,0,"Aqua",1242,200,"Aqua::OnAqua2";
+	monster "amatsu",0,0,"Aqua",1242,200,"Aqua::OnAqua3";
+	monster "amatsu",0,0,"Aqua",1242,200,"Aqua::OnAqua4";
+	monster "amatsu",0,0,"Aqua",1242,200,"Aqua::OnAqua5";
+	monster "amatsu",0,0,"Deviruchi",1109,50,"Aqua::OnDev";
+	monster "amatsu",0,0,"Demonio del Aqua",1582,5,"Aqua::OnDemon";
+	set $Aqua_Demon,5;
+end;
+
+OnAqua1:
+	if ($Aqua_Demon >= 5) monster "amatsu",0,0,"Aqua",1242,1,"Aqua::OnAqua1";
+end;
+
+OnAqua2:
+	if ($Aqua_Demon >= 4) monster "amatsu",0,0,"Aqua",1242,1,"Aqua::OnAqua2";
+end;
+
+OnAqua3:
+	if ($Aqua_Demon >= 3) monster "amatsu",0,0,"Aqua",1242,1,"Aqua::OnAqua3";
+end;
+
+OnAqua4:
+	if ($Aqua_Demon >= 2) monster "amatsu",0,0,"Aqua",1242,1,"Aqua::OnAqua4";
+end;
+
+OnAqua5:
+	if ($Aqua_Demon >= 1) monster "amatsu",0,0,"Aqua",1242,1,"Aqua::OnAqua5";
+end;
+
+OnDev:
+	if ($Aqua_Demon >= 1) 	monster "amatsu",0,0,"Deviruchi",1109,1,"Aqua::OnDev";
+end;
+
+OnDemon:
+	set $Aqua_Demon,$Aqua_Demon-1;
+	if ($Aqua_Demon == 4) {
+		set #Aqua_Hero1,1;
+		announce "amatsu",strcharinfo(0) + " ha matado uno de los cinco demonios del Aqua.",bc_map,bc_yellow;
+		killmonster "amatsu","Aqua::OnAqua1";
+	}
+	if ($Aqua_Demon == 3) {
+		set #Aqua_Hero2,1;
+		announce "amatsu",strcharinfo(0) + " ha matado uno de los cinco demonios del Aqua.",bc_map,bc_yellow;
+		killmonster "amatsu","Aqua::OnAqua2";
+	}
+	if ($Aqua_Demon == 2) {
+		set #Aqua_Hero3,1;
+		announce "amatsu",strcharinfo(0) + " ha matado uno de los cinco demonios del Aqua.",bc_map,bc_yellow;
+		killmonster "amatsu","Aqua::OnAqua3";
+	}
+	if ($Aqua_Demon == 1) {
+		set #Aqua_Hero4,1;
+		announce "amatsu",strcharinfo(0) + " ha matado uno de los cinco demonios del Aqua.",bc_map,bc_yellow;
+		killmonster "amatsu","Aqua::OnAqua4";
+	}
+	if ($Aqua_Demon == 0) {
+		set #Aqua_Hero5,1;
+		announce "amatsu",strcharinfo(0) + " ha matado el último de los demonios del Aqua.",bc_map,bc_yellow;
+		killmonster "amatsu","Aqua::OnAqua5";
+		killmonster "amatsu","Aqua::OnDev";
+		disablenpc "Anuncio";
+		removemapflag "amatsu",mf_rain;
+		startnpctimer;
+	}
+	getitem 7306,1;
+	set BaseExp,(BaseExp + (NextBaseExp/15)); // BaseExp para los ganadores. (Por defecto 1/5)
+end;
+
+OnTimer75000:
+	announce "amatsu","La tormenta se desvanece al igual que las almas de los cinco demonios.",bc_map,bc_yellow;
+end;
+
+OnTimer80000:
+	announce "amatsu","Id en paz, héroes de Amatsu. Sabed que hazaña nunca será olvidada.",bc_map,bc_yellow;
+end;
+
+OnTimer86480000:
+	disablenpc "Señor de Amatsu";
+	if ($Aqua_Auto == 0) stopnpctimer;
+end;
+}

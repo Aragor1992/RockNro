@@ -1,0 +1,87 @@
+function	script	Q_Book	{
+	bonus2 bMagicAddRace,RC_DemiHuman,-25;
+	bonus2 bSkillHeal,AL_HEAL,20;
+	bonus2 bSkillHeal,PR_SANCTUARY,150;
+	bonus bMatkRate,10;
+if(Class==4017||Class==4039){
+	bonus bCritical,50;
+	bonus bMatkRate,30;
+	bonus bMaxHPrate,10;
+/*	if(isequipped(Mage_Spirit)|| isequipped(Spirit_Of_Spirits)){
+		bonus bAspdRate,readparam(bInt)/5;
+		bonus bMaxHPrate,10;
+		bonus bMatkRate,10;
+		bonus2 bSkillAtk,19,20;
+		bonus2 bSkillAtk,14,20;
+		bonus2 bSkillAtk,20,20;
+		bonus2 bSkillAtk,545,20;
+		bonus2 bSkillAtk,547,20;
+	}*/
+}
+switch(getarg(0)+1){
+
+case 1:	bonus2 bAddEff,Eff_Stun,1000;
+		skill AM_ACIDTERROR,5;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		if(Class==8||Class==4009||Class==4017) {
+			bonus5 bAutoSpell,SL_SMA,3,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 2:	bonus bAtkEle,Ele_Water;
+		bonus2 bAddEff,Eff_Freeze,1000;
+		skill WZ_WATERBALL,3;
+		skill NJ_HYOUSYOURAKU,3;
+		bonus5 bAutoSpell,14,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		bonus2 bAddEff,Eff_Stone,1000;
+		skill HW_GRAVITATION,5;
+		bonus5 bAutoSpell,90,3,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		bonus5 bAutoSpell,MG_FIREBOLT,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill WZ_SIGHTRASHER,5;
+		skill NJ_BAKUENRYU,3;
+		break;	
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		bonus2 bAddEff,Eff_Confusion,1000;
+		skill NJ_RAIGEKISAI,2;
+		bonus5 bAutoSpell,MG_LIGHTNINGBOLT,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		bonus2 bAddEff,Eff_Poison,1000;
+		skill NSC_VENOMBOLT,10;
+		bonus5 bAutoSpell,NSC_VENOMBOLT,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		bonus2 bAddEff,Eff_Blind,1000;
+		skill NSC_HOLYBOLT,10;
+		bonus5 bAutoSpell,NSC_HOLYBOLT,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus2 bAddEff,Eff_Silence,1000;
+		bonus5 bAutoSpell,NPC_DARKSTRIKE,7,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill NPC_DARKSTRIKE,7;
+		break;
+	
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus2 bAddEff,Eff_Sleep,1000;
+		bonus5 bAutoSpell,MG_SOULSTRIKE,7,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill MG_SOULSTRIKE,7;
+		break;	
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus2 bAddEff,Eff_Curse,1000;
+		skill HW_NAPALMVULCAN,5;
+		bonus5 bAutoSpell,HW_NAPALMVULCAN,2,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;
+	}
+return;
+}

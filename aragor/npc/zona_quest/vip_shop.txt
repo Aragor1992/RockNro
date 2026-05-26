@@ -1,0 +1,219 @@
+quiz_02,243,387,4	trader	Accesorios VIP	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Morpheus_s_Armlet,2000;
+	sellitem Morrigane_s_Pendant,2000;
+	sellitem Orleans_Glove_plus,2000;
+	sellitem Bison_Horn_plus,2000;
+	sellitem Nile_Rose_V2,2000;
+	end;
+}
+
+quiz_02,245,385,4	trader	Valis VIP	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Neutral_Valkyries_Manteau,2000;
+	sellitem Fire_Valkyries_Manteau,2000;
+	sellitem Water_Valkyries_Manteau,2000;
+	sellitem Earth_Valkyries_Manteau,2000;
+	sellitem Wind_Valkyries_Manteau,2000;
+	sellitem Ghost_Valkyries_Manteau,2000;
+	sellitem Undead_Valkyries_Manteau,2000;
+	sellitem Poison_Valkyries_Manteau,2000;
+//	sellitem Holy_Valkyries_Manteau,2000;
+	sellitem Shadow_Valkyries_Manteau,2000;
+	end;
+}
+
+quiz_02,252,383,6	trader	Mids 2008	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem P_Golden_Hornaments,1000;
+	sellitem P_lentes_3d,1000;
+	sellitem P_Hockey_Mask,1000;
+	sellitem P_Morpheus_Hood,1000;
+	sellitem P_Observer,1000;
+	sellitem P_Elf_Ears,1000;
+	end;
+}
+
+quiz_02,254,385,6	trader	Mids 2009	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem P_Sage_Ring_Hat,1500;
+	sellitem P_ears_of_ifrit,1500;
+	sellitem P_mask_of_godess,1500;
+	end;
+}
+
+quiz_02,256,387,6	trader	Mids 2010	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Odin_Mask_plus,2400;
+	sellitem Power_Of_Thor_plus,2400;
+	sellitem Black_Tie,2400;
+	end;
+}
+
+quiz_02,258,389,6	trader	Mids 2011	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Blue_Chakra,3000;
+	sellitem Green_Chakra,3000;
+	sellitem Pink_Chakra,3000;
+	sellitem Red_Chakra,3000;
+	sellitem Gold_Aura,3000;
+	end;
+}
+
+quiz_02,260,389,6	trader	Mids 2013	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Kakashi_Mask,3200;
+	sellitem Neptune_Protector,3200;
+	sellitem valkyrie_ears_wings,3200;
+	sellitem victory_wings,3200;
+	sellitem Rinnegan,3200;
+	sellitem Sharingan,3200;
+	sellitem Vesper_Mask,3200;
+	sellitem Centimental_Leaf_Rock,3250;
+	sellitem AngelEar,3250;
+	sellitem P_Observer2,3250;
+	end;
+}
+
+quiz_02,262,389,6	trader	Mids 2014	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Headphones,3500;
+	sellitem Black_Glasses_plus,3500;
+	sellitem Obito_Goggles,3500;
+	sellitem Black_Hane_Ribbon,3500;
+	sellitem Cyan_Hane_Ribbon,3500;
+	sellitem Blue_Hane_Ribbon,3500;
+	sellitem Gold_Hane_Ribbon,3500;
+	sellitem Green_Hane_Ribbon,3500;
+	sellitem Hane_Ribbon,3500;
+	sellitem Purple_Hane_Ribbon,3500;
+	sellitem White_Hane_Ribbon,3500;
+	sellitem White_Glasses,3500;
+	sellitem Alucard_Glasses,3500;
+	sellitem Majoras_Mask,3500;
+	end;
+}
+
+quiz_02,264,389,6	trader	Hats VIP Cat1	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem black_helm,1500;
+	sellitem red_helm,1500;
+	sellitem blue_helm,1500;
+	sellitem gold_helm,1500;
+	sellitem chinese_samurai_hat,1500;
+	sellitem golden_horns,1500;
+	sellitem dragon_helm,1500;
+	sellitem maya_helm_plus,1500;
+	sellitem Valkyrie_randgris_helm,1500;
+	sellitem black_randgris_helm,1500;
+	sellitem penacho_de_moktezuma,1500;
+	sellitem skeleton_helm,1500;
+	sellitem torch_cap,1500;
+	sellitem Archangel_helm_vip,1500;
+	sellitem Black_Archangel_Helm,1500;
+	sellitem fenix_helm,1500;
+	sellitem divine_horns,1500;
+	sellitem Airth_Goat,1500;
+	sellitem Black_Airth_Goat,1500;
+	sellitem BlackValkyrieHelm_vip,1500;
+	sellitem whitevalk,1500;
+	sellitem redvalk,1500;
+	sellitem greenvalk,1500;
+	sellitem brownvalk,1500;
+	sellitem white_morrigane_v2_helm,1500;
+	sellitem Black_Viking_Helm,1500;
+	sellitem helm_of_ice_wolf,1500;
+	sellitem Bloody_Garm_Hat,1500;
+	sellitem Samurai_H,1500;
+	sellitem blue_samurai,1500;
+	sellitem green_samurai,1500;
+	sellitem pink_samurai,1500;
+	sellitem red_samurai,1500;
+	sellitem white_samurai,1500;
+	sellitem tiraya_bonnet_plus,1500;
+	sellitem True_valky_helm,1500;
+	sellitem True_valky_helm_blood,1500;
+	sellitem Hades_Helm,1500;
+	sellitem Zero_Helm,1500;
+	sellitem royal_crown,1500;
+	sellitem LuciferHelm,1500;
+	sellitem FlyingLuciferWings,1500;
+	sellitem Pisces_Crown_plus,1500;
+	sellitem Creed_Helm,1500;
+	sellitem Dark_Bashilrium,1500;
+	sellitem Crown_of_Deceit_plus,1500;
+	sellitem ifrit_mask,1500;
+	sellitem Flying_Angel,1500;
+	end;
+}
+
+quiz_02,266,389,6	trader	Hats VIP 2012	4_M_MOCASS2,{
+	OnInit:
+	tradertype(NST_CASH);
+	sellitem Lala_Cap,2000;
+	sellitem Evil_Druid_Hat,2000;
+	sellitem Wanderer_Sakkat,2000;
+	sellitem Astronaut_Helm,2000;
+	sellitem Gemini_Crown_plus,2000;
+	end;
+}
+
+quiz_02,268,389,6	trader	Hats VIP 2013	4_M_MOCASS2,{
+	OnInit:
+	sellitem Rasta_Hat_Vip,2500;
+	sellitem Desolation_Helm,2500;
+	sellitem Mama_mia_cap,2500;
+	sellitem fusion_hat,2500;
+	sellitem Son_Goanda_Hat,2500;
+	sellitem BoneHelm,2500;
+	sellitem Celestial_Crown,2500;
+	sellitem Leo_Diadem,2500;
+	end;
+}
+
+quiz_02,270,389,6	trader	Hats VIP 2014	4_M_MOCASS2,{
+	OnInit:
+	sellitem Cyan_Viking_Helm,2500;
+	sellitem Red_Viking_Helm,2500;
+	sellitem rider_cap,2500;
+	sellitem Dragon_Master_Helm,2500;
+	sellitem Black_Dark_Helm,2500;
+	sellitem Blue_Dark_Helm,2500;
+	sellitem Green_Dark_Helm,2500;
+	sellitem Pink_Dark_Helm,2500;
+	sellitem Red_Dark_Helm,2500;
+	sellitem Black_Dragon_Master_Helm,2500;
+	sellitem Blue_Dragon_Master_Helm,2500;
+	sellitem Black_Son_Goanda_Hat,2500;
+	sellitem Pink_Son_Goanda_Hat,2500;
+	sellitem Red_Son_Goanda_Hat,2500;
+	sellitem Black_Zero_Helm,2500;
+	sellitem Blue_Zero_Helm,2500;
+	sellitem Green_Zero_Helm,2500;
+	sellitem Pink_Zero_Helm,2500;
+	sellitem White_Tiraya_Bonnet,2500;
+	sellitem Sniper_Goggles,2500;
+	sellitem Uruhara_Hat,2500;
+	sellitem Capricon_Crown_plus,2500;
+	sellitem Desert_Prince,2500;
+	sellitem Blue_Dragon_Helm,2500;
+	sellitem God_Angel_Helm,2500;
+	sellitem Alucard_Hat,2500;
+	sellitem Helm_Of_God,2500;
+	sellitem Hokage_Hat,2500;
+	sellitem Kazekage_Hat,2500;
+	sellitem Lord_Helm,2500;
+	sellitem Solar_God_Helm,2500;
+	sellitem Winged_Diadem,2500;
+	sellitem Peacock_Feather_plus,2500;
+	end;
+}

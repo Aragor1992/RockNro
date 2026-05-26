@@ -1,0 +1,2 @@
+function	script	F_Yggdrasilberry	{if (!agitcheck() && !agitcheck2()){percentheal 10,10;}return;}
+function	script	F_Seed_Of_Yggdrasil	{if (!agitcheck() && !agitcheck2()){percentheal 5,5;}return;}

@@ -1,0 +1,31 @@
+function	script	F_hat_vip1	{
+menu	
+	""+getitemname(VIP_Airth_Goat)+"",H1,// Airth Goat Helm
+	""+getitemname(VIP_Archangel_helm)+"",H2,// Archangel Helm
+	""+getitemname(VIP_Astronaut_Helm)+"",H3,// Astronaut Helm
+	""+getitemname(9728)+"",H4,// Black Airth Goat	
+	""+getitemname(9750)+"",H5,// Black Archangel Helm
+	""+getitemname(9602)+"",H6,// Black Helm
+	""+getitemname(9658)+"",H7,// Black Valkyrie Helm
+	""+getitemname(9839)+"",H8,// Black Randgris Helm	
+	""+getitemname(9865)+"",H9,// Bloody Garm Helm
+	""+getitemname(9629)+"",H10,// Bloody Valkyrie Helm
+	""+getitemname(9801)+"",H11,// Blue Helm
+	""+getitemname(9817)+"",H12,// Chinese Helm
+	""+getitemname(9613)+"",H13,// Dragon Helm
+	""+getitemname(5210)+"",H14,// Flying Angel Wings
+	""+getitemname(9681)+"",H15,// Flying Lucifer Wings
+	""+getitemname(9623)+"",H16,// Gold Helm	
+	""+getitemname(20053)+"",H17,// Hades Helm
+	""+getitemname(9608)+"",H18,// Ice Wolf Helm
+	""+getitemname(9680)+"",H19,// Lucifer Helm
+	""+getitemname(9627)+"",H20,// Maya Helm	
+	""+getitemname(9659)+"",H21,// Morrigane’s Helm
+	""+getitemname(9632)+"",H22,// Penacho de Moctezuma
+	""+getitemname(9609)+"",H23,// Phoenix Helm
+	""+getitemname(9987)+"",H24,// Red Helm	
+	""+getitemname(9718)+"",H25,// Samurai Helm
+	""+getitemname(9628)+"",H26,// True Valkyrie Helm
+	""+getitemname(9611)+"",H27;// Valkyrie Randgris Helm
+return;
+}

@@ -1,0 +1,27 @@
+/*QUEST ACCESORY*/
+function	script	F_Critical_Ring	{bonus bCritical,10;bonus bCritAtkRate,10;bonus bAgi,10;bonus bLuk,10;return;}
+function	script	F_Bow_Thimble	{if(Class==3||Class==11||Class==4012||Class==17||Class==4018) {bonus bLongAtkRate,10;bonus bHit,50;}return;}
+function	script	F_Novice_Armlet	{bonus bFlee2,5;bonus bAtkRate,10;bonus bMatkRate,10;return;}
+function	script	F_Megingjard	{bonus bStr,30; bonus bAtkRate,3;}
+function	script	F_Brisingamen	{bonus bVit,10;bonus bInt,10;bonus bMatkRate,10;bonus2 bMagicAddRace,RC_DemiPlayer,5;return;}
+function	script	F_Celebration	{bonus bAllStats,10;return;}
+function	script	F_Icarus_Wing	{bonus bFlee2,5;bonus2 bAddRace,RC_DemiHuman,7;return;}
+function	script	F_The_Sign	{if(Class==24) {bonus bAtkRate,10;bonus bDex,10;bonus bAgi,10;}return;}
+function	script	F_Brooch	{bonus bDex,25;bonus bAgi,10;return;bonus bFlee,2;}
+function	script	F_QNile_Rose	{bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bSPrecovRate,10;bonus bHPrecovRate,10;return;}
+function	script	F_Glove	{bonus bDex,25;bonus bAgi,10;return;}
+
+/*VIP ACCESORY*/
+function	script	F_Morpheus_Armlet	{bonus bFlee2,5;bonus bCritical,5;bonus bStr,20;bonus2 bAddRace,RC_DemiHuman,10;bonus2 bSkillAtk,485,10;}
+function	script	F_Morrigane_Pendant	{bonus bLongAtkRate,7;bonus bDex,20;bonus bDelayrate,-7;if(BaseClass==Job_Ninja) {bonus bDelayrate,5;}if(BaseClass==Job_Gunslinger) {bonus bAtkRate,10;}}
+function	script	F_Orleans_Glove	{bonus bPerfectHitAddRate,15;bonus bHit,100;bonus bAtkRate,10;bonus bDelayrate,-5;}
+function	script	F_Bison_Horn	{bonus bInt,20;bonus bIgnoreMdefRate,10;bonus2 bSkillHeal,28,10;bonus2 bSkillHeal,70,10;bonus2 bSkillHeal,478,10;}
+function	script	F_VNile_Rose	{bonus bMaxHPrate,5;bonus bMaxSPrate,5;bonus bFlee2,7;bonus bDef,5;bonus bMdef,5;bonus bVit,5;}
+
+/*
+callfunc "F_Morpheus_Armlet";
+callfunc "F_Morrigane_Pendant";
+callfunc "F_Orleans_Glove";
+callfunc "F_Bison_Horn";
+callfunc "F_VNile_Rose";
+*/

@@ -1,0 +1,27 @@
+function	script	Q_Sleipnir	{
+	bonus bMdef,7;
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bSPrecovRate,5;
+	bonus bSpeedRate,15;
+return;
+}
+/*------------------------------------------------------------*/
+function	script	Q_Shoes	{
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bSpeedRate,15;	
+switch(getarg(0)+1){
+	case 1:bonus2 bSubEle,Ele_Neutral,5; break;
+	case 2:bonus2 bSubEle,Ele_Water,5; break;
+	case 3:bonus2 bSubEle,Ele_Earth,5; break;
+	case 4:bonus2 bSubEle,Ele_Fire,5; break;
+	case 5:bonus2 bSubEle,Ele_Wind,5; break;
+	case 6:bonus2 bSubEle,Ele_Poison,5; break;
+	case 7:bonus2 bSubEle,Ele_Holy,5; break;
+	case 8:bonus2 bSubEle,Ele_Dark,5; break;
+	case 9:bonus2 bSubEle,Ele_Ghost,5; break;
+	case 10:bonus2 bSubEle,Ele_Undead,5; break;
+	}
+return;
+}

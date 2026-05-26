@@ -1,0 +1,233 @@
+-	script	aLabWarps#01::labwarp	WARPNPC,1,1,{
+
+	if($nwy == 0){
+	end;
+	}
+	set $@r,rand(1,39);
+	if($@r == 1){warp "force_1-3",19,146;end;}
+	if($@r == 2){warp "force_1-3",19,50;end;}
+	if($@r == 3){warp "force_1-3",20,10;end;}
+	if($@r == 4){warp "force_1-3",60,29;end;}
+	if($@r == 5){warp "force_1-3",109,99;end;}
+	if($@r == 6){warp "force_1-3",69,138;end;}
+	if($@r == 7){warp "force_1-3",100,128;end;}
+	if($@r == 8){warp "force_1-3",100,10;end;}
+	if($@r == 9){warp "force_1-3",100,164;end;}//wineer
+	if($@r == 10){warp "force_1-3",130,19;end;}
+	if($@r == 11){warp "force_1-3",140,50;end;}
+	if($@r == 12){warp "force_1-3",180,128;end;}
+	if($@r == 13){warp "force_1-3",170,179;end;}
+	if($@r == 14){warp "force_1-3",180,50;end;}
+	if($@r == 15){warp "force_1-3",170,99;end;}
+	if($@r == 16){warp "force_1-3",19,189;end;}
+	if($@r == 17){warp "force_1-3",100,128;end;}
+	if($@r == 18){warp "force_1-3",100,10;end;}
+	if($@r == 19){warp "force_1-3",19,146;end;}
+	if($@r == 20){warp "force_1-3",19,50;end;}
+	if($@r == 21){warp "force_1-3",20,10;end;}
+	if($@r == 22){warp "force_1-3",60,29;end;}
+	if($@r == 23){warp "force_1-3",109,99;end;}
+	if($@r == 24){warp "force_1-3",69,138;end;}
+	if($@r == 25){warp "force_1-3",100,128;end;}
+	if($@r == 26){warp "force_1-3",100,10;end;}
+	if($@r == 27){warp "force_1-3",19,146;end;}
+	if($@r == 28){warp "force_1-3",19,50;end;}
+	if($@r == 29){warp "force_1-3",20,10;end;}
+	if($@r == 30){warp "force_1-3",60,29;end;}
+	if($@r == 31){warp "force_1-3",140,50;end;}
+	if($@r == 32){warp "force_1-3",180,128;end;}
+	if($@r == 33){warp "force_1-3",170,179;end;}
+	if($@r == 34){warp "force_1-3",180,50;end;}
+	if($@r == 35){warp "force_1-3",170,99;end;}
+	if($@r == 36){warp "force_1-3",19,189;end;}
+	if($@r == 37){warp "force_1-3",100,128;end;}
+	if($@r == 38){warp "force_1-3",100,10;end;}
+	if($@r == 39){warp "force_1-3",19,146;end;}	
+	end;
+	
+OnInit:
+	set $nwy,0;
+	end;	
+}
+
+force_1-3,10,99,0	duplicate(labwarp)	aLabWarps#02	WARPNPC,1,1,
+force_1-3,29,99,0	duplicate(labwarp)	aLabWarps#03	WARPNPC,1,1,
+force_1-3,60,69,0	duplicate(labwarp)	aLabWarps#04	WARPNPC,1,1,
+force_1-3,69,60,0	duplicate(labwarp)	aLabWarps#05	WARPNPC,1,1,
+force_1-3,20,29,0	duplicate(labwarp)	aLabWarps#06	WARPNPC,1,1,
+force_1-3,69,20,0	duplicate(labwarp)	aLabWarps#07	WARPNPC,1,1,
+force_1-3,60,109,0	duplicate(labwarp)	aLabWarps#08	WARPNPC,1,1,
+force_1-3,60,90,0	duplicate(labwarp)	aLabWarps#09	WARPNPC,1,1,
+force_1-3,60,128,0	duplicate(labwarp)	aLabWarps#10	WARPNPC,1,1,
+force_1-3,90,137,0	duplicate(labwarp)	aLabWarps#11	WARPNPC,1,1,
+force_1-3,109,138,0	duplicate(labwarp)	aLabWarps#12	WARPNPC,1,1,
+force_1-3,100,147,0	duplicate(labwarp)	aLabWarps#13	WARPNPC,1,1,
+force_1-3,90,59,0	duplicate(labwarp)	aLabWarps#14	WARPNPC,1,1,
+force_1-3,109,59,0	duplicate(labwarp)	aLabWarps#15	WARPNPC,1,1,
+force_1-3,179,29,0	duplicate(labwarp)	aLabWarps#16	WARPNPC,1,1,
+force_1-3,130,99,0	duplicate(labwarp)	aLabWarps#17	WARPNPC,1,1,
+force_1-3,139,109,0	duplicate(labwarp)	aLabWarps#18	WARPNPC,1,1,
+force_1-3,130,137,0	duplicate(labwarp)	aLabWarps#19	WARPNPC,1,1,
+force_1-3,139,147,0	duplicate(labwarp)	aLabWarps#20	WARPNPC,1,1,
+force_1-3,180,170,0	duplicate(labwarp)	aLabWarps#21	WARPNPC,1,1,
+force_1-3,170,59,0	duplicate(labwarp)	aLabWarps#22	WARPNPC,1,1,
+force_1-3,179,109,0	duplicate(labwarp)	aLabWarps#23	WARPNPC,1,1,
+force_1-3,179,90,0	duplicate(labwarp)	aLabWarps#24	WARPNPC,1,1,
+force_1-3,29,179,0	duplicate(labwarp)	aLabWarps#25	WARPNPC,1,1,
+
+force_1-3,100,186,4	script	aLaberinto	1_F_SIGNZISK,{
+
+set	.@n$,"^ff8000[ aLaberinto ]^000000";
+
+	if($@w == 1){
+	end;
+	}
+	set $@w,1;
+	mes .@n$;
+	mes "Muy bien hecho "+strcharinfo(0)+", has ganado!";
+	announce "Laberinto: El ganador del evento del Laberinto es "+strcharinfo(0)+", Felicidades.",bc_all,0x00ffff;
+	sleep2 1000;
+	mes "Ten tu premio.";
+	getitem 7539,rand(20,40);
+	getitem 39999,rand(0,1);
+	close2;
+	hideonnpc "aLaberinto";
+	hideonnpc "labwarp";
+	set $nwy,0;
+	set $@w,0;
+	sleep2 1000;
+	mapwarp "force_1-3","prontera",155,182;
+	end;
+	
+OnLaberinto:
+	if(getmapusers("force_1-3") == 0){
+	announce "Todos los participantes del evento Laberito se han retirado del mapa por lo que el evento queda nulo.",bc_all,0x00ffff;
+	set $nwy,0;
+	hideonnpc "aLaberinto";
+	hideonnpc "labwarp";
+	hideonnpc "aLabWarps#02";
+	hideonnpc "aLabWarps#03";
+	hideonnpc "aLabWarps#04";
+	hideonnpc "aLabWarps#05";
+	hideonnpc "aLabWarps#06";
+	hideonnpc "aLabWarps#07";
+	hideonnpc "aLabWarps#08";
+	hideonnpc "aLabWarps#09";
+	hideonnpc "aLabWarps#10";
+	hideonnpc "aLabWarps#11";
+	hideonnpc "aLabWarps#12";
+	hideonnpc "aLabWarps#13";
+	hideonnpc "aLabWarps#14";
+	hideonnpc "aLabWarps#15";
+	hideonnpc "aLabWarps#16";
+	hideonnpc "aLabWarps#17";
+	hideonnpc "aLabWarps#18";
+	hideonnpc "aLabWarps#19";
+	hideonnpc "aLabWarps#20";
+	hideonnpc "aLabWarps#21";
+	hideonnpc "aLabWarps#22";
+	hideonnpc "aLabWarps#23";
+	hideonnpc "aLabWarps#24";
+	hideonnpc "aLabWarps#25";
+	end;
+	}
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: Bienvenido al evento del Laberinto.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: Antes de comenzár explicaré brevemente de que trata el evento.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: El evento consiste en que deben encontrar el NPC llamado Asistente Laberinto que se encuentra en la parte principal del mapa.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: Para ello deberán atravesar por los portales que se encuentran por todo el mapa hasta poder llegar al NPC.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: El primero que hable con el NPC Asistente Laberinto será el ganador y todos los demás participantes serán retornados a la ciudad.",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: Eso es todo, ojalá se diviertan y suerte a todos!",bc_map,0xff8000;
+	sleep 10000;
+	mapannounce "force_1-3","Laberinto: Muy bien muchachos!",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: En sus marcas...",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: Listos...",bc_map,0xff8000;
+	sleep 5000;
+	mapannounce "force_1-3","Laberinto: A Correr!!",bc_map,0xff8000;
+	set $nwy,1;
+	hideoffnpc "aLaberinto";
+	hideoffnpc "labwarp";
+	hideoffnpc "aLabWarps#03";
+	hideoffnpc "aLabWarps#04";
+	hideoffnpc "aLabWarps#05";
+	hideoffnpc "aLabWarps#06";
+	hideoffnpc "aLabWarps#07";
+	hideoffnpc "aLabWarps#08";
+	hideoffnpc "aLabWarps#09";
+	hideoffnpc "aLabWarps#10";
+	hideoffnpc "aLabWarps#11";
+	hideoffnpc "aLabWarps#12";
+	hideoffnpc "aLabWarps#13";
+	hideoffnpc "aLabWarps#14";
+	hideoffnpc "aLabWarps#15";
+	hideoffnpc "aLabWarps#16";
+	hideoffnpc "aLabWarps#17";
+	hideoffnpc "aLabWarps#18";
+	hideoffnpc "aLabWarps#19";
+	hideoffnpc "aLabWarps#20";
+	hideoffnpc "aLabWarps#21";
+	hideoffnpc "aLabWarps#22";
+	hideoffnpc "aLabWarps#23";
+	hideoffnpc "aLabWarps#24";
+	hideoffnpc "aLabWarps#25";
+	L_Loop:
+	sleep 60000;
+	goto L_Loop;
+	
+OnMinute20:
+	if(getmapusers("force_1-3") > 0){
+	mapannounce "force_1-3","Laberinto: Lo sentimos, el tiempo del evento ha terminado. Participa en otra ocasión.",bc_map,0xff8000;
+	set $nwy,0;
+	hideonnpc "aLaberinto";
+	hideonnpc "aLabWarps#02";
+	hideonnpc "aLabWarps#03";
+	hideonnpc "aLabWarps#04";
+	hideonnpc "aLabWarps#05";
+	hideonnpc "aLabWarps#06";
+	hideonnpc "aLabWarps#07";
+	hideonnpc "aLabWarps#08";
+	hideonnpc "aLabWarps#09";
+	hideonnpc "aLabWarps#10";
+	hideonnpc "aLabWarps#11";
+	hideonnpc "aLabWarps#12";
+	hideonnpc "aLabWarps#13";
+	hideonnpc "aLabWarps#14";
+	hideonnpc "aLabWarps#15";
+	hideonnpc "aLabWarps#16";
+	hideonnpc "aLabWarps#17";
+	hideonnpc "aLabWarps#18";
+	hideonnpc "aLabWarps#19";
+	hideonnpc "aLabWarps#20";
+	hideonnpc "aLabWarps#21";
+	hideonnpc "aLabWarps#22";
+	hideonnpc "aLabWarps#23";
+	hideonnpc "aLabWarps#24";
+	hideonnpc "aLabWarps#25";
+	sleep 5000;
+	mapwarp "force_1-3","prontera",155,182;
+	end;
+	}
+	end;
+
+OnInit:
+	hideonnpc "aLaberinto";
+	end;
+
+}
+
+force_1-3	mapflag	noskill
+force_1-3	mapflag	nocommand
+force_1-3	mapflag	nobranch
+force_1-3	mapflag	nomemo
+force_1-3	mapflag	pvp	off
+force_1-3	mapflag	noteleport
+force_1-3	mapflag	nosave	SavePoint
+force_1-3	mapflag	novending
+force_1-3	mapflag	nowarpto

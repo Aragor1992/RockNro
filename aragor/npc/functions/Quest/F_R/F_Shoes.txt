@@ -1,0 +1,41 @@
+function	script	F_Sleipnir	{
+	bonus bMdef,7;
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bSPrecovRate,5;
+	bonus bSpeedRate,15;
+return;
+}
+/*------------------------------------------------------------*/
+function	script	F_Novice_Shoes	{
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bSPrecovRate,5;
+	bonus bHPrecovRate,15;
+	bonus bSpeedRate,15;
+return;
+}
+/*------------------------------------------------------------*/
+function	script	F_Q_Shoes	{
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bSpeedRate,15;	
+switch(getarg(0)+1){
+	case 1:bonus2 bSubEle,Ele_Neutral,5; break;
+	case 2:bonus2 bSubEle,Ele_Water,5; break;
+	case 3:bonus2 bSubEle,Ele_Earth,5; break;
+	case 4:bonus2 bSubEle,Ele_Fire,5; break;
+	case 5:bonus2 bSubEle,Ele_Wind,5; break;
+	case 6:bonus2 bSubEle,Ele_Poison,5; break;
+	case 7:bonus2 bSubEle,Ele_Holy,5; break;
+	case 8:bonus2 bSubEle,Ele_Dark,5; break;
+	case 9:bonus2 bSubEle,Ele_Ghost,5; break;
+	case 10:bonus2 bSubEle,Ele_Undead,5; break;
+	}
+return;
+}
+/*------------------------------------------------------------*/
+/*VIP SHOES*/
+function	script	F_Vidar_Boots	{bonus bFlee,getrefine()*10;bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bSPrecovRate,10;bonus bSpeedRate,15;bonus4 bAutoSpellWhenHit,531,5,20,0;return;}
+function	script	F_Goibne_Greaves	{bonus bMdef,getrefine();bonus4 bAutoSpellWhenHit,366,5,getrefine(),0;bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bSPrecovRate,10;bonus bSpeedRate,15;bonus5 bAutoSpellWhenHit,465,7,40,BF_MAGIC,0;return;}
+function	script	F_Valkyrie_Shoes	{bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bSPrecovRate,10;bonus bSpeedRate,15;bonus4 bAutoSpellWhenHit,73,1,20,0;bonus4 bAutoSpellWhenHit,249,5,20,0;if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) bonus4 bAutoSpellWhenHit,249,5,-20,0;return;}

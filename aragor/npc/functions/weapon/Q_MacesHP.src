@@ -1,0 +1,61 @@
+function	script	Q_Mace	{
+	skill "MO_TRIPLEATTACK",10;
+	bonus bHit,100;
+	bonus bMatkRate,getrefine()/2;
+	bonus bMatkRate,50;
+	bonus2 bSkillAtk,AL_HOLYLIGHT,270;
+	bonus2 bSkillHeal,AL_HEAL,20;
+	bonus2 bSkillHeal,PR_SANCTUARY,150;
+	bonus bBaseAtk,readparam(bInt)*10;
+	skill "SL_STUN",5;
+	skill "HW_MAGICCRASHER",5;
+	bonus5 bAutoSpell,SL_SMA,3,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+if(readparam(bInt)>=200) {bonus2 bSkillHeal,28,readparam(bInt)-162;}
+	/*"si tienes Link de soul linker 100% curacion con santuary al emperium.",*/
+switch(getarg(0)+1){
+
+case 1:	bonus bAtkEle,Ele_Neutral;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		skill SL_STUN,5;
+		bonus5 bAutoSpell,SL_SMA,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		break;		
+
+case 2:	bonus bAtkEle,Ele_Water;
+		skill MG_COLDBOLT,7;
+		break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		skill WZ_EARTHSPIKE,5;
+		break;
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		skill MG_FIREBOLT,7;
+		break;
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		skill MG_LIGHTNINGBOLT,7;
+		break;
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		skill NSC_VENOMBOLT,7;
+		break;
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		skill NSC_HOLYBOLT,7;
+		break;
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		skill NPC_DARKSTRIKE,7;
+		break;
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		skill MG_SOULSTRIKE,7;
+		break;
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		skill HW_NAPALMVULCAN,3;
+		break;
+	}
+return;
+}

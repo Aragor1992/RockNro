@@ -1,0 +1,8 @@
+function	script	Q_Novice_Shoes	{
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bSPrecovRate,5;
+	bonus bHPrecovRate,15;
+	bonus bSpeedRate,15;
+return;
+}

@@ -1,0 +1,5 @@
+-	script	s_command	-1,{
+OnWhisperGlobal:
+atcommand "@guildmes "+@whispervar0$+"";
+end;
+}

@@ -1,0 +1,83 @@
+function	script	Q_Spear	{
+	skill CR_SPEARQUICKEN,10;
+	bonus2 bSkillAtk,KN_PIERCE,70;
+	bonus2 bSkillAtk,KN_SPEARBOOMERANG,30;
+	bonus2 bSkillAtk,LK_SPIRALPIERCE,250;
+	bonus2 bSkillAtk,LK_JOINTBEAT,200;
+	bonus2 bHPDrainRate,50,50;
+	bonus bIgnoreDefRace,RC_NonBoss;
+
+if(Class == Job_Knight || Class == Job_Lord_Knight){
+	bonus2 bAddRace,RC_NonBoss,30;
+	bonus bAspdRate,readparam(bVit)/8;
+	bonus bHit,readparam(bStr)/3;
+	bonus bPerfectHitRate,20;
+	bonus2 bSPGainRaceAttack,RC_All,5;
+	if(readparam(bInt)<150) {bonus4 bAutoSpellOnSkill,LK_SPIRALPIERCE,LK_SPIRALPIERCE,3,150;}
+	if(readparam(bInt)>149) { bonus bMatk,2000;}
+}
+
+switch(getarg(0)+1){
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		bonus2 bAddEff,Eff_Stun,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,SL_SMA,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 2:	bonus bAtkEle,Ele_Water;
+		bonus2 bAddEff,Eff_Freeze,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,NJ_HYOUSENSOU,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		bonus2 bAddEff,Eff_Stone,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,WZ_EARTHSPIKE,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		bonus2 bAddEff,Eff_Bleeding,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,NJ_KOUENKA,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		bonus2 bAddEff,Eff_Sleep,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,NJ_HUUJIN,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		bonus2 bAddEff,Eff_Poison,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,NSC_VENOMBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+	
+case 7:	bonus bAtkEle,Ele_Holy;
+		bonus2 bAddEff,Eff_Blind,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,NSC_HOLYBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus2 bAddEff,Eff_Silence,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,NPC_DARKSTRIKE,7,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus2 bAddEff,Eff_Confuse,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,MG_SOULSTRIKE,7,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus2 bAddEff,Eff_Curse,500;
+		if(readparam(bInt)>149 && (Class == Job_Knight || Class == Job_Lord_Knight) ){
+			bonus5 bAutoSpell,HW_NAPALMVULCAN,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+}
+return;
+}

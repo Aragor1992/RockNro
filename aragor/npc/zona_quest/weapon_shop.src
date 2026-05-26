@@ -1,0 +1,501 @@
+//===== Hercules Script ======================================
+//= Euphy's Weapon Shop
+//===== By: ==================================================
+//= Euphy
+//===== Current Version: =====================================
+//= 1.6a
+//===== Description: =========================================
+//= A dynamic Weapon Shop based on Lunar's, with easier config.
+//= Includes support for multiple shops & cashpoints.
+//= Item Preview script by ToastOfDoom.
+//===== Additional Comments: =================================
+//= 1.0 Initial script.
+//= 1.2 Added category support.
+//= 1.3 More options and fixes.
+//= 1.4 Added debug settings.
+//= 1.5 Replaced categories with shop IDs.
+//= 1.6 Added support for purchasing stackables.
+//= 1.6a Added support for previewing costumes and robes.
+//============================================================
+
+// Shop NPCs -- supplying no argument displays entire menu.
+//	callfunc "wshop"{,<shop ID>{,<shop ID>{,...}}};
+//============================================================
+//prontera,163,202,6	script	Weapon Shop#1	4_M_MOCASS2,{ callfunc "wshop"; }
+
+// Script Core
+//============================================================
+-	script	weapon_shop	FAKE_NPC,{
+function Add; function Chk; function Slot; function A_An;
+OnInit:
+	freeloop(1);
+
+// -----------------------------------------------------------
+//  Basic shop settings.
+// -----------------------------------------------------------
+
+	set .Announce,0;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .ShowID,1;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
+	set .MaxStack,10;	// Max number of quest items purchased at one time.
+
+// -----------------------------------------------------------
+//  Points variable -- optional quest requirement.
+//	setarray .Points$[0],"<variable name>","<display name>";
+// -----------------------------------------------------------
+
+	setarray .Points$[0],"#CASHPOINTS","Cash Points";
+
+// -----------------------------------------------------------
+//  Shop IDs -- to add shops, copy dummy data at bottom of file.
+//	setarray .Shops$[1],"<Shop 1>","<Shop 2>"{,...};
+// -----------------------------------------------------------
+
+	setarray .Shops$[1],
+	"Espadas 1 mano","Espadas 2 manos",
+	"Maces",
+	"Libros",
+	"Staves",
+	"Lanzas",
+	"Axes",
+	"Dagas",
+	"Katares V2","Katares V3",
+	"Arcos",
+	"Puños",
+	"Instrumentos","Latigos",
+	"Taekwon Class",
+	"Revolvers","Riffles","Gatling Guns","Granade Launcher","shotguns",
+	"Shurikens",
+	"Novice Weapons",
+	"Especial Weapons",
+	"Poison Weapons",
+	"Flechas","Balas","Granadas";
+
+// -----------------------------------------------------------
+//  Quest items -- do NOT use a reward item more than once!
+//	Add(<shop ID>,<reward ID>,<reward amount>,
+//	    <Zeny cost>,<point cost>,
+//	    <required item ID>,<required item amount>{,...});
+// -----------------------------------------------------------
+// =========================== Espadas 1 mano =======================
+	Add(1,Q_1HSword_Neutral,1,20000000,0,1142,1,984,100,1001,80,Steel,60,Bloody_Edge,10,Muscovite,5);
+	Add(1,Q_1HSword_Water,1,20000000,0,1142,1,984,100,995,80,Steel,60,Bloody_Edge,10,Turquoise,5);
+	Add(1,Q_1HSword_Earth,1,20000000,0,1142,1,984,100,997,80,Steel,60,Bloody_Edge,10,Biotite,5);
+	Add(1,Q_1HSword_Fire,1,20000000,0,1142,1,984,100,994,80,Steel,60,Bloody_Edge,10,Phlogopite,5);
+	Add(1,Q_1HSword_Wind,1,20000000,0,1142,1,984,100,996,80,Steel,60,Bloody_Edge,10,Olivine,5);
+	Add(1,Q_1HSword_Dark,1,20000000,0,1142,1,984,100,7315,80,Steel,60,Bloody_Edge,10,Pyroxene,5);
+	Add(1,Q_1HSword_Holy,1,20000000,0,1142,1,984,100,7321,80,Steel,60,Bloody_Edge,10,Citrine,5);
+	Add(23,Q_1HSword_Ghost,1,20000000,0,1142,1,984,50,7047,40,Steel,30,Bloody_Edge,10,Phlogopite,5);
+	Add(23,Q_1HSword_Undead,1,20000000,0,1142,1,984,100,12020,80,Steel,60,Bloody_Edge,5,Biotite,5,Agate,5);
+	Add(24,Q_1HSword_Poison,1,20000000,0,1142,1,984,100,719,80,Steel,60,Steel,60,Bloody_Edge,10,Gemstone,5);
+// ========================== Espadas 2 manos ================
+	Add(2,Q_2HSword_Neutral,1,20000000,0,1180,1,984,100,1001,80,Steel,60,Blade_Lost_In_Darkness,10,Muscovite,5);
+	Add(2,Q_2HSword_Water,1,20000000,0,1180,1,984,100,995,80,Steel,60,Blade_Lost_In_Darkness,5,Turquoise,3);
+	Add(2,Q_2HSword_Earth,1,20000000,0,1180,1,984,100,997,80,Steel,60,Blade_Lost_In_Darkness,10,Biotite,5);
+	Add(2,Q_2HSword_Fire,1,20000000,0,1180,1,984,100,994,80,Steel,60,Blade_Lost_In_Darkness,10,Rose_Quartz,5);
+	Add(2,Q_2HSword_Wind,1,20000000,0,1180,1,984,100,996,80,Steel,60,Blade_Lost_In_Darkness,5,Olivine,3);
+	Add(2,Q_2HSword_Dark,1,20000000,0,1180,1,984,100,7315,80,Steel,60,Blade_Lost_In_Darkness,10,Pyroxene,5);
+	Add(2,Q_2HSword_Holy,1,20000000,0,1180,1,984,100,7321,80,Steel,60,Blade_Lost_In_Darkness,10,Citrine,5);
+	Add(23,Q_2HSword_Ghost,1,20000000,0,1180,1,984,100,7047,80,Steel,60,Blade_Lost_In_Darkness,10,Phlogopite,5);
+	Add(23,Q_2HSword_Undead,1,20000000,0,1180,1,984,100,12020,80,Steel,60,Blade_Lost_In_Darkness,5,Biotite,3,Agate,3);
+	Add(24,Q_2HSword_Poison,1,20000000,0,1180,1,984,100,719,80,Steel,60,Blade_Lost_In_Darkness,10,Gemstone,5);
+// ========================= Maces ==========================
+	Add(3,Q_Mace_Neutral,1,20000000,0,1540,1,984,100,1001,80,1019,100,Steel,60,Bloody_Edge,10,Muscovite,5);
+	Add(3,Q_Mace_Water,1,20000000,0,1540,1,984,100,995,80,1019,100,Steel,60,Bloody_Edge,10,Turquoise,5);
+	Add(3,Q_Mace_Earth,1,20000000,0,1540,1,984,100,997,80,1019,100,Steel,60,Bloody_Edge,10,Biotite,5);
+	Add(3,Q_Mace_Dark,1,20000000,0,1540,1,984,100,7315,80,1019,100,Steel,60,Bloody_Edge,10,Pyroxene,5);
+	Add(3,Q_Mace_Fire,1,20000000,0,1540,1,984,100,994,80,1019,100,Steel,60,Bloody_Edge,10,Rose_Quartz,5);
+	Add(3,Q_Mace_Wind,1,20000000,0,1540,1,984,100,996,80,1019,100,Steel,60,Bloody_Edge,10,Olivine,5);
+	Add(3,Q_Mace_Holy,1,20000000,0,1540,1,984,100,7321,80,1019,100,Steel,60,Bloody_Edge,10,Citrine,5);
+	Add(23,Q_Mace_Ghost,1,20000000,0,1540,1,984,100,7047,80,1019,100,Steel,60,Bloody_Edge,10,Phlogopite,5);
+	Add(23,Q_Mace_Undead,1,20000000,0,1540,1,984,100,12020,80,1019,100,Steel,60,Bloody_Edge,10,Biotite,2,Agate,2);
+	Add(24,Q_Mace_Poison,1,20000000,0,1540,1,984,100,719,80,1019,100,Steel,60,Bloody_Edge,10,Gemstone,5);
+// ========================= Books =============================
+	Add(4,Q_Book_Neutral,1,20000000,0,1573,1,984,100,1001,80,1019,100,7263,40,Muscovite,5);
+	Add(4,Q_Book_Fire,1,20000000,0,1573,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,5);
+	Add(4,Q_Book_Water,1,20000000,0,1573,1,984,100,995,80,1019,100,7263,40,Turquoise,5);
+	Add(4,Q_Book_Earth,1,20000000,0,1573,1,984,100,997,80,1019,100,7263,40,Biotite,5);
+	Add(4,Q_Book_Dark,1,20000000,0,1573,1,984,100,7315,80,1019,100,7263,40,Pyroxene,5);
+	Add(4,Q_Book_Wind,1,20000000,0,1573,1,984,100,996,80,1019,100,7263,40,Olivine,5);
+	Add(4,Q_Book_Holy,1,20000000,0,1573,1,984,100,7321,80,1019,100,7263,40,Citrine,5);
+	Add(23,Q_Book_Ghost,1,20000000,0,1573,1,984,100,7047,80,1019,100,7263,40,Phlogopite,5);
+	Add(23,Q_Book_Undead,1,20000000,0,1573,1,984,100,12020,80,1019,100,7263,40,Biotite,5,Agate,5);
+	Add(24,Q_Book_Poison,1,20000000,0,1573,1,984,100,719,80,1019,100,7263,40,Gemstone,5);
+// ====================== Staves =========================
+	Add(5,Q_Soul_Staff,1,20000000,0,1637,1,1006,100,7321,80,1007,40,Citrine,5);
+	Add(5,Q_Wizardry_Staff,1,20000000,0,1637,1,1006,100,1001,80,1007,40,Muscovite,5);
+	Add(23,Q_Infernal_Staff,1,20000000,0,1637,1,1006,100,12020,80,1007,40,Biotite,3,Agate,3);
+	Add(24,Q_Poison_Staff,1,20000000,0,1637,1,1006,100,719,80,1007,40,Gemstone,5);
+	Add(23,Q_Unbreakable_Staff,1,20000000,0,1637,1,1006,100,995,80,1007,40,Turquoise,5);
+	Add(5,Beast_Staff,1,20000000,0,1637,1,1006,100,997,80,1007,40,Biotite,5);
+// ======================== Spears =====================
+	Add(6,Q_Spear_Dark,1,20000000,0,1425,1,984,100,7315,80,Steel,60,Bloody_Edge,5,Pyroxene,3);
+	Add(6,Q_Spear_Neutral,1,20000000,0,1425,1,984,100,1001,80,Steel,60,Bloody_Edge,10,Muscovite,5);
+	Add(6,Q_Spear_Water,1,20000000,0,1425,1,984,100,995,80,Steel,60,Bloody_Edge,10,Turquoise,5);
+	Add(6,Q_Spear_Earth,1,20000000,0,1425,1,984,100,997,80,Steel,60,Bloody_Edge,10,Biotite,5);
+	Add(6,Q_Spear_Fire,1,20000000,0,1425,1,984,100,994,80,Steel,60,Bloody_Edge,10,Rose_Quartz,5);
+	Add(6,Q_Spear_Wind,1,20000000,0,1425,1,984,100,996,80,Steel,60,Bloody_Edge,10,Olivine,5);
+	Add(6,Q_Spear_Holy,1,20000000,0,1425,1,984,100,7321,80,Steel,60,Bloody_Edge,10,Citrine,5);
+	Add(23,Q_Spear_Ghost,1,20000000,0,1425,1,984,100,7047,80,Steel,60,Bloody_Edge,10,Phlogopite,5);
+	Add(23,Q_Spear_Undead,1,20000000,0,1425,1,984,100,12020,80,Steel,60,Bloody_Edge,5,Biotite,5,Agate,5);
+	Add(24,Q_Spear_Poison,1,20000000,0,1425,1,984,100,719,80,Steel,60,Bloody_Edge,10,Gemstone,5);
+// ================================================ Axes ================================================
+	Add(7,Q_Axe_Neutral,1,20000000,0,1352,1,984,100,1001,80,Steel,60,Old_Hilt,5,Muscovite,5);
+	Add(7,Q_Axe_Wind,1,20000000,0,1352,1,984,100,996,80,Steel,60,Old_Hilt,5,Olivine,5);
+	Add(7,Q_Axe_Fire,1,20000000,0,1352,1,984,100,994,80,Steel,60,Old_Hilt,5,Rose_Quartz,5);
+	Add(7,Q_Axe_Dark,1,20000000,0,1352,1,984,100,7315,80,Steel,60,Old_Hilt,5,Pyroxene,5);
+	Add(7,Q_Axe_Holy,1,20000000,0,1352,1,984,100,7321,80,Steel,60,Old_Hilt,5,Citrine,5);
+	Add(7,Q_Axe_Earth,1,20000000,0,1352,1,984,100,997,80,Steel,60,Old_Hilt,5,Biotite,5);
+	Add(7,Q_Axe_Water,1,20000000,0,1352,1,984,100,995,80,Steel,60,Old_Hilt,5,Turquoise,5);
+	Add(23,Q_Axe_Ghost,1,20000000,0,1352,1,984,100,7047,80,Steel,60,Old_Hilt,5,Phlogopite,5);
+	Add(23,Q_Axe_Undead,1,20000000,0,1352,1,984,100,12020,80,Steel,60,Old_Hilt,5,Biotite,2,Agate,2);
+	Add(24,Q_Axe_Poison,1,20000000,0,1352,1,984,100,719,80,Steel,60,Old_Hilt,10,Gemstone,5);
+// ================================================ Dagas ================================================
+	Add(8,Q_Dagger_Wind,1,20000000,0,13033,1,984,100,996,80,Steel,60,Old_Hilt,5,Olivine,5);
+	Add(8,Q_Dagger_Dark,1,20000000,0,13033,1,984,100,7315,80,Steel,60,Old_Hilt,5,Pyroxene,5);
+	Add(8,Q_Dagger_Neutral,1,20000000,0,13033,1,984,100,1001,80,Steel,60,Old_Hilt,5,Muscovite,5);
+	Add(8,Q_Dagger_Holy,1,20000000,0,13033,1,984,100,7321,80,Steel,60,Old_Hilt,5,Citrine,5);
+	Add(8,Q_Dagger_Fire,1,20000000,0,13033,1,984,100,994,80,Steel,60,Old_Hilt,5,Rose_Quartz,5);
+	Add(8,Q_Dagger_Earth,1,20000000,0,13033,1,984,100,997,80,Steel,60,Old_Hilt,5,Biotite,5);
+	Add(8,Q_Dagger_Water,1,20000000,0,13033,1,984,100,995,80,Steel,60,Old_Hilt,5,Turquoise,5);
+	Add(23,Q_Dagger_Ghost,1,20000000,0,13033,1,984,100,7047,80,Steel,60,Old_Hilt,5,Phlogopite,5);
+	Add(23,Q_Dagger_Undead,1,20000000,0,13033,1,984,100,12020,80,Steel,60,Old_Hilt,5,Biotite,1,Agate,4);
+	Add(24,Q_Dagger_Poison,1,20000000,0,13033,1,984,100,719,80,Steel,60,Old_Hilt,5,Gemstone,5);
+// ================================================ Katares ================================================
+	Add(9,Q_Katar_Water,1,20000000,0,1253,1,984,100,995,80,Steel,60,Old_Hilt,5,Turquoise,5);
+	Add(9,Q_Katar_Earth,1,20000000,0,1253,1,984,100,997,80,Steel,60,Old_Hilt,5,Biotite,5);
+	Add(9,Q_Katar_Fire,1,20000000,0,1253,1,984,100,994,80,Steel,60,Old_Hilt,5,Rose_Quartz,5);
+	Add(9,Q_Katar_Wind,1,20000000,0,1253,1,984,100,996,80,Steel,60,Old_Hilt,5,Olivine,5);
+	Add(9,Q_Katar_Holy,1,20000000,0,1253,1,984,100,7321,80,Steel,60,Old_Hilt,5,Citrine,5);
+	Add(9,Q_Katar_Neutral,1,20000000,0,1253,1,984,100,1001,80,Steel,60,Old_Hilt,5,Muscovite,5);
+	Add(9,Q_Katar_Dark,1,20000000,0,1253,1,984,100,7315,80,Steel,60,Old_Hilt,5,Pyroxene,5);
+	Add(23,Q_Katar_Ghost,1,20000000,0,1253,1,984,100,7047,80,Steel,60,Old_Hilt,5,Phlogopite,5);
+	Add(23,Q_Katar_Undead,1,20000000,0,1253,1,984,100,12020,80,Steel,60,Old_Hilt,5,Biotite,5,Agate,5);
+	Add(24,Q_Katar_Poison,1,20000000,0,1253,1,984,100,719,80,Steel,60,Old_Hilt,5,Gemstone,5);
+// ================================================ Katares V3 ================================================
+//////-	Add(10,P_Katar_Water,1,20000000,0,Q_Katar_Water,1);
+//////-	Add(10,P_Katar_Earth,1,20000000,0,Q_Katar_Earth,1);
+//////-	Add(10,P_Katar_Fire,1,20000000,0,Q_Katar_Fire,1);
+//////-	Add(10,P_Katar_Wind,1,20000000,0,Q_Katar_Wind,1);
+//////-	Add(10,P_Katar_Holy,1,20000000,0,Q_Katar_Holy,1);
+//////-	Add(10,P_Katar_Neutral,1,20000000,0,Q_Katar_Neutral,1);
+//////-	Add(10,P_Katar_Dark,1,20000000,0,Q_Katar_Dark,1);
+//////-	Add(10,P_Katar_Ghost,1,20000000,0,Q_Katar_Ghost,1);
+//////-	Add(10,P_Katar_Undead,1,20000000,0,Q_Katar_Undead,1);
+//////-	Add(10,P_Katar_Poison,1,20000000,0,Q_Katar_Poison,1);
+// ================================================ Bows ================================================
+	Add(11,Q_Celestial_Bow,1,20000000,0,1740,1,984,100,997,80,1019,100,7263,40,Biotite,5);/*Celestial Bow*/
+//////-	Add(11,1744,,1,20000000,0,Steel,100);/*Celestial Bow*/
+	Add(11,Q_Ballista,1,20000000,0,1740,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,5);/*Ballista v2*/
+	Add(11,Q_Luna_Bow,1,20000000,0,1740,1,984,100,7047,80,1019,100,7263,40,Phlogopite,5);/*Luna Bow v2*/
+	Add(11,Q_Dragon_Bow,1,20000000,0,1740,1,984,100,7321,80,1019,100,7263,40,Citrine,5);/*Dragon Bow*/
+	Add(23,Q_Infernal_Bow,1,20000000,0,1740,1,984,100,7315,80,1019,100,7263,40,Pyroxene,5);/*Infernal Bow*/
+	Add(24,Q_Poison_Bow,1,20000000,0,1740,1,984,100,719,80,1019,100,7263,40,Gemstone,5);/*Venom Bow*/
+// ================================================ Puños ================================================
+	Add(12,Q_Knuckle_Neutral,1,20000000,0,1816,1,984,100,1001,80,1019,100,7263,40,Muscovite,5);
+	Add(12,Q_Knuckle_Water,1,20000000,0,1816,1,984,100,995,80,1019,100,7263,40,Turquoise,5);
+	Add(12,Q_Knuckle_Earth,1,20000000,0,1816,1,984,100,997,80,1019,100,7263,40,Biotite,5);
+	Add(12,Q_Knuckle_Fire,1,20000000,0,1816,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,5);
+	Add(12,Q_Knuckle_Dark,1,20000000,0,1816,1,984,100,7315,80,1019,100,7263,40,Pyroxene,5);
+	Add(12,Q_Knuckle_Wind,1,20000000,0,1816,1,984,100,996,80,1019,100,7263,40,Olivine,5);
+	Add(12,Q_Knuckle_Holy,1,20000000,0,1816,1,984,100,7321,80,1019,100,7263,40,Citrine,5);
+	Add(23,Q_Knuckle_Ghost,1,20000000,0,1816,1,984,100,7047,80,1019,100,7263,40,Phlogopite,5);
+	Add(23,Q_Knuckle_Undead,1,20000000,0,1816,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,5);
+	Add(24,Q_Knuckle_Poison,1,20000000,0,1816,1,984,100,719,80,1019,100,7263,40,Gemstone,5);
+// ================================================ Instrumentos ================================================
+	Add(13,Q_Instrument_Neutral,1,20000000,0,1919,1,984,100,1001,80,1019,100,7263,40,Muscovite,5);
+	Add(13,Q_Instrument_Earth,1,20000000,0,1919,1,984,100,997,80,1019,100,7263,40,Biotite,5);
+	Add(13,Q_Instrument_Fire,1,20000000,0,1919,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,5);
+	Add(13,Q_Instrument_Water,1,20000000,0,1919,1,984,100,995,80,1019,100,7263,40,Turquoise,5);
+	Add(13,Q_Instrument_Dark,1,20000000,0,1919,1,984,100,7315,80,1019,100,7263,40,Pyroxene,5);
+	Add(13,Q_Instrument_Wind,1,20000000,0,1919,1,984,100,996,80,1019,100,7263,40,Olivine,5);
+	Add(13,Q_Instrument_Holy,1,20000000,0,1919,1,984,100,7321,80,1019,100,7263,40,Citrine,5);
+	Add(23,Q_Instrument_Ghost,1,20000000,0,1919,1,984,100,7047,80,1019,100,7263,40,Phlogopite,5);
+	Add(23,Q_Instrument_Undead,1,20000000,0,1919,1,984,100,12020,80,1019,100,7263,40,Biotite,5,Agate,5);
+	Add(24,Q_Instrument_Poison,1,20000000,0,1919,1,984,100,719,80,1019,100,7263,40,Gemstone,5);
+// ================================================ Whips ================================================
+	Add(14,Q_Whip_Neutral,1,20000000,0,1969,1,984,100,1001,80,1019,100,7263,40,Muscovite,5);
+	Add(14,Q_Whip_Water,1,20000000,0,1969,1,984,100,995,80,1019,100,7263,40,Turquoise,5);
+	Add(14,Q_Whip_Wind,1,20000000,0,1969,1,984,100,996,80,1019,100,7263,40,Olivine,5);
+	Add(14,Q_Whip_Fire,1,20000000,0,1969,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,5);
+	Add(14,Q_Whip_Earth,1,20000000,0,1969,1,984,100,997,80,1019,100,7263,40,Biotite,5);
+	Add(14,Q_Whip_Holy,1,20000000,0,1969,1,984,100,7321,80,1019,100,7263,40,Citrine,5);
+	Add(14,Q_Whip_Dark,1,20000000,0,1969,1,984,100,7315,80,1019,100,7263,40,Pyroxene,5);
+	Add(23,Q_Whip_Ghost,1,20000000,0,1969,1,984,100,7047,80,1019,100,7263,40,Phlogopite,5);
+	Add(23,Q_Whip_Undead,1,20000000,0,1969,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(24,Q_Whip_Poison,1,20000000,0,1969,1,984,100,719,80,1019,100,7263,40,Gemstone,5);
+// ================================================ Taekwon Class ===========================================
+	Add(15,Q_Taekwon_Neutral,1,20000000,0,1532,1,984,100,1001,80,1019,100,Steel,60,Bloody_Edge,5,Muscovite,5);
+	Add(15,Q_Taekwon_Fire,1,20000000,0,1532,1,984,100,994,80,1019,100,Steel,60,Bloody_Edge,5,Rose_Quartz,5);
+	Add(15,Q_Taekwon_Water,1,20000000,0,1532,1,984,100,995,80,1019,100,Steel,60,Bloody_Edge,5,Turquoise,5);
+	Add(15,Q_Taekwon_Wind,1,20000000,0,1532,1,984,100,996,80,1019,100,Steel,60,Bloody_Edge,5,Olivine,5);
+	Add(15,Q_Taekwon_Earth,1,20000000,0,1532,1,984,100,997,80,1019,100,Steel,60,Bloody_Edge,5,Biotite,5);
+	Add(15,Q_Taekwon_Holy,1,20000000,0,1532,1,984,100,7321,80,1019,100,Steel,60,Bloody_Edge,5,Citrine,5);
+	Add(15,Q_Taekwon_Dark,1,20000000,0,1532,1,984,100,7315,80,1019,100,Steel,60,Bloody_Edge,5,Pyroxene,5);
+	Add(23,Q_Taekwon_Undead,1,20000000,0,1532,1,984,100,12020,80,1019,100,Steel,60,Bloody_Edge,5,Biotite,5,Agate,5);
+	Add(23,Q_Taekwon_Ghost,1,20000000,0,1532,1,984,100,7047,80,1019,100,Steel,60,Bloody_Edge,5,Phlogopite,5);
+	Add(24,Q_Taekwon_Poison,1,20000000,0,1532,1,984,100,719,80,1019,100,Steel,60,Bloody_Edge,5,Gemstone,5);
+// ================================================ Guns ================================================
+//Revolvers
+	Add(16,Q_Revolver_Fenrir,1,20000000,0,13105,1,984,100,7315,80,1019,100,7263,40,Pyroxene,3);
+	Add(16,Q_Revolver_Darkness,1,20000000,0,13105,1,984,100,7315,80,1019,100,7263,40,Pyroxene,3);
+	Add(16,Q_Revolver_Infernal,1,20000000,0,13105,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(16,Q_Revolver_Vandal,1,20000000,0,13105,1,984,100,7315,80,1019,100,7263,40,Gemstone,3);
+//Riffles
+	Add(17,Q_Rifle_Tiamat,1,20000000,0,13153,1,984,100,1001,80,1019,100,7263,40,Muscovite,3);
+	Add(17,Q_Rifle_Judgment,1,20000000,0,13153,1,984,100,1001,80,1019,100,7263,40,Muscovite,3);
+	Add(17,Q_Rifle_Infernal,1,20000000,0,13153,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(17,Q_Rifle_Venom,1,20000000,0,13153,1,984,100,719,80,1019,100,7263,40,Gemstone,3);
+//Gatling Guns
+	Add(18,Q_Gatling_Cerberus,1,20000000,0,13157,1,984,100,996,80,1019,100,7263,40,Olivine,3);
+	Add(18,Q_Gatling_Calamity,1,20000000,0,13157,1,984,100,996,80,1019,100,7263,40,Olivine,3);
+	Add(18,Q_Gatling_Infernal,1,20000000,0,13157,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(18,Q_Gatling_Vandal,1,20000000,0,13157,1,984,100,719,80,1019,100,7263,40,Gemstone,3);
+//Granade Launcher
+	Add(19,Q_Granade_Dragon,1,20000000,0,13161,1,984,100,997,80,1019,100,7263,40,Biotite,3);
+	Add(19,Q_Granade_Catastrophe,1,20000000,0,13161,1,984,100,997,80,1019,100,7263,40,Biotite,3);
+	Add(19,Q_Granade_Inferno,1,20000000,0,13161,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(19,Q_Granade_Destroyer,1,20000000,0,13161,1,984,100,719,80,1019,100,7263,40,Gemstone,3);
+//shotguns
+	Add(20,Q_shotguns_Beowulf,1,20000000,0,13178,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
+	Add(20,Q_shotguns_Chaos,1,20000000,0,13178,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
+	Add(20,Q_shotguns_Blackrose,1,20000000,0,13178,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(20,Q_shotguns_Gatekeeper,1,20000000,0,13178,1,984,100,719,80,1019,100,7263,40,Gemstone,3);	
+// ================================================ Guns ================================================
+
+// ================================================ Shurikens ================================================
+	Add(21,Q_HUUMA_Neutral,1,20000000,0,13307,1,984,100,1001,80,1019,100,7263,40,Muscovite,3);
+	Add(21,Q_HUUMA_Water,1,20000000,0,13307,1,984,100,995,80,1019,100,7263,40,Turquoise,3);
+	Add(21,Q_HUUMA_Earth,1,20000000,0,13307,1,984,100,997,80,1019,100,7263,40,Biotite,3);
+	Add(21,Q_HUUMA_Dark,1,20000000,0,13307,1,984,100,7315,80,1019,100,7263,40,Pyroxene,3);
+	Add(21,Q_HUUMA_Fire,1,20000000,0,13307,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
+	Add(21,Q_HUUMA_Wind,1,20000000,0,13307,1,984,100,996,80,1019,100,7263,40,Olivine,3);
+	Add(21,Q_HUUMA_Holy,1,20000000,0,13307,1,984,100,7321,80,1019,100,7263,40,Citrine,3);
+	Add(23,Q_HUUMA_Undead,1,20000000,0,13307,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(23,Q_HUUMA_Ghost,1,20000000,0,13307,1,984,100,7047,80,1019,100,7263,40,Phlogopite,3);
+	Add(24,Q_HUUMA_Poison,1,20000000,0,13307,1,984,100,719,80,1019,100,7263,40,Gemstone,3);
+// ================================================ Novice Weapons ================================================
+	Add(22,Q_Neutral_Rod,1,20000000,0,1615,1,1006,100,1001,80,7099,60,Biotite,3,7757,3);
+	Add(22,Q_Earth_Rod,1,20000000,0,1615,1,1006,100,997,80,7099,60,Phlogopite,3,7757,3);
+	Add(22,Q_Shadow_Rod,1,20000000,0,1615,1,1006,100,7511,80,7099,60,Phlogopite,3,7757,3);
+	Add(22,Q_Holy_Rod,1,20000000,0,1615,1,1006,100,1001,80,7099,60,Phlogopite,3,7757,3);
+	Add(22,Q_Venom_Rod,1,20000000,0,1615,1,1006,100,957,80,7099,60,Phlogopite,3,7757,3);
+//	Add(22,Q_Undead_Rod,1,20000000,0,1615,1,1006,100,957,80,7099,60,Phlogopite,3,7757,3);	
+	Add(22,Q_Mini_Ballista,1,20000000,0,1727,1,984,100,Steel,80,Biotite,5,Phlogopite,3,7757,3);
+	
+// ======================== Flechas 25==============================
+	Add(25,Q_Arrow_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
+	Add(25,Q_Arrow_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
+	Add(25,Q_Arrow_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
+	Add(25,Q_Arrow_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
+	Add(25,Q_Arrow_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);	
+	Add(25,Q_Arrow_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
+	Add(25,Q_Arrow_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
+	Add(25,Q_Arrow_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
+	Add(25,Q_Arrow_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
+	Add(25,Q_Arrow_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
+// ======================== Balas 26==============================
+	Add(26,Q_Bullet_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
+	Add(26,Q_Bullet_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
+	Add(26,Q_Bullet_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
+	Add(26,Q_Bullet_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
+	Add(26,Q_Bullet_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);	
+	Add(26,Q_Bullet_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
+	Add(26,Q_Bullet_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
+	Add(26,Q_Bullet_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
+	Add(26,Q_Bullet_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
+	Add(26,Q_Bullet_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
+// ======================== Granadas 27============================
+	Add(26,Q_Sphere_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
+	Add(26,Q_Sphere_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
+	Add(26,Q_Sphere_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
+	Add(26,Q_Sphere_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
+	Add(26,Q_Sphere_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);
+	Add(26,Q_Sphere_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
+	Add(26,Q_Sphere_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
+	Add(26,Q_Sphere_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
+	Add(26,Q_Sphere_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
+	Add(26,Q_Sphere_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
+// -----------------------------------------------------------
+
+	freeloop(0);
+	set .menu$,"";
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1) {
+		set .menu$, .menu$+.Shops$[.@i]+":";
+		npcshopdelitem "wshop"+.@i,909;
+	}
+	end;
+
+OnMenu:
+	set .@size, getarraysize(@i);
+	if (!.@size) set .@i, select(.menu$);
+	else if (.@size == 1) set .@i, @i[0];
+	else {
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1)
+			set .@menu$, .@menu$+.Shops$[@i[.@j]]+":";
+		set .@i, @i[select(.@menu$)-1];
+	}
+	deletearray @i[0],getarraysize(@i);
+	if (.Shops$[.@i] == "") {
+		message strcharinfo(PC_NAME),"An error has occurred.";
+		end;
+	}
+	dispbottom "Seleccione uno a la vez.";
+	callshop "wshop"+.@i,1;
+	npcshopattach "wshop"+.@i;
+	end;
+
+OnBuyItem:
+	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
+	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
+	copyarray .@q[3],getd(".q_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+.@q[0]));
+	set .@q[2],.@q[1]*.@q[3];
+	if (!.@q[2] || .@q[2] > 30000) {
+		message strcharinfo(PC_NAME),"You can't purchase that many "+getitemname(.@q[0])+".";
+		end;
+	}
+	mes "[Weapon Shop]";
+	mes "Recompensa: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes "Requisitos:";
+	if (.@q[4]) mes " > "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
+	if (.@q[5]) mes " > "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
+	if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
+	next;
+	setarray @qe[1], getiteminfo(.@q[0], ITEMINFO_LOC), getiteminfo(.@q[0], ITEMINFO_VIEWSPRITE);
+	if (@qe[2] > 0 && ((@qe[1] & EQP_HEAD_LOW) || (@qe[1] & EQP_HEAD_TOP) || (@qe[1] & EQP_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_TOP) || (@qe[1] & EQP_COSTUME_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_LOW) || (@qe[1] & EQP_GARMENT) || (@qe[1] & EQP_COSTUME_GARMENT)))
+		set .@preview,1;
+	addtimer 1000, strnpcinfo(NPC_NAME)+"::OnEnd";
+	while(1) {
+		switch(select(" ~ Obtener ^0055FF"+ getitemname(.@q[0]) +"^000000", ((.@preview && !@qe[7])?" ~ vista previa...": ""), " ~ ^777777Cancelar^000000")) {
+		case 1:
+			if (@qe[0]) {
+				mes "[Weapon Shop]";
+				mes "Te faltan uno o más requisitos.";
+				close;
+			}
+			if (!checkweight(.@q[0],.@q[2])) {
+				mes "[Weapon Shop]";
+				mes "^FF0000Necesitas "+(((.@q[2] * getiteminfo(.@q[0], ITEMINFO_WEIGHT)) + Weight - MaxWeight) / 10)+" capacidad de peso adicional para completar este trade.^000000";
+				close;
+			}
+			if (.@q[4]) Zeny -= (.@q[4]*.@q[1]);
+			if (.@q[5]) setd .Points$[0], getd(.Points$[0])-(.@q[5]*.@q[1]);
+			if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+				delitem .@q[.@i],.@q[.@i+1]*.@q[1];
+			
+			if (.@q[0] == (Q_Arrow_Poison||Q_Arrow_Wind||Q_Arrow_Dark||Q_Arrow_Neutral||Q_Arrow_Holy
+			||Q_Arrow_Fire||Q_Arrow_Earth||Q_Arrow_Water||Q_Arrow_Ghost||Q_Arrow_Undead)){getitem .@q[0],.@q[2];}			
+			else if (.@q[0] == (Q_Bullet_Poison||Q_Bullet_Wind||Q_Bullet_Dark||Q_Bullet_Neutral||Q_Bullet_Holy
+			||Q_Bullet_Fire||Q_Bullet_Earth||Q_Bullet_Water||Q_Bullet_Ghost||Q_Bullet_Undead)){getitem .@q[0],.@q[2];}			
+			else if (.@q[0] == (Q_Sphere_Poison||Q_Sphere_Wind||Q_Sphere_Dark||Q_Sphere_Neutral||Q_Sphere_Holy
+			||Q_Sphere_Fire||Q_Sphere_Earth||Q_Sphere_Water||Q_Sphere_Ghost||Q_Sphere_Undead)){getitem .@q[0],.@q[2];}
+			else{getitem2 .@q[0],.@q[2],1,5,0,0,0,0,0;}
+			if (.Announce) announce strcharinfo(PC_NAME)+" has created "+((.@q[2] > 1)?.@q[2]+"x "+getitemname(.@q[0]):A_An(getitemname(.@q[0])))+"!",0;
+			specialeffect(EF_FLOWERLEAF, AREA, playerattached());
+			close;
+		case 2:
+			setarray @qe[3], getlook(LOOK_HEAD_BOTTOM), getlook(LOOK_HEAD_TOP), getlook(LOOK_HEAD_MID), getlook(LOOK_ROBE), 1;
+			if ((@qe[1] & 1) || (@qe[1] & 4096)) changelook LOOK_HEAD_BOTTOM, @qe[2];
+			else if ((@qe[1] & 256) || (@qe[1] & 1024)) changelook LOOK_HEAD_TOP, @qe[2];
+			else if ((@qe[1] & 512) || (@qe[1] & 2048)) changelook LOOK_HEAD_MID, @qe[2];
+			else if ((@qe[1] & 4) || (@qe[1] & 8192)) changelook LOOK_ROBE, @qe[2];
+			break;
+		case 3:
+			close;
+		}
+	}
+
+OnEnd:
+	if (@qe[7]) {
+		changelook LOOK_HEAD_BOTTOM, @qe[3];
+		changelook LOOK_HEAD_TOP, @qe[4];
+		changelook LOOK_HEAD_MID, @qe[5];
+		changelook LOOK_ROBE, @qe[6];
+	}
+	deletearray @qe[0],8;
+	end;
+
+function Add {
+	if (getitemname(getarg(1)) == "null") {
+		consolemes(CONSOLEMES_WARNING, "Recompensa #"+getarg(1)+" Inválida (omitida).");
+		return;
+	}
+	setarray .@j[0],getarg(2),getarg(3),getarg(4);
+	for(set .@i,5; .@i<getargcount(); set .@i,.@i+2) {
+		if (getitemname(getarg(.@i)) == "null") {
+			consolemes(CONSOLEMES_WARNING,  "Requisito #"+getarg(.@i)+" Inválida (omitida).");
+			return;
+		} else
+			setarray .@j[.@i-2],getarg(.@i),getarg(.@i+1);
+	}
+	copyarray getd(".q_"+getarg(1)+"[0]"),.@j[0],getarraysize(.@j);
+	npcshopadditem "wshop"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return;
+}
+
+function Chk {
+	if (getarg(0) < getarg(1)) {
+		set @qe[0],1;
+		return "^FF0000";
+	} else
+		return "^00FF00";
+}
+
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot) {
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0), ITEMINFO_TYPE) == IT_WEAPON || getiteminfo(getarg(0), ITEMINFO_TYPE) == IT_ARMOR) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$;
+	}
+}
+
+function A_An {
+	setarray .@A$[0],"a","e","i","o","u";
+	set .@B$, "_"+getarg(0);
+	for(set .@i,0; .@i<5; set .@i,.@i+1)
+		if (compare(.@B$,"_"+.@A$[.@i])) return "an "+getarg(0);
+	return "a "+getarg(0);
+}
+}
+
+function	script	wshop	{
+	deletearray @i[0],getarraysize(@i);
+	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
+		set @i[.@i],getarg(.@i);
+	doevent "weapon_shop::OnMenu";
+	end;
+}
+
+
+// Dummy shop data -- copy as needed.
+//============================================================
+-	shop	wshop1	FAKE_NPC,909:-1
+-	shop	wshop2	FAKE_NPC,909:-1
+-	shop	wshop3	FAKE_NPC,909:-1
+-	shop	wshop4	FAKE_NPC,909:-1
+-	shop	wshop5	FAKE_NPC,909:-1
+-	shop	wshop6	FAKE_NPC,909:-1
+-	shop	wshop7	FAKE_NPC,909:-1
+-	shop	wshop8	FAKE_NPC,909:-1
+-	shop	wshop9	FAKE_NPC,909:-1
+-	shop	wshop10	FAKE_NPC,909:-1
+-	shop	wshop11	FAKE_NPC,909:-1
+-	shop	wshop12	FAKE_NPC,909:-1
+-	shop	wshop13	FAKE_NPC,909:-1
+-	shop	wshop14	FAKE_NPC,909:-1
+-	shop	wshop15	FAKE_NPC,909:-1
+-	shop	wshop16	FAKE_NPC,909:-1
+-	shop	wshop17	FAKE_NPC,909:-1
+-	shop	wshop18	FAKE_NPC,909:-1
+-	shop	wshop19	FAKE_NPC,909:-1
+-	shop	wshop20	FAKE_NPC,909:-1
+-	shop	wshop21	FAKE_NPC,909:-1
+-	shop	wshop22	FAKE_NPC,909:-1
+-	shop	wshop23	FAKE_NPC,909:-1
+-	shop	wshop24	FAKE_NPC,909:-1
+-	shop	wshop25	FAKE_NPC,909:-1
+-	shop	wshop26	FAKE_NPC,909:-1
+-	shop	wshop27	FAKE_NPC,909:-1

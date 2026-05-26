@@ -1,0 +1,150 @@
+function	script	S_Mirror_Shield	{
+if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+	bonus2 bSkillAtk,CR_SHIELDBOOMERANG,70;
+	if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
+		bonus bMaxHPrate,10;
+		bonus bDelayrate,-10;
+		if(readparam(bStr)>=150){
+			bonus2 bAddRace,RC_DemiHuman,10;
+			bonus bHit,50;
+		}
+		if(readparam(bInt)>=150){
+			bonus bMatkRate,20;
+		}
+		}
+	}
+		bonus bShortWeaponDamageReturn,10;
+		bonus bLongWeaponDamageReturn,10;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+return;
+}
+
+function	script	S_Holy_Guard	{
+if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,CR_SHIELDBOOMERANG,70;
+			if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bMaxHPrate,10;
+				bonus bDelayrate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+			}
+		}
+		bonus bAllStats,10;
+		bonus2 bSubSize,1,10;
+		bonus2 bSubSize,0,10;
+		bonus5 bAutoSpellWhenHit,LK_PARRYING,3,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,0;
+return;
+}
+		
+function	script	S_Sacred_Mission	{
+if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,CR_SHIELDBOOMERANG,70;
+			if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bMaxHPrate,10;
+				bonus bDelayrate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+			}
+		}
+		bonus5 bAutoSpellWhenHit,SL_SKE,1,10,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,0;
+return;
+}
+
+function	script	S_Valkyrie_Shield	{
+if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,CR_SHIELDBOOMERANG,70;
+			if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bMaxHPrate,10;
+				bonus bDelayrate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+			}
+		}
+		bonus2 bSubEle,Ele_Neutral,20;
+		bonus2 bSubEle,Ele_Poison,20;
+		bonus2 bSubEle,Ele_Water,20;
+		bonus2 bSubEle,Ele_Ghost,20;
+		bonus2 bSubEle,Ele_Wind,20;
+		bonus2 bSubEle,Ele_Earth,20;
+		bonus2 bSubEle,Ele_Fire,20;
+		bonus2 bSubEle,Ele_Dark,20;
+		bonus2 bSubEle,Ele_Holy,20;
+		bonus2 bSubEle,Ele_Undead,20;
+		bonus bMdef,10;
+return;
+}
+
+function	script	S_Angelic_Guard	{
+if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,CR_SHIELDBOOMERANG,70;
+			if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bMaxHPrate,10;
+				bonus bDelayrate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+			}
+		}
+		bonus4 bAutoSpellOnSkill,AL_HEAL,AL_HEAL,5,200;
+		bonus5 bAutoSpellWhenHit,AL_HEAL,10,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,0;
+		bonus2 bSubEle,Ele_Neutral,10;
+		bonus2 bSubEle,Ele_Poison,10;
+		bonus2 bSubEle,Ele_Water,10;
+		bonus2 bSubEle,Ele_Ghost,10;
+		bonus2 bSubEle,Ele_Wind,10;
+		bonus2 bSubEle,Ele_Earth,10;
+		bonus2 bSubEle,Ele_Fire,10;
+		bonus2 bSubEle,Ele_Dark,10;
+		bonus2 bSubEle,Ele_Holy,10;
+		bonus2 bSubEle,Ele_Undead,10;
+return;
+}
+
+function	script	S_Ahura_Mazdah	{
+if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,CR_SHIELDBOOMERANG,70;
+			if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bMaxHPrate,10;
+				bonus bDelayrate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+			}
+		}
+		bonus bNearAtkDef,50;
+		bonus bLongAtkDef,50;
+		bonus bMagicAtkDef,50;
+		bonus bMatkRate,30;
+		bonus bAtkRate,30;
+		bonus5 bAutoSpellWhenHit,SA_COMA,1,25,BF_MAGIC+BF_MISC+BF_WEAPON,0;
+		/*bonus5 bAutoSpellWhenHit,SA_COMA,1,20,BF_SHORT+BF_LONG+BF_WEAPON,0;
+		bonus5 bAutoSpellWhenHit,SA_COMA,1,50,BF_MAGIC,1;
+		bonus5 bAutoSpellWhenHit,SA_COMA,1,10,BF_MISC,1;
+		*/ bonus bFlee,-100;
+		bonus bFlee2,-20;
+return;
+}

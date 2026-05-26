@@ -1,0 +1,20 @@
+Prontera,166,205,5	script	Lucas#selee1	4_M_KY_KNT,{ 2 Muscovite y 5 millones de zeny }
+Morroc,128,104,5	script	Ness#selee2	4_M_KY_KNT,{2 Peridot y 5 millones de zeny.}
+Aldebaran,154,142,5	script	Kirby#selee3	4_M_KY_KNT,{2 Turquoise y 5 millones de zeny.}
+Payon,207,103,5	script	Lugui#selee4	4_M_KY_KNT,{2 Rose Quartz, 5 Alice's Apron y 5 millones de zeny.}
+Geffen,140,71,5	script	Mario#selee5	4_M_KY_KNT,{2 Pyroxene, 2 Biotite y 5 millones de zeny.}
+Veins,227,113,5	script	Link#selee6	4_M_KY_KNT,{2 Phlogopite, 2 Mithril y 5 millones de zeny}
+Moscovia,257,217,5	script	Ikke#selee7	4_M_KY_KNT,{ 2 Old Hilt, 2 Bloody Edge, 2 Blade Of Darkness y 5 millones de zeny.}
+Prontera,156,282,5	script	Marth#selee8	4_M_KY_KNT,{ Muscovite, Peridot, Turquoise, Rose Quartz, Pyroxene, Biotite, Phlogopite, Mithril, Old Hilt, Bloody Edge, Blade Of Darkness y citrin}
+
+Prontera,156,282,5	script	Master Swordman#Master1	4_NFWISP,{}
+Prontera,156,282,5	script	Master Mage	4_NFWISP,{}
+Prontera,156,282,5	script	Master Gunslinger	4_NFWISP,{}
+Prontera,156,282,5	script	Master Taekwon	4_NFWISP,{}
+Prontera,156,282,5	script	Master Ninja	4_NFWISP,{}
+Prontera,156,282,5	script	Master Assassin	4_NFWISP,{}
+Prontera,156,282,5	script	Master Acolyte	4_NFWISP,{}
+Prontera,156,282,5	script	Master Stalker	4_NFWISP,{}
+Prontera,156,282,5	script	Master Archer	4_NFWISP,{}
+Prontera,156,282,5	script	Master Novice	4_NFWISP,{}
+Prontera,156,282,5	script	Master Merchant	4_NFWISP,{}

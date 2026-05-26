@@ -1,0 +1,68 @@
+function	script	Q_Instrument	{
+	skill HT_REMOVETRAP,1;
+	skill DC_DONTFORGETME,10;
+	bonus bAtkRate,50;
+	bonus bHitRate,10;
+	bonus bHit,100;
+	bonus bAtkRange,3;
+	bonus bAgi,readparam(bDex)/4;
+	bonus2 bSkillAtk,CG_ARROWVULCAN,60;
+	bonus2 bSkillAtk,AC_DOUBLE,-30;
+	bonus2 bAddRace,RC_NonBoss,30;
+	bonus2 bSkillHeal,BA_APPLEIDUN,4000;
+	bonus4 bAutoSpellOnSkill,CG_ARROWVULCAN,CG_ARROWVULCAN,5,150;
+switch(getarg(0)+1){
+case 1:	bonus bAtkEle,Ele_Neutral;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		bonus5 bAutoSpell,HT_SKIDTRAP,5,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Neutral)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;
+
+case 2:	bonus bAtkEle,Ele_Water;
+		bonus5 bAutoSpell,AL_DECAGI,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Water)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;		
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		bonus5 bAutoSpell,NPC_STOP,1,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Earth)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;		
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		bonus5 bAutoSpell,RG_STRIPSHIELD,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Fire)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;		
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		bonus5 bAutoSpell,HT_SHOCKWAVE,1,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Wind)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		bonus5 bAutoSpell,GS_DISARM,1,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Poison)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;		
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		bonus5 bAutoSpell,CG_TAROTCARD,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Holy)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus5 bAutoSpell,HT_SHOCKWAVE,1,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Dark)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;		
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus5 bAutoSpell,SA_DISPELL,1,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Ghost)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;		
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus5 bAutoSpell,CG_TAROTCARD,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(Q_Arrow_Undead)){bonus2 bAddRace,RC_NonBoss,20;}
+		break;
+	}
+return;
+}

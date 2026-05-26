@@ -1,0 +1,57 @@
+/*VIP ACCESORY*/
+function	script	P_Morpheus_Armlet	{
+	bonus bFlee2,5;
+	bonus bCritical,5;
+	bonus bStr,20;
+	bonus2 bAddRace,RC_DemiHuman,10;
+	bonus2 bSkillAtk,485,10;
+return;
+}
+
+function	script	P_Morrigane_Pendant	{
+	bonus bLongAtkRate,7;
+	bonus bDex,20;
+	bonus bDelayrate,-7;
+	if(BaseClass==Job_Ninja) {
+		bonus bDelayrate,2;
+	}
+	if(BaseClass==Job_Gunslinger) {
+		bonus bAtkRate,10;
+	}
+return;
+}
+
+function	script	P_Orleans_Glove	{
+	bonus bPerfectHitAddRate,15;
+	bonus bHit,100;
+	bonus bAtkRate,10;
+	bonus bDelayrate,-5;
+return;
+}
+
+function	script	P_Bison_Horn	{
+	bonus bInt,20;
+	bonus bIgnoreMdefRate,10;
+	bonus2 bSkillHeal,28,10;
+	bonus2 bSkillHeal,70,10;
+	bonus2 bSkillHeal,478,10;
+return;
+}
+
+function	script	P_Nile_Rose	{
+	bonus bMaxHPrate,5;
+	bonus bMaxSPrate,5;
+	bonus bFlee2,7;
+	bonus bDef,5;
+	bonus bMdef,5;
+	bonus bVit,5;
+return;
+}
+
+/*
+callfunc "P_Morpheus_Armlet";
+callfunc "P_Morrigane_Pendant";
+callfunc "P_Orleans_Glove";
+callfunc "P_Bison_Horn";
+callfunc "P_P_Nile_Rose";
+*/

@@ -1,0 +1,23 @@
+Function	script	F_Q_Armor	{
+	bonus2 bSubEle,getarg(0),15;
+	bonus bMdef,getrefine();
+	if(Q_Armor_MATK){bonus bMatkRate,5;}
+	if(Q_Armor_ATK){bonus bBaseAtk,50;}		
+	bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+	bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+	bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+if (getarg(0)== Ele_Neutral){bonus2 bResEff,Eff_Sleep,10000;skill "LK_AURABLADE",5;bonus bUnstripableArmor,0;bonus bUnbreakableArmor,0;}
+if (getarg(0)== Ele_Water){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,88,5,100,1;}bonus2 bResEff,Eff_Freeze,10000;bonus2 bResEff,Eff_Stone,10000;}
+if (getarg(0)== Ele_Earth){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,91,5,100,1;}bonus2 bResEff,Eff_Sleep,10000;bonus2 bResEff,Eff_Stone,10000;}
+if (getarg(0)== Ele_Fire){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,17,5,100,1;}bonus2 bResEff,Eff_Freeze,10000;bonus2 bResEff,Eff_Bleeding,10000;}
+if (getarg(0)== Ele_Wind){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,21,5,100,1;}bonus2 bResEff,Eff_Sleep,10000;bonus2 bResEff,Eff_Bleeding,10000;}
+if (getarg(0)== Ele_Holy){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,361,5,100,0;}bonus2 bResEff,Eff_Stone,10000;bonus2 bResEff,Eff_Bleeding,10000;}
+if (getarg(0)== Ele_Dark){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,11,5,100,1;}bonus2 bResEff,Eff_Sleep,10000;bonus2 bResEff,Eff_Freeze,10000;}
+if (getarg(0)== Ele_Ghost){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,13,6,100,1;}bonus2 bResEff,Eff_Stone,10000;}
+if (getarg(0)== Ele_Undead){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,400,2,100,1;}bonus2 bResEff,Eff_Freeze,10000;}
+if (getarg(0)== Ele_Poison){if(Q_Armor_MATK){bonus4 bAutoSpellWhenHit,547,3,100,1;}bonus2 bResEff,Eff_Bleeding,10000;}
+return;
+}

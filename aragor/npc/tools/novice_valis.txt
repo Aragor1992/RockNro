@@ -1,0 +1,82 @@
+-	script	Mighty Novice	FAKE_NPC,{
+if(Class == 0 || Class == 23){
+//	mes "Veo que eres un Super Novice..!";
+if(Class == 0){mes "Veo que eres un Novice";}
+else if(Class == 23){mes "Veo que eres un Super Novice";}	
+	next;
+	if(isequipped(Q_Novice_Manteau)){
+	mes "Y tienes equipado el Novice Manteau..!!!";
+	next;
+	mes "Yo tengo el poder para hacer que tu Manteau te protega del elemento que tu decidas!";
+	next;
+	mes "Solo dime el elemento y yo lo hare..!";
+	next;
+	switch(select("Neutral","Agua","Tierra","Fuego","Viento","Poison","Undead","Shadow","Ghost"))
+	{
+
+		case 1:
+		set Q_Novice_Manteau,1;
+		mes "Perfecto, de ahora en adelante tu garmet sera neutral.";
+		close;
+
+		case 2:
+		set Q_Novice_Manteau,2;
+		mes "Perfecto, de ahora en adelante tu garmet sera agua.";
+		
+		close;
+
+		case 3:
+		set Q_Novice_Manteau,3;
+		mes "Perfecto, de ahora en adelante tu garmet sera tierra.";
+		close;
+
+		case 4:
+		set Q_Novice_Manteau,4;
+		mes "Perfecto, de ahora en adelante tu garmet sera fuego.";
+		
+		close;
+
+		case 5:
+		set Q_Novice_Manteau,5;
+		mes "Perfecto, de ahora en adelante tu garmet sera viento.";
+		close;
+
+		case 6:
+		set Q_Novice_Manteau,6;
+		mes "Perfecto, de ahora en adelante tu garmet sera poison.";
+		
+		close;
+
+		case 7:
+		set Q_Novice_Manteau,8;
+		mes "Perfecto, de ahora en adelante tu garmet sera undead.";
+		close;
+
+		case 8:
+		set Q_Novice_Manteau,9;
+		mes "Perfecto, de ahora en adelante tu garmet sera shadow.";
+		close;
+
+		case 9:
+		set Q_Novice_Manteau,10;
+		mes "Perfecto, de ahora en adelante tu garmet sera ghost.";
+		close;
+		
+//		case 10:
+//		set Q_Novice_Manteau,7;
+//		mes "Perfecto, de ahora en adelante tu garmet sera holy.";
+//		close;
+
+	}
+
+	} else {
+		mes "Lastima que no tienes el Novice Manteau equipado...";
+		close;
+		}
+	}//novice
+	else {
+		mes "No eres un Novice No puedo Ayudarte";close;
+		}
+}
+
+prontera,163,194,5	duplicate(Mighty Novice)	Mighty Novice#Pro	4_F_NOVICE2

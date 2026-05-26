@@ -1,0 +1,76 @@
+function	script	F_Naruto_Uno	{
+
+switch(getarg(0)+1){
+case 1:	bonus2 bSubEle,Ele_Neutral,5; bonus bAllStats,3;
+		if(isequipped(Q_Garment_Neutral) && isequipped(Q_Shoes_Neutral) && (isequipped(P_Armor_Neutral) || isequipped(M_Armor_Neutral)|| isequipped(A_Armor_Neutral))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 2:	bonus2 bSubEle,Ele_Water,5;	bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Water) && isequipped(Q_Garment_Water) && (isequipped(P_Armor_Water) || isequipped(M_Armor_Water)|| isequipped(A_Armor_Water))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 3:	bonus2 bSubEle,Ele_Earth,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Earth) && isequipped(Q_Garment_Earth) && (isequipped(P_Armor_Earth) || isequipped(M_Armor_Earth)|| isequipped(A_Armor_Earth))) {
+		bonus bAllStats,7;
+	}		
+break;
+
+case 4:	bonus2 bSubEle,Ele_Fire,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Fire) && isequipped(Q_Garment_Fire) && (isequipped(P_Armor_Fire) || isequipped(M_Armor_Fire)|| isequipped(A_Armor_Fire))) {
+		bonus bAllStats,7;
+		bonus2 bSubEle,Ele_Fire,5;
+	} break;
+
+case 5:	bonus2 bSubEle,Ele_Wind,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Wind) && isequipped(Q_Garment_Wind) && (isequipped(P_Armor_Wind) || isequipped(M_Armor_Wind)|| isequipped(A_Armor_Wind))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 6:	bonus2 bSubEle,Ele_Poison,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Poison) && isequipped(Q_Garment_Poison) && (isequipped(P_Armor_Poison) || isequipped(M_Armor_Poison)|| isequipped(A_Armor_Poison))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 7:	bonus2 bSubEle,Ele_Holy,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Holy) && isequipped(Q_Garment_Holy) && (isequipped(P_Armor_Holy) || isequipped(M_Armor_Holy)|| isequipped(A_Armor_Holy))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 8:	bonus2 bSubEle,Ele_Dark,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Dark) && isequipped(Q_Garment_Dark) && (isequipped(P_Armor_Dark) || isequipped(M_Armor_Dark)|| isequipped(A_Armor_Dark))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 9:	bonus2 bSubEle,Ele_Ghost,5; bonus bAllStats,3;
+		if(isequipped(Q_Shoes_Ghost) && isequipped(Q_Garment_Ghost) && (isequipped(P_Armor_Ghost) || isequipped(M_Armor_Ghost)|| isequipped(A_Armor_Ghost))) {
+		bonus bAllStats,7;
+	}	break;
+
+case 10:	bonus2 bSubEle,Ele_Undead,5;bonus bAllStats,3;
+			if(isequipped(Q_Shoes_Undead) && isequipped(Q_Garment_Undead) && (isequipped(P_Armor_Undead) || isequipped(M_Armor_Undead)|| isequipped(A_Armor_Undead))) {
+			bonus bAllStats,7;
+			}	break;
+
+case 11:	bonus2 bSubEle,Ele_Neutral,5;
+			bonus bAllStats,5;
+			skill CH_PALMSTRIKE,3;
+			skill MO_EXPLOSIONSPIRITS,3;
+			bonus4 bAutoSpell,CH_SOULCOLLECT,1,250,0;
+			if(Class==Job_Assassin||Class==Job_Assassin_Cross) bonus4 bAutoSpell,CH_SOULCOLLECT,1,50,0;
+			if(Class==Job_Monk||Class==Job_Champion) bonus4 bAutoSpell,CH_SOULCOLLECT,1,10,0;
+break;
+
+case 12:	skill "AL_HEAL",6;
+			bonus bAllStats,5;
+			bonus2 bSubEle,Ele_Undead,5;
+break;
+
+case 13:	bonus bAllStats,5;
+			skill WZ_JUPITEL,5;
+			bonus2 bSubEle,Ele_Ghost,5;
+			break;
+	}
+return;
+}

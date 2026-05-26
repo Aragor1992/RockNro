@@ -1,0 +1,76 @@
+/*
+	You required at least GIT version with this commit. 
+	https://github.com/HerculesWS/Hercules/commit/e3c680b
+*/
+
+/* item_db.conf   // replace with your own custom id.
+
+{
+	Id: 9999
+	AegisName: "Diablo_Enchant"
+	Name: "Diablo Enchant"
+	Type: 11
+	Script: <" callfunc( "F_DiabloEnchant",9999,909 ); ">
+},
+
+{
+	Id: 909
+	AegisName: "Jellopy"
+	Name: "Jellopy"
+	Buy: 6
+	Weight: 10
+	BuyingStore: true
+	Script: <"
+		.@eqp = getequippedon();
+		
+		if (.@eqp & EQP_ARMOR) {
+			bonus bVit,100;
+		}
+		if (.@eqp & EQP_HEAD_TOP) {
+			bonus bInt,100;
+		}
+		if (.@eqp & EQP_SHOES) {
+			bonus bAgi,100;
+		}
+	">
+},
+
+*/
+
+
+// usage:
+// callfunc( "F_DiabloEnchant",<delete item id>,<bonus item id> );
+
+function	script	F_DiabloEnchant	{
+	.@itemid = getarg( 0,0 );
+	.@enchant = getarg( 1,0 );
+	if ( .@itemid && .@enchant ) {
+		for ( .@i = EQI_HEAD_TOP; .@i < EQI_ACC_R; .@i++ ) {
+			.@equip_itemid = getequipid( .@i );
+			.@menu$ = .@menu$ + ( .@equip_itemid == -1 ? "": getitemname( .@equip_itemid ) ) + ":";
+		}
+		.@i = select( .@menu$ );
+		.@equip_itemid = getequipid( .@i );
+		.@equip_refine = getequiprefinerycnt( .@i );
+		for ( .@c = 0; .@c < 4; .@c++ ) 
+			.@card[.@c] = getequipcardid( .@i,.@c );
+		
+		if ( .@card[0] && .@card[0] < 4001 ) {
+			mes "Signed Item can't be enchanted.";
+		}
+		// else if ( .@card[3] ) {
+			// mes "This item has been enchanted. Cant enchant twice.";
+		// }
+		else {
+			delequip .@i;
+			delitem .@itemid,1;
+			.@card[3] = .@enchant;
+			getitem2 .@equip_itemid,1,1,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+			equip2 .@equip_itemid,.@equip_refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+			specialeffect2 154;
+			message strcharinfo(0),"Enchant Success!";
+		}
+		close;
+	}
+	return;
+}

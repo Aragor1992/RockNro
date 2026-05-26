@@ -1,0 +1,166 @@
+function	script	Q_Luna_Bow	{
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus bDex,30;
+		bonus bAgi,20;
+		bonus bVit,10;
+		bonus2 bSkillAtk,HT_LANDMINE,100;
+		bonus2 bSkillAtk,HT_BLASTMINE,100;
+		bonus2 bSkillAtk,HT_CLAYMORETRAP,100;
+		bonus2 bSkillAtk,AC_DOUBLE,30;
+		bonus2 bSkillAtk,AC_SHOWER,80;
+		bonus2 bSkillAtk,AC_CHARGEARROW,100;
+		bonus2 bSkillAtk,SN_SHARPSHOOTING,30;
+		bonus5 bAutoSpell,382,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+		/*	if(isequipped(Rogue_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bFlee,70;
+				bonus bMaxHPrate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}*/
+		}
+	/*	if(isequipped(Archer_Spirit)|| isequipped(Spirit_Of_Spirits)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHPrate,10;
+		}*/
+return;
+}
+function	script	Q_Celestial_Bow	{
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus5 bAutoSpell,AS_SONICBLOW,5,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,HT_LANDMINE,100;
+		bonus2 bSkillAtk,HT_BLASTMINE,100;
+		bonus2 bSkillAtk,HT_CLAYMORETRAP,100;
+		bonus2 bSkillAtk,AC_DOUBLE,30;
+		bonus2 bSkillAtk,AC_SHOWER,80;
+		bonus2 bSkillAtk,AC_CHARGEARROW,100;
+		bonus2 bSkillAtk,SN_SHARPSHOOTING,30;
+		bonus2 bSkillAtk,AS_SONICBLOW,80;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+		/*	if(isequipped(Rogue_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bFlee,70;
+				bonus bMaxHPrate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}*/
+		}
+	/*	if(isequipped(Archer_Spirit)|| isequipped(Spirit_Of_Spirits)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHPrate,10;
+		}*/
+return;
+}
+
+function	script	Q_Dragon_Bow	{
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus5 bAutoSpell,289,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;
+		bonus2 bSkillAtk,HT_LANDMINE,100;
+		bonus2 bSkillAtk,HT_BLASTMINE,100;
+		bonus2 bSkillAtk,HT_CLAYMORETRAP,100;
+		bonus2 bSkillAtk,381,1200;
+		bonus2 bSkillAtk,AC_DOUBLE,30;
+		bonus2 bSkillAtk,AC_SHOWER,80;
+		bonus2 bSkillAtk,AC_CHARGEARROW,100;
+		bonus2 bSkillAtk,SN_SHARPSHOOTING,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+		/*	if(isequipped(Rogue_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bFlee,70;
+				bonus bMaxHPrate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}*/
+		}
+	/*	if(isequipped(Archer_Spirit)|| isequipped(Spirit_Of_Spirits)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHPrate,10;
+		}*/
+return;
+}
+
+function	script	Q_Infernal_Bow	{
+			bonus2 bSkillAtk,1009,20;
+			bonus bUnbreakableWeapon,0;
+			bonus5 bAutoSpell,289,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;
+			bonus2 bSkillAtk,HT_LANDMINE,100;
+			bonus2 bSkillAtk,HT_BLASTMINE,100;
+			bonus2 bSkillAtk,HT_CLAYMORETRAP,100;
+			bonus2 bSkillAtk,381,1200;
+			bonus2 bSkillAtk,AC_DOUBLE,30;
+			bonus2 bSkillAtk,AC_SHOWER,80;
+			bonus2 bSkillAtk,AC_CHARGEARROW,100;
+			bonus2 bSkillAtk,SN_SHARPSHOOTING,30;
+			if(Class==Job_Stalker) {
+				bonus bAtkRate,30;
+			/*	if(isequipped(Rogue_Spirit)|| isequipped(Spirit_Of_Spirits)){
+					bonus bFlee,70;
+					bonus bMaxHPrate,10;
+					bonus bAgi,readparam(bDex)/5;
+				}*/
+			}
+	/*	if(isequipped(Archer_Spirit)|| isequipped(Spirit_Of_Spirits)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHPrate,10;
+		}*/
+return;
+}
+
+function	script	Q_Poison_Bow	{
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnstripableWeapon,0;
+		skill 263,5;
+		bonus5 bAutoSpell,513,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,HT_LANDMINE,1050;
+		bonus2 bSkillAtk,HT_BLASTMINE,1750;
+		bonus2 bSkillAtk,HT_CLAYMORETRAP,1550;
+		bonus2 bSkillAtk,AC_DOUBLE,30;
+		bonus2 bSkillAtk,AC_SHOWER,80;
+		bonus2 bSkillAtk,AC_CHARGEARROW,100;
+		bonus2 bSkillAtk,SN_SHARPSHOOTING,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+		/*	if(isequipped(Rogue_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bFlee,70;
+				bonus bMaxHPrate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}*/
+		}
+	/*	if(isequipped(Archer_Spirit)|| isequipped(Spirit_Of_Spirits)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHPrate,10;
+		}*/
+return;
+}
+function	script	Q_Ballista	{
+		bonus2 bSkillAtk,1009,95;
+		bonus bUnstripableWeapon,0;
+		bonus5 bAutoSpell,370,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,HT_LANDMINE,100;
+		bonus2 bSkillAtk,HT_BLASTMINE,100;
+		bonus2 bSkillAtk,HT_CLAYMORETRAP,100;
+		bonus2 bSkillAtk,AC_DOUBLE,30;
+		bonus2 bSkillAtk,AC_SHOWER,80;
+		bonus2 bSkillAtk,AC_CHARGEARROW,100;
+		bonus2 bSkillAtk,SN_SHARPSHOOTING,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+		/*	if(isequipped(Rogue_Spirit)|| isequipped(Spirit_Of_Spirits)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}*/
+		}
+	/*	if(isequipped(Archer_Spirit)|| isequipped(Spirit_Of_Spirits)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}*/
+return;
+}

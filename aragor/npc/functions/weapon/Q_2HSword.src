@@ -1,0 +1,76 @@
+function	script	Q_2HSword	{
+	bonus bPerfectHitRate,20;
+	bonus bCritAtkRate,20;
+	bonus bAtkRange,4;
+	bonus bAtkRate,70;
+	bonus bAspdRate,50;
+	bonus bHit,150;bonus bFlee,200;
+	bonus5 bAutoSpell,TF_DOUBLE,10,500,BF_SHORT+BF_LONG,1;
+	skill KN_CHARGEATK,1;
+	skill MO_TRIPLEATTACK,10;
+	skill ASC_METEORASSAULT,8;	
+	bonus2 bSkillAtk,KN_BOWLINGBASH,-30;
+	bonus2 bSkillAtk,KN_AUTOCOUNTER,600;
+	bonus2 bSkillAtk,SM_BASH,30;
+	bonus2 bSkillAtk,KN_CHARGEATK,30;
+	bonus2 bSkillAtk,ASC_METEORASSAULT,40;
+	bonus2 bSkillAtk,LK_HEADCRUSH,40;
+	bonus2 bSkillAtk,SM_MAGNUM,60;
+	bonus2 bHPDrainRate,100,60;
+	bonus2 bSubSize,Size_Small,20;
+	bonus2 bSubSize,Size_Medium,20;
+	bonus bMagicAtkDef,20;
+	
+	bonus2 bSubEle,Ele_Neutral,10;
+	bonus2 bSubEle,Ele_Poison,10;
+	bonus2 bSubEle,Ele_Holy,10;
+	bonus2 bSubEle,Ele_Dark,10;
+	bonus2 bSubEle,Ele_Fire,10;
+	bonus2 bSubEle,Ele_Water,10;
+	bonus2 bSubEle,Ele_Wind,10;
+	bonus2 bSubEle,Ele_Earth,10;
+	bonus2 bSubEle,Ele_Undead,10;
+	bonus2 bSubEle,Ele_Ghost,10;
+	
+if(isequipped(Q_Swordman_Seele)){
+	bonus2 bSubRace,RC_DemiPlayer,10;
+	bonus bAgi,readparam(bDex)/3;
+	bonus bHit,50;
+	bonus bMaxHPrate,10;
+}
+
+switch(getarg(0)+1){
+
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		break;		
+
+case 2:	bonus bAtkEle,Ele_Water;
+		break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		break;
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		break;
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		break;
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		break;
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		break;
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		break;
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		break;
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		break;
+	}
+return;
+}

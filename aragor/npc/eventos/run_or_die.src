@@ -1,0 +1,88 @@
+//===== eAthena Script =====================================
+//= Run or Die ( aka. Poring Bomb Event )
+//===== By: ================================================
+//= AnnieRuru
+//===== Current Version: ===================================
+//= 2.3a
+//===== Compatible With: ===================================
+//= Hercules 2015-11-15
+//= DO NOT USE THIS SCRIPT IF YOUR HERCULES COMPILE BEFORE THIS DATE
+//===== Description: =======================================
+//= Avoid the poring bomb at all cost !
+//===== Topic ==============================================
+//= http://herc.ws/board/topic/11010-run-or-die-event-aka-poring-bomb/
+//===== Additional Comments: ===============================
+//= Its time to use queue iterator script commands !
+//==========================================================
+
+-	script	runordie	FAKE_NPC,{
+
+OnRunordiestart:
+	.start = true;
+	.qid = queue();
+	queueopt .qid, QUEUEOPT_DEATH, strnpcinfo(0)+"::OnDeath";
+	queueopt .qid, QUEUEOPT_LOGOUT, strnpcinfo(0)+"::OnQuit";
+	queueopt .qid, QUEUEOPT_MAPCHANGE, strnpcinfo(0)+"::OnMapChange";
+	
+	if ( queuesize(.qid) < 2 ) { // cannot start event if nobody joins(0) or just having (1) player
+		announce "Run Or Die: No hay suficientes jugadoras para comenzar el evento...", bc_all;
+		mapwarp "ev_runordie", "prontera",148,172;
+		queuedel .qid;
+		.start = false;
+		end;
+	}
+
+	mapannounce "ev_runordie", "Bienvenido al evento Run Or Die", bc_map;
+	sleep 3 * 1000;
+	mapannounce "ev_runordie", "Este es un evento fácil", bc_map;
+	sleep 3 * 1000;
+	mapannounce "ev_runordie", "Solo mantente alejado de todo lo que creas que es PELIGROSO!!", bc_map;
+	sleep 3 * 1000;
+	mapannounce "ev_runordie", "Mantente viv@ el mayor tiempo que puedas!!!!", bc_map;
+	sleep 3 * 1000;
+	mapannounce "ev_runordie", "El ÚLTIMO SUPERVIVIENTE será el GANADOR", bc_map;
+	sleep 3 * 1000;
+	mapannounce "ev_runordie", "el evento comenzará en 3", bc_map;
+	sleep 1 * 1000;
+	mapannounce "ev_runordie", "2...", bc_map;
+	sleep 1 * 1000;
+	mapannounce "ev_runordie", "1...", bc_map;
+	sleep 1 * 1000;
+	mapannounce "ev_runordie", "Es hora de correr..!!", bc_map;
+
+	while ( .start ) {
+		.@more += rand(1,2);
+		monster "ev_runordie", 0,0, "Come On Baby!!!", BOMBPORING, 2 + .@more, "", 0;
+		monster "ev_runordie", 0,0, "Come On Baby!!!", BOMBPORING, 2 + .@more, "", 1;
+		monster "ev_runordie", 0,0, "Come On Baby!!!", BOMBPORING, 2 + .@more, "", 2;
+		sleep 5000;
+	}
+	end;
+OnMapChange:
+	if ( @Queue_Destination_Map$ == "ev_runordie" ) end;
+OnDeath:
+OnQuit:
+	queueremove .qid, getcharid(3);
+	if ( queuesize(.qid) > 1 ) end;
+	.start = false;
+	killmonsterall "ev_runordie";
+	.@it = queueiterator(.qid);
+	.@aid = qiget(.@it);
+	qiclear .@it;
+	announce "Run Or Die: Felicidades ~ "+ rid2name(.@aid), bc_all;
+	getitem Poring_Coin,5,.@aid; // winner prize
+	queuedel .qid;
+	sleep 5000;
+	mapwarp "ev_runordie", "prontera", 148,172;
+	end;
+}
+
+ev_runordie	mapflag	nowarp
+ev_runordie	mapflag	nowarpto
+ev_runordie	mapflag	noteleport
+ev_runordie	mapflag	nosave	SavePoint
+ev_runordie	mapflag	noskill
+ev_runordie	mapflag	nomemo
+ev_runordie	mapflag	nopenalty
+ev_runordie	mapflag	noicewall
+//ev_runordie	mapflag	nobranch

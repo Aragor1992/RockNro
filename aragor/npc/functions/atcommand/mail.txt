@@ -1,0 +1,8 @@
+//-	script	mail_rodex	FAKE_NPC,{
+//OnAtcommand:
+//mes("Close this window to open your mail inbox.");
+////	close2();
+//	open_rodex();
+//	end;
+//OnInit:bindatcmd "mail",strnpcinfo(3)+"::OnAtcommand",0,99;end;
+//}

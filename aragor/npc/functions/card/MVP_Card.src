@@ -1,0 +1,65 @@
+function	script	F_Fallen	{
+    set .@c,callfunc("contar_cartas",EQI_HAND_L,4441);
+    set .@d,callfunc("contar_cartas",EQI_HAND_R,4441);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+        bonus2 bMagicAddRace,RC_DemiHuman,30;
+    }
+    return;
+}
+
+function	script	F_Ifrit	{
+    set .@c,callfunc("contar_cartas",EQI_ACC_L,4430);
+    set .@d,callfunc("contar_cartas",EQI_ACC_R,4430);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+		bonus bBaseAtk,(JobLevel/2);		
+		bonus bHit,(JobLevel/2);
+		bonus bCritical,(JobLevel/4);
+    }
+    return;
+}
+
+function	script	F_Bacsojin	{
+    set .@c,callfunc("contar_cartas",EQI_ACC_L,Bacsojin_Card);
+    set .@d,callfunc("contar_cartas",EQI_ACC_R,Bacsojin_Card);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+		//+10% heal,santuary,potion pitcher,slim potion
+    }
+    return;
+}
+
+function	script	F_Baphomet	{
+    set .@c,callfunc("contar_cartas",EQI_HAND_L,4147);
+    set .@d,callfunc("contar_cartas",EQI_HAND_R,4147);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+		//Splash Damage +4
+		bonus bHit,50;
+    }
+    return;
+}
+
+function	script	F_Berzebub	{
+    set .@c,callfunc("contar_cartas",EQI_ACC_L,4145);
+    set .@d,callfunc("contar_cartas",EQI_ACC_R,4145);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+		bonus bCastrate,-50;
+    }
+    return;
+}
+
+function	script	F_Boitata	{
+    set .@c,callfunc("contar_cartas",EQI_HAND_L,4463);
+    set .@d,callfunc("contar_cartas",EQI_HAND_L,4463);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+		bonus3 bHpRatioAtkRace,RC_NonBoss,900000,7000;
+    }
+    return;
+}
+//------------------------------------------------------------------------
+function	script	F_Moonlight_Flower	{
+	if( callfunc("contar_cartas",EQI_SHOES,Moonlight_Flower_Card) == 1){
+	//bonus bSpeedRate,20; 
+	//en Woe bonus bSpeedRate,15;
+	}
+return;
+}
+function	script	F_Orc_Lord	{return;}

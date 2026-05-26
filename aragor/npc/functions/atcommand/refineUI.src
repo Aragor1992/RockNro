@@ -1,0 +1,4 @@
+-	script	refineUI	FAKE_NPC,{
+OnAtcommand:openrefineryui(); end;
+OnInit:bindatcmd "refineui",strnpcinfo(3)+"::OnAtcommand",0,99;end;	
+}

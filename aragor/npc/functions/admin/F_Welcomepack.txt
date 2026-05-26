@@ -1,0 +1,27 @@
+function	script	F_Welcomepack	{
+
+query_sql ("SELECT last_ip FROM login WHERE account_id=" + getcharid(3) + "", .@lip$);
+query_sql ("SELECT last_mac FROM login WHERE account_id=" + getcharid(3) + "", .@lmac$);
+
+if ( getd("$" + .@lip$ + "_INS") > 0 || #INS_WELCOMPACK > 0 || getd("$" + .@lmac$ + "_INS") > 0){end;}
+    
+announce ""+strcharinfo(0)+" Bienvenido a Aragor Ro!",bc_all;
+
+
+		getitembound WBox_hat,1,1;
+		getitembound WBox_wing,1,1;
+		getitembound WBox_mid,1,1;
+		getitembound WBox_armor,1,1;
+		getitembound WBox_valis,1,1;
+		getitembound WBox_shoes,1,1;
+		getitembound WBox_weapon,1,1;
+		getitembound 4133,2,1;
+//		/*bolsa de bronze = 125,000,000z*/
+//		/*Manual de exp x300%*/
+
+set #INS_WELCOMPACK,1;
+setd "$" + .@lip$ + "_INS", getd("$" + .@lip$ + "_INS") + 1;
+setd "$" + .@lmac$ + "_INS", getd("$" + .@lmac$ + "_INS") + 1;
+
+end;
+}

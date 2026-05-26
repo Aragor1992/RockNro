@@ -1,0 +1,29 @@
+function	script	S_wings	{
+	bonus bMaxHPrate,10;
+	bonus bMatkRate,10;
+	bonus bAtkRate,10;
+	bonus bAllStats,10;
+	bonus2 bSubEle,Ele_Neutral,20;
+	bonus2 bSubEle,Ele_Poison,20;
+	bonus2 bSubEle,Ele_Holy,20;
+	bonus2 bSubEle,Ele_Dark,20;
+	bonus2 bSubEle,Ele_Fire,20;
+	bonus2 bSubEle,Ele_Water,20;
+	bonus2 bSubEle,Ele_Wind,20;
+	bonus2 bSubEle,Ele_Earth,20;
+	bonus2 bSubEle,Ele_Undead,20;
+	bonus2 bSubEle,Ele_Ghost,20;
+if(isequipped(Q_Novice_Shield) || isequipped(Q_Valkyries_Shield) || isequipped(Q_Angelic_Guard)){
+	bonus2 bSubEle,Ele_Neutral,-10;
+	bonus2 bSubEle,Ele_Poison,-10;
+	bonus2 bSubEle,Ele_Holy,-10;
+	bonus2 bSubEle,Ele_Dark,-10;
+	bonus2 bSubEle,Ele_Fire,-10;
+	bonus2 bSubEle,Ele_Water,-10;
+	bonus2 bSubEle,Ele_Wind,-10;
+	bonus2 bSubEle,Ele_Earth,-10;
+	bonus2 bSubEle,Ele_Undead,-10;
+	bonus2 bSubEle,Ele_Ghost,-10;
+	}
+return;
+}

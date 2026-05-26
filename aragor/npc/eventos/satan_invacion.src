@@ -1,0 +1,21 @@
+-	script	Satan_invacion	-1,{
+
+OnSpawnMorocc:
+if ( !$@Invaded ) {		
+		announce "Satan ha invadido Morocc! Dirígete allí de inmediato para detenerlo!",bc_all;
+		$@Invaded++;
+		monster "morocc",0,0,""+strmobinfo(1,1916)+"",1916,1,"Satan_invacion::OnSatanDead";
+		end;
+} 
+
+else if ( $@Invaded ) {end;}
+
+OnSatanDead:
+	announce "Felicidades a "+strcharinfo(0)+" por enviar a Satan de vuelta al vórtice Dimensional...",bc_all;
+	setd #CASHPOINTS, getd(#CASHPOINTS) + 100;
+	dispbottom "Ahora tienes "+#CASHPOINTS+" Cash Points!";
+	sleep 4000;
+	announce "Tengan cuidado... Satan puede volver otra vez.",bc_all;
+	$@Invaded = 0;
+end;
+}

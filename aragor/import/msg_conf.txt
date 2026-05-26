@@ -1,0 +1,141 @@
+0: teletransportado.
+1: El mapa no existe.
+2: Las coordenadas no son validas, se han utilizado otras aleatorias.
+3: Ese personaje no encontrado.
+4: Has saltado a %s
+5: Has saltado a %d %d
+6: Tu punto de guardado ha sido actualizado.
+7: teletransportado al punto de guardado.
+8: Tu velocidad cambio.
+9: Se han modificado las opciones.
+
+//550 -> 699: Job Names
+550: Novice
+551: Swordsman
+552: Magician
+553: Archer
+554: Acolyte
+555: Merchant
+556: Thief
+557: Knight
+558: Priest
+559: Wizard
+560: Blacksmith
+561: Hunter
+562: Assassin
+563: Crusader
+564: Monk
+565: Sage
+566: Rogue
+567: Alchemist
+568: Bard
+569: Dancer
+570: Wedding
+571: Super Novice
+572: Gunslinger
+573: Ninja
+574: Christmas
+575: High Novice
+576: High Swordsman
+577: High Magician
+578: High Archer
+579: High Acolyte
+580: High Merchant
+581: High Thief
+582: Lord Knight
+583: High Priest
+584: High Wizard
+585: Whitesmith
+//585: Mastersmith //iRO name
+586: Sniper
+587: Assassin Cross
+588: Paladin
+589: Champion
+590: Professor
+//590: Scholar //iRO name
+591: Stalker
+592: Creator
+//592: Biochemist //iRO Name
+593: Clown
+//593: Minstrel //iRO Name
+594: Gypsy
+595: Baby Novice
+596: Baby Swordsman
+597: Baby Magician
+598: Baby Archer
+599: Baby Acolyte
+600: Baby Merchant
+601: Baby Thief
+602: Baby Knight
+603: Baby Priest
+604: Baby Wizard
+605: Baby Blacksmith
+606: Baby Hunter
+607: Baby Assassin
+608: Baby Crusader
+609: Baby Monk
+610: Baby Sage
+611: Baby Rogue
+612: Baby Alchemist
+613: Baby Bard
+614: Baby Dancer
+615: Super Baby
+616: Taekwon
+617: Star Gladiator
+618: Soul Linker
+//619 FREE
+620: Unknown Job
+621: Summer
+622: Gangsi
+623: Death Knight
+624: Dark Collector
+625: Rune Knight
+626: Warlock
+627: Ranger
+628: Arch Bishop
+629: Mechanic
+630: Guillotine Cross
+631: Royal Guard
+632: Sorcerer
+633: Minstrel
+//633: Maestro //iRO Name
+634: Wanderer
+635: Sura
+636: Genetic 
+//636: Geneticist //iRO Name
+637: Shadow Chaser
+638: Baby Rune Knight
+639: Baby Warlock
+640: Baby Ranger
+641: Baby Arch Bishop
+642: Baby Mechanic
+643: Baby Guillotine Cross
+644: Baby Royal Guard
+645: Baby Sorcerer
+646: Baby Minstrel
+647: Baby Wanderer
+648: Baby Sura
+649: Baby Genetic
+650: Baby Shadow Chaser
+651: Expanded Super Novice
+652: Expanded Super Baby
+653: Kagerou
+654: Oboro
+655: Rebellion
+656: Rune Knight T
+657: Warlock T
+658: Ranger T
+659: Arch Bishop T
+660: Mechanic T
+661: Guillotine Cross T
+662: Royal Guard T
+663: Sorcerer T
+664: Minstrel T
+665: Wanderer T
+666: Sura T
+667: Genetic T
+668: Shadow Chaser T
+669: Summoner
+
+//670-849 FREE (please start using from the top if you need, leave the 670+ range for new jobs)
+889: Experiencia Ganada Base:%llu (%.2f%%) Job:%llu (%.2f%%)

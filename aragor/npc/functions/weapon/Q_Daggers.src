@@ -1,0 +1,94 @@
+function	script	Q_dagger	{
+if (getrefine()>9) bonus bAtkRate,3;
+	bonus bStr,20;
+	bonus bHit,50;
+	bonus bFlee,50;
+if(BaseJob==Job_Assassin) {
+/*		bonus2 bSkillAtk,AS_SONICBLOW,40; */
+		bonus2 bSkillAtk,ASC_METEORASSAULT,50;
+		bonus2 bSkillAtk,TF_DOUBLE,20;
+		bonus2 bHPDrainRate,50,15;
+		if(getiteminfo(getequipid(EQI_HAND_R),11) == 16){
+			bonus2 bSubSize,Size_Large,-200;
+			bonus2 bSubSize,Size_Medium,-200;
+			bonus2 bSubSize,Size_Small,-200;
+			/*adicion no confortable*/
+			bonus2 bSubEle,Ele_Neutral,-50;
+			bonus2 bSubEle,Ele_Water,-50;
+			bonus2 bSubEle,Ele_Earth,-50;
+			bonus2 bSubEle,Ele_Fire,-50;
+			bonus2 bSubEle,Ele_Wind,-50;
+			bonus2 bSubEle,Ele_Poison,-50;
+			bonus2 bSubEle,Ele_Holy,-50;
+			bonus2 bSubEle,Ele_Dark,-50;
+			bonus2 bSubEle,Ele_Ghost,-50;
+			bonus2 bSubEle,Ele_Undead,-50;			
+		}
+	}	
+if(BaseJob==Job_Rogue) {
+		bonus2 bSkillAtk,RG_RAID,50;
+		skill "AS_LEFT",5;
+		skill "AS_RIGHT",5;
+		skill "SM_BASH",10;
+		skill "MO_TRIPLEATTACK",10;
+		bonus bAtkRange,1;bonus bMatkRate,20;
+		bonus bAtkRate,70;bonus2 bHPDrainRate,50,20;
+		bonus bHit,200;bonus bAspd,30;
+	if(getiteminfo(getequipid(EQI_HAND_R),11) == 1 && getiteminfo(getequipid(EQI_HAND_L),11) == 1){
+		bonus2 bSubSize,Size_Small,15;
+		bonus2 bSubSize,Size_Medium,15;
+		bonus2 bSubSize,Size_Large,15;
+		}
+	}
+switch(getarg(0)+1){
+
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		bonus2 bAddEff,Eff_Stun,500;
+		break;
+
+case 2:	bonus bAtkEle,Ele_Water;
+		bonus2 bAddEff,Eff_Freeze,500;
+		break;		
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		bonus2 bAddEff,Eff_Stone,500;
+		break;		
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		bonus2 bAddEff,Eff_Bleeding,500;
+		break;		
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		bonus2 bAddEff,Eff_Sleep,500;
+		break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		bonus2 bAddEff,Eff_Poison,500;
+		break;		
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		bonus2 bAddEff,Eff_Blind,500;
+		break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus2 bAddEff,Eff_Silence,500;
+		break;		
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus2 bAddEff,Eff_Confuse,500;
+		break;		
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus2 bAddEff,Eff_Curse,500;
+		break;
+	}
+
+if(isequipped(Q_Assassin_Seele)){
+	bonus bAtkRate,10;
+	bonus bFlee,80;
+	bonus bFlee2,5;
+	bonus bAspd,20;
+}
+return;
+}

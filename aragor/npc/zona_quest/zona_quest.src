@@ -1,0 +1,421 @@
+//==================================WARPS======================================
+quiz_02,134,364,0	warp	quiz_02#1	2,2,quiz_02,134,348
+quiz_02,123,357,0	warp	quiz_02#2	2,2,quiz_02,134,367
+quiz_02,143,357,0	warp	quiz_02#3	2,2,quiz_02,161,348
+quiz_02,151,338,0	warp	quiz_02#4	2,2,quiz_02,134,348
+quiz_02,171,338,0	warp	quiz_02#5	2,2,quiz_02,160,367
+quiz_02,160,364,0	warp	quiz_02#6	2,2,quiz_02,161,348
+//==================================WARPS======================================
+
+//==================================WEAPONS======================================
+quiz_02,133,391,5	script	Espadas 1 mano#3	4_M_KY_KNT,{ callfunc "wshop",1; }
+quiz_02,135,391,4	script	Espadas 2 manos#3	4_M_KNIGHT_BLACK,{ callfunc "wshop",2; }
+quiz_02,161,391,4	script	Mazos	4_M_BLUEMAN,{ callfunc "wshop",3; }
+quiz_02,125,387,5	script	Libros	2_M_SAGE_OLD,{ callfunc "wshop",4; }
+quiz_02,172,385,4	script	Staves	4_M_JOB_WIZARD,{ callfunc "wshop",5; }
+quiz_02,172,381,4	script	Lanzas#4	4_M_RUSKNIGHT,{ callfunc "wshop",6; }
+quiz_02,153,391,5	script	Hachas#a	2_M_OLDBLSMITH,{ callfunc "wshop",7; }
+quiz_02,130,391,5	script	Dagas#4	2_M_THIEFMASTER,{ callfunc "wshop",8; }
+quiz_02,157,391,5	script	Katares#3	4_M_ROKI2,{ callfunc "wshop",9; }
+//quiz_02,148,370,5	script	Katares V3	4_M_BLACKMAN,{ callfunc "wshop",10; }
+quiz_02,126,391,5	script	Arcos	4_M_REIDIN_KURS,{ callfunc "wshop",11,25; }
+quiz_02,138,391,5	script	Puños#3	4_M_SURA,{ callfunc "wshop",12; }
+quiz_02,125,383,5	script	Instrumentos	4_M_MINSTREL,{ callfunc "wshop",13; }
+quiz_02,165,391,4	script	Latigos#2	4_F_WANDERER,{ callfunc "wshop",14; }
+quiz_02,169,391,4	script	Armas Taekwon	4_F_TAEKWON,{ callfunc "wshop",15; }
+quiz_02,142,391,5	script	Gunz Reloaded	4_M_GUNSLINGER,{ callfunc "wshop",16,17,18,19,20,26,27; }
+quiz_02,171,389,4	script	Shurikens	4_M_NINJA_BLUE,{ callfunc "wshop",21; }
+quiz_02,151,389,5	script	Armas Especiales	4_M_NFDEADMAN,{ callfunc "wshop",23; }
+quiz_02,144,389,5	script	ivan@timarte.net	4_F_NOVICE,{ callfunc "wshop",24; }
+//==================================WEAPONS======================================
+
+quiz_02,134,381,5	script	Super Mini	4_F_HUGIRL,{
+switch(select("Armaduras:Armas")) {
+	case 1:
+	callfunc "ashop",7;
+	close;
+	case 2:
+	callfunc "wshop",22; 
+	close;
+	}
+}
+//==================================builds======================================
+
+quiz_02,134,393,5	script	Build Espadas#1	4_M_CRU_HEAD,{
+if(BaseJob == Job_Crusader){
+if(isequipped(Q_1HSword_Poison)||isequipped(Q_1HSword_Neutral)||isequipped(Q_1HSword_Fire)||isequipped(Q_1HSword_Water)||isequipped(Q_1HSword_Wind)||isequipped(Q_1HSword_Earth)||isequipped(Q_1HSword_Holy)||isequipped(Q_1HSword_Dark)||isequipped(Q_1HSword_Ghost)||isequipped(Q_1HSword_Undead)){
+mes"Elije entre magico y fisico";
+next;
+switch(select("Build Magica:Build Fisica")) {
+	case 1:
+		set palamagico,1; set palafisico,0;
+		message strcharinfo(PC_NAME),"Build Magica!!";
+		close;
+	case 2:
+		set palamagico,0; set palafisico,1;
+		message strcharinfo(PC_NAME),"Build Fisica!!";
+		close;
+		}
+	}
+else
+mes"ponte una espada y elije tu build";
+close;
+}
+else
+mes"No eres Crusader!! ni Paladin!!";
+close;
+}
+
+quiz_02,167,393,4	script	Build Taekwon	4_M_CHNOLD,{
+
+if(BaseJob == Job_Taekwon){
+
+if(isequipped(Q_Taekwon_Neutral)|| isequipped(Q_Taekwon_Water)
+|| isequipped(Q_Taekwon_Earth)|| isequipped(Q_Taekwon_Fire)
+|| isequipped(Q_Taekwon_Wind)|| isequipped(Q_Taekwon_Poison)
+|| isequipped(Q_Taekwon_Holy)|| isequipped(Q_Taekwon_Dark)
+|| isequipped(Q_Taekwon_Ghost)|| isequipped(Q_Taekwon_Undead)){
+mes"Elije entre magico y fisico";
+switch(select("Build Magica:Build Fisica:Resetear Build")) {
+	case 1:
+		set taekmagico,1; set taekfisico,0;
+		message strcharinfo(PC_NAME),"Build Magica!!";
+		close;
+	case 2:
+		set taekmagico,0; set taekfisico,1;
+		message strcharinfo(PC_NAME),"Build Fisica!!";
+	case 3:
+		set taekmagico,0; set taekfisico,0;
+		message strcharinfo(PC_NAME),"Reseteado!!";
+	close;
+	}
+} 
+else
+mes"ponte un Arma Taekwon y elije tu build";
+close;
+} else if(BaseJob == Job_Star_Gladiator){mes"Ya eres Star Gladiator! ya no puedo afinar tu arma";close;}
+else
+mes"No eres Taekwon!!";
+close;
+}
+
+quiz_02,173,391,4	script	Build Shurikens	4_M_KAGE_OLD,{
+if(BaseJob == Job_Ninja){
+	if(isequipped(Q_HUUMA_Neutral)|| isequipped(Q_HUUMA_Water)
+		|| isequipped(Q_HUUMA_Earth)|| isequipped(Q_HUUMA_Fire)
+		|| isequipped(Q_HUUMA_Wind)|| isequipped(Q_HUUMA_Poison)
+		|| isequipped(Q_HUUMA_Holy)|| isequipped(Q_HUUMA_Dark)
+		|| isequipped(Q_HUUMA_Ghost)|| isequipped(Q_HUUMA_Undead)){
+			mes"Elije entre magico y fisico";
+			switch(select("Build Magica:Build Fisica:Resetear Build")) {
+				case 1:
+					set ninjamagico,1; set ninjafisico,0;
+					message strcharinfo(PC_NAME),"Build Magica!!";
+					close;
+				case 2:
+					set ninjaico,0; set ninjafisico,1;
+					message strcharinfo(PC_NAME),"Build Fisica!!";
+				case 3:
+					set ninjamagico,0; set ninjafisico,0;
+					message strcharinfo(PC_NAME),"Reseteado!!";
+				close;
+				}
+	}else mes"ponte un Arma Taekwon y elije tu build";close;
+}else mes"no eres ninja";close;
+}
+
+quiz_02,148,366,5	script	Afinacion de Armaduras	4_M_LGTGUARD,{
+	mes"Hola!! Soy el assistente de Afinacion de armaduras";
+	mes"Puedo afinar tu armadura para que sea magica o fisica";
+	mes"en otras palabras con auto cast o direcatamente de atake";
+	next;
+	if(getequipid(EQI_ARMOR)==3000||getequipid(EQI_ARMOR)==3001||getequipid(EQI_ARMOR)==3002
+	||getequipid(EQI_ARMOR)==3003||getequipid(EQI_ARMOR)==3004||getequipid(EQI_ARMOR)==3005
+	||getequipid(EQI_ARMOR)==3006||getequipid(EQI_ARMOR)==3007||getequipid(EQI_ARMOR)==3008
+	||getequipid(EQI_ARMOR)==3009){
+	mes"quieres afinar tu "+getitemname(getequipid(EQI_ARMOR))+" a Fisica?";
+	switch(select("Si:No")){
+	case 1:
+		set @r,getequiprefinerycnt(EQI_ARMOR);
+		set @c0,getequipcardid (EQI_ARMOR,0);
+		set @c1,getequipcardid (EQI_ARMOR,1);
+		set @c2,getequipcardid (EQI_ARMOR,2);
+		set @c3,getequipcardid (EQI_ARMOR,3);
+		if (getequipid(EQI_ARMOR)==3000){delitem getequipid(EQI_ARMOR),1; getitem2 3010,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3001){delitem getequipid(EQI_ARMOR),1; getitem2 3011,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3002){delitem getequipid(EQI_ARMOR),1; getitem2 3012,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3003){delitem getequipid(EQI_ARMOR),1; getitem2 3013,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3004){delitem getequipid(EQI_ARMOR),1; getitem2 3014,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3005){delitem getequipid(EQI_ARMOR),1; getitem2 3015,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3006){delitem getequipid(EQI_ARMOR),1; getitem2 3016,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3007){delitem getequipid(EQI_ARMOR),1; getitem2 3017,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3008){delitem getequipid(EQI_ARMOR),1; getitem2 3018,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3009){delitem getequipid(EQI_ARMOR),1; getitem2 3019,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+	case 2: close;
+	}
+	}else if(getequipid(EQI_ARMOR)==3010 ||getequipid(EQI_ARMOR)==3011 ||getequipid(EQI_ARMOR)==3012
+	||getequipid(EQI_ARMOR)==3013 ||getequipid(EQI_ARMOR)==3014 ||getequipid(EQI_ARMOR)==3015
+	||getequipid(EQI_ARMOR)==3016 ||getequipid(EQI_ARMOR)==3017 ||getequipid(EQI_ARMOR)==3018
+	||getequipid(EQI_ARMOR)==3019){
+	mes"quieres afinar tu "+getitemname(getequipid(EQI_ARMOR))+" a Magica?";
+	switch(select("Si:No")){
+	case 1:
+		set @r,getequiprefinerycnt(EQI_ARMOR);
+		set @c0,getequipcardid (EQI_ARMOR,0);
+		set @c1,getequipcardid (EQI_ARMOR,1);
+		set @c2,getequipcardid (EQI_ARMOR,2);
+		set @c3,getequipcardid (EQI_ARMOR,3);
+		if (getequipid(EQI_ARMOR)==3010){delitem getequipid(EQI_ARMOR),1; getitem2 3000,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3011){delitem getequipid(EQI_ARMOR),1; getitem2 3001,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3012){delitem getequipid(EQI_ARMOR),1; getitem2 3002,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3013){delitem getequipid(EQI_ARMOR),1; getitem2 3003,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3014){delitem getequipid(EQI_ARMOR),1; getitem2 3004,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3015){delitem getequipid(EQI_ARMOR),1; getitem2 3005,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3016){delitem getequipid(EQI_ARMOR),1; getitem2 3006,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3017){delitem getequipid(EQI_ARMOR),1; getitem2 3007,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3018){delitem getequipid(EQI_ARMOR),1; getitem2 3008,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+		else if (getequipid(EQI_ARMOR)==3019){delitem getequipid(EQI_ARMOR),1; getitem2 3009,1,1,@r,0,@c0,@c1,@c2,@c3; close;}
+	case 2: close;}
+	}else
+	mes"No tenes armadura a la que puedas afinar";
+	mes"O no la tienes equipada";
+	close;
+}
+//==================================builds======================================
+
+//==================================HATS && MIDS && LOW===========================
+//quiz_02,167,369,4	script	Hat Hommunculus	4_LAM,{}
+quiz_02,142,366,4	script	Narutos	4_M_HUGRANFA,{}
+//quiz_02,125,379,5	script	Hats	4_F_ANNIVERSARY,{}
+//quiz_02,133,377,5	script	Kafra Hats	4_F_KAFRA1,{}
+//quiz_02,125,371,5	script	Wings	4_F_VALKYRIE,{}
+//quiz_02,125,369,5	script	Wings 2	4_F_VALKYRIE2,{}
+//==================================HATS======================================
+
+//==================================Armaduras======================================
+quiz_02,150,366,1	script	Lady Armor#0	4_F_OPERATION,{callfunc "ashop",1,2,3;}
+//quiz_02,125,365,5	script	Armor Plus duales	4_M_LGTGUARD,{callfunc "ashop",3;}
+quiz_02,145,366,1	script	Shield Fashion	4_M_ROYALGUARD,{callfunc "ashop",6;}
+quiz_02,153,366,1	script	Garmets Enchulados	4_M_JP_RUN,{callfunc "ashop",4;}
+quiz_02,156,366,1	script	Ultra Shoes	1_M_PAY_ELDER,{callfunc "ashop",5;}
+quiz_02,139,366,5	script	Accesorios Maestros	1_F_MERCHANT_01,{callfunc "ashop",8;}
+//==================================Armaduras======================================
+
+//==================================micelanius && Accesorios======================================
+//quiz_02,154,370,5	script	Municiones#1	4_M_GUSLIMAN,{callfunc "wshop",25;}
+//quiz_02,134,371,4	script	Freya's Jewel Quest	4_F_LGTGIRL,{}
+//quiz_02,160,371,5	script	Tipo Raro	4_M_MASKMAN,{}
+//==================================micelanius======================================
+
+//quest VIP
+////quiz_02,140,380,5	script	Frey	421,{}
+////quiz_02,154,380,5	script	Njord	421,{}
+////quiz_02,157,376,5	script	Mids VIP	915,{}
+////quiz_02,144,370,4	script	Moe	119,{}
+
+////quiz_02,140,370,4	script	PlataValk Changer	409,{ }
+
+//////////////////////////////////
+//===== Script =======================================
+//= Atlas Script
+//===== By: ==================================================
+//= Atlas
+//===== Version: =====================================
+//= 1.0
+//===== Compatible =====================================
+//= Hercules - rAthena
+//===== Additional Comments: =================================
+//============================================================
+//// Asistente del Mercado ////
+quiz_02,147,373,5	script	Harold	4_M_PRESIDENT,{
+
+	set @npcname$,"[^8000FFHarold^000000]";
+	set @cantidad,0;
+
+	cutin "lhz_karl",2;
+	mes @npcname$;
+	mes (Sex?"Bienvenido":"Bienvenida")+" al mercado "+(Sex?"chico":"chica")+",";
+	mes "soy ^8000FFHarold^000000 y soy el encargado oficial de las divisas.";
+	mes "Puedo cambiar Bolsas de Zeny x Zeny y viceversa tambien";
+	mes "Puedo cambiar tus ^F79F81Poring Coin^000000 (^F79F81PC^000000) por ^04B404Cash Points^000000 (^04B404CP^000000) y viceversa!";
+	mes "Y ademas puedo decirte cuantos ^04B404CP^000000 te quedan en tu cuenta!";
+	next;
+	switch(select("Informacion:^F79F81PC^000000 por ^04B404CP^000000:^04B404CP^000000 por ^F79F81PC^000000:Zeny x Bolsas")) {
+		case 1:
+			switch(select("Ver mis ^04B404Cash Points^000000:Intercambio de divisas:Zeny x bolsas")) {
+				case 1:
+					mes @npcname$;
+					mes "Actualmente tienes [^04B404"+#CASHPOINTS+"^000000] ^04B404CP^000000.";
+					close2;
+					cutin "",255;
+					end;
+				case 2:
+					mes @npcname$;
+					mes "Actualmente, el precio de mercado de ^F79F81PC^000000 y ^04B404CP^000000 es el mismo, por ejemplo podria hacer que [^F79F8120^000000] ^F79F81PC^000000 pasen a ser [^04B40420^000000] ^04B404CP^000000!";
+					close2;
+					cutin "",255;
+					end;
+				case 3:
+					mes @npcname$;
+					mes "Podrás cambiar la cantidad de:";
+					mes "^c50000500,000,000z a bolsa oro.";
+					mes "^c50000250,000,000z a bolsa plata.";
+					mes "^c50000125,000,000z a bolsa bronze.";
+					mes "^c50000100,000,000z a moneda oro.";
+					mes "^c5000050,000,000z a moneda plata.";
+					mes "^c5000025,000,000z a moneda plata.";
+					next;
+					mes @npcname$;
+					mes "estas bolsas las podras abrir en cualquier momento";
+					mes "Se convierten en monedas o en Zeny segun lo requieras";
+					next;
+					mes "las monedas solo se convertiran en Zeny";
+					mes "tendras que venir con migo para hacer bolsas";
+					close2;
+					cutin "",255;
+					end;
+			}
+			
+		case 2:
+			mes @npcname$;
+			mes "Que cantidad de ^F79F81PC^000000 deseas pasar a ^04B404CP^000000?";
+			next;
+			input @cantidad;
+			mes @npcname$;
+			mes "Estas "+(Sex?"seguro":"segura")+" de querer cambiar el total de [^F79F81"+@cantidad+"^000000] ^F79F81PC^000000?";
+			next;
+			menu "Si",-,"No",L_Cancel;
+			if ( countitem(7539) < @cantidad) goto L_NoPC;
+			delitem 7539,@cantidad;
+			set #CASHPOINTS, #CASHPOINTS + @cantidad;
+			mes @npcname$;
+			mes "Tus [^F79F81"+@cantidad+"^F79F81] ^F79F81PC^000000 ahora son [^04B404"+@cantidad+"^000000] ^04B404CP^000000!";
+			close2;
+			cutin "",255;
+			end;
+			
+		case 3:
+			mes @npcname$;
+			mes "Que cantidad de ^04B404CP^000000 deseas pasar a ^F79F81PC^000000?";
+			next;
+			input @cantidad;
+			mes @npcname$;
+			mes "Estas "+(Sex?"seguro":"segura")+" de querer cambiar el total de [^04B404"+@cantidad+"^000000] ^04B404CP^000000?";
+			next;
+			menu "Si",-,"No",L_Cancel;
+			if ( #CASHPOINTS < @cantidad) goto L_NoCP;
+			set #CASHPOINTS, #CASHPOINTS - @cantidad;
+			getitem 7539,@cantidad;
+			mes @npcname$;
+			mes "Tus [^04B404"+@cantidad+"^000000] ^04B404CP^000000 ahora son [^F79F81"+@cantidad+"^000000] ^F79F81PC^000000!";
+			close2;
+			cutin "",255;
+			end;
+		case 4:
+			mes @npcname$;
+			switch(select("Zeny a bolsa:Monedas a bolsa:Zeny a moneda:nada")) {
+			case 1:
+				mes @npcname$;
+				switch(select("Oro 500M:Plata 250M:Bronze 125M")) {
+					case 1:
+						if ( Zeny < 500000000) goto L_NoZn;
+						getitem BZC_GOLD,1;set Zeny,Zeny-500000000;
+						mes @npcname$;mes "Listo ayi tiene tu bolsa";
+						close2;cutin "",255;end;
+					case 2:
+						if ( Zeny < 250000000) goto L_NoZn;
+						getitem BZC_SILVER,1;set Zeny,Zeny-250000000;
+						mes @npcname$;mes "Listo ayi tiene tu bolsa";
+						close2;cutin "",255;end;
+					case 3:
+						if ( Zeny < 125000000) goto L_NoZn;
+						getitem BZC_BRONZE,1;set Zeny,Zeny-125000000;
+						mes @npcname$;mes "Listo ayi tiene tu bolsa";
+						close2;cutin "",255;end;
+					}
+				break;
+			case 2:
+			mes @npcname$;
+			switch(select("Oro 100M:Plata 50M:Bronze 25M")) {
+					case 1:
+						if ( Zeny < 100000000) goto L_NoZn;
+						getitem ZC_GOLD,1;set Zeny,Zeny-100000000;
+						mes @npcname$;mes "Listo ayi tiene tu Moneda";
+						close2;cutin "",255;end;
+					case 2:
+						if ( Zeny < 50000000) goto L_NoZn;
+						getitem ZC_SILVER,1;set Zeny,Zeny-50000000;
+						mes @npcname$;mes "Listo ayi tiene tu Moneda";
+						close2;cutin "",255;end;
+					case 3:
+						if ( Zeny < 25000000) goto L_NoZn;
+						getitem ZC_BRONZE,1;set Zeny,Zeny-25000000;
+						mes @npcname$;mes "Listo ayi tiene tu Moneda";
+						close2;cutin "",255;end;
+					}
+				break;
+			case 3:
+				switch(select("Oro 500M:Plata 250M:Bronze 125M")) {
+					case 1:
+						if ( countitem(ZC_GOLD) < 5) goto L_NOZC;
+						delitem ZC_GOLD,5;getitem BC_GOLD,1;
+						mes @npcname$;mes "Listo ayi tiene tu bolsa";
+						close2;cutin "",255;end;
+					case 2:
+						if ( countitem(ZC_SILVER) < 5) goto L_NOZC;
+						delitem ZC_SILVER,5;getitem BC_SILVER,1;
+						mes @npcname$;mes "Listo ayi tiene tu bolsa";
+						close2;cutin "",255;end;
+					case 3:
+						if ( countitem(ZC_BRONZE) < 5) goto L_NOZC;
+						delitem ZC_BRONZE,5;getitem BC_BRONZE,1;
+						mes @npcname$;mes "Listo ayi tiene tu bolsa";
+						close2;cutin "",255;end;
+					}
+				break;
+			case 4:
+				goto L_Cancel;
+			}
+			
+			
+	}
+
+L_NoPC:
+	mes @npcname$;
+	mes "Lo siento ^0080FF"+strcharinfo(0)+"^000000, pero te faltan ^F79F81Poring Coins^000000 para realizar la transaccion.";
+	close2;
+	cutin "",255;
+	end;
+	
+L_NoCP:
+	mes @npcname$;
+	mes "Lo siento ^0080FF"+strcharinfo(0)+"^000000, pero te faltan ^04B404Cash Points^000000 para realizar la transaccion.";
+	close2;
+	cutin "",255;
+	end;
+
+L_NoZn:
+	mes @npcname$;
+	mes "Lo siento ^0080FF"+strcharinfo(0)+"^000000, pero te falta ^04B404Zeny^000000 para realizar la transaccion.";
+	close2;
+	cutin "",255;
+	end;
+	
+L_NOZC:
+	mes @npcname$;
+	mes "Lo siento ^0080FF"+strcharinfo(0)+"^000000, pero te faltan ^04B404Monedass^000000 para realizar la transaccion.";
+	close2;
+	cutin "",255;
+	end;
+
+L_Cancel:
+	mes @npcname$;
+	mes "Como usted desee, que pase un buen dia!";
+	close2;
+	cutin "",255;
+	end;
+		
+OnInit:
+	waitingroom "Asistente del Mercado",0;
+	end;
+}

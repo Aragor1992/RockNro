@@ -1,0 +1,69 @@
+function	script	Q_katar	{
+	bonus2 bSkillAtk,AS_SPLASHER,500;
+	bonus bNoGemStone,0;
+	bonus bCritical,5;
+	bonus2 bSkillAtk,ASC_METEORASSAULT,70;
+	bonus2 bSkillAtk,ASC_BREAKER,-50;
+	bonus bAtkRate,-15;
+	bonus bHit,100;
+	bonus2 bSkillAtk,AS_SONICBLOW,80;
+	bonus2 bSkillAtk,AS_GRIMTOOTH,25;
+	bonus bCritAtkRate,15;
+/*if(isequipped(Q_Assassin_Spirit)){
+	bonus2 bSubEle,Ele_Neutral,10;
+	bonus2 bSubEle,Ele_Poison,10;
+	bonus2 bSubEle,Ele_Holy,10;
+	bonus2 bSubEle,Ele_Dark,10;
+	bonus2 bSubEle,Ele_Fire,10;
+	bonus2 bSubEle,Ele_Water,10;
+	bonus2 bSubEle,Ele_Wind,10;
+	bonus2 bSubEle,Ele_Earth,10;
+	bonus2 bSubEle,Ele_Undead,10;
+	bonus2 bSubEle,Ele_Ghost,10;
+	bonus bAtkRate,10;
+	bonus bFlee,50;
+	bonus bHit,50;
+	bonus2 bSubRace,RC_DemiHuman,10;
+	}*/
+	switch(getarg(0)+1){
+
+case 1:	bonus2 bAddEff,Eff_Stun,500;
+		break;
+
+case 2:	bonus bAtkEle,Ele_Water;
+		bonus2 bAddEff,Eff_Freeze,500;
+		break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		bonus2 bAddEff,Eff_Stone,500;
+		break;
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		bonus2 bAddEff,Eff_Bleeding,500;
+		break;
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		bonus2 bAddEff,Eff_Sleep,500;
+		break;
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		bonus2 bAddEff,Eff_Poison,500;
+		break;
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		bonus2 bAddEff,Eff_Blind,500;
+		break;
+case 8:	bonus bAtkEle,Ele_Dark;
+		bonus2 bAddEff,Eff_Silence,500;
+		break;
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		bonus2 bAddEff,Eff_Confuse,500;
+		break;
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		bonus2 bAddEff,Eff_Curse,500;
+		break;
+	}
+return;
+}

@@ -1,0 +1,301 @@
+//===== Hercules Script ======================================
+//= Warper
+//===== By: ==================================================
+//= Euphy
+//===== Current Version: =====================================
+//= 1.4b
+//===== Description: =========================================
+//= A complete - but very condensed - warper script.
+//= Some coordinates written by Tekno-Kanix and ToastOfDoom.
+//===== Additional Comments: =================================
+//= 1.0 Initial script.
+//= 1.1 Added missing duplicates and fixed coordinates.
+//= 1.2 Added new episodes and simplified functions.
+//= 1.3 Added Renewal checks and Instances menu.
+//=     Aligned coordinates with @go.
+//= 1.4 Added new Guild Dungeons.
+//= 1.4a Slight edits.
+//= 1.4b Added Wolfchev's Laboratory warp.
+//============================================================
+
+-	script	Warper	FAKE_NPC,{
+function GoC; function GoD; function GoB; function GoV;
+
+// --------------------------------------------------
+//	Main Menu:
+// --------------------------------------------------
+mes "[Warp Npc]";
+mes "yo te puedo llevar a cualquier";
+mes "lugar en todo Aragor!! Ro";
+mes "donde deseas ir?";
+next;
+menu	"^0000FF Ultimo Mapa^000000",-,
+    	"^CC3300 Ciudades^000000",Towns,
+    	"^CC3300 Calabozos^000000",Dungeons,
+		"^669900 Armeria VIP^000000",armeria,
+		"^669900 Zona de Items y Pots^000000",itemsypots,
+		"^669900 Zona de Quest^000000",zonaquest,
+		"^669900 Zona VIP^000000",zonavip,
+		" Ciudad de Merchants [" +getmapusers("pvp_y_1-4") +" players]",mercancity;
+
+	if (lastwarp$ == "" || @Boss$ == "1" && Zeny < 10000000 || @Vip$ == "1" && Zeny < 2000000)
+		message strcharinfo(0),"Los mapas premium 2M y los Boss (MVP) 10M.";
+	else
+		warp lastwarp$,lastwarpx,lastwarpy;
+		if (@Boss$ == "1" && Zeny > 10000000 || @Boss$ == "1" && Zeny == 10000000){set Zeny,Zeny-10000000;}
+		if (@Vip$ == "1" && Zeny > 2000000 || @Vip$ == "1" && Zeny == 2000000){set Zeny,Zeny-10000000;}
+	end;
+
+function GoC {
+	set @Vip$,0; set @Boss$,0; set @Dungeon$,0;
+	warp getarg(0),getarg(1,0),getarg(2,0);
+	end;
+}
+function GoD {
+	set @Dungeon$,1; set @Vip$,0; set @Boss$,0;
+	set lastwarp$, getarg(0);
+	set lastwarpx, getarg(1,0);
+	set lastwarpy, getarg(2,0);
+	warp getarg(0),getarg(1,0),getarg(2,0);
+	end;
+}
+function GoB {
+	if (Zeny < 10000000){message strcharinfo(0),"Los mapas Boss (MVP) tienen un costo de 10,000,000 z"; end;}
+	if (Zeny > 10000000 || Zeny == 10000000){
+	set @Vip$,0; set @Boss$,1; set @Dungeon$,0;
+	set lastwarp$, getarg(0);
+	set lastwarpx, getarg(1,0);
+	set lastwarpy, getarg(2,0);
+	set Zeny,Zeny-10000000;
+	warp getarg(0),getarg(1,0),getarg(2,0);
+	end;}
+	end;
+}
+function GoV {
+	if (Zeny < 2000000){message strcharinfo(0),"Los mapas premium tienen un costo de 2,000,000 z"; end;}
+	if (Zeny > 2000000 || Zeny == 2000000){
+	set lastwarp$, getarg(0);
+	set lastwarpx, getarg(1,0);
+	set lastwarpy, getarg(2,0);
+	set @Vip$,1; set @Boss$,0; set @Dungeon$,0;
+	set Zeny,Zeny-2000000;
+	warp getarg(0),getarg(1,0),getarg(2,0);
+	end;}
+	end;
+}
+// --------------------------------------------------
+	Towns:
+// --------------------------------------------------
+menu	"Prontera [" +getmapusers("prontera") +" players]",T0, 
+		"Alberta [" +getmapusers("alberta") +" players]",T1, 
+		"Aldebaran [" +getmapusers("aldebaran") +" players]",T2, 
+		"Amatsu [" +getmapusers("amatsu") +" players]",T3,
+		"Another World [" +getmapusers("mid_camp") +"]",T4, 
+		"Ayothaya [" +getmapusers("ayothaya") +" players]",T5,
+    	"Brasilis [" +getmapusers("brasilis") +" players]",T6, 
+		"Comodo [" +getmapusers("comodo") +" players]",T7, 
+		"Dewata [" +getmapusers("dewata") +" players]",T8,
+		"Dicastes [" +getmapusers("dicastes01") +" players]",T9,
+    	"Einbroch [" +getmapusers("einbroch") +" players]",T10,	 
+		"Geffen [" +getmapusers("geffen") +" players]",T11, 
+		"Gonryun [" +getmapusers("gonryun") +" players]",T12, 
+		"Hugel [" +getmapusers("hugel") +" players]",T13,
+    	"Izlude [" +getmapusers("izlude") +" players]",T14,
+		"Lighthalzen [" +getmapusers("lighthalzen") +" players]",T15,
+		"Louyang [" +getmapusers("louyang") +" players]",T16,
+		"Lutie [" +getmapusers("xmas") +" players]",T17,
+		"Mora [" +getmapusers("mora") +" players]",T18,
+		"Morroc [" +getmapusers("morocc") +" players]",T19,
+		"Moscovia [" +getmapusers("moscovia") +" players]",T20,
+		"Niflheim [" +getmapusers("niflheim") +" players]",T21,
+		"Rachel [" +getmapusers("rachel") +" players]",T22,
+		"Payon [" +getmapusers("payon") +" players]",T23,
+		"Umbala [" +getmapusers("umbala") +" players]",T24,
+		"Nameless Island [" +getmapusers("nameless_i") +" players]",T25,
+		"Veins [" +getmapusers("veins") +" players]",T26,
+		"Yuno [" +getmapusers("yuno") +" players]",T27,
+		"Jardin de Prontera [" +getmapusers("prt_fild08") +" players]",T28,
+		"Splendide [" +getmapusers("splendide") +" players]",T29,		
+		"Mirador [" +getmapusers("hu_fild02") +" players]",T30,
+		"Malangdo [" +getmapusers("malangdo") +" players]",T31, 
+		"Malaya [" +getmapusers("malaya") +" players]",T32, 
+		"Manuk [" +getmapusers("manuk") +" players]",T33,		
+		"Thor Camp [" +getmapusers("thor_camp") +" players]",T34;
+
+T0: GoC("prontera",156,176);
+T1: GoC("alberta",138,57);
+T2: GoC("aldebaran",145,120);
+T3: GoC("amatsu",197,86);
+T4: GoC("mid_camp",218,234);
+T5: GoC("ayothaya",218,176);
+T6: GoC("brasilis",195,220);
+T7: GoC("comodo",188,161);
+T8: GoC("dewata",230,48);
+T9: GoC("dicastes01",198,187);
+T10: GoC("einbroch",64,200);
+T11: GoC("geffen",119,59);
+T12: GoC("gonryun",160,120);
+T13: GoC("hugel",96,145);
+T14: GoC("izlude",128,91);
+T15: GoC("lighthalzen",158,92);
+T16: GoC("louyang",217,100);
+T17: GoC("xmas",147,134);
+T18: GoC("mora",55,146);
+T19: GoC("morocc",156,93);
+T20: GoC("moscovia",223,184);
+T21: GoC("niflheim",35,161);
+T22: GoC("rachel",113,137);
+T23: GoC("payon",178,98);
+T24: GoC("umbala",130,130);
+T25: GoC("nameless_i",212,185);
+T26: GoC("veins",181,83);
+T27: GoC("yuno",160,168);
+T28: GoC("prt_fild08",144,358);
+T29: GoC("splendide",198,170);
+T30: GoC("hu_fild02",139,254);
+T31: GoC("malangdo",140,114);
+T32: GoC("malaya",231,200);
+T33: GoC("manuk",282,138);
+T34: GoC("thor_camp",246,68);
+
+// --------------------------------------------------
+	Dungeons:
+// --------------------------------------------------
+menu	"Abyss Lakes",D0, 
+		"Amatsu Dungeon",D1, 
+		"Anthell",D2,
+		"Arsinoe",D3,
+    	"Ayothaya Dungeon",D4, 
+		"Bibilan Dungeon",D5, 
+    	"Biolab",D6, 
+		"Coal Mine (Dead Pit)",D7, 
+		"Dewata Dungeon",D8, 
+		"Einbech Dungeon",D9,
+    	"Culvert",D10, 
+		"Gefenia",D11, 
+		"Glast Heim",D12, 
+		"Gonryun Dungeon",D13,
+    	"Ice Dungeon",D14, 
+		"Juperos",D15, 
+		"Kiel Dungeon",D16,
+    	"Magma-Dungeon",D17, 
+		"Malangdo Dungeon",D18, 
+		"Moscovia Dungeon",D19,
+    	"Nydhugger",D20, 
+		"Bosque Laberinto",D21, 
+		"Recinto Sagrado de Freya",D22, 
+		"Orc-Dungeon",D23,
+		"Payon-Dungeon",D24, 
+		"Playa de Comodon",D25, 
+		"Pyramids",D26,
+		"Odin Temple",D27, 
+		"Sphinx",D28, 
+		"Sunken Ship",D29,
+		"Thanatos Tower",D30, 
+		"Thor Volcano",D31, 
+		"Turtle Dungeon",D32, 
+		"Cursed Unnamed Island",D33;
+
+D0: GoD("abyss_01",258,271);
+D1: GoD("ama_dun01",228,11);
+D2: GoD("anthell01",37,261);
+D3: GoD("intro_01",21,21);
+D4: GoD("ayo_dun01",150,149);
+D5: GoD("izlu2dun",106,88);
+D6: GoD("lhz_dun01",157,283);
+D7: GoD("mjolnir_02",81,359);
+D8: GoD("dew_fild01",58,65);
+D9: GoD("einbech",136,248);
+D10: GoD("prt_fild05",273,210);
+D11: GoD("gefenia01",211,169);
+D12: GoD("glast_01",368,303);
+D13: GoD("gonryun",160,195);
+D14: GoD("ra_fild01",233,328);
+D15: GoD("jupe_core",149,148);
+D16: GoD("kh_dun01",196,49);
+D17: GoD("yuno_fild03",39,140);
+D18: GoD("mal_dun01",34,234);
+D19: GoD("mosk_dun01",203,273);
+D20: GoD("nyd_dun01",62,124);
+D21: GoD("prt_maze01",177,10);
+D22: GoD("ra_san01",114,140);
+D23: GoD("gef_fild10",70,332);
+D24: GoD("pay_arche",43,132);
+D25: GoD("cmd_fild02",252,171);
+D26: GoD("moc_ruins",62,162);
+D27: GoD("odin_tem01",99,145);
+D28: GoD("moc_fild19",107,100);
+D29: GoD("alb2trea",75,98);
+D30: GoD("tha_scene01",131,121);
+D31: GoD("ve_fild03",168,236);
+D32: GoD("tur_dun01",149,238);
+D33: GoD("nameless_n",254,231);
+
+
+armeria:
+GoC("quiz_02",134,348);
+
+itemsypots:
+GoC("quiz_02",161,348);
+
+zonaquest:
+GoC("quiz_02",147,379);
+
+zonavip:
+GoC("quiz_02",243,379);
+
+mercancity:
+GoC("pvp_y_1-4",22,235);
+
+}
+
+// --------------------------------------------------
+//	rock and ro
+// --------------------------------------------------
+alb2trea,73,101,4	duplicate(Warper)	Warp NPC#1	4_F_VALKYRIE
+pvp_y_1-4,19,234,4	duplicate(Warper)	Warp NPC#2	4_F_VALKYRIE
+quiz_02,147,392,4	duplicate(Warper)	Warp NPC#3	4_F_VALKYRIE
+quiz_02,134,357,4	duplicate(Warper)	Warp NPC#4	4_F_VALKYRIE
+quiz_02,161,339,4	duplicate(Warper)	Warp NPC#5	4_F_VALKYRIE
+quiz_02,249,381,4	duplicate(Warper)	Warp NPC#vip	4_F_VALKYRIE
+ayothaya,217,174,4	duplicate(Warper)	Warp NPC#6	4_F_VALKYRIE
+alberta,31,240,4	duplicate(Warper)	Warp NPC#7	4_F_VALKYRIE
+aldebaran,145,118,4	duplicate(Warper)	Warp NPC#8	4_F_VALKYRIE
+amatsu,192,81,4	duplicate(Warper)	Warp NPC#9	4_F_VALKYRIE
+comodo,194,158,4	duplicate(Warper)	Warp NPC#11	4_F_VALKYRIE
+gef_fild10,71,339,4	duplicate(Warper)	Warp NPC#12	4_F_VALKYRIE
+geffen,110,66,4	duplicate(Warper)	Warp NPC#13	4_F_VALKYRIE
+glast_01,366,308,4	duplicate(Warper)	Warp NPC#14	4_F_VALKYRIE
+gonryun,161,123,4	duplicate(Warper)	Warp NPC#15	4_F_VALKYRIE
+gonryun,164,196,4	duplicate(Warper)	Warp NPC#16	4_F_VALKYRIE
+izlude,129,115,4	duplicate(Warper)	Warp NPC#17	4_F_VALKYRIE
+izlu2dun,104,82,4	duplicate(Warper)	Warp NPC#18	4_F_VALKYRIE
+louyang,210,106,4	duplicate(Warper)	Warp NPC#19	4_F_VALKYRIE
+mjolnir_02,85,363,4	duplicate(Warper)	Warp NPC#20	4_F_VALKYRIE
+moc_fild19,106,97,4	duplicate(Warper)	Warp NPC#22	4_F_VALKYRIE
+moc_ruins,63,165,4	duplicate(Warper)	Warp NPC#23	4_F_VALKYRIE
+morocc,154,97,4	duplicate(Warper)	Warp NPC#24	4_F_VALKYRIE
+niflheim,32,161,4	duplicate(Warper)	Warp NPC#25	4_F_VALKYRIE
+pay_arche,39,135,4	duplicate(Warper)	Warp NPC#26	4_F_VALKYRIE
+payon,182,103,4	duplicate(Warper)	Warp NPC#27	4_F_VALKYRIE
+prontera,161,190,4	duplicate(Warper)	Warp NPC#28	4_F_VALKYRIE
+prt_fild05,273,215,4	duplicate(Warper)	Warp NPC#29	4_F_VALKYRIE
+tur_dun01,149,238,4	duplicate(Warper)	Warp NPC#30	4_F_VALKYRIE
+umbala,132,130,4	duplicate(Warper)	Warp NPC#31	4_F_VALKYRIE
+xmas,140,137,4	duplicate(Warper)	Warp NPC#32	4_F_VALKYRIE
+yuno,139,162,4	duplicate(Warper)	Warp NPC#33	4_F_VALKYRIE
+yuno_fild03,39,140,4	duplicate(Warper)	Warp NPC#34	4_F_VALKYRIE
+veins,184,91,4	duplicate(Warper)	Warp NPC#35	4_F_VALKYRIE
+nameless_i,188,197,4	duplicate(Warper)	Warp NPC#36	4_F_VALKYRIE
+mid_camp,207,234,4	duplicate(Warper)	Warp NPC#37	4_F_VALKYRIE
+moscovia,235,197,4	duplicate(Warper)	Warp NPC#38	4_F_VALKYRIE
+rachel,108,130,4	duplicate(Warper)	Warp NPC#39	4_F_VALKYRIE
+brasilis,184,220,4	duplicate(Warper)	Warp NPC#40	4_F_VALKYRIE
+alberta,129,53,4	duplicate(Warper)	Warp NPC#41	4_F_VALKYRIE
+mora,111,96,4	duplicate(Warper)	Warp NPC#42	4_F_VALKYRIE
+hugel,112,161,4	duplicate(Warper)	Warp NPC#43	4_F_VALKYRIE
+dicastes01,198,196,4	duplicate(Warper)	Warp NPC#44	4_F_VALKYRIE
+lighthalzen,163,84,4	duplicate(Warper)	Warp NPC#46	4_F_VALKYRIE
+prt_fild08,146,365,4	duplicate(Warper)	Warp NPC#47	4_F_VALKYRIE
+hu_fild02,134,256,4	duplicate(Warper)	Warp NPC#48	4_F_VALKYRIE
+splendide,201,178,4	duplicate(Warper)	Warp NPC#49	4_F_VALKYRIE

@@ -1,0 +1,15 @@
+[Unit]
+Description=Hercules map server
+After=syslog.target network.target mariadb.service login.service char.service
+
+[Service]
+WorkingDirectory=/home/aragor/Hercules/
+User=aragor
+ExecStart=/home/aragor/Hercules/map-server
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target

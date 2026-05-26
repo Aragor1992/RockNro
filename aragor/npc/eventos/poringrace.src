@@ -1,0 +1,559 @@
+//======Name========================================
+// Poring Race
+//======Version=====================================
+// 1.0
+//======Author(s)===================================
+// Sandbox
+//======Comments====================================
+// In loving memory of AstralRO
+//==================================================
+
+
+//======================================Race Trigger Function=========================================
+//====================================================================================================
+
+-	script	pracetrigger	-1,{
+
+OnInit:
+//disablenpc "Poring Race Warper";
+disablenpc "Bet Manager";
+end;
+
+
+OnRaceTrigger:
+//enablenpc "Poring Race Warper";
+announce "Poring Race Event: Vamos a tener un evento de Poring Race",bc_all,0xFF4500;
+sleep2 1000;
+announce "Poring Race Event: Para aquellos que quieran apostar, por favor valla  @ mellina 115 150!",bc_all,0xFF4500;
+sleep2 1000;
+announce "Poring Race Event: El Warper estaría abierto por 2 minutos",bc_all,0xFF4500;
+sleep2 90000;
+announce "Poring Race Event: Últimos 30 segundos.",bc_all,0xFF4500;
+sleep2 30000;
+announce "Poring Race Event: Warper cerrado.",bc_all,0xFF4500;
+//disablenpc "Poring Race Warper";
+donpcevent "Poring Race Event::OnPoringRaceStart";
+end;
+}
+
+
+-	script	Poring Race Event	-1,{
+
+OnPoringRaceStart:
+set $@race,1;
+enablenpc "Poring#race";
+movenpc "Poring#race",58,38;
+enablenpc "Drops#race";
+movenpc "Drops#race",58,36;
+enablenpc "Poporing#race";
+movenpc "Poporing#race",58,34;
+enablenpc "Marin#race";
+movenpc "Marin#race",58,32;
+enablenpc "Pouring#race";
+movenpc "Pouring#race",58,30;
+enablenpc "Santa Poring#race";
+movenpc "Santa Poring#race",58,28;
+mapannounce "poring_race","La Carrera Poring comenzará en un minuto.",bc_blue;
+enablenpc "Bet Manager";
+sleep2 1500;
+mapannounce "poring_race","We will be collecting your bets now, when the race starts, you can't place bets anymore.",bc_blue;
+sleep2 1500;
+mapannounce "poring_race","You can talk to the Bet Manager found at the bottom right corner of the map if you want to place a bet.",bc_blue;
+sleep2 2000;
+//mapannounce "poring_race","3 minutes before the race starts..",bc_blue;
+//sleep2 60000;
+//mapannounce "poring_race","2 minutes before the race starts..",bc_blue;
+//sleep2 60000;
+mapannounce "poring_race","1 minute before the race starts..",bc_blue;
+sleep2 30000;
+mapannounce "poring_race","30 seconds before the race starts..",bc_blue;
+sleep2 1500;
+mapannounce "poring_race","We are not accepting bets anymore.",bc_blue;
+disablenpc "Bet Manager";
+set $@race,2;
+sleep2 1500;
+mapannounce "poring_race","When the race ends, you'll have 25 minutes to claim your prizes, after that the npc closes.",bc_blue;
+sleep2 25000;
+mapannounce "poring_race","Gentlerings, get ready!",bc_blue;
+sleep2 5000;
+mapannounce "poring_race","On your mark!",bc_blue;
+sleep2 3000;
+mapannounce "poring_race","Get Set!",bc_blue;
+sleep2 3000;
+mapannounce "poring_race","GOOOOOOOOOOOOOOOOO!!!!!",bc_blue;
+areawarp "poring_race",58,42,76,18,"poring_race",61,32;
+set $@win,rand(1,6);
+switch($@win)
+{
+case 1: donpcevent "Poring#race::OnPoringWin"; break;
+case 2: donpcevent "Drops#race::OnDropsWin"; break;
+case 3: donpcevent "Poporing#race::OnPoporingWin"; break;
+case 4: donpcevent "Marin#race::OnMarinWin"; break;
+case 5: donpcevent "Pouring#race::OnPouringWin"; break;
+default: donpcevent "Santa Poring#race::OnSantaWin"; break;
+}
+donpcevent "Bet Manager::OnRaceStart";
+end;
+
+}
+
+
+//=================================Bet Manager========================================================
+//====================================================================================================
+
+
+poring_race,73,22,1	script	Bet Manager	4_M_MANAGER,{
+
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "Hi, what would you want to do?";
+menu "Place a Bet",-,"Claim Prize",Lclaim;
+next;
+if(@bet > 0) goto Lalreadybet;
+if($@race < 1) goto Lnorace;
+if($@race == 2) goto Lracestarted;
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "Where would you place your bet?";
+mes "There's a 1,000,000z fee and you could only bet once."; 
+//Edit bet type you want, by default it is set to 1,000,000z for a player to place a bet. The player can only bet once
+menu "Poring",-,"Drops",Ldrops,"Poporing",Lpopo,"Marin",Lmarin,"Pouring",Lpour,"Santa Poring",Lsanta;
+next;
+if(Zeny < 1000000) goto Lnenough; //Edit to match the desired bet type.
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've placed your bet on ^0000FFPoring^000000, Goodluck!";
+set @bet,1;
+set Zeny,Zeny-1000000; //Edit to match the desired bet type.
+close;
+
+Ldrops:
+next;
+if(Zeny < 1000000) goto Lnenough; //Edit to match the desired bet type.
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've placed your bet on ^0000FFDrops^000000, Goodluck!";
+set @bet,2;
+set Zeny,Zeny-1000000; //Edit to match the desired bet type.
+close;
+
+Lpopo:
+next;
+if(Zeny < 1000000) goto Lnenough; //Edit to match the desired bet type.
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've placed your bet on ^0000FFPoporing^000000, Goodluck!";
+set @bet,3;
+set Zeny,Zeny-1000000; //Edit to match the desired bet type.
+close;
+
+Lmarin:
+next;
+if(Zeny < 1000000) goto Lnenough; //Edit to match the desired bet type.
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've placed your bet on ^0000FFMarin^000000, Goodluck!";
+set @bet,4;
+set Zeny,Zeny-1000000; //Edit to match the desired bet type.
+close;
+
+Lpour:
+next;
+if(Zeny < 1000000) goto Lnenough; //Edit to match the desired bet type.
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've placed your bet on ^0000FFPouring^000000, Goodluck!";
+set @bet,5;
+set Zeny,Zeny-1000000; //Edit to match the desired bet type.
+close;
+
+Lsanta:
+next;
+if(Zeny < 1000000) goto Lnenough;//Edit to match the desired bet type.
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've placed your bet on ^0000FFSanta Poring^000000, Goodluck!";
+set @bet,6;
+set Zeny,Zeny-1000000;//Edit to match the desired bet type.
+close;
+
+Lnenough:
+next;
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "We need zeny for the race maintenance!"; //Edit to match the desired bet type.
+close;
+
+Lalreadybet:
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You've already placed your bet on: ^0000FF";
+switch(@bet){
+case 1: mes "Poring"; break;
+case 2: mes "Drops"; break;
+case 3: mes "Poporing"; break;
+case 4: mes "Marin"; break;
+case 5: mes "Pouring"; break;
+case 6: mes "Santa Poring"; break;
+default: mes "None"; break;
+}
+mes "^000000";
+close;
+
+Lnorace:
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "There's no race being held at the moment, or it's finished already.";
+close;
+
+Lclaim:
+next;
+if($@race == 1) goto Lnoclaim;
+if($@win != @bet) goto Lnowin;
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "Congratulations! You've won!";
+set @bet,0;
+getitem 7227,1; //Edit to the prize that you want if a bettor's bet wins.
+close;
+
+Lnoclaim:
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "You can't claim prizes during the bet collection process.";
+close;
+
+
+Lracestarted:
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "The race has started, you can't place bets anymore.";
+close;
+
+
+Lnowin:
+mes "[ ^0000FFBet Manager^000000 ]";
+mes "Either you've already got your prize or the monster you've placed your bet on didn't won.";
+close;
+
+
+OnRaceStart:
+sleep2 1800000;
+set $@win,7;
+disablenpc "Bet Manager";
+disablenpc "Poring#race";
+disablenpc "Drops#race";
+disablenpc "Poporing#race";
+disablenpc "Marin#race";
+disablenpc "Pouring#race";
+disablenpc "Santa Poring#race";
+end;
+
+}
+
+
+//======================================Race Function=================================================
+//====================================================================================================
+poring_race,58,38,3	script	Poring#race	PORING,{
+end;
+npcspeed 200;
+
+OnInit:
+disablenpc "Poring#race";
+disablenpc "Bet Manager";
+end;
+
+
+
+OnPoringWin:
+npcwalkto 55,38;
+donpcevent "Drops#race::OnDropsLose";
+donpcevent "Poporing#race::OnPoporingLose";
+donpcevent "Marin#race::OnMarinLose";
+donpcevent "Pouring#race::OnPouringLose";
+donpcevent "Santa Poring#race::OnSantaLose";
+sleep2 2500;
+npcwalkto 52,38;
+sleep2 4000;
+npcwalkto 46,38;
+sleep2 2500;
+npcwalkto 41,38;
+sleep2 2500;
+npcwalkto 37,38;
+sleep2 2500;
+npcwalkto 30,38;
+sleep2 10000;
+mapannounce "poring_race","Poring won the Race!!",bc_blue;
+set $@race,0;
+enablenpc "Bet Manager";
+npcwalkto 58,38;
+end;
+
+OnPoringLose:
+npcwalkto 53,38;
+sleep2 4000;
+npcwalkto 46,38;
+sleep2 2500;
+npcwalkto 44,38;
+sleep2 2500;
+npcwalkto 39,38;
+sleep2 2500;
+npcwalkto 36,38;
+sleep2 4500;
+npcwalkto 30,38;
+sleep2 3000;
+npcwalkto 58,38;
+end;
+
+}
+
+poring_race,58,36,3	script	Drops#race	DROPS,{
+end;
+npcspeed 200;
+
+OnInit:
+disablenpc "Drops#race";
+end;
+
+OnDropsWin:
+npcwalkto 55,36;
+donpcevent "Poring#race::OnPoringLose";
+donpcevent "Poporing#race::OnPoporingLose";
+donpcevent "Marin#race::OnMarinLose";
+donpcevent "Pouring#race::OnPouringLose";
+donpcevent "Santa Poring#race::OnSantaLose";
+sleep2 2500;
+npcwalkto 52,36;
+sleep2 4000;
+npcwalkto 46,36;
+sleep2 2500;
+npcwalkto 41,36;
+sleep2 2500;
+npcwalkto 37,36;
+sleep2 2500;
+npcwalkto 30,36;
+sleep2 10000;
+mapannounce "poring_race","Drops won the Race!!",bc_blue;
+set $@race,0;
+enablenpc "Bet Manager";
+npcwalkto 58,36;
+end;
+
+OnDropsLose:
+npcwalkto 54,36;
+sleep2 4000;
+npcwalkto 47,36;
+sleep2 2500;
+npcwalkto 43,36;
+sleep2 2500;
+npcwalkto 37,36;
+sleep2 2500;
+npcwalkto 35,36;
+sleep2 4500;
+npcwalkto 30,36;
+sleep2 3000;
+npcwalkto 58,36;
+end;
+}
+
+
+poring_race,58,34,3	script	Poporing#race	POPORING,{
+end;
+npcspeed 200;
+
+OnInit:
+disablenpc "Poporing#race";
+end;
+
+OnPoporingWin:
+npcwalkto 55,34;
+donpcevent "Poring#race::OnPoringLose";
+donpcevent "Drops#race::OnDropsLose";
+donpcevent "Marin#race::OnMarinLose";
+donpcevent "Pouring#race::OnPouringLose";
+donpcevent "Santa Poring#race::OnSantaLose";
+sleep2 500;
+npcwalkto 52,34;
+sleep2 4000;
+npcwalkto 46,34;
+sleep2 2500;
+npcwalkto 41,34;
+sleep2 2500;
+npcwalkto 37,34;
+sleep2 2500;
+npcwalkto 30,34;
+sleep2 10000;
+mapannounce "poring_race","Poporing won the Race!!",bc_blue;
+set $@race,0;
+enablenpc "Bet Manager";
+npcwalkto 58,34;
+end;
+
+
+OnPoporingLose:
+npcwalkto 54,34;
+sleep2 4000;
+npcwalkto 47,34;
+sleep2 2500;
+npcwalkto 43,34;
+sleep2 2500;
+npcwalkto 37,34;
+sleep2 2500;
+npcwalkto 34,34;
+sleep2 4500;
+npcwalkto 30,34;
+sleep2 3000;
+npcwalkto 58,34;
+end;
+}
+
+
+poring_race,58,32,3	script	Marin#race	MARIN,{
+end;
+npcspeed 200;
+
+OnInit:
+disablenpc "Marin#race";
+end;
+
+OnMarinWin:
+npcwalkto 55,32;
+donpcevent "Poring#race::OnPoringLose";
+donpcevent "Drops#race::OnDropsLose";
+donpcevent "Poporing#race::OnPoporingLose";
+donpcevent "Pouring#race::OnPouringLose";
+donpcevent "Santa Poring#race::OnSantaLose";
+sleep2 2500;
+npcwalkto 52,32;
+sleep2 4000;
+npcwalkto 46,32;
+sleep2 2500;
+npcwalkto 41,32;
+sleep2 2500;
+npcwalkto 37,32;
+sleep2 2500;
+npcwalkto 30,32;
+sleep2 10000;
+mapannounce "poring_race","Marin won the Race!!",bc_blue;
+set $@race,0;
+enablenpc "Bet Manager";
+npcwalkto 58,32;
+end;
+
+
+OnMarinLose:
+npcwalkto 52,32;
+sleep2 4000;
+npcwalkto 48,32;
+sleep2 2500;
+npcwalkto 40,32;
+sleep2 2500;
+npcwalkto 37,32;
+sleep2 2500;
+npcwalkto 33,32;
+sleep2 4500;
+npcwalkto 30,32;
+sleep2 3000;
+npcwalkto 58,32;
+end;
+}
+
+poring_race,58,30,3	script	Pouring#race	POURING,{
+end;
+npcspeed 200;
+
+OnInit:
+disablenpc "Pouring#race";
+end;
+
+
+OnPouringWin:
+npcwalkto 55,30;
+donpcevent "Poring#race::OnPoringLose";
+donpcevent "Drops#race::OnDropsLose";
+donpcevent "Poporing#race::OnPoporingLose";
+donpcevent "Marin#race::OnMarinLose";
+donpcevent "Santa Poring#race::OnSantaLose";
+sleep2 2500;
+npcwalkto 52,30;
+sleep2 4000;
+npcwalkto 46,30;
+sleep2 2500;
+npcwalkto 41,30;
+sleep2 2500;
+npcwalkto 37,30;
+sleep2 2500;
+npcwalkto 30,30;
+sleep2 10000;
+mapannounce "poring_race","Pouring won the Race!!",bc_blue;
+set $@race,0;
+enablenpc "Bet Manager";
+npcwalkto 58,30;
+end;
+
+OnPouringLose:
+npcwalkto 50,30;
+sleep2 4000;
+npcwalkto 43,30;
+sleep2 2500;
+npcwalkto 38,30;
+sleep2 2500;
+npcwalkto 35,30;
+sleep2 2500;
+npcwalkto 31,30;
+sleep2 4500;
+npcwalkto 30,30;
+sleep2 3000;
+npcwalkto 58,30;
+end;
+
+
+
+}
+
+poring_race,58,28,3	script	Santa Poring#race	PORING_,{
+end;
+npcspeed 200;
+
+OnInit:
+disablenpc "Santa Poring#race";
+end;
+
+
+OnSantaWin:
+npcwalkto 55,28;
+donpcevent "Poring#race::OnPoringLose";
+donpcevent "Drops#race::OnDropsLose";
+donpcevent "Poporing#race::OnPoporingLose";
+donpcevent "Pouring#race::OnPouringLose";
+donpcevent "Marin#race::OnMarinLose";
+sleep2 2500;
+npcwalkto 52,28;
+sleep2 4000;
+npcwalkto 46,28;
+sleep2 2500;
+npcwalkto 41,28;
+sleep2 2500;
+npcwalkto 37,28;
+sleep2 4500;
+npcwalkto 30,28;
+sleep2 10000;
+mapannounce "poring_race","Santa Poring won the Race!!",bc_blue;
+set $@race,0;
+enablenpc "Bet Manager";
+npcwalkto 58,28;
+end;
+
+OnSantaLose:
+npcwalkto 49,28;
+sleep2 4000;
+npcwalkto 48,28;
+sleep2 2500;
+npcwalkto 47,28;
+sleep2 2500;
+npcwalkto 35,28;
+sleep2 2500;
+npcwalkto 32,28;
+sleep2 4500;
+npcwalkto 30,28;
+sleep2 3000;
+npcwalkto 58,28;
+end;
+}
+
+
+poring_race	mapflag	nowarp
+poring_race	mapflag	nowarpto
+poring_race	mapflag	noskill
+poring_race	mapflag	noteleport
+poring_race	mapflag	nomemo
+poring_race	mapflag	nosave	SavePoint
+poring_race	mapflag	noicewall
+poring_race	mapflag	noreturn
+poring_race	mapflag	noloot

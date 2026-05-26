@@ -1,0 +1,39 @@
+// Item Combos Database
+//
+// Structure of Database:
+// ID:ID:ID:ID,{ Script }
+
+QA_Armor_Neutral:Q_Garmet_Neutral:Q_Shoes_Neutral{callfunc("Q_combo",Ele_Neutral);}
+QA_Armor_Poison:Q_Garmet_Poison:Q_Shoes_Poison{callfunc("Q_combo",Ele_Poison);}
+QA_Armor_Holy:Q_Garmet_Holy:Q_Shoes_Holy{callfunc("Q_combo",Ele_Holy);}
+QA_Armor_Dark:Q_Garmet_Dark:Q_Shoes_Dark{callfunc("Q_combo",Ele_Dark);}
+QA_Armor_Fire:Q_Garmet_Fire:Q_Shoes_Fire{callfunc("Q_combo",Ele_Fire);}
+QA_Armor_Water:Q_Garmet_Water:Q_Shoes_Water{callfunc("Q_combo",Ele_Water);}
+QA_Armor_Wind:Q_Garmet_Wind:Q_Shoes_Wind{callfunc("Q_combo",Ele_Wind);}
+QA_Armor_Earth:Q_Garmet_Earth:Q_Shoes_Earth{callfunc("Q_combo",Ele_Earth);}
+QA_Armor_Undead:Q_Garmet_Undead:Q_Shoes_Undead{callfunc("Q_combo",Ele_Undead);}
+QA_Armor_Ghost:Q_Garmet_Ghost:Q_Shoes_Ghost{callfunc("Q_combo",Ele_Ghost);}
+
+QM_Armor_Neutral:Q_Garmet_Neutral:Q_Shoes_Neutral{callfunc("Q_combo",Ele_Neutral);}
+QM_Armor_Poison:Q_Garmet_Poison:Q_Shoes_Poison{callfunc("Q_combo",Ele_Poison);}
+QM_Armor_Holy:Q_Garmet_Holy:Q_Shoes_Holy{callfunc("Q_combo",Ele_Holy);}
+QM_Armor_Dark:Q_Garmet_Dark:Q_Shoes_Dark{callfunc("Q_combo",Ele_Dark);}
+QM_Armor_Fire:Q_Garmet_Fire:Q_Shoes_Fire{callfunc("Q_combo",Ele_Fire);}
+QM_Armor_Water:Q_Garmet_Water:Q_Shoes_Water{callfunc("Q_combo",Ele_Water);}
+QM_Armor_Wind:Q_Garmet_Wind:Q_Shoes_Wind{callfunc("Q_combo",Ele_Wind);}
+QM_Armor_Earth:Q_Garmet_Earth:Q_Shoes_Earth{callfunc("Q_combo",Ele_Earth);}
+QM_Armor_Undead:Q_Garmet_Undead:Q_Shoes_Undead{callfunc("Q_combo",Ele_Undead);}
+QM_Armor_Ghost:Q_Garmet_Ghost:Q_Shoes_Ghost{callfunc("Q_combo",Ele_Ghost);}
+
+D_Armor_Neutral:Q_Garmet_Neutral:Q_Shoes_Neutral{callfunc("Q_combo",Ele_Neutral);}
+D_Armor_Poison:Q_Garmet_Poison:Q_Shoes_Poison{callfunc("Q_combo",Ele_Poison);}
+D_Armor_Holy:Q_Garmet_Holy:Q_Shoes_Holy{callfunc("Q_combo",Ele_Holy);}
+D_Armor_Dark:Q_Garmet_Dark:Q_Shoes_Dark{callfunc("Q_combo",Ele_Dark);}
+D_Armor_Fire:Q_Garmet_Fire:Q_Shoes_Fire{callfunc("Q_combo",Ele_Fire);}
+D_Armor_Water:Q_Garmet_Water:Q_Shoes_Water{callfunc("Q_combo",Ele_Water);}
+D_Armor_Wind:Q_Garmet_Wind:Q_Shoes_Wind{callfunc("Q_combo",Ele_Wind);}
+D_Armor_Earth:Q_Garmet_Earth:Q_Shoes_Earth{callfunc("Q_combo",Ele_Earth);}
+D_Armor_Undead:Q_Garmet_Undead:Q_Shoes_Undead{callfunc("Q_combo",Ele_Undead);}
+D_Armor_Ghost:Q_Garmet_Ghost:Q_Shoes_Ghost{callfunc("Q_combo",Ele_Ghost);}
+
+Q_Novice_Shoes:Q_Novice_Manteau:Q_Novice_Shield{callfunc("F_NoviceCombo);}

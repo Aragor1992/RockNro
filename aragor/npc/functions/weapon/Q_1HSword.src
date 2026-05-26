@@ -1,0 +1,95 @@
+function	script	Q_1HSword	{
+	skill KN_ONEHAND,1;
+	bonus bMatkRate,getrefine()/2;
+if(palafisico==1 && BaseJob==Job_Crusader){
+		bonus bAtk,400;
+		bonus bMaxHPrate,readparam(bStr)/10;
+		bonus bAspdRate,readparam(bStr)/5;
+		bonus bHit,100;
+		bonus bPerfectHitRate,10;
+		bonus bSPDrainValue,5;
+		bonus2 bSkillAtk,SM_BASH,60;
+		bonus2 bSkillAtk,CR_HOLYCROSS,40;
+		bonus2 bSkillAtk,PA_SHIELDCHAIN,20;
+	}
+if(palamagico==1 && BaseJob==Job_Crusader){
+		bonus bCritical,50;
+		bonus bAspdRate,readparam(bInt)/10;
+		bonus bMatkRate,readparam(bInt)/12;
+		bonus2 bSkillHeal,AL_HEAL,10;
+	}
+switch(getarg(0)+1){
+
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		skill SL_STUN,7;
+		bonus4 bAutoSpellOnSkill,SL_STUN,SL_SMA,10,1000;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,SL_SMA,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;	
+
+case 2:	bonus bAtkEle,Ele_Water;
+		skill MG_COLDBOLT,7;
+		bonus3 bAddEff,Eff_Freeze,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,MG_COLDBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		skill WZ_EARTHSPIKE,5;
+		bonus3 bAddEff,Eff_Stone,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,WZ_EARTHSPIKE,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		skill MG_FIREBOLT,7;
+		bonus3 bAddEff,Eff_Bleeding,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,MG_FIREBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		skill MG_LIGHTNINGBOLT,7;
+		bonus bAtkRange,2;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,MG_LIGHTNINGBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		skill NSC_VENOMBOLT,7;
+		bonus3 bAddEff,Eff_Poison,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,NSC_VENOMBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		skill NSC_HOLYBOLT,7;
+		bonus3 bAddEff,Eff_Blind,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,NSC_HOLYBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		skill NPC_DARKSTRIKE,7;
+		bonus3 bAddEff,Eff_Curse,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			skill NPC_DARKSTRIKE,7;bonus3 bAddEff,Eff_Curse,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		}	break;
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		skill MG_SOULSTRIKE,7;
+		bonus3 bAddEff,Eff_Sleep,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,MG_SOULSTRIKE,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		skill HW_NAPALMVULCAN,3;
+		bonus3 bAddEff,Eff_Curse,1000,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC;
+		if (palamagico && BaseJob==Job_Crusader){
+			bonus5 bAutoSpell,HW_NAPALMVULCAN,2,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+	}
+return;
+}

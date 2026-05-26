@@ -1,0 +1,137 @@
+//Super item
+//Actualizada 24/Feb/2012
+//Actualizada 17/11/2014
+//Actualizada 29/Nov/2020
+quiz_02,249,389,4	script	Super Mighty Sage	4_M_SANTA,{		
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Que tal !! Yo soy el gran y experimentado Sabio creador de los regalos de Navidad..!";
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Yo puedo colocarle a esos items los bonus que tu eligas. Asombroso verdad..!";
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Antes de comenzar, recuerda tener equipado el item al cual le asignaras el bonus";
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	//se identifica que tipo de mid es 2009, 2010 o 2011
+	if(getequipid(EQI_HEAD_MID)==9897 || getequipid(EQI_HEAD_MID)==9898 || getequipid(EQI_HEAD_MID)==9923 || getequipid(EQI_HEAD_MID)==9959 || getequipid(EQI_HEAD_MID)==9961 || getequipid(EQI_HEAD_MID)==9966 || getequipid(EQI_HEAD_MID)==9965 || getequipid(EQI_HEAD_MID)==9963 || getequipid(EQI_HEAD_MID)==9960 || getequipid(EQI_HEAD_MID)==9962 || getequipid(EQI_HEAD_MID)==15901|| getequipid(EQI_HEAD_MID)==15281|| getequipid(EQI_HEAD_MID)==9964|| getequipid(EQI_HEAD_MID)==32550|| getequipid(EQI_HEAD_MID)==32577|| getequipid(EQI_HEAD_MID)==32578|| getequipid(EQI_HEAD_MID)==32579|| getequipid(EQI_HEAD_MID)==32681){ // 2014
+		set @typemid,2014;
+		set @bonusDisp,4;
+		set @listabonus,21;
+	}
+	else if(getequipid(EQI_HEAD_MID)==9920||getequipid(EQI_HEAD_MID)==9981||getequipid(EQI_HEAD_MID)==9968||getequipid(EQI_HEAD_MID)==9969||getequipid(EQI_HEAD_MID)==9970||getequipid(EQI_HEAD_MID)==9971||getequipid(EQI_HEAD_MID)==10043||getequipid(EQI_HEAD_MID)==15204||getequipid(EQI_HEAD_MID)==9856||getequipid(EQI_HEAD_MID)==9855||getequipid(EQI_HEAD_MID)==9925||getequipid(EQI_HEAD_MID)==20060||getequipid(EQI_HEAD_MID)==9982||getequipid(EQI_HEAD_MID)==9901||getequipid(EQI_HEAD_MID)==9601){ //MIDS 2011
+		set @typemid,2011; 
+		set @bonusDisp,4; //variable para identificar cuantos bonus son posibles
+		set @listabonus,21;
+	}
+	else if(getequipid(EQI_HEAD_MID)==P_Power_Of_Thor || getequipid(EQI_HEAD_MID)==P_Odin_Mask || getequipid(EQI_HEAD_MID)==P_Black_Tie|| getequipid(EQI_HEAD_MID)==P_Gold_Power_Thor|| getequipid(EQI_HEAD_MID)==P_Red_Power_Thor ){ //MIDS 2010
+		set @typemid,2010; 
+		set @bonusDisp,4; //variable para identificar cuantos bonus son posibles
+		set @listabonus,18;
+	}
+	else if(getequipid(EQI_HEAD_MID)==P_Sage_Ring_Hat || getequipid(EQI_HEAD_MID)==P_ears_of_ifrit || getequipid(EQI_HEAD_MID)==P_mask_of_godess){ //MIDS 2009
+		set @typemid,2009;
+		set @bonusDisp,3;
+		set @listabonus,10;
+	}
+	else {
+		//se verifica que tenga un regalo equipado para acceder al NPC
+		mes "^FF0000No detecto que tengas equipado ningun regalo^000000";
+		close;
+	}
+	
+	cleararray @bonus[0],0,4;
+	mes "Dime lo que deseas hacer";
+	menu "Asignar Bonus",-,"Ver bonus asignados",verbonus;
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Ve que tienes equipado un ^B05D00"+getequipname(EQI_HEAD_MID)+"^000000. Los bonus que puedes elegir son los siguientes:";
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	for(set .@j,1;.@j<=@listabonus;set .@j,.@j+1)
+		callfunc("listaBonus",(.@j));//Imprime los bonus que se pueden elegir
+	//seleccion de Bonus
+	set .@i,0;
+	while(.@i<@bonusDisp){
+		input @bopcion;
+		if( callfunc("validarBonus",(.@i)) ){
+			set @bonus[.@i],@bopcion;
+			next;
+			mes "^FF0000[Mighty Sage]^000000";
+			mes "Has seleccionado:";
+			callfunc("listaBonus",(@bopcion));
+			next;
+			mes "^FF0000[Mighty Sage]^000000";
+			for(set .@j,1;.@j<=@listabonus;set .@j,.@j+1)
+				callfunc("listaBonus",(.@j));
+			set .@i,.@i+1;
+		}
+	}
+	//Se asignan los bonus a cada mid segun sea el caso
+	if(@typemid == 2009){ //Mids 2009
+		set b1Mid2009,@bonus[0];
+		set b2Mid2009,@bonus[1];
+		set b3Mid2009,@bonus[2];
+	}
+	else if(@typemid == 2010){ //Mids 2010
+		set b1Mid2010,@bonus[0];
+		set b2Mid2010,@bonus[1];
+		set b3Mid2010,@bonus[2];
+		set b4Mid2010,@bonus[3];
+	}
+	else if(@typemid == 2011){ //Mids 2011
+		set b1Mid2011,@bonus[0];
+		set b2Mid2011,@bonus[1];
+		set b3Mid2011,@bonus[2];
+		set b4Mid2011,@bonus[3];
+	}
+	else if(@typemid == 2014){ //Mids 2014
+		set b1Mid2014,@bonus[0];
+		set b2Mid2014,@bonus[1];
+		set b3Mid2014,@bonus[2];
+		set b4Mid2014,@bonus[3];
+	}
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Ya has seleccionado todos los bonus para tu item";
+	mes "Espero y con esto hayas mejorado tu build";
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Siempre estare aqui de tal manera que puedas cambiar los bonus cuando gustes.";
+	next;
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Ahh y recuerda quitarte y volverte a poner el item para que los nuevos bonus tomen efecto";
+	close;
+	
+verbonus:
+	next;
+	if(@typemid == 2009){ //Mid 2009
+		setarray @verbonus[0],b1Mid2009,b2Mid2009,b3Mid2009;
+	}
+	else if(@typemid == 2010){ //Mid 2010
+		setarray @verbonus[0],b1Mid2010,b2Mid2010,b3Mid2010,b4Mid2010;
+	}
+	else if(@typemid == 2011){ //Mid 2011
+		setarray @verbonus[0],b1Mid2011,b2Mid2011,b3Mid2011,b4Mid2011;
+	}
+	else if(@typemid == 2014){ //Mid 2014
+		setarray @verbonus[0],b1Mid2014,b2Mid2014,b3Mid2014,b4Mid2014;
+	}
+	mes "^FF0000[Mighty Sage]^000000";
+	mes "Tu ^B05D00"+getequipname(EQI_HEAD_MID)+"^000000 tiene los siguientes bonus:";
+	for(set .@i,0;.@i<@bonusDisp;set .@i,.@i+1)
+		callfunc("listaBonus",(@verbonus[.@i]));
+	close;	
+}
+
+prontera,147,193,5	duplicate(Super Mighty Sage)	Super Mighty Sage#1	2_M_MOLGENSTEIN
+ayothaya,212,207,5	duplicate(Super Mighty Sage)	Super Mighty Sage#2	2_M_MOLGENSTEIN
+payon,165,111,5	duplicate(Super Mighty Sage)	Super Mighty Sage#3	2_M_MOLGENSTEIN
+brasilis,167,218,5	duplicate(Super Mighty Sage)	Super Mighty Sage#4	2_M_MOLGENSTEIN
+morocc,146,81,5	duplicate(Super Mighty Sage)	Super Mighty Sage#5	2_M_MOLGENSTEIN
+gonryun,169,135,5	duplicate(Super Mighty Sage)	Super Mighty Sage#6	2_M_MOLGENSTEIN
+louyang,232,127,5	duplicate(Super Mighty Sage)	Super Mighty Sage#7	2_M_MOLGENSTEIN
+aldebaran,173,118,5	duplicate(Super Mighty Sage)	Super Mighty Sage#8	2_M_MOLGENSTEIN
+lighthalzen,151,110,5	duplicate(Super Mighty Sage)	Super Mighty Sage#9	2_M_MOLGENSTEIN
+prt_fild08,164,334,5	duplicate(Super Mighty Sage)	Super Mighty Sage#10	2_M_MOLGENSTEIN
+hu_fild02,139,236,5	duplicate(Super Mighty Sage)	Super Mighty Sage#11	2_M_MOLGENSTEIN

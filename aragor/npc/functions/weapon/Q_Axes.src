@@ -1,0 +1,125 @@
+function	script	Q_Axe	{
+	bonus bStr,10;
+	bonus bInt,10;
+	bonus bHit,50;
+	skill BS_ADRENALINE2,1;
+	skill ITM_TOMAHAWK,1;
+	skill KN_CHARGEATK,1;
+	bonus bAspdRate,30;
+	bonus bMatkRate,30;
+if(BaseJob==Job_Blacksmith) {
+	bonus bSpeedRate,10;
+	bonus bAtkRate,30;
+	bonus bStr,20;
+	bonus bHit,100;
+	bonus2 bSkillAtk,MC_MAMMONITE,50;
+	bonus2 bSkillAtk,ITM_TOMAHAWK,30;
+	bonus2 bAddSkillBlow,ITM_TOMAHAWK,1;
+	bonus4 bAutoSpellOnSkill,WS_CARTTERMINATION,WS_CARTTERMINATION,5,150;
+}
+if(BaseJob==Alchemist){
+	bonus bMatkRate,50;
+	bonus bDelayrate,-10;
+	bonus bSpeedRate,10;
+	bonus bSpeedRate,10;bonus bInt,20;
+	bonus bHit,100;
+	bonus2 bSkillAtk,AM_ACIDTERROR,50;
+	bonus2 bAddSkillBlow,AM_ACIDTERROR,2;
+	bonus2 bSkillAtk,CR_ACIDDEMONSTRATION,20;
+	bonus2 bSkillHeal,AM_POTIONPITCHER,10;
+	bonus2 bSkillHeal,CR_SLIMPITCHER,10;
+}
+switch(getarg(0)+1){
+
+case 1:	bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		if(BaseJob==Job_Blacksmith) {
+			bonus2 bHPDrainRate,100,50;
+		}
+		if(BaseJob==Alchemist){
+			skill CR_ACIDDEMONSTRATION,5;
+			bonus5 bAutoSpell,CR_ACIDDEMONSTRATION,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+
+case 2:	bonus bAtkEle,Ele_Water;
+		if(BaseJob==Job_Blacksmith) {}
+		if(BaseJob==Alchemist){
+			skill MG_COLDBOLT,7;
+			bonus5 bAutoSpell,MG_COLDBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;		
+
+case 3:	bonus bAtkEle,Ele_Earth;
+		if(BaseJob==Job_Blacksmith) {
+			bonus2 bSubSize,Size_Medium,10;
+			bonus2 bSubSize,Size_Large,10;
+		}
+		if(BaseJob==Alchemist){
+			skill WZ_EARTHSPIKE,5;
+			bonus5 bAutoSpell,WZ_EARTHSPIKE,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;		
+
+case 4:	bonus bAtkEle,Ele_Fire;
+		if(BaseJob==Job_Blacksmith) {
+			bonus2 bAddRace,RC_NonBoss,10;
+		}
+		if(BaseJob==Alchemist){
+			skill MG_FIREBOLT,7;
+			bonus5 bAutoSpell,MG_FIREBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;		
+
+case 5:	bonus bAtkEle,Ele_Wind;
+		if(BaseJob==Job_Blacksmith) {
+			bonus5 bAutoSpell,HT_SHOCKWAVE,1,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}
+		if(BaseJob==Alchemist){
+			skill MG_LIGHTNINGBOLT,7;
+			bonus5 bAutoSpell,MG_LIGHTNINGBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;	
+
+case 6:	bonus bAtkEle,Ele_Poison;
+		if(BaseJob==Job_Blacksmith) {}
+		if(BaseJob==Alchemist){
+			skill NSC_VENOMBOLT,7;
+			bonus5 bAutoSpell,NSC_VENOMBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;		
+
+case 7:	bonus bAtkEle,Ele_Holy;
+		if(BaseJob==Job_Blacksmith) {
+			bonus bMagicAtkDef,15;
+		}
+		if(BaseJob==Alchemist){
+			skill NSC_HOLYBOLT,7;
+			bonus5 bAutoSpell,NSC_HOLYBOLT,5,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;	
+
+case 8:	bonus bAtkEle,Ele_Dark;
+		if(BaseJob==Job_Blacksmith) {
+			bonus3 bAutoSpell,NPC_HELLPOWER,1,10;
+			bonus4 bAutoSpell,NPC_HELLPOWER,1,10,0;
+		}
+		if(BaseJob==Alchemist){
+			skill NPC_DARKSTRIKE,7;
+			bonus5 bAutoSpell,NPC_DARKSTRIKE,7,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;		
+
+case 9:	bonus bAtkEle,Ele_Ghost;
+		if(BaseJob==Job_Blacksmith) {
+			bonus bMagicAtkDef,15;
+		}
+		if(BaseJob==Alchemist){			
+			skill MG_SOULSTRIKE,7;
+			bonus5 bAutoSpell,MG_SOULSTRIKE,7,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;		
+
+case 10:	bonus bAtkEle,Ele_Undead;
+		if(BaseJob==Job_Blacksmith) {
+			skill AS_POISONREACT,7;
+			bonus2 bSkillAtk,TF_POISON,30;
+		}
+		if(BaseJob==Alchemist){
+			skill HW_NAPALMVULCAN,3;
+			bonus5 bAutoSpell,HW_NAPALMVULCAN,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}	break;
+	}
+return;
+}

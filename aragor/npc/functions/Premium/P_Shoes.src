@@ -1,0 +1,34 @@
+/*VIP SHOES*/
+function	script	P_Vidar_Boots	{
+	bonus bFlee,getrefine()*10;
+	bonus bMaxHPrate,10;
+	bonus bMaxSPrate,10;
+	bonus bSPrecovRate,10;
+	bonus bSpeedRate,15;
+	bonus4 bAutoSpellWhenHit,NJ_UTSUSEMI,5,20,0;
+	return;
+}
+
+function	script	P_Goibne_Greaves	{
+	bonus bMdef,getrefine();
+	bonus4 bAutoSpellWhenHit,HW_MAGICPOWER,5,getrefine(),0;
+	bonus bMaxHPrate,10;
+	bonus bMaxSPrate,10;
+	bonus bSPrecovRate,10;
+	bonus bSpeedRate,15;
+	bonus5 bAutoSpellWhenHit,SL_KAITE,7,40,BF_MAGIC,0;
+	return;
+}
+
+function	script	P_Valkyrie_Shoes	{
+	bonus bMaxHPrate,10;
+	bonus bMaxSPrate,10;
+	bonus bSPrecovRate,10;
+	bonus bSpeedRate,15;
+	bonus4 bAutoSpellWhenHit,PR_KYRIE,1,20,0;
+	bonus4 bAutoSpellWhenHit,CR_AUTOGUARD,5,20,0;
+	if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2){
+		bonus4 bAutoSpellWhenHit,CR_AUTOGUARD,5,-20,0;
+	}
+	return;
+}

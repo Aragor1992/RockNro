@@ -1,0 +1,8 @@
+function	script	F_Anubis	{
+    set .@c,callfunc("contar_cartas",EQI_HAND_L,4138);
+    set .@d,callfunc("contar_cartas",EQI_HAND_R,4138);
+    if(.@c == 1 && .@d == 1 || .@c == 1 && .@d == 0 || .@c == 0 && .@d == 1){
+        bonus2 bSubRace,RC_Angel,30;
+    }
+    return;
+}
