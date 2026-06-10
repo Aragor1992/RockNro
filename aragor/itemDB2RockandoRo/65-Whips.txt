@@ -1,0 +1,260 @@
+{
+	Id: 17011
+	AegisName: "Queen's_Whip"
+	Name: "Queen's Whip v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_neutral"; ">
+},
+{
+	Id: 17012
+	AegisName: "Icicle_Whip"
+	Name: "Ice Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_agua"; ">
+},
+{
+	Id: 17013
+	AegisName: "Electric_Wire"
+	Name: "Electric Wire v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_viento"; ">
+},
+{
+	Id: 17014
+	AegisName: "Red_Flame_Whip"
+	Name: "Flame Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_fuego"; ">
+},
+{
+	Id: 17015
+	AegisName: "Gaia_Whip"
+	Name: "Earth Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_tierra"; ">
+},
+{
+	Id: 17016
+	AegisName: "Skipping_Rope"
+	Name: "Angel Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_holy"; ">
+},
+{
+	Id: 17017
+	AegisName: "Blade_Whip"
+	Name: "Demon Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_shadow"; ">
+},
+{
+	Id: 17018
+	AegisName: "Dimension_Whip"
+	Name: "Dimension Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_ghost"; ">
+},
+{
+	Id: 17019
+	AegisName: "Infernal_Whip"
+	Name: "Infernal Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_undead"; ">
+},
+{
+	Id: 20013
+	AegisName: "Queen's_Whip"
+	Name: "Venom Whip"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 2
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_FEMALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_WHIP"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_latigo_poison"; ">
+},

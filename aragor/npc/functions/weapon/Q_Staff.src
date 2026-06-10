@@ -1,4 +1,4 @@
-function	script	Q_Staff	{
+function	script	W_STAFF	{
 	bonus2 bMagicAddRace,RC_DemiHuman,10;
 	bonus bDelayrate,-5;
 	bonus2 bSkillAtk,WZ_METEOR,-20;

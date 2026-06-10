@@ -1,4 +1,4 @@
-function	script	Q_Book	{
+function	script	W_BOOK	{
 	bonus2 bMagicAddRace,RC_DemiHuman,-25;
 	bonus2 bSkillHeal,AL_HEAL,20;
 	bonus2 bSkillHeal,PR_SANCTUARY,150;

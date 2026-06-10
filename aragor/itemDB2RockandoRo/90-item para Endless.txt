@@ -1,0 +1,16 @@
+{
+	Id: 20065
+	AegisName: "Ticket_Endless"
+	Name: "Ticket Endless"
+	Buy: 20
+	Weight: 10
+	Trade: {
+		override: 60
+		nodrop: true
+		notrade: true
+		partneroverride: true
+		nocart: true
+		nostorage: true
+		nogstorage: true
+	}
+},

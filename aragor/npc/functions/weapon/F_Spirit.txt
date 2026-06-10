@@ -1,6 +1,16 @@
 function	script	P_Spirit	{
-	
-	if(class==24){
+if(isequipped(S_Critical_Ring)) {callfunc "F_Critical_Ring";}
+if(isequipped(S_Bow_Thimble)) {callfunc "F_Bow_Thimble";}
+if(isequipped(S_Novice_Armlet)) {callfunc "F_Novice_Armlet";}
+if(isequipped(S_Megingjard)) {callfunc "F_Megingjard";}
+if(isequipped(S_Brisingamen)) {callfunc "F_Brisingamen";}
+if(isequipped(S_Celebration_Ring)) {callfunc "F_Celebration";}
+if(isequipped(S_The_Sign)) {callfunc "F_The_Sign";}
+if(isequipped(S_Glove)) {callfunc "F_Glove";}
+if(isequipped(S_Brooch)) {callfunc "F_Brooch";}
+if(isequipped(S_Nile_Rose)) {callfunc "S_Nile_Rose";}
+if(isequipped(Q_Icarus_Wing)) {callfunc "S_Icarus_Wing";}
+if(class==24){
 		bonus bMaxHPrate,10;
 		bonus bAtkRate,10;
 		bonus bAgi,readparam(bDex)/5;

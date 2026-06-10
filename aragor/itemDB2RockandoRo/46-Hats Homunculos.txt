@@ -1,0 +1,110 @@
+{
+	Id: 9655
+	AegisName: "Drooping_Amistr"
+	Name: "Drooping_Amistr_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 598
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMatkRate,15;
+		bonus bInt,15;
+		bonus bDex,15;
+		if(Class==Job_Alchemist||Class==Job_Creator) {
+			skill 496,1;
+			skill 497,1;
+			skill 498,1;
+		}
+		;
+	">
+},
+{
+	Id: 9725
+	AegisName: "Lif_Doll_Hat_v2"
+	Name: "Drooping Lif V2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 297
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMatkRate,15;
+		bonus bInt,15;
+		bonus bDex,15;
+		if(Class==Job_Alchemist||Class==Job_Creator) {
+			skill 496,1;
+			skill 497,1;
+			skill 498,1;
+		}
+		;
+	">
+},
+{
+	Id: 9726
+	AegisName: "Vanilmirth_Hat_V2"
+	Name: "Vanilmirth Hat V2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 317
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMatkRate,15;
+		bonus bInt,15;
+		bonus bDex,15;
+		if(Class==Job_Alchemist||Class==Job_Creator) {
+			skill 496,1;
+			skill 497,1;
+			skill 498,1;
+		}
+		;
+	">
+},
+{
+	Id: 9915
+	AegisName: "HillslionDoll"
+	Name: "Hillslion Doll"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 949
+	Script: <"
+		bonus bMatkRate,15;
+		bonus bInt,15;
+		bonus bDex,15;
+		if(Class==Job_Alchemist||Class==Job_Creator) {
+			skill 496,1;
+			skill 497,1;
+			skill 498,1;
+		}
+		;
+	">
+},

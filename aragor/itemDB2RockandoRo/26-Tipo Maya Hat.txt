@@ -1,0 +1,419 @@
+{
+	Id: 9616
+	AegisName: "Kankuro_Hood"
+	Name: "Kankuro Hood"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 563
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9625
+	AegisName: "Deviling_Hat"
+	Name: "Deviling Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 512
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9640
+	AegisName: "ClockTowerHat"
+	Name: "Clock_Tower_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 592
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9641
+	AegisName: "hoodofshadow"
+	Name: "Hood_of_shadow"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 593
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9645
+	AegisName: "traveler_hat"
+	Name: "Traveler Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 527
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9647
+	AegisName: "white_top_hat"
+	Name: "White Top Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 517
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9656
+	AegisName: "maskofdolar"
+	Name: "Mask_Of_Dolor"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 599
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9663
+	AegisName: "2_tune_hat"
+	Name: "2 Tune Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 540
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9675
+	AegisName: "BabyBlueCap"
+	Name: "Baby Blue Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 612
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9712
+	AegisName: "FeatheredMiniTopHat"
+	Name: "Feathered_Mini_Top_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 669
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9719
+	AegisName: "Witch_H"
+	Name: "Witch Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 695
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9731
+	AegisName: "black_traveler_hat"
+	Name: "Traveler Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 709
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9736
+	AegisName: "red_traveler_hat_item"
+	Name: "Traveler Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 714
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9737
+	AegisName: "white_traveler_hat"
+	Name: "Traveler Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 715
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9739
+	AegisName: "pink_traveler_hat"
+	Name: "Traveler Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 717
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9789
+	AegisName: "Blue_Piamette_Hairband"
+	Name: "Blue Piamette Hairband"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 800
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9803
+	AegisName: "blue_traveler_hat"
+	Name: "Blue Traveler Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 813
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,10;
+	">
+},

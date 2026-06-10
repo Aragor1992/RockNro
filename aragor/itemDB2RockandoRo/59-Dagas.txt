@@ -1,0 +1,300 @@
+{
+	Id: 16061
+	AegisName: "Ice_Pick"
+	Name: "Lightweight Dagger"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_viento"; ">
+},
+{
+	Id: 16062
+	AegisName: "Assassin_Dagger"
+	Name: "Shadow Dagger"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_shadow"; ">
+},
+{
+	Id: 16063
+	AegisName: "Grimtooth"
+	Name: "Grimtooth v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_neutral"; ">
+},
+{
+	Id: 16064
+	AegisName: "Holy_Dagger"
+	Name: "Holy Dagger"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_holy"; ">
+},
+{
+	Id: 16065
+	AegisName: "Kindle_Dagger"
+	Name: "Kindling Dagger v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_fuego"; ">
+},
+{
+	Id: 16066
+	AegisName: "Obsidian_Dagger"
+	Name: "Obsidian Dagger v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_tierra"; ">
+},
+{
+	Id: 16067
+	AegisName: "Fisherman's_Dagger"
+	Name: "Fisherman's Dagger v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_agua"; ">
+},
+{
+	Id: 16068
+	AegisName: "Dimension Dagger"
+	Name: "Dimension Dagger"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_ghost"; ">
+},
+{
+	Id: 16069
+	AegisName: "Infernal Dagger"
+	Name: "Infernal Dagger"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_undead"; ">
+},
+{
+	Id: 20009
+	AegisName: "Ice_Pick"
+	Name: "Venom Dagger"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 250
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+		Archer: true
+		Hunter: true
+		Thief: true
+		Assassin: true
+		Rogue: true		
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_DAGGER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_daga_poison"; ">
+},

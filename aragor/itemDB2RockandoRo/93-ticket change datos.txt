@@ -1,0 +1,14 @@
+{
+	Id: 20066
+	AegisName: "Cambio_datos_pass"
+	Name: "Cambio datos pass"
+	Buy: 0
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},

@@ -1,0 +1,250 @@
+{
+	Id: 17031
+	AegisName: "Fuuma_Shuriken_Beneki"
+	Name: "Kazema Shuriken Reikon"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_neutral"; ">
+},
+{
+	Id: 17032
+	AegisName: "Fuuma_Shuriken_Daisharin"
+	Name: "Kazema Shuriken Suiton"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_agua"; ">
+},
+{
+	Id: 17033
+	AegisName: "Fuuma_Shuriken_Daisharin_"
+	Name: "Kazema Shuriken Doton"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_tierra"; ">
+},
+{
+	Id: 17034
+	AegisName: "Fuuma_Shuriken_Rekka"
+	Name: "Kazema Shuriken Kage"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_shadow"; ">
+},
+{
+	Id: 17035
+	AegisName: "Fuuma_Shuriken_Beneki"
+	Name: "Kazema Shuriken Katon"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_fuego"; ">
+},
+{
+	Id: 17036
+	AegisName: "Fuuma_Shuriken_Daisharin"
+	Name: "Kazema Shuriken Fuuton"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_viento"; ">
+},
+{
+	Id: 17037
+	AegisName: "Fuuma_Shuriken_Daisharin_"
+	Name: "Kazema Shuriken Tenrai"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_holy"; ">
+},
+{
+	Id: 17038
+	AegisName: "Fuuma_Shuriken_Infernal"
+	Name: "Kazema Infernal Shuriken"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_undead"; ">
+},
+{
+	Id: 17039
+	AegisName: "Fuuma_Shuriken_Dimension"
+	Name: "Dimension Shuriken"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_ghost"; ">
+},
+{
+	Id: 19120
+	AegisName: "Fuuma_Shuriken_Venom"
+	Name: "Vandal Shuriken"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_HUUMA"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shuriken_poison"; ">
+},

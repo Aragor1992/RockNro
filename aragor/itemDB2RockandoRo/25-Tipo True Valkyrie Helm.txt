@@ -1,0 +1,494 @@
+{
+	Id: 9604
+	AegisName: "bunny_hat"
+	Name: "Bunny Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 502
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9610
+	AegisName: "reinder_hat"
+	Name: "Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 524
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9639
+	AegisName: "angelripper"
+	Name: "Angel_ripper"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 591
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9644
+	AegisName: "pink_goblin_hat"
+	Name: "Pink Goblin Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 554
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9648
+	AegisName: "fashion_black_helm"
+	Name: "Fashion Black Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 516
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9649
+	AegisName: "Falcon_hat"
+	Name: "Falcon Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 566
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9679
+	AegisName: "DevilingHat"
+	Name: "Deviling Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 617
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9684
+	AegisName: "WolfHelm"
+	Name: "Wolf Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 627
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9687
+	AegisName: "DragonRider"
+	Name: "Dragon Rider"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 663
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9695
+	AegisName: "CountessHat"
+	Name: "Countess Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 642
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9710
+	AegisName: "DragonCrown"
+	Name: "Dragon Crown"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 662
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9716
+	AegisName: "GrandArchAngelingHat"
+	Name: "Grand ArchAngeling Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 683
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9840
+	AegisName: "black_reinder_hat"
+	Name: "Black Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 862
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9841
+	AegisName: "blue_reinder_hat"
+	Name: "Blue Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 863
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9842
+	AegisName: "green_reinder_hat"
+	Name: "Green Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 864
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9843
+	AegisName: "pink_reinder_hat"
+	Name: "Pink Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 865
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9844
+	AegisName: "white_reinder_hat"
+	Name: "White Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 866
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9845
+	AegisName: "yellow_reinder_hat"
+	Name: "Yellow Reinder Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 867
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15101
+	AegisName: "GrandDragonHelm"
+	Name: "Grand Dragon Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 677
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},

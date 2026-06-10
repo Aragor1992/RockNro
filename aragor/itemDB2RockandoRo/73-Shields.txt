@@ -1,0 +1,318 @@
+{
+	Id: 18031
+	AegisName: "Mirror_Shield_"
+	Name: "Shield Reflect"
+	Type: "IT_ARMOR"
+	Buy: 60000
+	Weight: 1000
+	Def: 4
+	Slots: 4
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,251,70;
+			if(isequipped(18201)|| isequipped(18208)){
+				bonus bMaxHPrate,10;
+				bonus bDelayRate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				;
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+				;
+			}
+			;
+		}
+		bonus bShortWeaponDamageReturn,10;
+		bonus bLongWeaponDamageReturn,10;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+	">
+	OnUnequipScript: <" sc_end SC_ENDURE; ">
+},
+{
+	Id: 18032
+	AegisName: "Holy_Guard"
+	Name: "Supreme Guard"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1400
+	Def: 9
+	Slots: 4
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,251,70;
+			if(isequipped(18201)|| isequipped(18208)){
+				bonus bMaxHPrate,10;
+				bonus bDelayRate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				;
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+				;
+			}
+			;
+		}
+		bonus bAllStats,10;
+		bonus2 bSubSize,1,10;
+		bonus2 bSubSize,0,10;
+		bonus5 bAutoSpellWhenHit,356,3,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,0;
+	">
+	OnUnequipScript: <" sc_end SC_ENDURE; ">
+},
+{
+	Id: 18033
+	AegisName: "Sacred_Mission"
+	Name: "Sacred Mission Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1400
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,251,70;
+			if(isequipped(18201)|| isequipped(18208)){
+				bonus bMaxHPrate,10;
+				bonus bDelayRate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				;
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+				;
+			}
+			;
+		}
+		bonus5 bAutoSpellWhenHit,471,1,10,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,0;
+	">
+	OnUnequipScript: <" sc_end SC_ENDURE; ">
+},
+{
+	Id: 18035
+	AegisName: "Valkyrie's_Shield"
+	Name: "Valkyrie's Shield Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,251,70;
+			if(isequipped(18201)|| isequipped(18208)){
+				bonus bMaxHPrate,10;
+				bonus bDelayRate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				;
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+				;
+			}
+			;
+		}
+		bonus2 bSubEle,Ele_Neutral,20;
+		bonus2 bSubEle,Ele_Poison,20;
+		bonus2 bSubEle,Ele_Water,20;
+		bonus2 bSubEle,Ele_Ghost,20;
+		bonus2 bSubEle,Ele_Wind,20;
+		bonus2 bSubEle,Ele_Earth,20;
+		bonus2 bSubEle,Ele_Fire,20;
+		bonus2 bSubEle,Ele_Dark,20;
+		bonus2 bSubEle,Ele_Holy,20;
+		bonus2 bSubEle,Ele_Undead,20;
+		bonus bMDef,10;
+	">
+	OnUnequipScript: <" sc_end SC_ENDURE; ">
+},
+{
+	Id: 18036
+	AegisName: "Angelic_Guard"
+	Name: "Angelic Guard Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,251,70;
+			if(isequipped(18201)|| isequipped(18208)){
+				bonus bMaxHPrate,10;
+				bonus bDelayRate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				;
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+				;
+			}
+			;
+		}
+		bonus4 bAutoSpellOnSkill,28,28,5,200;
+		bonus5 bAutoSpellWhenHit,28,10,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,0;
+		bonus2 bSubEle,Ele_Neutral,10;
+		bonus2 bSubEle,Ele_Poison,10;
+		bonus2 bSubEle,Ele_Water,10;
+		bonus2 bSubEle,Ele_Ghost,10;
+		bonus2 bSubEle,Ele_Wind,10;
+		bonus2 bSubEle,Ele_Earth,10;
+		bonus2 bSubEle,Ele_Fire,10;
+		bonus2 bSubEle,Ele_Dark,10;
+		bonus2 bSubEle,Ele_Holy,10;
+		bonus2 bSubEle,Ele_Undead,10;
+	">
+	OnUnequipScript: <" sc_end SC_ENDURE; ">
+},
+{
+	Id: 18037
+	AegisName: "Ahura_Mazdah"
+	Name: "Ahura Mazdah Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Paladin2) {
+			bonus2 bSkillAtk,251,70;
+			if(isequipped(18201)|| isequipped(18208)){
+				bonus bMaxHPrate,10;
+				bonus bDelayRate,-10;
+				if(readparam(bStr)>=150){
+					bonus2 bAddRace,RC_DemiHuman,10;
+					bonus bHit,50;
+				}
+				;
+				if(readparam(bInt)>=150){
+					bonus bMatkRate,20;
+				}
+				;
+			}
+			;
+		}
+		bonus bNearAtkDef,50;
+		bonus bLongAtkDef,50;
+		bonus bMagicAtkDef,50;
+		bonus bMatkRate,30;
+		bonus bAtkRate,30;
+		bonus5 bAutoSpellWhenHit,303,1,25,BF_MAGIC+BF_MISC+BF_WEAPON,0;
+		/*bonus5 bAutoSpellWhenHit,303,1,20,BF_SHORT+BF_LONG+BF_WEAPON,0;
+		bonus5 bAutoSpellWhenHit,303,1,50,BF_MAGIC,1;
+		bonus5 bAutoSpellWhenHit,303,1,10,BF_MISC,1;
+		*/ bonus bFlee,-100;
+		bonus bFlee2,-20;
+	">
+	OnUnequipScript: <"
+		sc_end SC_ENDURE;
+		heal -MaxHp/10,-MaxSP/10;
+	">
+},
+//super novice
+{
+	Id: 18034
+	AegisName: "Novice_Shield"
+	Name: "Novice Shield Plus"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 1000
+	Def: 3
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_SHIELD"
+	EquipLv: 25
+	ViewSprite: 3
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Neutral,20;
+		bonus2 bSubEle,Ele_Poison,20;
+		bonus2 bSubEle,Ele_Water,20;
+		bonus2 bSubEle,Ele_Ghost,20;
+		bonus2 bSubEle,Ele_Wind,20;
+		bonus2 bSubEle,Ele_Earth,20;
+		bonus2 bSubEle,Ele_Fire,20;
+		bonus2 bSubEle,Ele_Dark,20;
+		bonus2 bSubEle,Ele_Holy,20;
+		bonus2 bSubEle,Ele_Undead,20;
+		bonus4 bAutoSpellWhenHit,356,3,20,0;
+		bonus bMaxHPrate,10;
+		bonus bAllStats,10;
+	">
+},

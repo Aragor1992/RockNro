@@ -1,0 +1,49 @@
+//FEBRERO
+{
+	Id: 15202
+	AegisName: "Cookies_Ring"
+	Name: "Cookie_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1032
+	Trade: {
+		override: 99
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bAddMonsterDropItem,558,200;
+		callfunc "F_alasviptemp";
+	">
+	OnEquipScript: <" callfunc "F_alasviptempinit"; ">
+	OnUnequipScript: <" callfunc "F_alasviptempend"; ">
+},
+{
+	Id: 15205
+	AegisName: "Rose_Ring_Hat"
+	Name: "Rose_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1035
+	Trade: {
+		override: 99
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bAddMonsterDropItem,558,200;
+		callfunc "F_alasviptemp";
+	">
+	OnEquipScript: <" callfunc "F_alasviptempinit"; ">
+	OnUnequipScript: <" callfunc "F_alasviptempend"; ">
+},

@@ -1,0 +1,14 @@
+//Card daño con Dark soul strike y Dark Jupitel
+{
+	Id: 4461
+	AegisName: "Soul_Taker_Card"
+	Name: "Soul Taker Card"
+	Type: "IT_CARD"
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Script: <"
+		bonus2 bSkillAtk,NSC_DARKJUPITEL,10;
+		bonus2 bSkillAtk,NPC_DARKSTRIKE,10;
+	">
+},

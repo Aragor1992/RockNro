@@ -1,4 +1,4 @@
-function	script	Q_Mace	{
+function	script	W_MACE_HP	{
 	skill "MO_TRIPLEATTACK",10;
 	bonus bHit,100;
 	bonus bMatkRate,getrefine()/2;

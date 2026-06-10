@@ -1,0 +1,537 @@
+// ========================= Books =============================
+{
+	Id: 16031
+	AegisName: "Sage's_Diary"
+	Name: "Sage's Diary v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Stun,1000;
+		bonus bMatkRate,10;
+		skill 230,5;
+		if(Class==8||Class==4009||Class==4017) {
+			bonus5 bAutoSpell,469,3,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		}
+		;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16032
+	AegisName: "Book_of_the_Blazing_Sun"
+	Name: "Vulcano Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Bleeding,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Fire;
+		skill 81,5;
+		skill 536,3;
+		bonus5 bAutoSpell,19,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16033
+	AegisName: "Book_of_Billows"
+	Name: "Deluge Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Freeze,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Water;
+		skill 86,3;
+		skill 539,3;
+		bonus5 bAutoSpell,14,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16034
+	AegisName: "Book_of_Mother_Earth"
+	Name: "Magnetic Earth Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Stone,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Earth;
+		skill 484,5;
+		bonus5 bAutoSpell,90,3,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16035
+	AegisName: "Book_of_the_Apocalypse"
+	Name: "Armageddom Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Silence,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Dark;
+		bonus5 bAutoSpell,340,7,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill 340,7;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHpRate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16036
+	AegisName: "Book_of_Gust_of_Wind"
+	Name: "Whirlwind Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Confusion,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Wind;
+		skill 541,2;
+		bonus5 bAutoSpell,20,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16037
+	AegisName: "Bible"
+	Name: "Holy Bible"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Blind,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Holy;
+		skill 545,10;
+		bonus5 bAutoSpell,545,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16050
+	AegisName: "Dimensional_Book"
+	Name: "Dimensional Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Sleep,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Ghost;
+		bonus5 bAutoSpell,13,7,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill 13,7;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16060
+	AegisName: "Infernal_Book"
+	Name: "Infernal Book"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Curse,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Undead;
+		skill 400,5;
+		bonus5 bAutoSpell,400,2,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 20005
+	AegisName: "Sage's_Diary"
+	Name: "Venom Book v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Sage: true
+		Star_Gladiator: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOOK"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,-25;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bAddEff,Eff_Poison,1000;
+		bonus bMatkRate,10;
+		bonus bAtkEle,Ele_Poison;
+		skill 547,10;
+		bonus5 bAutoSpell,547,4,80,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==4017||Class==4039){
+			bonus bCritical,50;
+			bonus bMatkRate,30;
+			bonus bMaxHPrate,10;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,19,20;
+				bonus2 bSkillAtk,14,20;
+				bonus2 bSkillAtk,20,20;
+				bonus2 bSkillAtk,545,20;
+				bonus2 bSkillAtk,547,20;
+			}
+			;
+		}
+		;
+	">
+},

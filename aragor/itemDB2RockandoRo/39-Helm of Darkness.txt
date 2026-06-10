@@ -1,0 +1,88 @@
+{
+	Id: 9831
+	AegisName: "black_mask_of_darkness"
+	Name: "black_mask_of_darkness"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 853
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9832
+	AegisName: "pink_mask_of_darkness"
+	Name: "pink_mask_of_darkness"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 854
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9833
+	AegisName: "red_mask_of_darkness"
+	Name: "red_mask_of_darkness"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 855
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9834
+	AegisName: "white_mask_of_darkness"
+	Name: "white_mask_of_darkness"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 856
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},

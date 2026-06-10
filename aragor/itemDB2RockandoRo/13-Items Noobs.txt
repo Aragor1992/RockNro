@@ -1,0 +1,57 @@
+{
+	Id: 9887
+	AegisName: "black_benie_hat"
+	Name: "Black Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 818
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9888
+	AegisName: "Rambo_Headband"
+	Name: "Rambo Headband"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: 512
+	Refine: false
+	ViewSprite: 705
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9889
+	AegisName: "Icarus_Wings"
+	Name: "Icarus Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: 1
+	Refine: false
+	ViewSprite: 894
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9890
+	AegisName: "Noble_Nameplate"
+	Name: "Noble Nameplate"
+	Type: 2
+	Buy: 0
+	Weight: 100
+	EquipLv: 90
+	Script: <" sc_start SC_EXPBOOST,1800000,50; ">
+},

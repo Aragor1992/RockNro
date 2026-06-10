@@ -1,0 +1,303 @@
+// Bullets Viejas
+{
+	Id: 13200
+	AegisName: "Bullet_neutral"
+	Name: "Bullet"
+	Type: 10
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 13201
+	AegisName: "Bullet_holy"
+	Name: "Silver Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 13202
+	AegisName: "Bullet_fuego"
+	Name: "Shell of Blood"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+//Bullets Custom
+{
+	Id: 19010
+	AegisName: "Bullet_shadow"
+	Name: "Shadow Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 10
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 19011
+	AegisName: "Bullet_viento"
+	Name: "Wind Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 15
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 19012
+	AegisName: "Bullet_agua"
+	Name: "Water Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 30
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 19013
+	AegisName: "Bullet_tierra"
+	Name: "Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 10
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 19014
+	AegisName: "Bullet_undead"
+	Name: "Undead Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 15
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 19015
+	AegisName: "Bullet_ghost"
+	Name: "Ghost Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 30
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+{
+	Id: 19016
+	AegisName: "Bullet_veneno"
+	Name: "Poison Bullet"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 10
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+},
+//Spheres Viejas
+{
+	Id: 13203
+	AegisName: "Flare_Sphere"
+	Name: "Flare Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 13204
+	AegisName: "Lightning_Sphere"
+	Name: "Lightning Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 13205
+	AegisName: "Poison_Sphere"
+	Name: "Poison Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 13206
+	AegisName: "Blind_Sphere"
+	Name: "Blind Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 13207
+	AegisName: "Freezing_Sphere"
+	Name: "Freezing Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 19017
+	AegisName: "Holy_Sphere"
+	Name: "Holy Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 19018
+	AegisName: "Earth_Sphere"
+	Name: "Earth Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 19019
+	AegisName: "Undead_Sphere"
+	Name: "Undead Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 19020
+	AegisName: "Ghost_Sphere"
+	Name: "Ghost Spheree"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},
+{
+	Id: 19021
+	AegisName: "Neutral_Sphere"
+	Name: "Neutral Sphere"
+	Type: 10
+	Buy: 5
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+},

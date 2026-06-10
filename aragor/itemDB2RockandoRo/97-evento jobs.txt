@@ -1,0 +1,96 @@
+{
+	Id: 9671
+	AegisName: "fox_tail"
+	Name: "Fox_Tail"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 607
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_questevento"; ">
+},
+{
+	Id: 9682
+	AegisName: "FoxHat"
+	Name: "Fox Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 625
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,10;
+		bonus bMaxHPrate,10;
+		bonus bSpeedRate,5;
+		bonus bflee,20;
+		if(isequipped(9671)) {
+			bonus bflee,140;
+		}
+		;
+	">
+},
+{
+	Id: 15294
+	AegisName: "White_Fox_Tail"
+	Name: "White Fox Tail"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1187
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_questevento"; ">
+},
+{
+	Id: 15295
+	AegisName: "WhiteFoxHat"
+	Name: "White Fox Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1188
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,10;
+		bonus bMaxHPrate,10;
+		bonus bSpeedRate,5;
+		bonus bflee,20;
+		if(isequipped(15294)) {
+			bonus bflee,140;
+		}
+		;
+	">
+},

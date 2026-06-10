@@ -1,0 +1,188 @@
+{
+	Id: 9891
+	AegisName: "Drooping_Bacsojin"
+	Name: "Drooping Bacsojin"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 928
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9892
+	AegisName: "godporin"
+	Name: "God Poring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 929
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9893
+	AegisName: "kumahat"
+	Name: "Kuma hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 930
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9896
+	AegisName: "rock_champion_crown"
+	Name: "Rock Champion Crown"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 933
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9899
+	AegisName: "Black_Usagi"
+	Name: "Black Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 936
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9903
+	AegisName: "Blue_Usagi"
+	Name: "Blue Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 937
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9904
+	AegisName: "Cyan_Usagi"
+	Name: "Cyan Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 938
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9905
+	AegisName: "Gold_Usagi"
+	Name: "Gold Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 939
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9906
+	AegisName: "Green_Usagi"
+	Name: "Green Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 940
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9907
+	AegisName: "Purple_Usagi"
+	Name: "Purple Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 941
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9908
+	AegisName: "Red_Usagi"
+	Name: "Red Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 942
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9909
+	AegisName: "White_Usagi"
+	Name: "White Usagi"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 943
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},

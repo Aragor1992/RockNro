@@ -1,0 +1,176 @@
+{
+	Id: 9677
+	AegisName: "BlackHat"
+	Name: "Black Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 614
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9711
+	AegisName: "DropsHat"
+	Name: "Drops Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 665
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9765
+	AegisName: "Purple_Cute_Flower"
+	Name: "Purple Cute Flower"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 776
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9766
+	AegisName: "Dropping_Edga_hat"
+	Name: "Dropping Edga Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 777
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9767
+	AegisName: "Dropping_Maya_hat"
+	Name: "Dropping Maya Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 778
+},
+{
+	Id: 9768
+	AegisName: "Dropping_Valkyrie_hat"
+	Name: "Dropping Valkyrie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 779
+},
+{
+	Id: 9774
+	AegisName: "Incubus_Doll"
+	Name: "Incubus Doll"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 785
+},
+{
+	Id: 9781
+	AegisName: "Phreeoni_Hat"
+	Name: "Phreeoni Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 792
+},
+{
+	Id: 9788
+	AegisName: "zelotus_doll"
+	Name: "Zelotus Doll"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 799
+},
+{
+	Id: 9820
+	AegisName: "droopingbaphomet"
+	Name: "Drooping Baphomet"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 837
+},
+{
+	Id: 9821
+	AegisName: "dropping_dragon_hat"
+	Name: "Dropping_Dragon_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 838
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9822
+	AegisName: "dropping_thanatos_of_dolor"
+	Name: "Dropping Thanatos of Dolor"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 839
+},

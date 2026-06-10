@@ -1,0 +1,74 @@
+{
+	Id: 9201
+	AegisName: "MVP_Armor_Card"
+	Name: "Armor Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" callfunc "F_ArmorRegalo"; ">
+},
+{
+	Id: 9202
+	AegisName: "MVP_Shield_Card"
+	Name: "Shield Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHIELD"
+	Script: <" callfunc "F_ShieldRegalo"; ">
+},
+{
+	Id: 9203
+	AegisName: "MVP_Weapon_Card001"
+	Name: "Weapon Card 1"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Script: <"
+		bonus bAtkRate,15;
+		bonus bMatkRate,15;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+	">
+},
+{
+	Id: 9204
+	AegisName: "MVP_Weapon_Card002"
+	Name: "Weapon Card 2"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Script: <"
+		bonus bAspdRate,25;
+		bonus3 bAutoSpell,"RG_STRIPWEAPON",2,30;
+	">
+},
+{
+	Id: 9205
+	AegisName: "MVP_Accesory_Card001"
+	Name: "Accesory Card 1"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ACC"
+	Script: <" callfunc "F_AcceATK"; ">
+},
+{
+	Id: 9206
+	AegisName: "MVP_Accesory_Card002"
+	Name: "Accesory Card 2"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ACC"
+	Script: <" callfunc "F_AcceDEF"; ">
+},

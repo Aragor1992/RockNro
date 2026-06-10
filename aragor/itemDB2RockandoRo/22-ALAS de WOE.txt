@@ -1,0 +1,114 @@
+{
+	Id: 15126
+	AegisName: "Bee_Wings"
+	Name: "Bee Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 726
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15130
+	AegisName: "Divine_wings"
+	Name: "Divine wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 730
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15149
+	AegisName: "Shadow_Fairy_Wings"
+	Name: "Shadow Fairy wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 749
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15190
+	AegisName: "Black_Bag"
+	Name: "Black_Bag"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1020
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15196
+	AegisName: "Diablo_Tail"
+	Name: "Diablo_Tail"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1026
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15197
+	AegisName: "Saiyan_Tail"
+	Name: "Saiyan_Tail"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1027
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},

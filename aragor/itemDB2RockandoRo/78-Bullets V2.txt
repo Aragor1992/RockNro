@@ -1,0 +1,219 @@
+{
+	Id: 19170
+	AegisName: "Super_Neutral_Bullet"
+	Name: "Super Neutral Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 19171
+	AegisName: "Super_Fire_Bullet"
+	Name: "Super Fire Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Fire; ">
+},
+{
+	Id: 19172
+	AegisName: "Super_Wind_Bullet"
+	Name: "Super Wind Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Wind; ">
+},
+{
+	Id: 19173
+	AegisName: "Super_Earth_Bullet"
+	Name: "Super Earth Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Earth; ">
+},
+{
+	Id: 19174
+	AegisName: "Super_Aqua_Bullet"
+	Name: "Super Aqua Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Water; ">
+},
+{
+	Id: 19175
+	AegisName: "Super_Ghost_Bullet"
+	Name: "Super Ghost Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Ghost; ">
+},
+{
+	Id: 19176
+	AegisName: "Super_Shadow_Bullet"
+	Name: "Super Shadow Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Dark; ">
+},
+{
+	Id: 19177
+	AegisName: "Super_Undead_Bullet"
+	Name: "Super Undead Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Undead; ">
+},
+{
+	Id: 19178
+	AegisName: "Super_Poison_Bullet"
+	Name: "Super Poison Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Poison; ">
+},
+{
+	Id: 19179
+	AegisName: "Super_Holy_Bullet"
+	Name: "Super Holy Bullet"
+	Type: "IT_AMMO"
+	Buy: 1
+	Weight: 1
+	Atk: 50
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_BULLET"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Holy; ">
+},

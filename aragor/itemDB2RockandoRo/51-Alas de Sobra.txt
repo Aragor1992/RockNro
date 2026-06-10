@@ -1,0 +1,563 @@
+{
+	Id: 15031
+	AegisName: "fenix_wings"
+	Name: "Phoenix Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 538
+},
+{
+	Id: 15043
+	AegisName: "fenix_wings"
+	Name: "Phoenix Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 538
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 15044
+	AegisName: "devil_wings"
+	Name: "Devil Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 515
+},
+{
+	Id: 15046
+	AegisName: "Devil_Wings"
+	Name: "Devil Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 515
+},
+{
+	Id: 15047
+	AegisName: "butterfly_wings"
+	Name: "Butterfly Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 568
+},
+{
+	Id: 15048
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15050
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15052
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15053
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15054
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15055
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15057
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15058
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15059
+	AegisName: "ArchDevilWings"
+	Name: "Ghotic Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15060
+	AegisName: "green_insect_wings"
+	Name: "Green Insect Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 504
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 15063
+	AegisName: "AngelCadet"
+	Name: "AngelCadet"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 572
+},
+{
+	Id: 15067
+	AegisName: "ArchAngel"
+	Name: "ArchAngel"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 577
+},
+{
+	Id: 15068
+	AegisName: "DevilWings"
+	Name: "DevilWings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 578
+},
+{
+	Id: 15070
+	AegisName: "ArchDevilWings"
+	Name: "ArchDevil Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 586
+},
+{
+	Id: 15072
+	AegisName: "ChaosVampireWings"
+	Name: "Chaos Vampire Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 589
+},
+{
+	Id: 15079
+	AegisName: "DarkDestinyWings"
+	Name: "Dark Destiny Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 621
+},
+{
+	Id: 15084
+	AegisName: "BluePixieWings"
+	Name: "Blue Pixie Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 632
+},
+{
+	Id: 15088
+	AegisName: "DevilingWingEars"
+	Name: "Deviling Wing Ears"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 658
+},
+{
+	Id: 15089
+	AegisName: "DevilingWings"
+	Name: "Deviling Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 659
+},
+{
+	Id: 15094
+	AegisName: "FallenAngelWings"
+	Name: "Fallen Angel Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 668
+},
+{
+	Id: 15098
+	AegisName: "FlowerWings"
+	Name: "Flower Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 673
+},
+{
+	Id: 15100
+	AegisName: "GoldenSeraphWings"
+	Name: "Golden Seraph Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 676
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_gold_seraph"; ">
+	OnUnequipScript: <" sc_end 361; ">
+},
+{
+	Id: 15105
+	AegisName: "GreenFlameWings"
+	Name: "Green Flame Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 685
+},
+{
+	Id: 15106
+	AegisName: "GreenSeraphWings"
+	Name: "Green Seraph Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 686
+},
+{
+	Id: 15107
+	AegisName: "GreySeraphWings"
+	Name: "Grey Seraph Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 687
+},
+{
+	Id: 15118
+	AegisName: "FreyaWings"
+	Name: "Magic Skady Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 618
+},
+{
+	Id: 15124
+	AegisName: "Baby_Angel_Wings"
+	Name: "Baby Angel Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 724
+},
+{
+	Id: 15125
+	AegisName: "Baby_Demon_Wings"
+	Name: "Baby Demon Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 725
+},
+{
+	Id: 15138
+	AegisName: "Mini_Blue_Butterfly_wings"
+	Name: "Mini Blue Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 738
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" Callfunc "F_MiniBlue"; ">
+},
+{
+	Id: 15139
+	AegisName: "Mini_Green_Butterfly_wings"
+	Name: "Mini Green Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 739
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" Callfunc "F_MiniGreenButterfly"; ">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15140
+	AegisName: "Mini_Pink_Butterfly_wings"
+	Name: "Mini Pink Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 740
+},
+{
+	Id: 15141
+	AegisName: "Mini_Purple_Butterfly_wings"
+	Name: "Mini Purple Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 741
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" Callfunc "F_MiniPurple"; ">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+		sc_end SC_OVERTHRUST;
+	">
+},
+{
+	Id: 15142
+	AegisName: "Mini_White_Butterfly_wings"
+	Name: "Mini White Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 742
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" Callfunc "F_mini_white"; ">
+},
+{
+	Id: 15143
+	AegisName: "Mini_Yellow_Butterfly_wings"
+	Name: "Mini Yellow Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 743
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" Callfunc "F_MiniYellowBut"; ">
+},
+{
+	Id: 15145
+	AegisName: "Pombo_wings"
+	Name: "Pombo wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 745
+},
+{
+	Id: 15147
+	AegisName: "Red_Butterfly_Wings"
+	Name: "Red Butterfly wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 747
+},

@@ -1,0 +1,255 @@
+{
+	Id: 17041
+	AegisName: "Super_Neutral_Rod"
+	Name: "Super Neutral Rod"
+	Type: "IT_WEAPON"
+	Buy: 43000
+	Weight: 500
+	Atk: 70
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 30
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,469,-20;
+		bonus bHit,300;
+		bonus bAspd,30;
+		bonus bAllStats,10;
+		bonus bMatkRate,30;
+		bonus4 bAutoSpellOnSkill,468,469,10,1000;
+		skill 468,5;
+		skill 482,2;
+		bonus5 bAutoSpell,469,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		if(isequipped(18212)|| isequipped(18208)){
+			bonus bBaseAtk,readparam(bInt)*10;
+			bonus bMatkRate,10;
+			bonus bDelayRate,-10;
+			bonus2 bSkillHeal,28,20;
+			bonus bMaxHPrate,10;
+		}
+		;
+	">
+},
+{
+	Id: 17042
+	AegisName: "Super_Earth_Rod"
+	Name: "Super Earth Rod"
+	Type: "IT_WEAPON"
+	Buy: 43000
+	Weight: 500
+	Atk: 70
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 30
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAtkEle,Ele_Earth;
+		bonus bHit,300;
+		bonus bAspd,30;
+		bonus bAllStats,10;
+		bonus bMatkRate,30;
+		skill 90,5;
+		skill 482,2;
+		bonus5 bAutoSpell,90,3,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(18212)|| isequipped(18208)){
+			bonus bBaseAtk,readparam(bInt)*10;
+			bonus bMatkRate,10;
+			bonus bDelayRate,-10;
+			bonus2 bSkillHeal,28,20;
+			bonus bMaxHPrate,10;
+		}
+		;
+	">
+},
+{
+	Id: 17043
+	AegisName: "Super_Shadow_Rod"
+	Name: "Super Shadow Rod"
+	Type: "IT_WEAPON"
+	Buy: 43000
+	Weight: 500
+	Atk: 70
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 30
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAtkEle,Ele_Dark;
+		bonus bHit,300;
+		bonus bAspd,30;
+		bonus bAllStats,10;
+		bonus bMatkRate,30;
+		skill 340,10;
+		skill 482,2;
+		bonus5 bAutoSpell,340,7,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(18212)|| isequipped(18208)){
+			bonus bBaseAtk,readparam(bInt)*10;
+			bonus bMatkRate,10;
+			bonus bDelayRate,-10;
+			bonus2 bSkillHeal,28,20;
+			bonus bMaxHPrate,10;
+		}
+		;
+	">
+},
+{
+	Id: 17044
+	AegisName: "Super_Holy_Rod"
+	Name: "Super Holy Rod"
+	Type: "IT_WEAPON"
+	Buy: 43000
+	Weight: 500
+	Atk: 70
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 30
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAtkEle,Ele_Holy;
+		bonus bHit,300;
+		bonus bAspd,30;
+		bonus bAllStats,10;
+		bonus bMatkRate,30;
+		skill 482,2;
+		skill 545,10;
+		bonus5 bAutoSpell,545,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(18212)|| isequipped(18208)){
+			bonus bBaseAtk,readparam(bInt)*10;
+			bonus bMatkRate,10;
+			bonus bDelayRate,-10;
+			bonus2 bSkillHeal,28,20;
+			bonus bMaxHPrate,10;
+		}
+		;
+	">
+},
+{
+	Id: 17045
+	AegisName: "Super_Venom_Rod"
+	Name: "Super Venom Rod"
+	Type: "IT_WEAPON"
+	Buy: 43000
+	Weight: 500
+	Atk: 70
+	Range: 1
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 30
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAtkEle,Ele_Poison;
+		bonus bHit,300;
+		bonus bAspd,30;
+		bonus bAllStats,10;
+		bonus bMatkRate,30;
+		skill 482,2;
+		skill 547,10;
+		bonus5 bAutoSpell,547,5,100,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(isequipped(18212)|| isequipped(18208)){
+			bonus bBaseAtk,readparam(bInt)*10;
+			bonus bMatkRate,10;
+			bonus bDelayRate,-10;
+			bonus2 bSkillHeal,28,20;
+			bonus bMaxHPrate,10;
+		}
+		;
+	">
+},
+{
+	Id: 17049
+	AegisName: "Mini_Ballista"
+	Name: "Mini Ballista v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 14
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAspd,100;
+		bonus bUnstripableWeapon,0;
+		bonus5 bAutoSpell,370,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill 46,10;
+		bonus2 bSkillAtk,46,20;
+		bonus bHit,200;
+		bonus bDex,20;
+		skill 263,5;
+		if(isequipped(18212)|| isequipped(18208)){
+			skill 372,3;
+			if(!isequipped(15150) && !isequipped(4456))bonus2 bSkillAtk,"CH_CHAINCRUSH",-50;
+			bonus bAtkRate,10;
+			bonus bDelayRate,-10;
+			bonus bMaxHPrate,10;
+		}
+		;
+	">
+},

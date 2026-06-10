@@ -1,0 +1,271 @@
+// ========================= Maces ==========================
+{
+	Id: 16021
+	AegisName: "Morning_Star"
+	Name: "Iron Driver v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_neutral"; ">
+},
+{
+	Id: 16022
+	AegisName: "Smasher"
+	Name: "Tidal Mace"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_agua"; ">
+},
+{
+	Id: 16023
+	AegisName: "Quadrille"
+	Name: "Quadrille v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_tierra"; ">
+},
+{
+	Id: 16024
+	AegisName: "Spike"
+	Name: "Spike v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_shadow"; ">
+},
+{
+	Id: 16025
+	AegisName: "Flail"
+	Name: "Lava Mace"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_fuego"; ">
+},
+{
+	Id: 16026
+	AegisName: "Mjolnir"
+	Name: "Mjolnir v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_viento"; ">
+},
+{
+	Id: 16027
+	AegisName: "Grand_Cross"
+	Name: "Grand Cross v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_holy"; ">
+},
+{
+	Id: 16028
+	AegisName: "Dimensional_Mace"
+	Name: "Dimensional Mace"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_ghost"; ">
+},
+{
+	Id: 16029
+	AegisName: "Infernal_Mace"
+	Name: "Infernal Mace"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_undead"; ">
+},
+{
+	Id: 20004
+	AegisName: "Morning_Star"
+	Name: "Venom Driver v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Acolyte: true
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mazo_poison"; ">
+},

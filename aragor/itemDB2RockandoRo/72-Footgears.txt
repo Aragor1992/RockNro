@@ -1,0 +1,431 @@
+{
+	Id: 18051
+	AegisName: "Sandals_"
+	Name: "Sandals Plus"
+	Type: "IT_ARMOR"
+	Buy: 400
+	Weight: 200
+	Def: 1
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18052
+	AegisName: "Shoes_"
+	Name: "Shoes Plus"
+	Type: "IT_ARMOR"
+	Buy: 3500
+	Weight: 400
+	Def: 2
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18053
+	AegisName: "Boots_"
+	Name: "Boots Plus"
+	Type: "IT_ARMOR"
+	Buy: 18000
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18054
+	AegisName: "Sleipnir"
+	Name: "Sleipnir Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMdef,7;
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSPrecovRate,5;
+		bonus bSpeedRate,15;
+	">
+},
+{
+	Id: 18055
+	AegisName: "Greaves_"
+	Name: "Greaves Plus"
+	Type: "IT_ARMOR"
+	Buy: 48000
+	Weight: 750
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18056
+	AegisName: "Safety_Boots"
+	Name: "Safety Boots Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 350
+	Def: 6
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18057
+	AegisName: "Novice_Slippers"
+	Name: "Novice Slippers Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1
+	Def: 2
+	Slots: 4
+	Job: 0x1887436801
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18059
+	AegisName: "Freyr's_Shoes"
+	Name: "Freyr's Shoes Plus"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+// quest
+{
+	Id: 18260
+	AegisName: "Combat_Greaves"
+	Name: "Combat Greaves"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Neutral,5;
+	">
+},
+{
+	Id: 18261
+	AegisName: "Ifrit's_Shoes"
+	Name: "Ifrit's Shoes"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Fire,5;
+	">
+},
+{
+	Id: 18262
+	AegisName: "Aqua_Boots"
+	Name: "Aqua Boots"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Water,5;
+	">
+},
+{
+	Id: 18263
+	AegisName: "Sky_Walker"
+	Name: "Sky Walker"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Wind,5;
+	">
+},
+{
+	Id: 18264
+	AegisName: "Stone_Age"
+	Name: "Stone Age"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Earth,5;
+	">
+},
+{
+	Id: 18265
+	AegisName: "God's_Slippers"
+	Name: "God's Slippers"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Holy,5;
+	">
+},
+{
+	Id: 18266
+	AegisName: "Boots_of_Doom"
+	Name: "Boots of Doom"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Dark,5;
+	">
+},
+{
+	Id: 18267
+	AegisName: "Freddy_Kruger_Shackle's"
+	Name: "Freddy Kruger Shackle's"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Undead,5;
+	">
+},
+{
+	Id: 18268
+	AegisName: "Arbok_Boots"
+	Name: "Arbok Boots"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Poison,5;
+	">
+},
+{
+	Id: 18269
+	AegisName: "Gengar's_Shoes"
+	Name: "Gengar's Shoes"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1000
+	Def: 5
+	Slots: 4
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSpeedRate,15;
+		bonus2 bSubEle,Ele_Ghost,5;
+	">
+},
+// super novice
+{
+	Id: 18058
+	AegisName: "Novice_Shoes"
+	Name: "Novice Shoes Plus"
+	Type: "IT_ARMOR"
+	Buy: 35000
+	Weight: 500
+	Def: 2
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_SHOES"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bSPrecovRate,5;
+		bonus bHPrecovRate,15;
+		bonus bSpeedRate,15;
+		if(isequipped(18016,18034)){
+			bonus bMatkRate,10;
+			bonus bAtkRate,10;
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+		}
+		;
+	">
+},

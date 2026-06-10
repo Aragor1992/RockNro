@@ -1,0 +1,374 @@
+{
+	Id: 9941
+	AegisName: "Chess_Censor_Bar"
+	Name: "Chess_Censor_Bar"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 975
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9942
+	AegisName: "Black_Ear_Ice_Feathers"
+	Name: "Black_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 976
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9943
+	AegisName: "Cyan_Ear_Ice_Feathers"
+	Name: "Cyan_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 977
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9944
+	AegisName: "Ear_Ice_Feathers"
+	Name: "Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 978
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9945
+	AegisName: "Gold_Ear_Ice_Feathers"
+	Name: "Gold_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 979
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9946
+	AegisName: "Green_Ear_Ice_Feathers"
+	Name: "Green_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 980
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9947
+	AegisName: "Purple_Ear_Ice_Feathers"
+	Name: "Purple_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 981
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9948
+	AegisName: "Red_Ear_Ice_Feathers"
+	Name: "Red_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 982
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9949
+	AegisName: "White_Ear_Ice_Feathers"
+	Name: "White_Ear_Ice_Feathers"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 983
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9950
+	AegisName: "Black_Eye_Of_Darkness"
+	Name: "Black_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 984
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9951
+	AegisName: "Blue_Eye_Of_Darkness"
+	Name: "Blue_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 985
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9952
+	AegisName: "Cyan_Eye_Of_Darkness"
+	Name: "Cyan_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 986
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9953
+	AegisName: "Eye_Of_Darkness"
+	Name: "Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 987
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9954
+	AegisName: "Gold_Eye_Of_Darkness"
+	Name: "Gold_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 988
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9955
+	AegisName: "Green_Eye_Of_Darkness"
+	Name: "Green_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 989
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9956
+	AegisName: "Purple_Eye_Of_Darkness"
+	Name: "Purple_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 990
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9957
+	AegisName: "Red_Eye_Of_Darkness"
+	Name: "Red_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 991
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9958
+	AegisName: "White_Eye_Of_Darkness"
+	Name: "White_Eye_Of_Darkness"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 992
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9972
+	AegisName: "Enchanted_Kingdom_Hat"
+	Name: "Enchanted Kingdom Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1006
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9973
+	AegisName: "Black_Kitsune_Tai"
+	Name: "Black Kitsune Tai"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1007
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9974
+	AegisName: "White_Kitsune_Tail"
+	Name: "White Kitsune Tail"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1008
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9976
+	AegisName: "Lilo_Hat"
+	Name: "Lilo Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1010
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9977
+	AegisName: "Moetubasa_Hat"
+	Name: "Moetubasa Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1011
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9978
+	AegisName: "No_Fear_Band"
+	Name: "No Fear Band"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1012
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9979
+	AegisName: "NY_Cap"
+	Name: "NY_Cap"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1013
+	Script: <"
+		bonus bInt,7;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,15;
+		bonus bMatkRate,10;
+	">
+},
+{
+	Id: 9980
+	AegisName: "Phoenix_Crown"
+	Name: "Phoenix Crown"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1014
+	Script: <"
+		if(Class==Job_Paladin||Class==Job_Crusader) {
+			bonus bShortWeaponDamageReturn,-5;
+		}
+		;
+		bonus bStr,7;
+		bonus bDex,5;
+		bonus bVit,10;
+		bonus bShortWeaponDamageReturn,10;
+		bonus bMaxHPrate,15;
+	">
+},
+{
+	Id: 9985
+	AegisName: "White_Wolf_Hat"
+	Name: "White_Wolf_Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1019
+	Script: <" bonus bAllStats,2; ">
+},

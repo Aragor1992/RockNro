@@ -1,0 +1,427 @@
+{
+	Id: 18011
+	AegisName: "Manteau_"
+	Name: "Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 32000
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18013
+	AegisName: "Survivor's_Manteau"
+	Name: "Survivor's Manteau v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 550
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bVit,10;
+		if(isequipped(1618) || isequipped(1620))bonus bMaxHP,300;
+		bonus bMatkRate,-5;
+		if(isequipped(1617)||isequipped(1618)||isequipped(1619)||isequipped(1620)) bonus bMatkRate,getequiprefinerycnt(4);
+		bonus2 bSubEle,Ele_Neutral,15;
+	">
+},
+{
+	Id: 18014
+	AegisName: "Somber_Novice_Hood"
+	Name: "Somber Novice Hood v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 1
+	Def: 2
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Refine: false
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus2 bSubEle,Ele_Neutral,15; ">
+},
+{
+	Id: 18015
+	AegisName: "Skeleton_manteau"
+	Name: "Skeleton Manteau v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 700
+	Def: 1
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bStr,20;
+		bonus bVit,20;
+		bonus bDex,20;
+		bonus bLuk,20;
+		bonus bAgi,20;
+	">
+},
+{
+	Id: 18017
+	AegisName: "Pauldron"
+	Name: "Pauldron v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 800
+	Def: 5
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 80
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18018
+	AegisName: "Eagle_Wing"
+	Name: "Eagle Wing v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 300
+	Def: 1
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" if(isequipped(1616)) bonus bSpeedRate,10; ">
+},
+{
+	Id: 18019
+	AegisName: "Falcon_Muffler"
+	Name: "Falcon Muffler v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 400
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bFlee,15;
+		bonus bFlee2,5;
+	">
+},
+{
+	Id: 18021
+	AegisName: "Morpheus's_Shawl"
+	Name: "Morpheus's Shawl v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxSPrate,10;
+		bonus bMdef,3;
+	">
+},
+{
+	Id: 18022
+	AegisName: "Morrigane's_Manteau"
+	Name: "Morrigane's Manteau v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bLuk,2;
+		bonus bFlee2,8;
+	">
+},
+{
+	Id: 18023
+	AegisName: "Goibne's_Spaulders"
+	Name: "Goibne's Spaulders v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 700
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bLongAtkDef,10;
+		bonus bMdef,2;
+		bonus bVit,1;
+	">
+},
+{
+	Id: 18025
+	AegisName: "Pauldron"
+	Name: "Happy Birthday Gaby"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 800
+	Def: 5
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 1
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+// quest
+{
+	Id: 18012
+	AegisName: "Ragamuffin_Manteau"
+	Name: "Ragamuffin Manteau v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 500
+	Def: 1
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,Ele_Holy,15;
+	">
+},
+{
+	Id: 18020
+	AegisName: "Vali's_Manteau"
+	Name: "Vali's Manteau v2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_neutral"; ">
+},
+{
+	Id: 18026
+	AegisName: "Earth's_Muffler"
+	Name: "Earth's Muffler"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_tierra"; ">
+},
+{
+	Id: 18027
+	AegisName: "Ifrit's_Jacket"
+	Name: "Ifrit's Jacket"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_fuego"; ">
+},
+{
+	Id: 18028
+	AegisName: "Manteau_Of_Sky"
+	Name: "Manteau Of Sky"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_viento"; ">
+},
+{
+	Id: 18029
+	AegisName: "Water_cape"
+	Name: "Water Cape"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_agua"; ">
+},
+{
+	Id: 18030
+	AegisName: "Ectoplasm"
+	Name: "Ectoplasm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_ghost"; ">
+},
+{
+	Id: 18220
+	AegisName: "Diablo's_Manteau"
+	Name: "Diablo's Manteau"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_shadow"; ">
+},
+{
+	Id: 18221
+	AegisName: "Mummy's_Bandage"
+	Name: "Mummy's Bandage"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_undead"; ">
+},
+{
+	Id: 18222
+	AegisName: "Ghoul's_Breath"
+	Name: "Ghoul's Breath"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 600
+	Def: 4
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_quest_poison"; ">
+},
+//Super Novice
+{
+	Id: 18016
+	AegisName: "Novice_Manteau"
+	Name: "Novice Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 50000
+	Weight: 500
+	Def: 2
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_GARMENT"
+	EquipLv: 25
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		callfunc "F_novice_garment";
+	">
+},

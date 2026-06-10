@@ -1,0 +1,119 @@
+//MvPs 2014
+{
+	Id: 4451
+	AegisName: "Entweihen_Card"
+	Name: "Entweihen Crothen Card"
+	Type: "IT_CARD"
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus3 bHpRatioMAtkRace,RC_NonBoss,900000,8000; ">
+},
+{
+	Id: 4462
+	AegisName: "Naght_Sieger_Card"
+	Name: "Naght Sieger Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Naght"; ">
+},
+{
+	Id: 4463
+	AegisName: "Boitata_Card"
+	Name: "Boitata Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus3 bHpRatioAtkRace,RC_NonBoss,900000,7000; ">
+},
+{
+	Id: 4464
+	AegisName: "Fire_Resistance_Card"
+	Name: "Fire Resistance Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Fire,15;
+		bonus2 bResEff,Eff_Curse,5000;
+	">
+},
+{
+	Id: 4465
+	AegisName: "Earth_Resistance_Card"
+	Name: "Earth Resistance Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Earth,15;
+		bonus2 bResEff,Eff_Stone,5000;
+	">
+},
+{
+	Id: 4466
+	AegisName: "Magical_Dodge_Card"
+	Name: "Magical Dodge Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHIELD"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		if(!isequipped(9691)){
+			bonus bMagicFlee,200;
+		}
+		bonus2 bSubRace,RC_Demihuman,10;
+	">
+},

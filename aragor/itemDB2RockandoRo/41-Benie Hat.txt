@@ -1,0 +1,120 @@
+{
+	Id: 9807
+	AegisName: "black_benie_hat"
+	Name: "Black Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 818
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9808
+	AegisName: "blue_benie_hat"
+	Name: "Blue Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 819
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9809
+	AegisName: "green_benie_hat"
+	Name: "Green Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 820
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9810
+	AegisName: "pink_benie_hat"
+	Name: "Pink Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 821
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9811
+	AegisName: "red_benie_hat"
+	Name: "Red Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 822
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9812
+	AegisName: "white_benie_hat"
+	Name: "White Benie Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 823
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},

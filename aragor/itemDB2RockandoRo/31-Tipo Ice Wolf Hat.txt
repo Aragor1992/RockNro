@@ -1,0 +1,140 @@
+{
+	Id: 9813
+	AegisName: "bone_head"
+	Name: "Bone Head"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 824
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,89,2,20,0;
+		bonus2 bSubEle,Ele_Water,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9858
+	AegisName: "wolf_man_hat"
+	Name: "wolf_man_hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 880
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,89,2,20,0;
+		bonus2 bSubEle,Ele_Water,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9863
+	AegisName: "Black_Chax_Hat"
+	Name: "Black Chax Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 904
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,89,2,20,0;
+		bonus2 bSubEle,Ele_Water,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9870
+	AegisName: "Ghost_Musketeer_Hat"
+	Name: "Ghost Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 911
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,89,2,20,0;
+		bonus2 bSubEle,Ele_Water,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9878
+	AegisName: "Pisces_Diadem"
+	Name: "Pisces Diadem"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 919
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,89,2,20,0;
+		bonus2 bSubEle,Ele_Water,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},

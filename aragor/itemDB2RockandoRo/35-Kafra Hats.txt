@@ -1,0 +1,126 @@
+{
+	Id: 20030
+	AegisName: "Deporte_Doll_Hat"
+	Name: "Deporte Doll Hat"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 60
+	ViewSprite: 354
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,3;
+		skill 26,2;
+	">
+},
+{
+	Id: 20031
+	AegisName: "Glarice_Doll_Hat"
+	Name: "Clarice Doll Hat"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 60
+	ViewSprite: 355
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,3;
+		skill 26,2;
+	">
+},
+{
+	Id: 20032
+	AegisName: "Sorin_Doll_Hat"
+	Name: "Sorin Doll Hat"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 60
+	ViewSprite: 356
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,3;
+		skill 26,2;
+	">
+},
+{
+	Id: 20033
+	AegisName: "Tailring_Doll_Hat"
+	Name: "Tailring Doll Hat"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 60
+	ViewSprite: 357
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,3;
+		skill 26,2;
+	">
+},
+{
+	Id: 20034
+	AegisName: "Vinit_Doll_Hat"
+	Name: "Vinit Doll Hat"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 60
+	ViewSprite: 358
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,3;
+		skill 26,2;
+	">
+},
+{
+	Id: 20035
+	AegisName: "W_Doll_Hat"
+	Name: "W Doll Hat"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 60
+	ViewSprite: 359
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,3;
+		skill 26,2;
+	">
+},

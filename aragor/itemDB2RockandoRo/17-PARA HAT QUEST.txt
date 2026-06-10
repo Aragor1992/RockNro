@@ -1,0 +1,142 @@
+{
+	Id: 9910
+	AegisName: "Love_Daddy_Hat"
+	Name: "Love Daddy Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 944
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9911
+	AegisName: "Moonlight_Flower_Cap"
+	Name: "Moonlight Flower Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 945
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9912
+	AegisName: "Capricon_Crown"
+	Name: "Capricon Crown"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 946
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9913
+	AegisName: "Danzo_bandage"
+	Name: "Danzo bandage"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: 512
+	ViewSprite: 947
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9916
+	AegisName: "Necromancer_Hood"
+	Name: "Necromancer Hood"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: 249
+	ViewSprite: 950
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9917
+	AegisName: "Piccolo_Hat"
+	Name: "Piccolo Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 951
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,15;
+		bonus bAtkRate,10;
+	">
+},
+{
+	Id: 9918
+	AegisName: "St_Patrick_Hat"
+	Name: "St Patrick Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 952
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,15;
+		bonus bHit,70;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9919
+	AegisName: "Tobi_Mask"
+	Name: "Tobi_Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: 512
+	ViewSprite: 953
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9922
+	AegisName: "Kakashi_Mask"
+	Name: "Kakashi Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: 512
+	ViewSprite: 956
+	Script: <" bonus bAllStats,2; ">
+},

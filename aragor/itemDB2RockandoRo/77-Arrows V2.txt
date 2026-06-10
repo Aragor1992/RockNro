@@ -1,0 +1,189 @@
+{
+	Id: 19160
+	AegisName: "Super_Neutral_Arrow"
+	Name: "Super Neutral Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 60
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 19161
+	AegisName: "Super_Fire_Arrow"
+	Name: "Super Fire Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Fire; ">
+},
+{
+	Id: 19162
+	AegisName: "Super_Wind_Arrow"
+	Name: "Super Wind Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Wind; ">
+},
+{
+	Id: 19163
+	AegisName: "Super_Earth_Arrow"
+	Name: "Super Earth Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Earth; ">
+},
+{
+	Id: 19164
+	AegisName: "Super_Aqua_Arrow"
+	Name: "Super Aqua Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Water; ">
+},
+{
+	Id: 19165
+	AegisName: "Super_Ghost_Arrow"
+	Name: "Super Ghost Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Ghost; ">
+},
+{
+	Id: 19166
+	AegisName: "Super_Shadow_Arrow"
+	Name: "Super Shadow Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Dark; ">
+},
+{
+	Id: 19167
+	AegisName: "Super_Undead_Arrow"
+	Name: "Super Undead Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Undead; ">
+},
+{
+	Id: 19168
+	AegisName: "Super_Poison_Arrow"
+	Name: "Super Poison Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Poison; ">
+},
+{
+	Id: 19169
+	AegisName: "Super_Holy_Arrow"
+	Name: "Super Holy Arrow"
+	Type: "IT_AMMO"
+	Buy: 3
+	Weight: 2
+	Atk: 50
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_ARROW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Holy; ">
+},

@@ -1,0 +1,468 @@
+{
+	Id: 9605
+	AegisName: "antler_"
+	Name: "Antler"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 575
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9612
+	AegisName: "marina_hat"
+	Name: "Marina Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 525
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9615
+	AegisName: "Reisz_Helmet_Item"
+	Name: "Reisz Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 562
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9630
+	AegisName: "musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 702
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9634
+	AegisName: "Pimp_Hat"
+	Name: "Pimp Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 553
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9637
+	AegisName: "AzureCorsair"
+	Name: "Azure Corsair Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 587
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9654
+	AegisName: "maskofmaero"
+	Name: "Mask_of_Maero"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 597
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9657
+	AegisName: "maskofdespero"
+	Name: "Mask_Of_Despero"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 600
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9664
+	AegisName: "gold_fox_hat"
+	Name: "Moonlight Flower Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 505
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9693
+	AegisName: "ChiefHat"
+	Name: "Chief Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 640
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9720
+	AegisName: "Hook_H"
+	Name: "Hook Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 697
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9730
+	AegisName: "black_musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 708
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9732
+	AegisName: "blue_musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 710
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9733
+	AegisName: "green_musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 711
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9734
+	AegisName: "pink_musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 712
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9735
+	AegisName: "Red_musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 713
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 9738
+	AegisName: "yellow_musketeer_hat"
+	Name: "Musketeer Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 716
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},
+{
+	Id: 15102
+	AegisName: "GrandEarWings"
+	Name: "Grand Ear Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 678
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bHit,50;
+		bonus bAspdRate,5;
+	">
+},

@@ -1,0 +1,270 @@
+{
+	Id: 16101
+	AegisName: "Nemesis_v2"
+	Name: "Nemesis v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_neutral"; ">
+},
+{
+	Id: 16102
+	AegisName: "SunLight"
+	Name: "SunLight"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_fuego"; ">
+},
+{
+	Id: 16103
+	AegisName: "Neptune"
+	Name: "Neptune"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_agua"; ">
+},
+{
+	Id: 16104
+	AegisName: "Tornado"
+	Name: "Tornado"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_viento"; ">
+},
+{
+	Id: 16105
+	AegisName: "Earthquake"
+	Name: "Earthquake"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_tierra"; ">
+},
+{
+	Id: 16106
+	AegisName: "Starlight"
+	Name: "Starlight"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_holy"; ">
+},
+{
+	Id: 16107
+	AegisName: "Moonlight"
+	Name: "Moonlight"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_shadow"; ">
+},
+{
+	Id: 16108
+	AegisName: "Corpse"
+	Name: "Corpse"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_undead"; ">
+},
+{
+	Id: 16109
+	AegisName: "Nightmare"
+	Name: "Nightmare"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_ghost"; ">
+},
+{
+	Id: 19121
+	AegisName: "Toxic"
+	Name: "Toxic"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 100
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Taekwon: true
+		Star_Gladiator: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MACE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_taekwon_poison"; ">
+},

@@ -1,0 +1,383 @@
+{
+	Id: 1744
+	AegisName: "Rudra_Bow"
+	Name: "Celestial Bow"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Script: <"
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus5 bAutoSpell,136,5,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,116,100;
+		bonus2 bSkillAtk,122,100;
+		bonus2 bSkillAtk,123,100;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		bonus2 bSkillAtk,136,80;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 16081
+	AegisName: "Rudra_Bow"
+	Name: "Celestial Bow"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus5 bAutoSpell,136,5,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,116,100;
+		bonus2 bSkillAtk,122,100;
+		bonus2 bSkillAtk,123,100;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		bonus2 bSkillAtk,136,80;
+		bonus bNearAtkDef,10;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 16082
+	AegisName: "Ballista"
+	Name: "Ballista v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,1009,95;
+		bonus bUnstripableWeapon,0;
+		bonus5 bAutoSpell,370,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,116,100;
+		bonus2 bSkillAtk,122,100;
+		bonus2 bSkillAtk,123,100;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 16083
+	AegisName: "Luna_Bow"
+	Name: "Luna Bow v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus bDex,30;
+		bonus bAgi,20;
+		bonus bVit,10;
+		bonus2 bSkillAtk,116,100;
+		bonus2 bSkillAtk,122,100;
+		bonus2 bSkillAtk,123,100;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		bonus5 bAutoSpell,382,3,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 16084
+	AegisName: "Dragon_Wing"
+	Name: "Dragon Bow"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnstripableWeapon,0;
+		bonus2 bSkillAtk,129,60;
+		bonus2 bSkillAtk,116,100;
+		bonus2 bSkillAtk,122,100;
+		bonus2 bSkillAtk,123,100;
+		bonus2 bAddEff,Eff_Confusion,500;
+		bonus2 bAddEff,Eff_Stun,500;
+		bonus2 bAddEff,Eff_Curse,500;
+		bonus2 bAddEff,Eff_Silence,500;
+		bonus2 bAddEff,Eff_Poison,500;
+		bonus2 bAddEff,Eff_Bleeding,500;
+		bonus2 bAddEff,Eff_Freeze,500;
+		bonus2 bAddEff,Eff_Stone,500;
+		bonus2 bAddEff,Eff_Sleep,500;
+		bonus2 bAddEff,Eff_Blind,500;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 16085
+	AegisName: "Infernal_Bow"
+	Name: "Infernal Bow"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnbreakableWeapon,0;
+		bonus5 bAutoSpell,289,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;
+		bonus2 bSkillAtk,116,100;
+		bonus2 bSkillAtk,122,100;
+		bonus2 bSkillAtk,123,100;
+		bonus2 bSkillAtk,381,1200;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 20011
+	AegisName: "Infernal_Bow"
+	Name: "Venom Bow"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 350
+	Range: 14
+	Slots: 4
+	Job: {
+		Hunter: true
+		Bard: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_BOW"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,1009,20;
+		bonus bUnstripableWeapon,0;
+		skill 263,5;
+		bonus5 bAutoSpell,513,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus2 bSkillAtk,116,1050;
+		bonus2 bSkillAtk,122,1750;
+		bonus2 bSkillAtk,123,1550;
+		bonus2 bSkillAtk,46,30;
+		bonus2 bSkillAtk,47,80;
+		bonus2 bSkillAtk,148,100;
+		bonus2 bSkillAtk,382,30;
+		if(Class==Job_Stalker) {
+			bonus bAtkRate,30;
+			if(isequipped(18211)|| isequipped(18208)){
+				bonus bFlee,70;
+				bonus bMaxHpRate,10;
+				bonus bAgi,readparam(bDex)/5;
+			}
+			;
+		}
+		;
+		if(isequipped(18204)|| isequipped(18208)){
+			bonus bDex,20;
+			bonus bLuk,20;
+			bonus bMaxHpRate,10;
+		}
+		;
+	">
+},

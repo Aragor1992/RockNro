@@ -1,0 +1,132 @@
+{
+	Id: 15191
+	AegisName: "Day_Ring"
+	Name: "Day_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1021
+},
+{
+	Id: 15192
+	AegisName: "Music_Ring"
+	Name: "Music_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1022
+},
+{
+	Id: 15193
+	AegisName: "Night_Ring"
+	Name: "Night_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1023
+},
+{
+	Id: 15194
+	AegisName: "Snowflake_Ring"
+	Name: "Snowflake_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1024
+},
+{
+	Id: 15195
+	AegisName: "Sunflower_Ring"
+	Name: "Sunflower_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1025
+},
+{
+	Id: 15198
+	AegisName: "Santa_Scarf"
+	Name: "Santa Scarf"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1028
+},
+{
+	Id: 15199
+	AegisName: "Scarf"
+	Name: "Scarf"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1029
+},
+{
+	Id: 15206
+	AegisName: "Candy_Ring"
+	Name: "Candy_Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1036
+},
+{
+	Id: 15210
+	AegisName: "Ring_of_Feathers"
+	Name: "Ring_of_Feathers"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1040
+},
+{
+	Id: 15213
+	AegisName: "Black_Sion_Wings"
+	Name: "Black_Sion_Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1043
+},
+{
+	Id: 15214
+	AegisName: "Red_Sion_Wings"
+	Name: "Red_Sion_Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1044
+},

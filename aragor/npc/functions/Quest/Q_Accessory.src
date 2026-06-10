@@ -1,78 +1,127 @@
 /*QUEST ACCESORY*/
-function	script	Q_Critical_Ring	{
+function	script	S_Critical_Ring	{
 	bonus bCritical,10;
 	bonus bCritAtkRate,10;
 	bonus bAgi,10;
 	bonus bLuk,10;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bCritical,10;
+		bonus bCritAtkRate,10;
+		bonus bAgi,10;
+		bonus bLuk,10;
+	}
 return;
 }
 
-function	script	Q_Bow_Thimble	{
+function	script	S_Bow_Thimble	{
+if(Class==3||Class==11||Class==4012||Class==17||Class==4018) {
+	bonus bLongAtkRate,10;
+	bonus bHit,50;
+}
+if(isequipped(18204) || isequipped(18210) || isequipped(18211)|| isequipped(18208)){
 	if(Class==3||Class==11||Class==4012||Class==17||Class==4018) {
 		bonus bLongAtkRate,10;
 		bonus bHit,50;
 	}
+}
 return;
 }
 
-function	script	Q_Novice_Armlet	{
-	bonus bFlee2,5;
-	bonus bAtkRate,10;
-	bonus bMatkRate,10;
+function	script	S_Novice_Armlet	{
+		bonus bFlee2,5;
+		bonus bAtkRate,10;
+		bonus bMatkRate,10;
+		if(isequipped(18212) || isequipped(18208)){
+			bonus bFlee2,5;
+			bonus bAtkRate,10;
+			bonus bMatkRate,10;
+		}
 return;
 }
 
-function	script	Q_Megingjard	{
-	bonus bStr,30;
+function	script	S_Megingjard	{
 	bonus bAtkRate,3;
+	bonus bStr,30;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bStr,30;	bonus bAtkRate,3;
+	}	
 return;
 }
 
-function	script	Q_Brisingamen	{
+function	script	S_Brisingamen	{
 	bonus bVit,10;
 	bonus bInt,10;
 	bonus bMatkRate,10;
-	bonus2 bMagicAddRace,RC_DemiPlayer,5;
-return;
-}
-
-function	script	Q_Celebration	{
-	bonus bAllStats,10;
-return;
-}
-
-function	script	Q_Icarus_Wing	{
-	bonus bFlee2,5;
-	bonus2 bAddRace,RC_DemiHuman,7;
-return;
-}
-
-function	script	Q_The_Sign	{
-	if(Class==24) {
-		bonus bAtkRate,10;
-		bonus bDex,10;
-		bonus bAgi,10;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bVit,10;
+		bonus bInt,10;
+		bonus bMatkRate,10;
 	}
 return;
 }
 
-function	script	Q_Brooch	{
-	bonus bDex,25;
-	bonus bAgi,10;
-	bonus bFlee,2;
+function	script	S_Celebration	{
+	bonus bAllStats,10;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bAllStats,10;
+	}
 return;
 }
 
-function	script	Q_Nile_Rose	{
+function	script	S_Icarus_Wing	{	
+bonus bFlee2,5;
+bonus2 bAddRace,RC_DemiHuman,7;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bFlee2,5;
+			bonus2 bAddRace,RC_DemiHuman,7;
+		}
+return;
+}
+
+function	script	S_The_Sign	{
+	if(Class==24) {
+		bonus bAtkRate,10;
+		bonus bDex,10;
+		bonus bAgi,10;
+		if(isequipped(18210)|| isequipped(18208)){
+			bonus bAtkRate,10;
+			bonus bDex,10;
+			bonus bAgi,10;
+		}
+	}
+return;
+}
+
+function	script	S_Brooch	{
+	bonus bAgi,30;
+	bonus bFlee,60;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bAgi,30;
+		bonus bFlee,60;
+	}
+return;
+}
+
+function	script	S_Nile_Rose	{
 	bonus bMaxHPrate,10;
 	bonus bMaxSPrate,10;
 	bonus bSPrecovRate,10;
 	bonus bHPrecovRate,10;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bMaxHPrate,10;
+		bonus bMaxSPrate,10;
+		bonus bSPrecovRate,10;
+		bonus bHPrecovRate,10;
+	}
 return;
 }
 
-function	script	Q_Glove	{
+function	script	S_Glove	{
 	bonus bDex,25;
 	bonus bAgi,10;
+	if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+		bonus bDex,25;
+		bonus bAgi,10;
+	}
 return;
 }

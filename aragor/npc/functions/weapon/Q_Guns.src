@@ -1,4 +1,4 @@
-function	script	Q_Revolvers	{
+function	script	W_REVOLVER	{
 bonus bUnbreakableWeapon,0;
 if (getrefine()>9) bonus bAtkRate,3;
 	bonus bAspdRate,20;
@@ -21,9 +21,9 @@ if (getarg(0)== Darkness){bonus5 bAutoSpell,HT_ANKLESNARE,1,50,BF_MAGIC+BF_SHORT
 if (getarg(0)== Infernal){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
 if (getarg(0)== vandal){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;bonus bUnstripableWeapon,0;}
 return;
-}/* item script : callfunc("Q_Revolvers",Fenrir); : callfunc("Q_Revolvers",Darkness); : callfunc("Q_Revolvers",Infernal);  : callfunc("Q_Revolvers",vandal); */
+}/* item script : callfunc("W_REVOLVER",Fenrir); : callfunc("W_REVOLVER",Darkness); : callfunc("W_REVOLVER",Infernal);  : callfunc("W_REVOLVER",vandal); */
 
-function	script	Q_Rifles	{
+function	script	W_RIFLE	{
 bonus bUnbreakableWeapon,0;
 if (getrefine()>9) bonus bAtkRate,3;
 bonus2 bAddSkillBlow,507,5;
@@ -46,9 +46,9 @@ if (getarg(0)== Judgment){bonus5 bAutoSpell,ASC_BREAKER,5,50,BF_MAGIC+BF_SHORT+B
 if (getarg(0)== Infernal){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
 if (getarg(0)== Poison){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
 return;
-}/* item script : callfunc("Q_Rifles",Tiamat); : callfunc("Q_Rifles",Judgment); : callfunc("Q_Rifles",Infernal); : callfunc("Q_Rifles",Poison); */
+}/* item script : callfunc("W_RIFLE",Tiamat); : callfunc("W_RIFLE",Judgment); : callfunc("W_RIFLE",Infernal); : callfunc("W_RIFLE",Poison); */
 
-function	script	Q_shotguns	{
+function	script	W_SHOTGUN	{
 bonus bUnbreakableWeapon,0;
 if (getrefine()>9) bonus bAtkRate,3;
 bonus bSplashRange,2;
@@ -75,9 +75,9 @@ if (getarg(0)== Chaos){bonus5 bAutoSpell,GS_RAPIDSHOWER,5,50,BF_MAGIC+BF_SHORT+B
 if (getarg(0)== Blackrose){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
 if (getarg(0)== Gatekeeper){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
 return;
-}/* item script : callfunc("Q_shotguns",Beowulf); : callfunc("Q_shotguns",Chaos); : callfunc("Q_shotguns",Blackrose); : callfunc("Q_shotguns",Gatekeeper); */
+}/* item script : callfunc("W_SHOTGUN",Beowulf); : callfunc("W_SHOTGUN",Chaos); : callfunc("W_SHOTGUN",Blackrose); : callfunc("W_SHOTGUN",Gatekeeper); */
 
-function	script	Q_Gatling	{
+function	script	W_GATLING	{
 bonus bUnstripableWeapon,0;
 if (getrefine()>9) bonus bAtkRate,3;
 bonus bAspdRate,30;
@@ -103,9 +103,9 @@ if (getarg(0)== Calamity){
 if (getarg(0)== Infernal){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
 if (getarg(0)== vandal){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
 return;
-}/* item script : callfunc("Q_Gatling",Cerberus); : callfunc("Q_Gatling",Calamity); : callfunc("Q_Gatling",Infernal); : callfunc("Q_Gatling",vandal); */
+}/* item script : callfunc("W_GATLING",Cerberus); : callfunc("W_GATLING",Calamity); : callfunc("W_GATLING",Infernal); : callfunc("W_GATLING",vandal); */
 
-function	script	Q_Granade	{
+function	script	W_GRENADE	{
 bonus bUnbreakableWeapon,0;
 if (getrefine()>9) bonus bAtkRate,3;
 bonus bSplashRange,3;
@@ -129,4 +129,4 @@ if (getarg(0)== Catastrophe){
 if (getarg(0)== Inferno){bonus5 bAutoSpell,SA_DISPELL,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;}
 if (getarg(0)== Destroyer){bonus5 bAutoSpell,GS_DISARM,1,20,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;}
 return;
-}/* item script : callfunc("Q_Granade",Dragon); : callfunc("Q_Granade",Catastrophe); : callfunc("Q_Granade",Inferno); : callfunc("Q_Granade",Destroyer); */
+}/* item script : callfunc("W_GRENADE",Dragon); : callfunc("W_GRENADE",Catastrophe); : callfunc("W_GRENADE",Inferno); : callfunc("W_GRENADE",Destroyer); */

@@ -1,0 +1,97 @@
+{
+	Id: 19001
+	AegisName: "ticketvip"
+	Name: "Ticket VIP"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 19002
+	AegisName: "black_note"
+	Name: "Black Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19003
+	AegisName: "blue_note"
+	Name: "Blue Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19004
+	AegisName: "red_note"
+	Name: "Red Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19005
+	AegisName: "pink_note"
+	Name: "Pink Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19006
+	AegisName: "white_note"
+	Name: "White Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19007
+	AegisName: "green_note"
+	Name: "Green Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19008
+	AegisName: "yellow_note"
+	Name: "Yellow Note"
+	Sell: 10
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+	}
+},

@@ -1,4 +1,4 @@
-function	script	Q_Rod	{
+function	script	N_STAFF	{
 	bonus bHit,300;
 	bonus bAspd,30;
 	bonus bAllStats,10;

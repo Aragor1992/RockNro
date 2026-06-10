@@ -1,0 +1,60 @@
+{
+	Id: 9794
+	AegisName: "Green_Quiz_Hat"
+	Name: "Green Quiz Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 805
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9795
+	AegisName: "Red_Quiz_Hat"
+	Name: "Red Quiz Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 806
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9796
+	AegisName: "Yellow_Quiz_Hat"
+	Name: "Yellow Quiz Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 807
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},

@@ -4,19 +4,14 @@ if(Class==Job_Crusader||Class==Job_Paladin||Class==Job_Crusader2||Class==Job_Pal
 	if(isequipped(Swordman_Spirit)|| isequipped(Spirit_Of_Spirits)){
 		bonus bMaxHPrate,10;
 		bonus bDelayrate,-10;
-		if(readparam(bStr)>=150){
-			bonus2 bAddRace,RC_DemiHuman,10;
-			bonus bHit,50;
-		}
-		if(readparam(bInt)>=150){
-			bonus bMatkRate,20;
-		}
-		}
+		if(readparam(bStr)>=150){bonus2 bAddRace,RC_DemiHuman,10;bonus bHit,50;}
+		if(readparam(bInt)>=150){bonus bMatkRate,20;}
 	}
-		bonus bShortWeaponDamageReturn,10;
-		bonus bLongWeaponDamageReturn,10;
-		bonus3 bMagicDamageReturn2,100,1,10;
-		bonus3 bMagicDamageReturn2,100,0,10;
+}
+bonus bShortWeaponDamageReturn,10;
+bonus bLongWeaponDamageReturn,10;
+bonus3 bMagicDamageReturn2,100,1,10;
+bonus3 bMagicDamageReturn2,100,0,10;
 return;
 }
 

@@ -1,4 +1,4 @@
-function	script	Q_wings	{
+function	script	Q_WINGS	{
 	bonus bMaxHPrate,5;
 	bonus bMatkRate,5;
 	bonus bAtkRate,5;

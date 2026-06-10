@@ -1,0 +1,125 @@
+{
+	Id: 9694
+	AegisName: "Coif"
+	Name: "Coif"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 641
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+	">
+},
+{
+	Id: 9752
+	AegisName: "Golden_Crown"
+	Name: "Golden Crown"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 763
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+	">
+},
+{
+	Id: 9784
+	AegisName: "Samurai_x_helmet"
+	Name: "Samurai x Helmet"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 795
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+	">
+},
+{
+	Id: 9828
+	AegisName: "helm_of_abyss"
+	Name: "Helm of Abyss"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 850
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+	">
+},
+{
+	Id: 9857
+	AegisName: "war_horns_helm"
+	Name: "War Horns Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 879
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+	">
+},

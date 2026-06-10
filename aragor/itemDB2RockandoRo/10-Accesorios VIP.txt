@@ -1,0 +1,178 @@
+{
+	Id: 18078
+	AegisName: "Morpheus's_Armlet"
+	Name: "Morpheus's Bracelet v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 35
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bFlee2,5;
+		bonus bCritical,5;
+		bonus bStr,20;
+		bonus2 bAddRace,RC_DemiHuman,10;
+		bonus2 bSkillAtk,485,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211)|| isequipped(18208)|| isequipped(18212)){
+			bonus bFlee2,5;
+			bonus bCritical,5;
+			bonus bStr,20;
+			bonus2 bAddRace,RC_DemiHuman,10;
+			bonus2 bSkillAtk,485,10;
+		}
+		;
+	">
+},
+{
+	Id: 18079
+	AegisName: "Morrigane's_Pendant"
+	Name: "Morrigane's Pendant v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 35
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bLongAtkRate,7;
+		bonus bDex,20;
+		bonus bDelayRate,-7;
+		if(BaseClass==Job_Ninja) {
+			bonus bDelayRate,5;
+		}
+		;
+		if(BaseClass==Job_Gunslinger) {
+			bonus bAtkRate,10;
+		}
+		;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211)|| isequipped(18208)|| isequipped(18212)){
+			bonus bLongAtkRate,7;
+			bonus bDex,20;
+			bonus bDelayRate,-7;
+			if(BaseClass==Job_Gunslinger) {
+				bonus bAtkRate,10;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 18083
+	AegisName: "Orleans_Glove"
+	Name: "Glove of Orleans V2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 35
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bPerfectHitAddRate,15;
+		bonus bHit,100;
+		bonus bAtkRate,10;
+		bonus bDelayRate,-5;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211)|| isequipped(18208)|| isequipped(18212)){
+			bonus bPerfectHitAddRate,15;
+			bonus bHit,100;
+			bonus bAtkRate,10;
+			bonus bDelayRate,-5;
+		}
+		;
+	">
+},
+{
+	Id: 18084
+	AegisName: "Bison_Horn"
+	Name: "Horn of the Buffalo V2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 35
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,20;
+		bonus bIgnoreMdefRate,10;
+		bonus2 bSkillHeal,28,10;
+		bonus2 bSkillHeal,70,10;
+		bonus2 bSkillHeal,478,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211)|| isequipped(18208)|| isequipped(18212)){
+			bonus bInt,20;
+			bonus bIgnoreMdefRate,10;
+			bonus2 bSkillHeal,28,10;
+			bonus2 bSkillHeal,70,10;
+			bonus2 bSkillHeal,478,10;
+		}
+		;
+	">
+},
+{
+	Id: 18088
+	AegisName: "Nile_Rose_V2"
+	Name: "Nile Rose V2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 35
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,5;
+		bonus bMaxSPrate,5;
+		bonus bFlee2,7;
+		bonus bDef,5;
+		bonus bMDef,5;
+		bonus bVit,5;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bMaxHPrate,5;
+			bonus bMaxSPrate,5;
+			bonus bFlee2,7;
+			bonus bDef,5;
+			bonus bMDef,5;
+			bonus bVit,5;
+		}
+		;
+	">
+},

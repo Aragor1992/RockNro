@@ -1,0 +1,300 @@
+{
+	Id: 9618
+	AegisName: "Majestic_Fox_Queen"
+	Name: "Majestic Fox Queen"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 565
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9624
+	AegisName: "Luck_O_Terish"
+	Name: "Luck O TheIrish"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 511
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9631
+	AegisName: "constructionhat"
+	Name: "Construction_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 581
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9633
+	AegisName: "Domino_Cap"
+	Name: "Domino_Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 582
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9635
+	AegisName: "HyegunHat"
+	Name: "Hyegun_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 583
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9646
+	AegisName: "Valkyrie_helm"
+	Name: "Valkyrie Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 513
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9653
+	AegisName: "HelmOfHermes"
+	Name: "Helm_Of_Hermes"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 596
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9662
+	AegisName: "machoman_hat"
+	Name: "Black Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 550
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9713
+	AegisName: "GodHelm"
+	Name: "God Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 675
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9721
+	AegisName: "badgerhat"
+	Name: "Badger Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 580
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9727
+	AegisName: "Beret_v2"
+	Name: "Beret V2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 226
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9775
+	AegisName: "Kobold_Archer_Cap"
+	Name: "Kobold Archer Cap"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 786
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,5;
+	">
+},

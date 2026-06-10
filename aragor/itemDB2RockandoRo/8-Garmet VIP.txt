@@ -1,0 +1,189 @@
+{
+	Id: 18024
+	AegisName: "Neutral_Valkyrie's_Manteau"
+	Name: "Neutral Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_neutral"; ">
+},
+{
+	Id: 18241
+	AegisName: "Fire_Valkyrie's_Manteau"
+	Name: "Fire Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_fuego"; ">
+},
+{
+	Id: 18242
+	AegisName: "Water_Valkyrie's_Manteau"
+	Name: "WaterValkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_agua"; ">
+},
+{
+	Id: 18243
+	AegisName: "Earth_Valkyrie's_Manteau"
+	Name: "Earth Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_tierra"; ">
+},
+{
+	Id: 18244
+	AegisName: "Wind_Valkyrie's_Manteau"
+	Name: "Wind Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_viento"; ">
+},
+{
+	Id: 18245
+	AegisName: "Ghost_Valkyrie's_Manteau"
+	Name: "Ghost Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_ghost"; ">
+},
+{
+	Id: 18246
+	AegisName: "Undead_Valkyrie's_Manteau"
+	Name: "Undead Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_undead"; ">
+},
+{
+	Id: 18247
+	AegisName: "Poison_Valkyrie's_Manteau"
+	Name: "Poison Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_poison"; ">
+},
+{
+	Id: 18248
+	AegisName: "Holy_Valkyrie's_Manteau"
+	Name: "Holy Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18249
+	AegisName: "Shadow_Valkyrie's_Manteau"
+	Name: "Shadow Valkyrie's Manteau v2"
+	Type: "IT_ARMOR"
+	Buy: 10000000
+	Sell: 10
+	Weight: 500
+	Def: 3
+	Slots: 4
+	Loc: "EQP_GARMENT"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vip_dark"; ">
+},

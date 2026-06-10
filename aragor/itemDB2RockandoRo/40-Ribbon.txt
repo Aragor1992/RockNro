@@ -1,0 +1,104 @@
+{
+	Id: 9753
+	AegisName: "Black_Ribbon"
+	Name: "Black Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 764
+},
+{
+	Id: 9755
+	AegisName: "Green_Ribbon"
+	Name: "Green Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 766
+},
+{
+	Id: 9756
+	AegisName: "Orange_Ribbon"
+	Name: "Orange Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 767
+},
+{
+	Id: 9757
+	AegisName: "Pink_Ribbon"
+	Name: "Pink Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 768
+},
+{
+	Id: 9758
+	AegisName: "Purple_Ribbon"
+	Name: "Purple Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 769
+},
+{
+	Id: 9759
+	AegisName: "Red_Ribbon"
+	Name: "Red Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 770
+},
+{
+	Id: 9760
+	AegisName: "White_Ribbon"
+	Name: "White Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 771
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9761
+	AegisName: "Yellow_Ribbon"
+	Name: "Yellow Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 772
+},

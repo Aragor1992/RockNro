@@ -1,4 +1,4 @@
-function	script	P_Katar	{
+function	script	P_KATAR	{
 	bonus bHit,100;
 	bonus bCritical,10;
 	bonus bCritAtkRate,15;

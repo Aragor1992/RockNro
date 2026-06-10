@@ -1,0 +1,219 @@
+{
+	Id: 19180
+	AegisName: "Super_Neutral_Sphere"
+	Name: "Super Neutral Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 70
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 19181
+	AegisName: "Super_Fire_Sphere"
+	Name: "Super Fire Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Fire; ">
+},
+{
+	Id: 19182
+	AegisName: "Super_Wind_Sphere"
+	Name: "Super Wind Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Wind; ">
+},
+{
+	Id: 19183
+	AegisName: "Super_Earth_Sphere"
+	Name: "Super Earth Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Earth; ">
+},
+{
+	Id: 19184
+	AegisName: "Super_Aqua_Sphere"
+	Name: "Super Aqua Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Water; ">
+},
+{
+	Id: 19185
+	AegisName: "Super_Ghost_Sphere"
+	Name: "Super Ghost Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Ghost; ">
+},
+{
+	Id: 19186
+	AegisName: "Super_Shadow_Sphere"
+	Name: "Super Shadow Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Dark; ">
+},
+{
+	Id: 19187
+	AegisName: "Super_Undead_Sphere"
+	Name: "Super Undead Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Undead; ">
+},
+{
+	Id: 19188
+	AegisName: "Super_Poison_Sphere"
+	Name: "Super Poison Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Poison; ">
+},
+{
+	Id: 19189
+	AegisName: "Super_Holy_Sphere"
+	Name: "Super Holy Sphere"
+	Type: "IT_AMMO"
+	Buy: 5
+	Weight: 1
+	Atk: 60
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 1
+	Subtype: "A_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bAtkEle,Ele_Holy; ">
+},

@@ -1,0 +1,345 @@
+{
+	Id: 9607
+	AegisName: "Cat_O_nine_tail"
+	Name: "Cat O' Nine Tail Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 540
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,15;
+		bonus bDex,5;
+		bonus bAgi,5;
+		bonus bCastrate,-10;
+	">
+},
+{
+	Id: 9617
+	AegisName: "Majestic_Fox_King"
+	Name: " Majestic Fox King"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 564
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bSpeedRate,10;
+		bonus bMaxHPrate,10;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 9619
+	AegisName: "Sombrero_japones"
+	Name: "Sombrero japones"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 570
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,15;
+		bonus bDex,5;
+		bonus bAgi,5;
+		bonus bCastrate,-10;
+	">
+},
+{
+	Id: 9643
+	AegisName: "machoman_hat"
+	Name: "Black Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 550
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9660
+	AegisName: "Archangel_helm"
+	Name: "Archangel Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 579
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+		bonus bMaxHPrate,20;
+		bonus bInt,10;
+		bonus bDex,10;
+		bonus bStr,10;
+		bonus bUnstripableHelm,0;
+	">
+},
+{
+	Id: 9665
+	AegisName: "maya_helm"
+	Name: "Hat Maya VIP"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 509
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnstripableHelm,0;
+		bonus bInt,15;
+		bonus bDex,10;
+		bonus bCastrate,-25;
+		bonus bMaxHPrate,20;
+	">
+},
+{
+	Id: 9666
+	AegisName: "Archangel_helm"
+	Name: "Archangel Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 579
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnstripableHelm,0;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+		bonus bMaxHPrate,20;
+		bonus bInt,10;
+		bonus bDex,10;
+		bonus bStr,10;
+		bonus bFlee2,10;
+		bonus bLuk,30;
+	">
+},
+{
+	Id: 9673
+	AegisName: "Fox_Mask"
+	Name: "Fox_Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 610
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9674
+	AegisName: "Military_Cap"
+	Name: "Military_Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 611
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9678
+	AegisName: "BlackValkyrieHelm"
+	Name: "Black Valkirie Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 615
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9689
+	AegisName: "BrownValkyrieHelm"
+	Name: "BrownValkyrie Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 636
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9697
+	AegisName: "ÇÞ"
+	Name: "ÇÞ"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: 1
+	Refine: false
+	ViewSprite: 644
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9708
+	AegisName: "DemonWings"
+	Name: "Demon Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: 1
+	Refine: false
+	ViewSprite: 655
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9714
+	AegisName: "GoldenHalo"
+	Name: "Golden Halo"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 680
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9729
+	AegisName: "Rambo_Headband"
+	Name: "Rambo Headband"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: 512
+	Refine: false
+	ViewSprite: 705
+	Script: <"
+		bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Fire,5;
+	">
+},
+{
+	Id: 9780
+	AegisName: "Morriganes_Helm"
+	Name: "Morriganes Helm"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 791
+},
+{
+	Id: 9670
+	AegisName: "wolf_tail"
+	Name: "Wolf_Tail"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 606
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},

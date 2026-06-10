@@ -1,0 +1,932 @@
+{
+	Id: 4121
+	AegisName: "Phreeoni_Card"
+	Name: "Phreeoni Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bHit,150; ">
+},
+{
+	Id: 4123
+	AegisName: "Eddga_Card"
+	Name: "Eddga Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHOES"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		set .@c,callfunc("contar_cartas",6,4123);
+		bonus bMdef,(.@c>1)?(9 - .@c):10;
+	">
+	OnEquipScript: <" sc_start4 SC_ENDURE,60000,10,0,0,1; ">
+	OnUnequipScript: <" sc_end SC_ENDURE; ">
+},
+{
+	Id: 4128
+	AegisName: "Golden_Bug_Card"
+	Name: "Golden Thief Bug Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHIELD"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		if( callfunc("contar_cartas",3,4128) == 1){
+			bonus bMagicAtkDef,17;
+			bonus bMdef,5;
+		}
+	">
+},
+{
+	Id: 4131
+	AegisName: "Moonlight_Flower_Card"
+	Name: "Moonlight Flower Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHOES"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Moonlight_Flower"; ">
+},
+{
+	Id: 4132
+	AegisName: "Mistress_Card"
+	Name: "Mistress Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Wind,15;
+		bonus bNoGemStone,0;
+		bonus bUseSPrate,-25;
+	">
+},
+{
+	Id: 4134
+	AegisName: "Dracula_Card"
+	Name: "Dracula Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSPVanishRate,50,10;
+		bonus2 bSpDrainRate,100,5;
+		if(Class==4016||Class==4038) {
+			bonus2 bSpDrainRate,-100,-5;
+		}
+		;
+	">
+},
+{
+	Id: 4135
+	AegisName: "Orc_Load_Card"
+	Name: "Orc Lord Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		if(getrefine()>=7) {
+			callfunc "F_Orc_Lord";
+		}
+		;
+	">
+},
+{
+	Id: 4137
+	AegisName: "Drake_Card"
+	Name: "Drake Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bNoSizeFix,0;
+		bonus bAtkRate,20;
+	">
+},
+{
+	Id: 4142
+	AegisName: "Doppelganger_Card"
+	Name: "Doppelganger Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAspdRate,(BaseLevel/5); ">
+},
+{
+	Id: 4143
+	AegisName: "Orc_Hero_Card"
+	Name: "Orc Hero Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Neutral,15;
+		bonus3 bAutoSpellWhenHit,678,10,5;
+		bonus2 bResEff,Eff_Stun,10000;
+	">
+},
+{
+	Id: 4144
+	AegisName: "Osiris_Card"
+	Name: "Osiris Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		sc_start 34,90000000,10;
+		bonus2 bSubEle,Ele_Poison,15;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 4145
+	AegisName: "Berzebub_Card"
+	Name: "Berzebub Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ACC"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bCastrate,-50; ">
+},
+{
+	Id: 4146
+	AegisName: "Maya_Card"
+	Name: "Maya Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHIELD"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Maya"; ">
+},
+{
+	Id: 4147
+	AegisName: "Baphomet_Card"
+	Name: "Baphomet Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Baphomet"; ">
+},
+{
+	Id: 4148
+	AegisName: "Pharaoh_Card"
+	Name: "Pharaoh Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bUseSPrate,-30; ">
+},
+{
+	Id: 4168
+	AegisName: "Dark_Lord_Card"
+	Name: "Dark Lord Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHOES"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,10;
+		bonus bMaxSPrate,10;
+		bonus5 bAutoSpellWhenHit,"WZ_METEOR",5,100,BF_SHORT,1;
+		if(isequipped(4169)) {
+			bonus bMaxHPrate,20;
+			bonus bMaxSPrate,20;
+		}
+	">
+},
+{
+	Id: 4169
+	AegisName: "Dark_Illusion_Card"
+	Name: "Dark Illusion Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bCastrate,-10-10*isequipped(4168); ">
+},
+{
+	Id: 4236
+	AegisName: "Amon_Ra_Card"
+	Name: "Amon Ra Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHOES"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus3 bAutoSpellWhenHit,"PR_KYRIE",7,(30+20*(readparam(bInt)>=99));
+	">
+},
+{
+	Id: 4263
+	AegisName: "Incant_Samurai_Card"
+	Name: "Incantation Samurai Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Inca"; ">
+},
+{
+	Id: 4276
+	AegisName: "Lord_Of_Death_Card"
+	Name: "Lord of Death Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bAddEff,Eff_Stun,500;
+		bonus2 bAddEff,Eff_Curse,500;
+		bonus2 bAddEff,Eff_Silence,500;
+		bonus2 bAddEff,Eff_Poison,500;
+		bonus2 bAddEff,Eff_Bleeding,500;
+		bonus2 bAddEff,Eff_Stone,500;
+		bonus2 bAddEff,Eff_Confusion,500;
+		bonus2 bAddEff,Eff_Freeze,500;
+		bonus2 bAddEff,Eff_Sleep,500;
+	">
+},
+{
+	Id: 4302
+	AegisName: "Tao_Gunka_Card"
+	Name: "Tao Gunka Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Taogunka"; ">
+},
+{
+	Id: 4305
+	AegisName: "Turtle_General_Card"
+	Name: "Turtle General Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bAddRace,RC_NonBoss,25;
+		bonus2 bAddRace2,5,25;
+	">
+},
+{
+	Id: 4318
+	AegisName: "Knight_Windstorm_Card"
+	Name: "Stormy Knight Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus3 bAutoSpell,"WZ_STORMGUST",2,20;
+		bonus2 bAddEff,Eff_Freeze,2000;
+		bonus bMatkRate,15;
+	">
+},
+{
+	Id: 4324
+	AegisName: "Garm_Card"
+	Name: "Garm Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bDef,5;
+		bonus bMDef,5;
+		bonus2 bSubEle,Ele_Water,10;
+		bonus2 bAddEffWhenHit,Eff_Freeze,5000;
+	">
+},
+{
+	Id: 4330
+	AegisName: "Dark_Snake_Lord_Card"
+	Name: "Evil Snake Lord Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Ghost,15;
+		bonus2 bResEff,Eff_Bleeding,10000;
+	">
+},
+{
+	Id: 4342
+	AegisName: "RSX_0806_Card"
+	Name: "RSX 0806 Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bVit,3;
+		bonus bUnbreakableArmor,0;
+		bonus bNoKnockback,0;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Freeze,10000;
+	">
+},
+{
+	Id: 4352
+	AegisName: "B_Ygnizem_Card"
+	Name: "General Egnigem Cenia Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHOES"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,10;
+		bonus bMaxSPrate,10;
+		bonus2 bHPRegenRate,500,10000;
+		bonus2 bSPRegenRate,100,10000;
+	">
+},
+{
+	Id: 4357
+	AegisName: "B_Seyren_Card"
+	Name: "Lord Knight Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_LKnight"; ">
+},
+{
+	Id: 4359
+	AegisName: "B_Eremes_Card"
+	Name: "Assassin Cross Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		skill "AS_CLOAKING",3;
+		bonus bAspdRate,-25;
+	">
+	OnUnequipScript: <" sc_end SC_CLOAKING; ">
+},
+{
+	Id: 4361
+	AegisName: "B_Harword_Card"
+	Name: "Whitesmith Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bBreakWeaponRate,300;
+		bonus bBreakArmorRate,210;
+	">
+},
+{
+	Id: 4363
+	AegisName: "B_Magaleta_Card"
+	Name: "High Priest Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,10;
+		bonus5 bAutoSpellWhenHit,"HP_ASSUMPTIO",3,50,BF_WEAPON|BF_MAGIC,0;
+	">
+},
+{
+	Id: 4365
+	AegisName: "B_Katrinn_Card"
+	Name: "High Wizard Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Hwizard"; ">
+},
+{
+	Id: 4367
+	AegisName: "B_Shecil_Card"
+	Name: "Sniper Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Sniper"; ">
+},
+{
+	Id: 4372
+	AegisName: "Bacsojin_Card"
+	Name: "Bacsojin Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ACC"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Bacsojin"; ">
+},
+{
+	Id: 4374
+	AegisName: "Apocalips_H_Card"
+	Name: "Vesper Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: ["EQP_HEAD_LOW", "EQP_HEAD_TOP", "EQP_HEAD_MID"]
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bDex,2;
+		bonus2 bIgnoreMdefRate,RC_Boss,30;
+	">
+},
+{
+	Id: 4376
+	AegisName: "Lady_Tanee_Card"
+	Name: "Lady Tanee Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_SHOES"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Tanee"; ">
+},
+{
+	Id: 4386
+	AegisName: "Detale_Card"
+	Name: "Detale Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		override: 99
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bSubEle,Ele_Water,10;
+	">
+},
+{
+	Id: 4399
+	AegisName: "Thanatos_Card"
+	Name: "Thanatos Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 4403
+	AegisName: "Kiel_Card"
+	Name: "Kiel Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Kiel"; ">
+},
+{
+	Id: 4407
+	AegisName: "Randgris_Card"
+	Name: "Randgris Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnbreakableWeapon,0;
+		bonus2 bAddRace,RC_NonBoss,10;
+		bonus2 bAddRace,RC_Boss,10;
+		bonus3 bAutoSpell,"SA_DISPELL",1,50;
+	">
+},
+{
+	Id: 4408
+	AegisName: "Gloom_Under_Night_Card"
+	Name: "Gloom Under Night Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Gloom"; ">
+},
+{
+	Id: 4419
+	AegisName: "Ktullanux_Card"
+	Name: "Ktullanux Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		if(getrefine()>=7) {
+			callfunc "F_Ktullanux";
+		}
+		;
+	">
+},
+{
+	Id: 4425
+	AegisName: "Atroce_Card"
+	Name: "Atroce Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bBaseAtk,100;
+		bonusautoscript "{ specialeffect2 EF_FLAMELAUNCHER; sc_start SC_INCBASEATK,10000,500; }",50;
+	">
+},
+{
+	Id: 4430
+	AegisName: "Ifrit_Card"
+	Name: "Ifrit Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_ACC"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Ifrit"; ">
+},
+{
+	Id: 4441
+	AegisName: "Fallen_Bishop_Hibram_Card"
+	Name: "Fallen Bishop Hibram Card"
+	Type: "IT_CARD"
+	Buy: 10000000
+	Sell: 0
+	Weight: 10
+	Loc: "EQP_WEAPON"
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_Fallen"; ">
+},

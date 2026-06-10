@@ -1,0 +1,342 @@
+{
+	Id: 15282
+	AegisName: "Black_Satan_Wings"
+	Name: " Black Satan Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1171
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_satan_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15283
+	AegisName: "Black_Shaman_Wings"
+	Name: " Black Shaman Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1172
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shaman_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_OVERTHRUST,900000000,2;
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_OVERTHRUST;
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15284
+	AegisName: "Blue_Satan_Wings"
+	Name: " Blue Satan Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1173
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_satan_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15285
+	AegisName: "Green_Satan_Wings"
+	Name: " Green Satan Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1174
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_satan_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15286
+	AegisName: "Green_Shaman_Wings"
+	Name: " Green Shaman Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1175
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shaman_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_OVERTHRUST,900000000,2;
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_OVERTHRUST;
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15287
+	AegisName: "Orange_Satan_Wings"
+	Name: " Orange Satan Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1176
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_satan_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15288
+	AegisName: "Orange_Shaman_Wings"
+	Name: " Orange Shaman Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1177
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shaman_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_OVERTHRUST,900000000,2;
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_OVERTHRUST;
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15289
+	AegisName: "Pink_Satan_Wings"
+	Name: " Pink Satan Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1178
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_satan_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15290
+	AegisName: "Pink_Shaman_Wings"
+	Name: " Pink Shaman Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1179
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shaman_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_OVERTHRUST,900000000,2;
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_OVERTHRUST;
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15291
+	AegisName: "Red_Shaman_Wings"
+	Name: " Red Shaman Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1180
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shaman_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_OVERTHRUST,900000000,2;
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_OVERTHRUST;
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15292
+	AegisName: "Yellow_Satan_Wings"
+	Name: " Yellow Satan Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1181
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_satan_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},
+{
+	Id: 15293
+	AegisName: "Yellow_Shaman_Wings"
+	Name: " Yellow Shaman Wings"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1182
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_shaman_wings"; ">
+	OnEquipScript: <"
+		sc_start SC_OVERTHRUST,900000000,2;
+		sc_start SC_INCREASEAGI,900000000,10;
+		sc_start SC_BLESSING,900000000,10;
+	">
+	OnUnequipScript: <"
+		sc_end SC_OVERTHRUST;
+		sc_end SC_INCREASEAGI;
+		sc_end SC_BLESSING;
+	">
+},

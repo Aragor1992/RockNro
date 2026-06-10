@@ -258,10 +258,10 @@ OnInit:
 	Add(19,Q_Granade_Inferno,1,20000000,0,13161,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
 	Add(19,Q_Granade_Destroyer,1,20000000,0,13161,1,984,100,719,80,1019,100,7263,40,Gemstone,3);
 //shotguns
-	Add(20,Q_shotguns_Beowulf,1,20000000,0,13178,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
-	Add(20,Q_shotguns_Chaos,1,20000000,0,13178,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
-	Add(20,Q_shotguns_Blackrose,1,20000000,0,13178,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
-	Add(20,Q_shotguns_Gatekeeper,1,20000000,0,13178,1,984,100,719,80,1019,100,7263,40,Gemstone,3);	
+	Add(20,Q_Shotguns_Beowulf,1,20000000,0,13178,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
+	Add(20,Q_Shotguns_Chaos,1,20000000,0,13178,1,984,100,994,80,1019,100,7263,40,Rose_Quartz,3);
+	Add(20,Q_Shotguns_Blackrose,1,20000000,0,13178,1,984,100,12020,80,1019,100,7263,40,Biotite,3,Agate,3);
+	Add(20,Q_Shotguns_Gatekeeper,1,20000000,0,13178,1,984,100,719,80,1019,100,7263,40,Gemstone,3);	
 // ================================================ Guns ================================================
 
 // ================================================ Shurikens ================================================
@@ -285,38 +285,38 @@ OnInit:
 	Add(22,Q_Mini_Ballista,1,20000000,0,1727,1,984,100,Steel,80,Biotite,5,Phlogopite,3,7757,3);
 	
 // ======================== Flechas 25==============================
-	Add(25,Q_Arrow_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
-	Add(25,Q_Arrow_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
-	Add(25,Q_Arrow_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
-	Add(25,Q_Arrow_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
-	Add(25,Q_Arrow_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);	
-	Add(25,Q_Arrow_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
-	Add(25,Q_Arrow_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
-	Add(25,Q_Arrow_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
-	Add(25,Q_Arrow_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
-	Add(25,Q_Arrow_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
+	Add(25,S_ARROW_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
+	Add(25,S_ARROW_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
+	Add(25,S_ARROW_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
+	Add(25,S_ARROW_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
+	Add(25,S_ARROW_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);	
+	Add(25,S_ARROW_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
+	Add(25,S_ARROW_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
+	Add(25,S_ARROW_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
+	Add(25,S_ARROW_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
+	Add(25,S_ARROW_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
 // ======================== Balas 26==============================
-	Add(26,Q_Bullet_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
-	Add(26,Q_Bullet_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
-	Add(26,Q_Bullet_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
-	Add(26,Q_Bullet_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
-	Add(26,Q_Bullet_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);	
-	Add(26,Q_Bullet_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
-	Add(26,Q_Bullet_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
-	Add(26,Q_Bullet_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
-	Add(26,Q_Bullet_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
-	Add(26,Q_Bullet_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
+	Add(26,S_BULLET_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
+	Add(26,S_BULLET_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
+	Add(26,S_BULLET_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
+	Add(26,S_BULLET_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
+	Add(26,S_BULLET_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);	
+	Add(26,S_BULLET_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
+	Add(26,S_BULLET_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
+	Add(26,S_BULLET_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
+	Add(26,S_BULLET_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
+	Add(26,S_BULLET_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
 // ======================== Granadas 27============================
-	Add(26,Q_Sphere_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
-	Add(26,Q_Sphere_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
-	Add(26,Q_Sphere_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
-	Add(26,Q_Sphere_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
-	Add(26,Q_Sphere_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);
-	Add(26,Q_Sphere_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
-	Add(26,Q_Sphere_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
-	Add(26,Q_Sphere_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
-	Add(26,Q_Sphere_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
-	Add(26,Q_Sphere_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
+	Add(26,S_GRENADE_Poison,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Gemstone,3);
+	Add(26,S_GRENADE_Wind,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Olivine,3);
+	Add(26,S_GRENADE_Dark,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Pyroxene,3);
+	Add(26,S_GRENADE_Neutral,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Muscovite,3);
+	Add(26,S_GRENADE_Holy,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Citrine,3);
+	Add(26,S_GRENADE_Fire,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Rose_Quartz,3);
+	Add(26,S_GRENADE_Earth,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Biotite,3);
+	Add(26,S_GRENADE_Water,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Turquoise,3);
+	Add(26,S_GRENADE_Ghost,1,20000000,0,984,50,997,40,1019,50,7263,20,Agate,3,Phlogopite,3);
+	Add(26,S_GRENADE_Undead,1,20000000,0,984,50,997,40,1019,50,7263,20,Biotite,3,Agate,3);
 // -----------------------------------------------------------
 
 	freeloop(0);

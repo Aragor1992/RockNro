@@ -1,0 +1,260 @@
+{
+	Id: 17001
+	AegisName: "Gumoongoh"
+	Name: "Queen"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_neutral"; ">
+},
+{
+	Id: 17002
+	AegisName: "Electric_Guitar"
+	Name: "Rock Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_tierra"; ">
+},
+{
+	Id: 17003
+	AegisName: "Burning_Passion_Guitar"
+	Name: "Burning Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_fuego"; ">
+},
+{
+	Id: 17004
+	AegisName: "Loner's_Guitar"
+	Name: "Sumerged Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_agua"; ">
+},
+{
+	Id: 17005
+	AegisName: "Green_Acre_Guitar"
+	Name: "Chaos Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_shadow"; ">
+},
+{
+	Id: 17006
+	AegisName: "Gentle_Breeze_Guitar"
+	Name: "Electric Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_viento"; ">
+},
+{
+	Id: 17007
+	AegisName: "Oriental_Lute"
+	Name: "Legend"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_holy"; ">
+},
+{
+	Id: 17008
+	AegisName: "Dimensional_Guitar"
+	Name: "Dimensional Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_ghost"; ">
+},
+{
+	Id: 17009
+	AegisName: "Infernal_Guitar"
+	Name: "Infernal Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_undead"; ">
+},
+{
+	Id: 20001
+	AegisName: "Electric_Guitar"
+	Name: "Venom Guitar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Bard: true
+	}
+	Gender: "SEX_MALE"
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_MUSICAL"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_guitarra_poison"; ">
+},

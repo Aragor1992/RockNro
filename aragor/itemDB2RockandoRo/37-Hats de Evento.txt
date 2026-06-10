@@ -1,0 +1,154 @@
+{
+	Id: 9652
+	AegisName: "lolikitty"
+	Name: "Loli_Kitty"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 595
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9672
+	AegisName: "Blue_Cap"
+	Name: "Feather Beret"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 609
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9685
+	AegisName: "BlueGoldenBells"
+	Name: "Blue Golden Bells"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 630
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9754
+	AegisName: "Blue_Ribbon"
+	Name: "Blue Ribbon"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 765
+},
+{
+	Id: 9779
+	AegisName: "Mike_Mayers_Mask"
+	Name: "Mike Mayers Mask"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 790
+},
+{
+	Id: 9786
+	AegisName: "Squirting_Poring"
+	Name: "Squirting Poring"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 797
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bDex,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,15;
+		bonus bFlee2,7;
+		bonus2 bSubRace,RC_DemiHuman,10;
+	">
+},
+{
+	Id: 9787
+	AegisName: "Witch_Hat"
+	Name: "Witch Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 798
+},
+{
+	Id: 9805
+	AegisName: "ayothaya_kings_hat"
+	Name: "Ayothaya Kings Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 816
+},
+{
+	Id: 9816
+	AegisName: "chinese_dragon_hat"
+	Name: "Chinese Dragon Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 827
+},
+{
+	Id: 9838
+	AegisName: "punk_face"
+	Name: "Punk Face"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 860
+},

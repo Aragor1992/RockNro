@@ -1,0 +1,318 @@
+{
+	Id: 18071
+	AegisName: "Critical_Ring"
+	Name: "Master Critical Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bCritical,10;
+		bonus bCritAtkRate,10;
+		bonus bAgi,10;
+		bonus bLuk,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bCritical,10;
+			bonus bCritAtkRate,10;
+			bonus bAgi,10;
+			bonus bLuk,10;
+		}
+		;
+	">
+},
+{
+	Id: 18072
+	AegisName: "Bow_Thimble"
+	Name: "Master Bow Thimble"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==3||Class==11||Class==4012||Class==17||Class==4018) {
+			bonus bLongAtkRate,10;
+			bonus bHit,50;
+		}
+		;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211)|| isequipped(18208)){
+			if(Class==3||Class==11||Class==4012||Class==17||Class==4018) {
+				bonus bLongAtkRate,10;
+				bonus bHit,50;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 18073
+	AegisName: "Novice_Armlet"
+	Name: "Master Novice Armlet"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Job: 0x00000001
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bFlee2,5;
+		bonus bAtkRate,10;
+		bonus bMatkRate,10;
+		if(isequipped(18212) || isequipped(18208)){
+			bonus bFlee2,5;
+			bonus bAtkRate,10;
+			bonus bMatkRate,10;
+		}
+	">
+},
+{
+	Id: 18074
+	AegisName: "Megingjard"
+	Name: "Master Megingjard"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 2000
+	Def: 2
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,30;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bStr,30;
+		}
+		;
+	">
+},
+{
+	Id: 18075
+	AegisName: "Brisingamen"
+	Name: "Master Brisingamen"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 800
+	Def: 1
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bVit,10;
+		bonus bInt,10;
+		bonus bMatkRate,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bVit,10;
+			bonus bInt,10;
+			bonus bMatkRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 18076
+	AegisName: "Celebration_Ring"
+	Name: "Master Celebration Ring"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bAllStats,10;
+		}
+		;
+	">
+},
+{
+	Id: 18077
+	AegisName: "The_Sign"
+	Name: "Master The Sign"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==24) {
+			bonus bAtkRate,10;
+			bonus bDex,10;
+			bonus bAgi,10;
+			if(isequipped(18210)|| isequipped(18208)){
+				bonus bAtkRate,10;
+				bonus bDex,10;
+				bonus bAgi,10;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 18080
+	AegisName: "Glove"
+	Name: "Master Glove"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bDex,25;
+		bonus bAgi,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bDex,25;
+			bonus bAgi,10;
+		}
+		;
+	">
+},
+{
+	Id: 18081
+	AegisName: "Brooch"
+	Name: "Master Brooch"
+	Type: "IT_ARMOR"
+	Buy: 30000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,30;
+		bonus bFlee,60;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bAgi,30;
+			bonus bFlee,60;
+		}
+		;
+	">
+},
+{
+	Id: 18082
+	AegisName: "Nile_Rose"
+	Name: "Master Nile Rose"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,10;
+		bonus bMaxSPrate,10;
+		bonus bSPrecovRate,10;
+		bonus bHPrecovRate,10;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bMaxHPrate,10;
+			bonus bMaxSPrate,10;
+			bonus bSPrecovRate,10;
+			bonus bHPrecovRate,10;
+		}
+		;
+	">
+},
+{
+	Id: 18085
+	AegisName: "Icarus_Wing"
+	Name: "Icarus Wing"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 35
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bFlee2,5;
+		bonus2 bAddRace,RC_DemiHuman,7;
+		if(isequipped(18204) || isequipped(18210) || isequipped(18211) || isequipped(18212) || isequipped(18208)){
+			bonus bFlee2,5;
+			bonus2 bAddRace,RC_DemiHuman,7;
+		}
+		;
+	">
+},

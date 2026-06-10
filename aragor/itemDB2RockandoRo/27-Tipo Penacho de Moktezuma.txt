@@ -1,0 +1,145 @@
+{
+	Id: 9603
+	AegisName: "bapho_helm"
+	Name: "Bone Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 536
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Paladin||Class==Job_Crusader) {
+			bonus bShortWeaponDamageReturn,-5;
+		}
+		;
+		bonus bStr,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bShortWeaponDamageReturn,10;
+		bonus bMaxHPrate,20;
+	">
+},
+{
+	Id: 9606
+	AegisName: "pirate_hat"
+	Name: "Black Pirate Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 522
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Paladin||Class==Job_Crusader) {
+			bonus bShortWeaponDamageReturn,-5;
+		}
+		;
+		bonus bStr,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bShortWeaponDamageReturn,10;
+		bonus bMaxHPrate,20;
+	">
+},
+{
+	Id: 9614
+	AegisName: "Whiteberret"
+	Name: "White Berret"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 561
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Paladin||Class==Job_Crusader) {
+			bonus bShortWeaponDamageReturn,-5;
+		}
+		;
+		bonus bStr,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bShortWeaponDamageReturn,10;
+		bonus bMaxHPrate,20;
+	">
+},
+{
+	Id: 9661
+	AegisName: "pachuco_hat"
+	Name: "Feathered Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 501
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Paladin||Class==Job_Crusader) {
+			bonus bShortWeaponDamageReturn,-5;
+		}
+		;
+		bonus bStr,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bShortWeaponDamageReturn,10;
+		bonus bMaxHPrate,20;
+	">
+},
+{
+	Id: 9751
+	AegisName: "Black_Hollow_Mask"
+	Name: "Black Hollow Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 762
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(Class==Job_Paladin||Class==Job_Crusader) {
+			bonus bShortWeaponDamageReturn,-5;
+		}
+		;
+		bonus bStr,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bShortWeaponDamageReturn,10;
+		bonus bMaxHPrate,20;
+	">
+},

@@ -1,0 +1,270 @@
+{
+	Id: 16091
+	AegisName: "Claw"
+	Name: "Diamond Knuckle"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_neutral"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16092
+	AegisName: "Finger"
+	Name: "Sapphire Knuckle"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_agua"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16093
+	AegisName: "Kaiser_Knuckle"
+	Name: "Stone Knuckle"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_tierra"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16094
+	AegisName: "Berserk"
+	Name: "Ruby Knuckle"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_fuego"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16095
+	AegisName: "Garm_Claw"
+	Name: "Garm Claw v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_shadow"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16096
+	AegisName: "Kaiser_Knuckle"
+	Name: "Kaiser Knuckle v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_viento"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16097
+	AegisName: "Kaiser_Knuckle"
+	Name: "Opal Knuckle"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_holy"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16098
+	AegisName: "Dimensional_Fist"
+	Name: "Dimensional Fist"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_ghost"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16099
+	AegisName: "Infernal_Fist"
+	Name: "Infernal Fist"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_undead"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 20012
+	AegisName: "Claw"
+	Name: "Venom Fist"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 1
+	Slots: 4
+	Job: {
+		Priest: true
+		Monk: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KNUCKLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_puño_poison"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},

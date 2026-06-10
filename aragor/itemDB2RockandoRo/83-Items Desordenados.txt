@@ -1,0 +1,63 @@
+{
+	Id: 20022
+	AegisName: "Bunny_Band"
+	Name: "Bunny Band Enchulada"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 15
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" bonus bLuk,20; ">
+},
+{
+	Id: 20023
+	AegisName: "Valkyrie_Helm"
+	Name: "Valkyrie Helm v2 Enchulado"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 225
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMdef,10;
+		bonus bAllStats,10;
+	">
+},
+{
+	Id: 20026
+	AegisName: "Tiger_Mask"
+	Name: "Tiger Mask v2"
+	Type: "IT_ARMOR"
+	Buy: 20
+	Weight: 400
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 181
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,10;
+		bonus bMaxHP,10000;
+	">
+},

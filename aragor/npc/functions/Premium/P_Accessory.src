@@ -39,8 +39,8 @@ return;
 }
 
 function	script	P_Nile_Rose	{
-	bonus bMaxHPrate,5;
-	bonus bMaxSPrate,5;
+	bonus bMaxHPrate,10;
+	bonus bMaxSPrate,10;
 	bonus bFlee2,7;
 	bonus bDef,5;
 	bonus bMdef,5;

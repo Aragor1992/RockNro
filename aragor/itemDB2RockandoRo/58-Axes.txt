@@ -1,0 +1,300 @@
+{
+	Id: 16051
+	AegisName: "War_Axe"
+	Name: "War Axe v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 300
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_neutral"; ">
+},
+{
+	Id: 16052
+	AegisName: "Windhawk"
+	Name: "Windhawk v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_viento"; ">
+},
+{
+	Id: 16053
+	AegisName: "Bloody_Axe"
+	Name: "Bloody Axe v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_fuego"; ">
+},
+{
+	Id: 16054
+	AegisName: "Sabbath"
+	Name: "Sabbath v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_shadow"; ">
+},
+{
+	Id: 16055
+	AegisName: "Light_Epsilon"
+	Name: "Light Epsilon v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_holy"; ">
+},
+{
+	Id: 16056
+	AegisName: "Slaughter"
+	Name: "Slaughter v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_tierra"; ">
+},
+{
+	Id: 16057
+	AegisName: "Guillotine"
+	Name: "Aqua Axe v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_agua"; ">
+},
+{
+	Id: 16058
+	AegisName: "Dimension Axe"
+	Name: "Dimension Axe"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_ghost"; ">
+},
+{
+	Id: 16059
+	AegisName: "Infernal Axe"
+	Name: "Infernal Axe"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_undead"; ">
+},
+{
+	Id: 20008
+	AegisName: "War_Axe"
+	Name: "Venom Axe v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 200
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Merchant: true
+		Knight: true
+		Blacksmith: true
+		Crusader: true
+		Alchemist: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HAXE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hacha_poison"; ">
+},

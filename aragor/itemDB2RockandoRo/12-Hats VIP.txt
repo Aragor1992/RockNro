@@ -1,0 +1,1911 @@
+{
+	Id: 5210
+	AegisName: "Flying_Angel"
+	Name: "Flying Angel"
+	Type: "IT_ARMOR"
+	Weight: 300
+	Def: 1
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	EquipLv: 10
+	ViewSprite: 264
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_flyingHelm"; ">
+},
+{
+	Id: 9602
+	AegisName: "black_helm"
+	Name: "Black Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 510
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackhelm"; ">
+},
+{
+	Id: 9608
+	AegisName: "helm_of_ice_wolf"
+	Name: "Ice Wolf Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 559
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_icewolfhelm"; ">
+},
+{
+	Id: 9609
+	AegisName: "fenix_helm"
+	Name: "Phoenix Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 523
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_archangelhelm"; ">
+},
+{
+	Id: 9611
+	AegisName: "Valkyrie_randgris_helm"
+	Name: "Valkyrie Randgris Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 560
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mayahelm"; ">
+},
+{
+	Id: 9613
+	AegisName: "dragon_helm"
+	Name: "Dragon Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 519
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_dragonhelm"; ">
+},
+{
+	Id: 9623
+	AegisName: "gold_helm"
+	Name: "Gold Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 718
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackhelm"; ">
+},
+{
+	Id: 9627
+	AegisName: "maya_helm"
+	Name: "Maya Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 509
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mayahelm"; ">
+},
+{
+	Id: 9628
+	AegisName: "True_valky_helm"
+	Name: "True Valkyrie Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 557
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 9629
+	AegisName: "True_valky_helm_blood"
+	Name: "Bloody Valkyrie Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 558
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 9632
+	AegisName: "penacho_de_moktezuma"
+	Name: "Penacho de Moctezuma"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 548
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_penachohelm"; ">
+},
+{
+	Id: 9638
+	AegisName: "Airth_Goat"
+	Name: "Airth Goat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 590
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_airthhelm"; ">
+},
+{
+	Id: 9650
+	AegisName: "Archangel_helm"
+	Name: "Archangel Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 579
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_archangelhelm"; ">
+},
+{
+	Id: 9658
+	AegisName: "BlackValkyrieHelm"
+	Name: "Black_Valkyrie_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 601
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 9659
+	AegisName: "white_morrigane_v2_helm"
+	Name: "White Morrigane v2 Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 814
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_morriganeshelm"; ">
+},
+{
+	Id: 9667
+	AegisName: "redvalk"
+	Name: "Red_Valkyrie_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 603
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 9668
+	AegisName: "greenvalk"
+	Name: "Green_Valkyrie_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 604
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 9669
+	AegisName: "brownvalk"
+	Name: "Brown_Valkyrie_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 605
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 9680
+	AegisName: "LuciferHelm"
+	Name: "Lucifer Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 622
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_luciferhelm"; ">
+},
+{
+	Id: 9681
+	AegisName: "FlyingLuciferWings"
+	Name: "Flying Lucifer Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 624
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_luciferhelm"; ">
+},
+{
+	Id: 9718
+	AegisName: "Samurai_H"
+	Name: "Samurai Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 694
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_samuraihelm"; ">
+},
+{
+	Id: 9728
+	AegisName: "Black_Airth_Goat"
+	Name: "Black Airth Goat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 703
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_airthhelm"; ">
+},
+{
+	Id: 9740
+	AegisName: "red_helm"
+	Name: "Red Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 719
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackhelm"; ">
+},
+{
+	Id: 9750
+	AegisName: "Black_Archangel_Helm"
+	Name: "Black Archangel Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 761
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_archangelhelm"; ">
+},
+{
+	Id: 9801
+	AegisName: "blue_helm"
+	Name: "Blue Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 812
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackhelm"; ">
+},
+{
+	Id: 9802
+	AegisName: "whitevalk"
+	Name: "White_Valkyrie_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 602
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 9817
+	AegisName: "chinese_samurai_hat"
+	Name: "Chinese Samurai Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 828
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_chinsamu"; ">
+},
+{
+	Id: 9819
+	AegisName: "divine_horns"
+	Name: "Divine Horns"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 836
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_divinehorn"; ">
+},
+{
+	Id: 9827
+	AegisName: "golden_horns"
+	Name: "Golden Horns"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 849
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_chinsamu"; ">
+},
+{
+	Id: 9829
+	AegisName: "ifrit_mask"
+	Name: "Ifrit Mask"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 851
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9839
+	AegisName: "black_randgris_helm"
+	Name: "Black Randgris_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 861
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mayahelm"; ">
+},
+{
+	Id: 9846
+	AegisName: "royal_crown"
+	Name: "Royal Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 868
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_royalcrown"; ">
+},
+{
+	Id: 9847
+	AegisName: "blue_samurai"
+	Name: "Blue Samurai"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 869
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_samuraihelm"; ">
+},
+{
+	Id: 9848
+	AegisName: "green_samurai"
+	Name: "Green Samurai"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 870
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_samuraihelm"; ">
+},
+{
+	Id: 9849
+	AegisName: "pink_samurai"
+	Name: "Pink Samurai"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 871
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_samuraihelm"; ">
+},
+{
+	Id: 9850
+	AegisName: "red_samurai"
+	Name: "Red Samurai"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 872
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_samuraihelm"; ">
+},
+{
+	Id: 9851
+	AegisName: "white_samurai"
+	Name: "White Samurai"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 873
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_samuraihelm"; ">
+},
+{
+	Id: 9852
+	AegisName: "skeleton_helm"
+	Name: "Skeleton Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 874
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_penachohelm"; ">
+},
+{
+	Id: 9853
+	AegisName: "tiraya_bonnet"
+	Name: "Tiraya Bonnet"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 875
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_tirayabon"; ">
+},
+{
+	Id: 9854
+	AegisName: "torch_cap"
+	Name: "Torch Cap"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 876
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_torchcap"; ">
+},
+{
+	Id: 9864
+	AegisName: "Black_Viking_Helm"
+	Name: "Black Viking Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 905
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_morriganeshelm"; ">
+},
+{
+	Id: 9865
+	AegisName: "Bloody_Garm_Hat"
+	Name: "Bloody Garm Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 906
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_firewolfhelm"; ">
+},
+{
+	Id: 9868
+	AegisName: "Crown_of_Deceit"
+	Name: "Crown of Deceit"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 909
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9886
+	AegisName: "Zero_Helm"
+	Name: "Zero Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 927
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 9924
+	AegisName: "Creed_Helm"
+	Name: "Creed Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 958
+	Script: <" callfunc "F_piscescrown"; ">
+},
+{
+	Id: 9926
+	AegisName: "Pisces_Crown"
+	Name: "Pisces Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 960
+	Script: <" callfunc "F_piscescrown"; ">
+},
+{
+	Id: 20052
+	AegisName: "Dark_Bashilrium"
+	Name: "Dark Bashilrium"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 706
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_bashilrium"; ">
+},
+{
+	Id: 20053
+	AegisName: "Hades_Helm"
+	Name: "Hades Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 707
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+//Hats Diciembre 2012
+{
+	Id: 9749
+	AegisName: "Astronaut_Helm"
+	Name: "Astronaut Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 760
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_astrohelm"; ">
+},
+{
+	Id: 9770
+	AegisName: "Evil_Druid_Hat"
+	Name: "Evil Druid Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 781
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_evildruid"; ">
+},
+{
+	Id: 9914
+	AegisName: "Gemini_Crown"
+	Name: "Gemini Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 948
+	Script: <" callfunc "F_geminicrown"; ">
+},
+{
+	Id: 9921
+	AegisName: "Wanderer_Sakkat"
+	Name: "Wanderer Sakkat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 955
+	Script: <" callfunc "F_wandersak"; ">
+},
+{
+	Id: 9975
+	AegisName: "Lala_Cap"
+	Name: "Lala Cap"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1009
+	Trade: {
+		override: 99
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lalacap"; ">
+},
+//Hats VIP 2013
+{
+	Id: 9686
+	AegisName: "BoneHelm"
+	Name: "Bone Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 633
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_bonehelm"; ">
+},
+{
+	Id: 9894
+	AegisName: "Leo_Diadem"
+	Name: "Leo Diadem"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 931
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_leodiadem"; ">
+},
+{
+	Id: 9983
+	AegisName: "Son_Goanda_Hat"
+	Name: "Son Goanda Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1017
+	Script: <" callfunc "F_fusionhelm"; ">
+},
+{
+	Id: 9987
+	AegisName: "Rasta_Hat"
+	Name: "Rastaman Hat VIP"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1045
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_tirayabon"; ">
+},
+{
+	Id: 9988
+	AegisName: "vdayhat"
+	Name: "Valentine´s Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1046
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,2;
+		bonus bAllStats,10;
+	">
+},
+{
+	Id: 9989
+	AegisName: "gent_hat"
+	Name: "Valentine´s Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1047
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		skill 27,2;
+		bonus bAllStats,10;
+	">
+},
+{
+	Id: 9990
+	AegisName: "Desolation_Helm"
+	Name: "Desolation Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1048
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 9991
+	AegisName: "Mama_mia_cap"
+	Name: "Mama Mia Cap"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1049
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9992
+	AegisName: "Mama_mia_cap"
+	Name: "Mama Mia Cap VIP"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1049
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_mamamia"; ">
+},
+{
+	Id: 9993
+	AegisName: "fusion_hat"
+	Name: "Fusion Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1050
+},
+{
+	Id: 9994
+	AegisName: "fusion_hat"
+	Name: "Fusion Hat VIP"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1050
+	Script: <" callfunc "F_fusionhelm"; ">
+},
+{
+	Id: 9995
+	AegisName: "Akatsuki_Cap"
+	Name: "Akatsuki Garment"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: 1
+	Refine: false
+	ViewSprite: 1051
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 9996
+	AegisName: "Villan_Hat"
+	Name: "Villan_Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1052
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,10;
+		bonus2 bIgnoreDefRate,RC_DemiHuman,20;
+	">
+},
+{
+	Id: 9998
+	AegisName: "Celestial_Crown"
+	Name: "Celestial Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1054
+	Script: <" callfunc "F_geminicrown"; ">
+},
+// Hats vip 2014
+{
+	Id: 9895
+	AegisName: "rider_cap"
+	Name: "Rider Cap"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 932
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_RiderCap"; ">
+},
+{
+	Id: 9927
+	AegisName: "Cyan_Viking_Helm"
+	Name: "Cyan Viking Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 961
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_CyanViking"; ">
+},
+{
+	Id: 9930
+	AegisName: "Red_Viking_Helm"
+	Name: "Red Viking Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 964
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_RedViking"; ">
+},
+{
+	Id: 15223
+	AegisName: "Dragon_Master_Helm"
+	Name: "Dragon Master Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1072
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DragonMaster"; ">
+},
+{
+	Id: 15601
+	AegisName: "Black_Dark_Helm"
+	Name: "Black Dark Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1102
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkhelm"; ">
+	OnUnequipScript: <" sc_end SC_CONCENTRATION; ">
+},
+{
+	Id: 15602
+	AegisName: "Blue_Dark_Helm"
+	Name: "Blue Dark Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1103
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkhelm"; ">
+	OnUnequipScript: <" sc_end SC_CONCENTRATION; ">
+},
+{
+	Id: 15603
+	AegisName: "Green_Dark_Helm"
+	Name: "Green Dark Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1104
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkhelm"; ">
+	OnUnequipScript: <" sc_end SC_CONCENTRATION; ">
+},
+{
+	Id: 15604
+	AegisName: "Pink_Dark_Helm"
+	Name: "Pink Dark Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1105
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkhelm"; ">
+	OnUnequipScript: <" sc_end SC_CONCENTRATION; ">
+},
+{
+	Id: 15605
+	AegisName: "Red_Dark_Helm"
+	Name: "Red Dark Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1106
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkhelm"; ">
+	OnUnequipScript: <" sc_end SC_CONCENTRATION; ">
+},
+{
+	Id: 15606
+	AegisName: "Black_Dragon_Master_Helm"
+	Name: "Black Dragon Master Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1107
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DragonMaster"; ">
+},
+{
+	Id: 15607
+	AegisName: "Blue_Dragon_Master_Helm"
+	Name: "Blue Dragon Master Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1108
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DragonMaster"; ">
+},
+{
+	Id: 15608
+	AegisName: "Black_Son_Goanda_Hat"
+	Name: "Black Son Goanda Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1109
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_fusionhelm"; ">
+},
+{
+	Id: 15609
+	AegisName: "Pink_Son_Goanda_Hat"
+	Name: "Pink Son Goanda Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1110
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_fusionhelm"; ">
+},
+{
+	Id: 15610
+	AegisName: "Red_Son_Goanda_Hat"
+	Name: "Red Son Goanda Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1111
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_fusionhelm"; ">
+},
+{
+	Id: 15611
+	AegisName: "Black_Zero_Helm"
+	Name: "Black Zero Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1112
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 15612
+	AegisName: "Blue_Zero_Helm"
+	Name: "Blue Zero Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1113
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 15613
+	AegisName: "Green_Zero_Helm"
+	Name: "Green Zero Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1114
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 15614
+	AegisName: "Pink_Zero_Helm"
+	Name: "Pink Zero Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1115
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_hadeshelm"; ">
+},
+{
+	Id: 15615
+	AegisName: "White_Beret"
+	Name: "White_Beret"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1121
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,10;
+		bonus bAtkRate,5;
+	">
+},
+{
+	Id: 15616
+	AegisName: "White_Tiraya_Bonnet"
+	Name: "White_Tiraya_Bonnet"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1122
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_tirayabon"; ">
+},
+{
+	Id: 15617
+	AegisName: "Sniper_Goggles"
+	Name: "Sniper Goggles"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1143
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnstripableHelm,0;
+		bonus bMaxHPrate,20;
+		bonus bStr,10;
+		bonus bAgi,10;
+		bonus bDex,10;
+		bonus bAtkRate,10;
+		bonus bFlee2,15;
+		bonus2 bSubRace,RC_Demihuman,12;
+	">
+},
+{
+	Id: 15618
+	AegisName: "Uruhara_Hat"
+	Name: "Uruhara Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1144
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_uruhara"; ">
+},
+{
+	Id: 15619
+	AegisName: "Capricon_Crown"
+	Name: "Capricon Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1145
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnstripableHelm,0;
+		bonus bMaxHPrate,20;
+		bonus bInt,10;
+		bonus bAgi,10;
+		bonus bDex,10;
+		bonus bMatkRate,10;
+		bonus bFlee2,15;
+		bonus2 bSubRace,RC_Demihuman,12;
+	">
+},
+{
+	Id: 15621
+	AegisName: "Desert_Prince"
+	Name: "Desert Prince"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1147
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_RiderCap"; ">
+},
+{
+	Id: 15622
+	AegisName: "Blue_Dragon_Helm"
+	Name: "Blue Dragon Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1148
+},
+{
+	Id: 15623
+	AegisName: "God_Angel_Helm"
+	Name: "God Angel Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1149
+},
+{
+	Id: 15624
+	AegisName: "Alucard_Hat"
+	Name: "Alucard Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1150
+},
+{
+	Id: 15625
+	AegisName: "Helm_Of_God"
+	Name: "Helm Of God"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1152
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_HelmOfGod"; ">
+},
+{
+	Id: 15626
+	AegisName: "Hokage_Hat"
+	Name: "Hokage Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1153
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_RedViking"; ">
+},
+{
+	Id: 15627
+	AegisName: "Kazekage_Hat"
+	Name: "Kazekage Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1154
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_CyanViking"; ">
+},
+{
+	Id: 15628
+	AegisName: "Lord_Helm"
+	Name: "Lord Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1155
+},
+{
+	Id: 15629
+	AegisName: "Solar_God_Helm"
+	Name: "Solar God Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1157
+},
+{
+	Id: 15630
+	AegisName: "Winged_Diadem"
+	Name: "Winged Diadem"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1158
+},
+{
+	Id: 15631
+	AegisName: "Taurus_Crown"
+	Name: "Taurus Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1159
+},
+{
+	Id: 15632
+	AegisName: "Cancer_Crown"
+	Name: "Cancer Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1160
+},
+{
+	Id: 15633
+	AegisName: "Aries_Crown"
+	Name: "Aries Crown"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1161
+},
+{
+	Id: 15634
+	AegisName: "Aries_Diadem"
+	Name: "Aries Diadem"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1162
+},
+{
+	Id: 15635
+	AegisName: "Peacock_Feather"
+	Name: "Peacock Feather"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1163
+},
+{
+	Id: 10041
+	AegisName: "Illusion_Helm"
+	Name: "Illusion Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1057
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_astrohelm"; ">
+},
+{
+	Id: 10044
+	AegisName: "Mini_Mouse"
+	Name: "Mini Mouse"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1060
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		skill 28,5;
+	">
+},
+{
+	Id: 10045
+	AegisName: "Mouse_Hat"
+	Name: "Mouse Hat"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1061
+},
+{
+	Id: 10046
+	AegisName: "Leo_Diadem_v2"
+	Name: "Leo Diadem"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1116
+	Script: <" callfunc "F_blackvalkyriehelm"; ">
+},
+{
+	Id: 10048
+	AegisName: "Saiyan_Head"
+	Name: "Saiyan Head"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1062
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_fusionhelm"; ">
+},
+{
+	Id: 10050
+	AegisName: "Vagabond_Wolf"
+	Name: "Vagabond_Wolf"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1064
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_bonehelm"; ">
+},
+{
+	Id: 10051
+	AegisName: "Dark_Helm"
+	Name: "Dark_Helm"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1065
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkhelm"; ">
+	OnUnequipScript: <" sc_end SC_CONCENTRATION; ">
+},
+

@@ -1,0 +1,127 @@
+{
+	Id: 9933
+	AegisName: "Christmas_Tree_Hat"
+	Name: "Christmas_Tree_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 967
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9934
+	AegisName: "Red_Little_Angel_Doll"
+	Name: "Red_Little_Angel_Doll"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 968
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},
+{
+	Id: 9935
+	AegisName: "Santa_Beard"
+	Name: "Santa_Beard"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: 512
+	Refine: false
+	ViewSprite: 969
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		skill 28,5;
+	">
+},
+{
+	Id: 9936
+	AegisName: "Savage_Babe_Hat"
+	Name: "Savage_Babe_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 970
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9937
+	AegisName: "Snowman_Hat"
+	Name: "Snowman_Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 971
+	Script: <"
+		bonus bAllStats,5;
+		skill 28,5;
+	">
+},
+{
+	Id: 9938
+	AegisName: "gm-man"
+	Name: "GM Man"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 972
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9939
+	AegisName: "gm-woman"
+	Name: "GM Woman"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 973
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9940
+	AegisName: "ponde"
+	Name: "Ponde"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 974
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},

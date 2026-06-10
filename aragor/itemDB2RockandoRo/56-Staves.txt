@@ -1,0 +1,389 @@
+{
+	Id: 16038
+	AegisName: "Soul_Staff"
+	Name: "Soul Staff v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Magician: true
+		Wizard: true
+		Sage: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+		bonus bDelayRate,-5;
+		bonus2 bSkillAtk,83,-20;
+		bonus2 bSkillAtk,89,-40;
+		bonus2 bSkillAtk,85,70;
+		bonus2 bSkillAtk,549,150;
+		bonus bAtkEle,Ele_Holy;
+		skill 545,7;
+		bonus5 bAutoSpell,545,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnbreakableWeapon,0;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus bMatkRate,30;
+		bonus bHit,100;
+		if(Class==9||Class==4010||Class==4032){
+			bonus bMatkRate,60;
+			bonus bMaxHPrate,10;
+			bonus bHit,200;
+			bonus bDex,20;
+			bonus2 bSkillAtk,484,900;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,83,20;
+				bonus2 bSkillAtk,85,20;
+				bonus2 bSkillAtk,89,20;
+				bonus2 bSkillAtk,91,20;
+				bonus2 bSkillAtk,549,20;
+				bonus2 bSkillAtk,548,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16039
+	AegisName: "Wizardry_Staff"
+	Name: "Wizardry Staff v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Magician: true
+		Wizard: true
+		Sage: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+		bonus bDelayRate,-5;
+		bonus2 bSkillAtk,83,-20;
+		bonus2 bSkillAtk,89,-40;
+		bonus2 bSkillAtk,85,70;
+		bonus2 bSkillAtk,549,150;
+		bonus bAtkEle,Ele_Dark;
+		bonus5 bAutoSpell,469,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnStripableWeapon,0;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus2 bSkillAtk,83,20;
+		bonus2 bSkillAtk,85,20;
+		bonus2 bSkillAtk,89,20;
+		bonus2 bSkillAtk,91,20;
+		bonus2 bSkillAtk,549,20;
+		bonus2 bSkillAtk,548,20;
+		bonus bHit,100;
+		bonus bMatkRate,30;
+		if(Class==9||Class==4010||Class==4032){
+			bonus bMatkRate,60;
+			bonus bMaxHPrate,10;
+			bonus bHit,200;
+			bonus bDex,20;
+			bonus2 bSkillAtk,484,900;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,83,20;
+				bonus2 bSkillAtk,85,20;
+				bonus2 bSkillAtk,89,20;
+				bonus2 bSkillAtk,91,20;
+				bonus2 bSkillAtk,549,20;
+				bonus2 bSkillAtk,548,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 16040
+	AegisName: "Infernal_Staff"
+	Name: "Infernal Staff"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Magician: true
+		Wizard: true
+		Sage: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+		bonus bDelayRate,-5;
+		bonus2 bSkillAtk,83,-20;
+		bonus2 bSkillAtk,89,-40;
+		bonus2 bSkillAtk,85,70;
+		bonus2 bSkillAtk,549,150;
+		bonus bAtkEle,Ele_Undead;
+		bonus5 bAutoSpell,340,7,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		skill 546,10;
+		skill 340,10;
+		bonus bUnbreakableWeapon,0;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus bHit,100;
+		bonus bMatkRate,30;
+		if(Class==9||Class==4010||Class==4032){
+			bonus bMatkRate,60;
+			bonus bMaxHPrate,10;
+			bonus bHit,200;
+			bonus bDex,20;
+			bonus2 bSkillAtk,484,900;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,83,20;
+				bonus2 bSkillAtk,85,20;
+				bonus2 bSkillAtk,89,20;
+				bonus2 bSkillAtk,91,20;
+				bonus2 bSkillAtk,549,20;
+				bonus2 bSkillAtk,548,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 20006
+	AegisName: "Soul_Staff"
+	Name: "Venom Staff v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Magician: true
+		Wizard: true
+		Sage: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+		bonus bDelayRate,-5;
+		bonus2 bSkillAtk,83,-20;
+		bonus2 bSkillAtk,89,-40;
+		bonus2 bSkillAtk,85,70;
+		bonus2 bSkillAtk,549,150;
+		bonus bAtkEle,Ele_Poison;
+		skill 547,7;
+		bonus5 bAutoSpell,547,5,50,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
+		bonus bUnStripableWeapon,0;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus bHit,100;
+		bonus bMatkRate,30;
+		if(Class==9||Class==4010||Class==4032){
+			bonus bMatkRate,60;
+			bonus bMaxHPrate,10;
+			bonus bHit,200;
+			bonus bDex,20;
+			bonus2 bSkillAtk,484,900;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,83,20;
+				bonus2 bSkillAtk,85,20;
+				bonus2 bSkillAtk,89,20;
+				bonus2 bSkillAtk,91,20;
+				bonus2 bSkillAtk,549,20;
+				bonus2 bSkillAtk,548,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 20014
+	AegisName: "Unbreakable_Staff"
+	Name: "Unbreakable Staff v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Magician: true
+		Wizard: true
+		Sage: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+		bonus bDelayRate,-5;
+		bonus2 bSkillAtk,83,-20;
+		bonus2 bSkillAtk,89,-40;
+		bonus2 bSkillAtk,85,70;
+		bonus2 bSkillAtk,549,150;
+		bonus bAtkEle,Ele_Ghost;
+		bonus bUnbreakableWeapon,0;
+		skill 28,6;
+		skill 70,6;
+		skill 358,1;
+		bonus4 bAutoSpellWhenHit,28,5,20,0;
+		bonus bShortWeaponDamageReturn,10;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+		bonus2 bSkillHeal,28,45;
+		bonus2 bSkillHeal,70,200;
+		bonus bHit,100;
+		bonus bMatkRate,30;
+		if(Class==9||Class==4010||Class==4032){
+			bonus bMatkRate,60;
+			bonus bMaxHPrate,10;
+			bonus bHit,200;
+			bonus bDex,20;
+			bonus2 bSkillAtk,484,900;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,83,20;
+				bonus2 bSkillAtk,85,20;
+				bonus2 bSkillAtk,89,20;
+				bonus2 bSkillAtk,91,20;
+				bonus2 bSkillAtk,549,20;
+				bonus2 bSkillAtk,548,20;
+			}
+			;
+		}
+		;
+	">
+},
+{
+	Id: 20015
+	AegisName: "Beast_Staff"
+	Name: "Staff of the Beast v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1400
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Magician: true
+		Wizard: true
+		Sage: true
+		Soul_Linker: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_STAFF"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bMagicAddRace,RC_DemiHuman,10;
+		bonus bDelayRate,-5;
+		bonus2 bSkillAtk,83,-20;
+		bonus2 bSkillAtk,89,-40;
+		bonus2 bSkillAtk,85,70;
+		bonus2 bSkillAtk,549,150;
+		bonus4 bAutoSpellOnSkill,467,469,3,1000;
+		skill 467,7;
+		skill 230,2;
+		bonus2 bSkillHeal,28,20;
+		bonus2 bSkillHeal,70,150;
+		bonus bMaxHPrate,10;
+		bonus bHit,300;
+		bonus bMatkRate,30;
+		if(Class==9||Class==4010||Class==4032){
+			bonus bMatkRate,60;
+			bonus bMaxHPrate,10;
+			bonus bHit,200;
+			bonus bDex,20;
+			bonus2 bSkillAtk,484,900;
+			if(isequipped(18203)|| isequipped(18208)){
+				bonus bAspdRate,readparam(bInt)/5;
+				bonus bMaxHpRate,10;
+				bonus bMatkRate,10;
+				bonus2 bSkillAtk,83,20;
+				bonus2 bSkillAtk,85,20;
+				bonus2 bSkillAtk,89,20;
+				bonus2 bSkillAtk,91,20;
+				bonus2 bSkillAtk,549,20;
+				bonus2 bSkillAtk,548,20;
+			}
+			;
+		}
+		;
+	">
+},

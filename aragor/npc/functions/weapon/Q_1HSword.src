@@ -1,4 +1,4 @@
-function	script	Q_1HSword	{
+function	script	W_1HSWORD	{
 	skill KN_ONEHAND,1;
 	bonus bMatkRate,getrefine()/2;
 if(palafisico==1 && BaseJob==Job_Crusader){

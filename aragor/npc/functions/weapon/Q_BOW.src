@@ -1,4 +1,4 @@
-function	script	Q_Luna_Bow	{
+function	script	W_BOW_Luna	{
 		bonus2 bSkillAtk,1009,20;
 		bonus bUnbreakableWeapon,0;
 		bonus bDex,30;
@@ -27,7 +27,7 @@ function	script	Q_Luna_Bow	{
 		}*/
 return;
 }
-function	script	Q_Celestial_Bow	{
+function	script	W_BOW_Celestial	{
 		bonus2 bSkillAtk,1009,20;
 		bonus bUnbreakableWeapon,0;
 		bonus5 bAutoSpell,AS_SONICBLOW,5,200,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;
@@ -55,7 +55,7 @@ function	script	Q_Celestial_Bow	{
 return;
 }
 
-function	script	Q_Dragon_Bow	{
+function	script	W_BOW_Dragon	{
 		bonus2 bSkillAtk,1009,20;
 		bonus bUnbreakableWeapon,0;
 		bonus5 bAutoSpell,289,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;
@@ -83,7 +83,7 @@ function	script	Q_Dragon_Bow	{
 return;
 }
 
-function	script	Q_Infernal_Bow	{
+function	script	W_BOW_Infernal	{
 			bonus2 bSkillAtk,1009,20;
 			bonus bUnbreakableWeapon,0;
 			bonus5 bAutoSpell,289,1,30,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON,1;
@@ -111,7 +111,7 @@ function	script	Q_Infernal_Bow	{
 return;
 }
 
-function	script	Q_Poison_Bow	{
+function	script	W_BOW_Poison	{
 		bonus2 bSkillAtk,1009,20;
 		bonus bUnstripableWeapon,0;
 		skill 263,5;
@@ -138,7 +138,7 @@ function	script	Q_Poison_Bow	{
 		}*/
 return;
 }
-function	script	Q_Ballista	{
+function	script	W_BOW_Ballista	{
 		bonus2 bSkillAtk,1009,95;
 		bonus bUnstripableWeapon,0;
 		bonus5 bAutoSpell,370,3,150,BF_MAGIC+BF_SHORT+BF_LONG+BF_WEAPON+BF_MISC,1;

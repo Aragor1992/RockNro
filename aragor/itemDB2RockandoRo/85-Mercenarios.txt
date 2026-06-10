@@ -1,0 +1,160 @@
+{
+	Id: 12153
+	AegisName: "Merc_Archer_Scroll_Lv1"
+	Name: "Archer Mercenary Summon Scroll Level 1"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12153,2060,"1"; ">
+},
+{
+	Id: 12154
+	AegisName: "Merc_Archer_Scroll_Lv2"
+	Name: "Archer Mercenary Summon Scroll Level 2"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12154,2061,"2"; ">
+},
+{
+	Id: 12155
+	AegisName: "Merc_Archer_Scroll_Lv3"
+	Name: "Archer Mercenary Summon Scroll Level 3"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12155,2062,"3"; ">
+},
+{
+	Id: 12156
+	AegisName: "Merc_Archer_Scroll_Lv4"
+	Name: "Archer Mercenary Summon Scroll Level 4"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12156,2063,"4"; ">
+},
+{
+	Id: 12157
+	AegisName: "Merc_Archer_Scroll_Lv5"
+	Name: "Archer Mercenary Summon Scroll Level 5"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12157,2064,"5"; ">
+},
+{
+	Id: 12158
+	AegisName: "Merc_Archer_Scroll_Lv6"
+	Name: "Archer Mercenary Summon Scroll Level 6"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12158,2065,"6"; ">
+},
+{
+	Id: 12159
+	AegisName: "Merc_Archer_Scroll_Lv7"
+	Name: "Archer Mercenary Summon Scroll Level 7"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12159,2066,"7"; ">
+},
+{
+	Id: 12160
+	AegisName: "Merc_Archer_Scroll_Lv8"
+	Name: "Archer Mercenary Summon Scroll Level 8"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12160,2067,"8"; ">
+},
+{
+	Id: 12161
+	AegisName: "Merc_Archer_Scroll_Lv9"
+	Name: "Archer Mercenary Summon Scroll Level 9"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12161,2068,"9"; ">
+},
+{
+	Id: 12162
+	AegisName: "Merc_Archer_Scroll_Lv10"
+	Name: "Archer Mercenary Summon Scroll Level 10"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12162,2069,"10"; ">
+},
+{
+	Id: 12163
+	AegisName: "Merc_Sword_Scroll_Lv1"
+	Name: "Swordsman Mercenary Summon Scroll Level 1"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12163,2070,"1"; ">
+},
+{
+	Id: 12164
+	AegisName: "Merc_Sword_Scroll_Lv2"
+	Name: "Swordsman Mercenary Summon Scroll Level 2"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12164,2071,"2"; ">
+},
+{
+	Id: 12165
+	AegisName: "Merc_Sword_Scroll_Lv3"
+	Name: "Swordsman Mercenary Summon Scroll Level 3"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12165,2072,"3"; ">
+},
+{
+	Id: 12166
+	AegisName: "Merc_Sword_Scroll_Lv4"
+	Name: "Swordsman Mercenary Summon Scroll Level 4"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12166,2073,"4"; ">
+},
+{
+	Id: 12167
+	AegisName: "Merc_Sword_Scroll_Lv5"
+	Name: "Swordsman Mercenary Summon Scroll Level 5"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12167,2074,"5"; ">
+},
+{
+	Id: 12168
+	AegisName: "Merc_Sword_Scroll_Lv6"
+	Name: "Swordsman Mercenary Summon Scroll Level 6"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12168,2075,"6"; ">
+},
+{
+	Id: 12169
+	AegisName: "Merc_Sword_Scroll_Lv7"
+	Name: "Swordsman Mercenary Summon Scroll Level 7"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12169,2076,"7"; ">
+},
+{
+	Id: 12170
+	AegisName: "Merc_Sword_Scroll_Lv8"
+	Name: "Swordsman Mercenary Summon Scroll Level 8"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12170,2077,"8"; ">
+},
+{
+	Id: 12171
+	AegisName: "Merc_Sword_Scroll_Lv9"
+	Name: "Swordsman Mercenary Summon Scroll Level 9"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12171,2078,"9"; ">
+},
+{
+	Id: 12172
+	AegisName: "Merc_Sword_Scroll_Lv10"
+	Name: "Swordsman Mercenary Summon Scroll Level 10"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",12172,2079,"10"; ">
+},

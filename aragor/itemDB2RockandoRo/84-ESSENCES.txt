@@ -1,0 +1,48 @@
+{
+	Id: 19201
+	AegisName: "wind_essence"
+	Name: "Wind Essence"
+	Buy: 1
+	Weight: 500
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19202
+	AegisName: "water_essence"
+	Name: "Water Essence"
+	Buy: 1
+	Weight: 500
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19203
+	AegisName: "fire_essence"
+	Name: "Fire Essence"
+	Buy: 1
+	Weight: 500
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+	}
+},
+{
+	Id: 19204
+	AegisName: "earth_essence"
+	Name: "Earth Essence"
+	Buy: 1
+	Weight: 500
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+	}
+},

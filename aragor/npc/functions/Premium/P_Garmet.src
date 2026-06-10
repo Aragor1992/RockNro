@@ -3,7 +3,7 @@ function	script	P_Garmet	{
 switch(getarg(0)+1){
 
 case 1:	bonus2 bSubEle,Ele_Neutral,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Neutral) || isequipped(M_Armor_Neutral)|| isequipped(A_Armor_Neutral))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Neutral) || isequipped(M_ARMOR_Neutral)|| isequipped(A_ARMOR_Neutral))) {
 			bonus bHit,70;
 			bonus2 bAddEle,Ele_Neutral,20;
 			bonus2 bResEff,Eff_Bleeding,10000;
@@ -11,7 +11,7 @@ case 1:	bonus2 bSubEle,Ele_Neutral,25;
 		break;
 
 case 2:	bonus2 bSubEle,Ele_Water,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Water) || isequipped(M_Armor_Water)|| isequipped(A_Armor_Water))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Water) || isequipped(M_ARMOR_Water)|| isequipped(A_ARMOR_Water))) {
 			bonus2 bHPRegenRate,1000,500;
 			bonus2 bSPRegenRate,50,1000;
 			bonus2 bAddEle,Ele_Water,20;
@@ -20,7 +20,7 @@ case 2:	bonus2 bSubEle,Ele_Water,25;
 		break;
 
 case 3:	bonus2 bSubEle,Ele_Earth,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Earth) || isequipped(M_Armor_Earth)|| isequipped(A_Armor_Earth))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Earth) || isequipped(M_ARMOR_Earth)|| isequipped(A_ARMOR_Earth))) {
 			bonus2 bSubSize,Size_Small,10;
 			bonus2 bSubSize,Size_Medium,10;
 			bonus2 bAddEle,Ele_Earth,10;
@@ -29,7 +29,7 @@ case 3:	bonus2 bSubEle,Ele_Earth,25;
 		break;
 
 case 4:	bonus2 bSubEle,Ele_Fire,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Fire) || isequipped(M_Armor_Fire)|| isequipped(A_Armor_Fire))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Fire) || isequipped(M_ARMOR_Fire)|| isequipped(A_ARMOR_Fire))) {
 			bonus2 bAddMagicDamageClass,Class_All,10;
 			bonus2 bAddRace, RC_All,10;
 			bonus2 bMagicAddRace,10,RC_DemiHuman+RC_Player;
@@ -39,7 +39,7 @@ case 4:	bonus2 bSubEle,Ele_Fire,25;
 		break;
 
 case 5:	bonus2 bSubEle,Ele_Wind,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Wind) || isequipped(M_Armor_Wind)|| isequipped(A_Armor_Wind))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Wind) || isequipped(M_ARMOR_Wind)|| isequipped(A_ARMOR_Wind))) {
 			bonus bAtkRange,3;
 			bonus2 bAddEle,Ele_Wind,20;
 			bonus2 bResEff,Eff_Freeze,10000;
@@ -47,7 +47,7 @@ case 5:	bonus2 bSubEle,Ele_Wind,25;
 		break;
 
 case 6:	bonus2 bSubEle,Ele_Poison,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Poison) || isequipped(M_Armor_Poison)|| isequipped(A_Armor_Poison))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Poison) || isequipped(M_ARMOR_Poison)|| isequipped(A_ARMOR_Poison))) {
 			bonus bCritical,10;
 			bonus bCritAtkRate,10;
 			bonus2 bAddEle,Ele_Poison,20;
@@ -56,7 +56,7 @@ case 6:	bonus2 bSubEle,Ele_Poison,25;
 		break;
 
 case 7:	bonus2 bSubEle,Ele_Holy,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Neutral) || isequipped(M_Armor_Neutral)|| isequipped(A_Armor_Neutral))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Neutral) || isequipped(M_ARMOR_Neutral)|| isequipped(A_ARMOR_Neutral))) {
 			bonus bHPrecovRate,5;
 			bonus bSPrecovRate,5;
 			bonus2 bSubEle,Ele_Earth,5;
@@ -68,7 +68,7 @@ case 7:	bonus2 bSubEle,Ele_Holy,25;
 		break;
 
 case 8:	bonus2 bSubEle,Ele_Dark,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Dark) || isequipped(M_Armor_Dark)|| isequipped(A_Armor_Dark))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Dark) || isequipped(M_ARMOR_Dark)|| isequipped(A_ARMOR_Dark))) {
 			bonus bSplashRange,2;
 			bonus2 bAddEle,Ele_Holy,15;
 			bonus2 bAddEle,Ele_Dark,20;
@@ -77,7 +77,7 @@ case 8:	bonus2 bSubEle,Ele_Dark,25;
 		break;
 
 case 9:	bonus2 bSubEle,Ele_Ghost,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Ghost) || isequipped(M_Armor_Ghost)|| isequipped(A_Armor_Ghost))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Ghost) || isequipped(M_ARMOR_Ghost)|| isequipped(A_ARMOR_Ghost))) {
 			bonus2 bHPVanishRate,50,10;
 			bonus2 bSPRegenRate,20,1000;
 			bonus2 bAddEle,Ele_Ghost,20;
@@ -86,7 +86,7 @@ case 9:	bonus2 bSubEle,Ele_Ghost,25;
 		break;
 
 case 10:	bonus2 bSubEle,Ele_Undead,25;
-		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Undead) || isequipped(M_Armor_Undead)|| isequipped(A_Armor_Undead))) {
+		if( (isequipped(P_Valkyries_Shoes) || isequipped(P_Goibnes_Greaves) || isequipped(P_Vidars_Boots)) && (isequipped(P_Armor_Undead) || isequipped(M_ARMOR_Undead)|| isequipped(A_ARMOR_Undead))) {
 			bonus2 bHPDrainRate,50,20;
 			bonus2 bAddEle,Ele_Undead,20;
 			bonus2 bResEff,Eff_Stone,10000;

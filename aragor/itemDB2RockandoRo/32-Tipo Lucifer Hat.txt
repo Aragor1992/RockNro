@@ -1,0 +1,144 @@
+{
+	Id: 9707
+	AegisName: "DarkSnakeLordHat"
+	Name: "Dark Snake Lord Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 654
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,2;
+		bonus2 bAddEle,Ele_Holy,5;
+		bonus2 bAddEle,Ele_Dark,5;
+		bonus2 bAddEff,Eff_Stun,200;
+		bonus2 bAddEff,Eff_Curse,200;
+		bonus2 bAddEff,Eff_Silence,200;
+		bonus2 bAddEff,Eff_Poison,200;
+		bonus2 bAddEff,Eff_Bleeding,200;
+		bonus2 bAddEff,Eff_Stone,200;
+		bonus2 bAddEff,Eff_Confusion,200;
+		bonus2 bAddEff,Eff_Freeze,200;
+		bonus2 bAddEff,Eff_Sleep,200;
+	">
+},
+{
+	Id: 9742
+	AegisName: "Angry_Kitty_Hat"
+	Name: "Angry Kitty Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 753
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,2;
+		bonus2 bAddEle,Ele_Holy,5;
+		bonus2 bAddEle,Ele_Dark,5;
+		bonus2 bAddEff,Eff_Stun,200;
+		bonus2 bAddEff,Eff_Curse,200;
+		bonus2 bAddEff,Eff_Silence,200;
+		bonus2 bAddEff,Eff_Poison,200;
+		bonus2 bAddEff,Eff_Bleeding,200;
+		bonus2 bAddEff,Eff_Stone,200;
+		bonus2 bAddEff,Eff_Confusion,200;
+		bonus2 bAddEff,Eff_Freeze,200;
+		bonus2 bAddEff,Eff_Sleep,200;
+	">
+},
+{
+	Id: 9826
+	AegisName: "general_hat"
+	Name: "General Hat"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 843
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,2;
+		bonus2 bAddEle,Ele_Holy,5;
+		bonus2 bAddEle,Ele_Dark,5;
+		bonus2 bAddEff,Eff_Stun,200;
+		bonus2 bAddEff,Eff_Curse,200;
+		bonus2 bAddEff,Eff_Silence,200;
+		bonus2 bAddEff,Eff_Poison,200;
+		bonus2 bAddEff,Eff_Bleeding,200;
+		bonus2 bAddEff,Eff_Stone,200;
+		bonus2 bAddEff,Eff_Confusion,200;
+		bonus2 bAddEff,Eff_Freeze,200;
+		bonus2 bAddEff,Eff_Sleep,200;
+	">
+},
+{
+	Id: 9871
+	AegisName: "Green_Crown"
+	Name: "Green Crown"
+	Type: 4
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 912
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bVit,5;
+		bonus bStr,5;
+		bonus bMaxHPrate,20;
+		bonus bAtkRate,2;
+		bonus2 bAddEle,Ele_Holy,5;
+		bonus2 bAddEle,Ele_Dark,5;
+		bonus2 bAddEff,Eff_Stun,200;
+		bonus2 bAddEff,Eff_Curse,200;
+		bonus2 bAddEff,Eff_Silence,200;
+		bonus2 bAddEff,Eff_Poison,200;
+		bonus2 bAddEff,Eff_Bleeding,200;
+		bonus2 bAddEff,Eff_Stone,200;
+		bonus2 bAddEff,Eff_Confusion,200;
+		bonus2 bAddEff,Eff_Freeze,200;
+		bonus2 bAddEff,Eff_Sleep,200;
+	">
+},

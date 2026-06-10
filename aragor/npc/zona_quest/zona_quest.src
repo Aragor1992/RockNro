@@ -124,7 +124,7 @@ if(BaseJob == Job_Ninja){
 }else mes"no eres ninja";close;
 }
 
-quiz_02,148,366,5	script	Afinacion de Armaduras	4_M_LGTGUARD,{
+/*quiz_02,148,366,5	script	Afinacion de Armaduras	4_M_LGTGUARD,{
 	mes"Hola!! Soy el assistente de Afinacion de armaduras";
 	mes"Puedo afinar tu armadura para que sea magica o fisica";
 	mes"en otras palabras con auto cast o direcatamente de atake";
@@ -180,16 +180,16 @@ quiz_02,148,366,5	script	Afinacion de Armaduras	4_M_LGTGUARD,{
 	mes"No tenes armadura a la que puedas afinar";
 	mes"O no la tienes equipada";
 	close;
-}
+}*/
 //==================================builds======================================
 
 //==================================HATS && MIDS && LOW===========================
-//quiz_02,167,369,4	script	Hat Hommunculus	4_LAM,{}
+quiz_02,167,369,4	script	Hat Hommunculus	4_LAM,{}
 quiz_02,142,366,4	script	Narutos	4_M_HUGRANFA,{}
-//quiz_02,125,379,5	script	Hats	4_F_ANNIVERSARY,{}
-//quiz_02,133,377,5	script	Kafra Hats	4_F_KAFRA1,{}
-//quiz_02,125,371,5	script	Wings	4_F_VALKYRIE,{}
-//quiz_02,125,369,5	script	Wings 2	4_F_VALKYRIE2,{}
+quiz_02,125,379,5	script	Hats	4_F_ANNIVERSARY,{}
+quiz_02,133,377,5	script	Kafra Hats	4_F_KAFRA1,{}
+quiz_02,125,371,5	script	Wings	4_F_VALKYRIE,{}
+quiz_02,125,369,5	script	Wings 2	4_F_VALKYRIE2,{}
 //==================================HATS======================================
 
 //==================================Armaduras======================================

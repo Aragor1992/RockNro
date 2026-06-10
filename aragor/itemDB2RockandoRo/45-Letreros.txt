@@ -1,0 +1,60 @@
+{
+	Id: 9743
+	AegisName: "WoE_Hat"
+	Name: "WoE Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 754
+},
+{
+	Id: 9744
+	AegisName: "Busco_GM_Hat"
+	Name: "Busco GM Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 755
+},
+{
+	Id: 9745
+	AegisName: "Busco_Novia_Hat"
+	Name: "Busco Novia Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 756
+},
+{
+	Id: 9746
+	AegisName: "Busco_Novio_Hat"
+	Name: "Busco Novio Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 757
+},
+{
+	Id: 9747
+	AegisName: "Busco_Amigos_Hat"
+	Name: "Busco Amigos Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 758
+},

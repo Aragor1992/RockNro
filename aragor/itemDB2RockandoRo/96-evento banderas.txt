@@ -1,0 +1,253 @@
+{
+	Id: 15637
+	AegisName: "Mexico_Hat"
+	Name: "Mexico Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1183
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15638
+	AegisName: "Chile_Hat"
+	Name: "Chile Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1184
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15639
+	AegisName: "Spain_Hat"
+	Name: "Spain Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1185
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15640
+	AegisName: "Argentina_Hat"
+	Name: "Argentina Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1186
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15641
+	AegisName: "Colombia_Hat"
+	Name: "Colombia Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1189
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15642
+	AegisName: "RDominicana"
+	Name: "RDominicana"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1190
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15643
+	AegisName: "USA_Hat"
+	Name: "USA Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1191
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15644
+	AegisName: "CostaRica_Hat"
+	Name: "CostaRica Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1192
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15645
+	AegisName: "ElSalvador_Hat"
+	Name: "ElSalvador Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1193
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15646
+	AegisName: "Panama_Hat"
+	Name: "Panama Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1194
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 15647
+	AegisName: "Venezuela_Hat"
+	Name: "Venezuela Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1195
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bVit,5;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},

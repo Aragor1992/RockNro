@@ -1,4 +1,4 @@
-function	script	Q_Taekwon	{
+function	script	W_MACE_TAEK	{
 skill "MO_TRIPLEATTACK",10;
 if (BaseJob == Job_Taekwon) {
 bonus bSpeedRate,20;

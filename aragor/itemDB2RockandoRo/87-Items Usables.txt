@@ -1,0 +1,272 @@
+{
+	Id: 19300
+	AegisName: "Old_Card_Album_Box"
+	Name: "Old Card Album Box"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+	}
+	Script: <" getitem 616,10; ">
+},
+{
+	Id: 19301
+	AegisName: "Rock_Food_Box"
+	Name: "Rock Food Box"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		getitem 12202,5;
+		getitem 12203,5;
+		getitem 12204,5;
+		getitem 12205,5;
+		getitem 12206,5;
+		getitem 12207,5;
+	">
+},
+{
+	Id: 19302
+	AegisName: "Armor_Scroll"
+	Name: "Armor Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(70),1; ">
+},
+{
+	Id: 19303
+	AegisName: "Shoes_Scroll"
+	Name: "Shoes Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(71),1; ">
+},
+{
+	Id: 19304
+	AegisName: "Accesorie_Scroll"
+	Name: "Accesorie Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(72),1; ">
+},
+{
+	Id: 19305
+	AegisName: "Garment_Scroll"
+	Name: "Garment Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(73),1; ">
+},
+{
+	Id: 19306
+	AegisName: "Shield_Scroll"
+	Name: "Shield Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(74),1; ">
+},
+{
+	Id: 19307
+	AegisName: "Wing_Scroll"
+	Name: "Wing Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(75),1; ">
+},
+{
+	Id: 19308
+	AegisName: "Notas_Scroll"
+	Name: "Notas Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(76),1; ">
+},
+{
+	Id: 19309
+	AegisName: "vip_wings_scroll_a"
+	Name: "VIP Wings Scroll A"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarAlasVIP_A"; ">
+},
+{
+	Id: 19310
+	AegisName: "vip_wings_scroll_b"
+	Name: "VIP Wings Scroll B"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarAlasVIP_B"; ">
+},
+{
+	Id: 19311
+	AegisName: "vip_wings_scroll_c"
+	Name: "VIP Wings Scroll C"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarAlasVIP_C"; ">
+},
+{
+	Id: 19312
+	AegisName: "vip_hats_scroll_a"
+	Name: "VIP Hats Scroll A"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarHatsVIP_A"; ">
+},
+{
+	Id: 19313
+	AegisName: "vip_hats_scroll_b"
+	Name: "VIP Hats Scroll B"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarHatsVIP_B"; ">
+},
+{
+	Id: 19314
+	AegisName: "vip_hats_scroll_c"
+	Name: "VIP Hats Scroll C"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarHatsVIP_C"; ">
+},
+{
+	Id: 19315
+	AegisName: "vip_garment_scroll"
+	Name: "VIP Garment Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarGarmentVIP"; ">
+},
+{
+	Id: 19316
+	AegisName: "vip_footgear_scroll"
+	Name: "VIP Footgear Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarShoesVIP"; ">
+},
+{
+	Id: 19317
+	AegisName: "vip_accesorio_scroll"
+	Name: "VIP Accesorio Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_DarAcceVIP"; ">
+},

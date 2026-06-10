@@ -2,7 +2,7 @@ function	script	Q_Garmet	{
 bonus bMdef,getrefine();
 switch(getarg(0)+1){
 case 1:	bonus2 bSubEle,Ele_Neutral,15;
-		if(isequipped(Q_Shoes_Neutral) && (isequipped(P_Armor_Neutral) || isequipped(M_Armor_Neutral)|| isequipped(A_Armor_Neutral))) {
+		if(isequipped(Q_SHOES_Neutral,M_ARMOR_Neutral) || isequipped(Q_SHOES_Neutral,A_ARMOR_Neutral)|| isequipped(Q_SHOES_Neutral,P_Armor_Neutral)) {
 		bonus bHit,70;
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
@@ -11,7 +11,7 @@ case 1:	bonus2 bSubEle,Ele_Neutral,15;
 		}	break;
 
 case 2:	bonus2 bSubEle,Ele_Water,15;
-		if(isequipped(Q_Shoes_Water) && (isequipped(P_Armor_Water) || isequipped(M_Armor_Water)|| isequipped(A_Armor_Water))) {
+		if(isequipped(Q_SHOES_Water,M_ARMOR_Water) || isequipped(Q_SHOES_Water,A_ARMOR_Water) || isequipped(Q_SHOES_Water,P_Armor_Water) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus2 bHPRegenRate,1000,500;
@@ -21,7 +21,7 @@ case 2:	bonus2 bSubEle,Ele_Water,15;
 		}	break;
 
 case 3:	bonus2 bSubEle,Ele_Earth,15;
-		if(isequipped(Q_Shoes_Earth) && (isequipped(P_Armor_Earth) || isequipped(M_Armor_Earth)|| isequipped(A_Armor_Earth))) {
+		if(isequipped(Q_SHOES_Earth,M_ARMOR_Earth) || isequipped(Q_SHOES_Earth,A_ARMOR_Earth) || isequipped(Q_SHOES_Earth,P_Armor_Earth) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus2 bSubSize,Size_Small,10;
@@ -31,7 +31,7 @@ case 3:	bonus2 bSubEle,Ele_Earth,15;
 		}	break;
 
 case 4:	bonus2 bSubEle,Ele_Fire,15;
-		if(isequipped(Q_Shoes_Fire) && (isequipped(P_Armor_Fire) || isequipped(M_Armor_Fire)|| isequipped(A_Armor_Fire))) {
+		if(isequipped(Q_SHOES_Fire,M_ARMOR_Fire) || isequipped(Q_SHOES_Fire,A_ARMOR_Fire) || isequipped(Q_SHOES_Fire,P_Armor_Fire) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus2 bAddMagicDamageClass,Class_All,10;
@@ -42,7 +42,7 @@ case 4:	bonus2 bSubEle,Ele_Fire,15;
 		}	break;
 
 case 5:	bonus2 bSubEle,Ele_Wind,15;
-		if(isequipped(Q_Shoes_Wind) && (isequipped(P_Armor_Wind) || isequipped(M_Armor_Wind)|| isequipped(A_Armor_Wind))) {
+		if(isequipped(Q_SHOES_Wind,M_ARMOR_Wind) || isequipped(Q_SHOES_Wind,A_ARMOR_Wind) || isequipped(Q_SHOES_Wind,P_Armor_Wind) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus bAtkRange,3;
@@ -51,7 +51,7 @@ case 5:	bonus2 bSubEle,Ele_Wind,15;
 		}	break;
 
 case 6:	bonus2 bSubEle,Ele_Poison,15;
-		if(isequipped(Q_Shoes_Poison) && (isequipped(P_Armor_Poison) || isequipped(M_Armor_Poison)|| isequipped(A_Armor_Poison))) {
+		if(isequipped(Q_SHOES_Poison,M_ARMOR_Poison) || isequipped(Q_SHOES_Poison,A_ARMOR_Poison) || isequipped(Q_SHOES_Poison,P_Armor_Poison) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus bCritical,10;
@@ -61,7 +61,7 @@ case 6:	bonus2 bSubEle,Ele_Poison,15;
 		}	break;
 
 case 7:	bonus2 bSubEle,Ele_Holy,15;
-		if(isequipped(Q_Shoes_Holy) && (isequipped(P_Armor_Holy) || isequipped(M_Armor_Holy)|| isequipped(A_Armor_Holy))) {
+		if(isequipped(Q_SHOES_Holy,M_ARMOR_Holy) || isequipped(Q_SHOES_Holy,A_ARMOR_Holy) || isequipped(Q_SHOES_Holy,P_Armor_Holy) ) {
 		bonus bMaxHPrate,5;
 		bonus bMaxSPrate,5;
 		bonus bHPrecovRate,5;
@@ -74,7 +74,7 @@ case 7:	bonus2 bSubEle,Ele_Holy,15;
 		}	break;
 
 case 8:	bonus2 bSubEle,Ele_Dark,15;
-		if(isequipped(Q_Shoes_Dark) && (isequipped(P_Armor_Dark) || isequipped(M_Armor_Dark)|| isequipped(A_Armor_Dark))) {
+		if(isequipped(Q_SHOES_Dark,M_ARMOR_Dark) || isequipped(Q_SHOES_Dark,A_ARMOR_Dark) || isequipped(Q_SHOES_Dark,P_Armor_Dark) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus bSplashRange,2;
@@ -84,7 +84,7 @@ case 8:	bonus2 bSubEle,Ele_Dark,15;
 		}	break;
 
 case 9:	bonus2 bSubEle,Ele_Ghost,15;
-		if(isequipped(Q_Shoes_Ghost) && (isequipped(P_Armor_Ghost) || isequipped(M_Armor_Ghost)|| isequipped(A_Armor_Ghost))) {
+		if(isequipped(Q_SHOES_Ghost,M_ARMOR_Ghost) || isequipped(Q_SHOES_Ghost,A_ARMOR_Ghost) || isequipped(Q_SHOES_Ghost,P_Armor_Ghost) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus2 bHPVanishRate,50,10;
@@ -94,7 +94,7 @@ case 9:	bonus2 bSubEle,Ele_Ghost,15;
 	}	break;
 
 case 10:	bonus2 bSubEle,Ele_Undead,15;
-		if(isequipped(Q_Shoes_Undead) && (isequipped(P_Armor_Undead) || isequipped(M_Armor_Undead)|| isequipped(A_Armor_Undead))) {
+		if(isequipped(Q_SHOES_Undead,M_ARMOR_Undead) || isequipped(Q_SHOES_Undead,A_ARMOR_Undead) || isequipped(Q_SHOES_Undead,P_Armor_Undead) ) {
 		bonus bMaxHPrate,10;
 		bonus bMaxSPrate,10;
 		bonus2 bHPDrainRate,50,20;

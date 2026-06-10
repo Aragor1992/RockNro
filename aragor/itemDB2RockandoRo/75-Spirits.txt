@@ -1,0 +1,275 @@
+{
+	Id: 18200
+	AegisName: "Assassin's_Spirit"
+	Name: "Assassin's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18201
+	AegisName: "Swordman's_Spirit"
+	Name: "Swordman's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Crusader: true
+		Knight: true
+		Swordman: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18202
+	AegisName: "Acolyte's_Spirit"
+	Name: "Acolyte's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Acolyte: true
+		Monk: true
+		Priest: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18203
+	AegisName: "Mage's_Spirit"
+	Name: "Mage's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Sage: true
+		SoulLinker: true
+		Wizard: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18204
+	AegisName: "Archer's_Spirit"
+	Name: "Archer's Spirit"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Job: {
+		BardDancer: true
+		Hunter: true
+	}
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18205
+	AegisName: "Merchant's_Spirit"
+	Name: "Merchant's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Alchemist: true
+		Blacksmith: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18206
+	AegisName: "Light's_Spirit"
+	Name: "Light's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Taekwon: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18207
+	AegisName: "Shadow's_Spirit"
+	Name: "Shadow's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Taekwon: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18208
+	AegisName: "Spirit_Of_Spirits"
+	Name: "Spirit of Spirits"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(class==24){
+			bonus bMaxHPrate,10;
+			bonus bAtkRate,10;
+			bonus bAgi,readparam(bDex)/5;
+		}
+		;
+	">
+},
+{
+	Id: 18209
+	AegisName: "Ninja's_Spirit"
+	Name: "Ninja's Spirit"
+	Type: "IT_AMMO"
+	Sell: 10
+	Weight: 21
+	Job: {
+		Ninja: true
+	}
+	Loc: "EQP_AMMO"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18210
+	AegisName: "Gun's_Spirit"
+	Name: "Gun's Spirit"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,10;
+		bonus bAtkRate,10;
+		bonus bAgi,readparam(bDex)/5;
+	">
+},
+{
+	Id: 18211
+	AegisName: "Rogue's_Spirit"
+	Name: "Rogue's Spirit"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Job: {
+		Rogue: true
+	}
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 18212
+	AegisName: "Novice's_Spirit"
+	Name: "Novice's Spirit"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 100
+	Slots: 4
+	Job: {
+		Novice: true
+	}
+	Loc: "EQP_ACC"
+	EquipLv: 25
+	Refine: false
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},

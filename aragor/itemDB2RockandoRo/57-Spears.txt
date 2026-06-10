@@ -1,0 +1,280 @@
+{
+	Id: 16041
+	AegisName: "Longinus's_Spear"
+	Name: "Longinus's Spear v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_shadow"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16042
+	AegisName: "Gungnir"
+	Name: "Gungnir v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 600
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_neutral"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16043
+	AegisName: "Gelerdria"
+	Name: "Leviathan"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_agua"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16044
+	AegisName: "Brocca"
+	Name: "Gae Bolg v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_tierra"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16045
+	AegisName: "Hellfire"
+	Name: "HellFire v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_fuego"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16046
+	AegisName: "Zephyrus"
+	Name: "Zephyrus v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_viento"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16047
+	AegisName: "Brionac"
+	Name: "Brionac v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_holy"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16048
+	AegisName: "Dimension_Spear"
+	Name: "Dimension Spear"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_ghost"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 16049
+	AegisName: "Infernal_Spear"
+	Name: "Infernal Spear"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_undead"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},
+{
+	Id: 20007
+	AegisName: "Longinus's_Spear"
+	Name: "Venom Spear v2"
+	Type: 5
+	Sell: 10
+	Weight: 3000
+	Atk: 500
+	Range: 3
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_1HSPEAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_lanza_poison"; ">
+	OnUnequipScript: <" sc_end SC_MATKPOTION; ">
+},

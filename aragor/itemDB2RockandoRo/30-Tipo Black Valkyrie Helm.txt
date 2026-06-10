@@ -1,0 +1,140 @@
+{
+	Id: 9741
+	AegisName: "Adventure_Hat"
+	Name: "Adventure Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 752
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,83,2,20,0;
+		bonus2 bSubEle,Ele_Fire,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9776
+	AegisName: "Love_Bear_Hat"
+	Name: "Love Bear Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 787
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,83,2,20,0;
+		bonus2 bSubEle,Ele_Fire,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9872
+	AegisName: "Jasper_Crest"
+	Name: "Jasper Crest"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 913
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,83,2,20,0;
+		bonus2 bSubEle,Ele_Fire,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9873
+	AegisName: "Mario_Flying_Cap"
+	Name: "Mario Flying Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 914
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,83,2,20,0;
+		bonus2 bSubEle,Ele_Fire,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},
+{
+	Id: 9881
+	AegisName: "Robot_Hat"
+	Name: "Robot Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 922
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,83,2,20,0;
+		bonus2 bSubEle,Ele_Fire,5;
+		bonus2 bSPRegenRate,5,1000;
+	">
+},

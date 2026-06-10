@@ -1,4 +1,4 @@
-function	script	Q_dagger	{
+function	script	W_DAGGER	{
 if (getrefine()>9) bonus bAtkRate,3;
 	bonus bStr,20;
 	bonus bHit,50;

@@ -1,4 +1,4 @@
-function	script	Q_Knuckle	{
+function	script	W_KNUCKLE	{
 	bonus2 bSkillAtk,MO_EXTREMITYFIST,-40;
 	bonus2 bAddRace,RC_NonBoss,30;
 	bonus2 bAddRace,RC_Boss,-30;

@@ -1,0 +1,1077 @@
+//Armors Con Autocast == Magicos
+{
+	Id: 18002
+	AegisName: "Lucius's_Fierce_Armor_of_Volcano"
+	Name: "Hell Armor of Volcano"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,17,5,100,1;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,3,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18003
+	AegisName: "Saphien's_Armor_of_Ocean"
+	Name: "Poseidon Armor of Ocean"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,88,5,100,1;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bSubEle,1,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18004
+	AegisName: "Aebecee's_Raging_Typhoon_Armor"
+	Name: "Huracan Armor"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,21,5,100,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,4,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18005
+	AegisName: "Claytos_Cracking_Earth_Armor"
+	Name: " Gaia Earth Armor"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,91,5,100,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bSubEle,2,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18006
+	AegisName: "Holy_Cloth_of_Benefit"
+	Name: "Darkness Armor of Benefit"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,11,5,100,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bSubEle,7,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18007
+	AegisName: "Angelic_Protection"
+	Name: "Celestial Armor of Protection"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,361,5,100,0;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,6,25;
+		bonus5 bAutoSpellWhenHit,361,5,100,BF_MAGIC+BF_MISC,0;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18008
+	AegisName: "Holy_Cloth_of_Benefit"
+	Name: "Deadly Armor"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,13,6,100,1;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bSubEle,8,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18009
+	AegisName: "Angelic_Protection"
+	Name: "Underworld Protector"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,400,2,100,1;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bSubEle,9,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18010
+	AegisName: "Meteor_Plate"
+	Name: "Venom Protector"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,5;
+		bonus4 bAutoSpellWhenHit,547,3,100,1;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,Ele_Poison,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18231
+	AegisName: "Legion_Plate_Armor_"
+	Name: "Platinum Armor"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bMatkRate,10;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bSubEle,Ele_Neutral,25;
+		skill 355,5;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		bonus bUnstripableArmor,0;
+		bonus bUnbreakableArmor,0;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+//Armors Sin Autocast == Fisicos
+{
+	Id: 18001
+	AegisName: "Legion_Plate_Armor"
+	Name: "Platinum Armor"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,100;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bSubEle,Ele_Neutral,25;
+		skill 355,5;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		bonus bUnstripableArmor,0;
+		bonus bUnbreakableArmor,0;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18232
+	AegisName: "Lucius's_Fierce_Armor_of_Volcano_"
+	Name: "Hell Armor of Volcano"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,3,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18233
+	AegisName: "Saphien's_Armor_of_Ocean_"
+	Name: "Poseidon Armor of Ocean"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bSubEle,1,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18234
+	AegisName: "Aebecee's_Raging_Typhoon_Armor_"
+	Name: "Huracan Armor"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,4,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18235
+	AegisName: "Claytos_Cracking_Earth_Armor_"
+	Name: " Gaia Earth Armor"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bSubEle,2,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18236
+	AegisName: "Holy_Cloth_of_Benefit_"
+	Name: "Darkness Armor of Benefit"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bSubEle,7,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18237
+	AegisName: "Angelic_Protection_"
+	Name: "Celestial Armor of Protection"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,6,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+},
+{
+	Id: 18238
+	AegisName: "Holy_Cloth_of_Benefit_"
+	Name: "Deadly Armor"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bSubEle,8,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18239
+	AegisName: "Angelic_Protection_"
+	Name: "Underworld Protector"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bSubEle,9,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18240
+	AegisName: "Meteor_Plate_"
+	Name: "Venom Protector"
+	Type: "IT_ARMOR"
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bBaseAtk,50;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bSubEle,Ele_Poison,25;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+//armor plus duales 2015
+{
+	Id: 18089
+	AegisName: "Venom_Scruffy_Coat"
+	Name: "Venom Scruffy Coat"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,Ele_Poison,25;
+		sc_start 34,90000000,10;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)) {
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18090
+	AegisName: "Aqua_Robe"
+	Name: "Aqua Robe"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,1,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)) {
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+},
+{
+	Id: 18091
+	AegisName: "Blinded_Brynhild"
+	Name: "Blinded Brynhild"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus bUnstripableArmor,0;
+		bonus bUnbreakableArmor,0;
+		sc_start 34,90000000,10;
+		bonus2 bSubEle,Ele_Neutral,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam (bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,20;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)){
+			bonus bAtkRate,6;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18092
+	AegisName: "Dark_Diablos_Armor"
+	Name: "Dark Diablos Armor"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,7,25;
+		bonus2 bMagicAddEle,Ele_Holy,15;
+		bonus2 bMagicAddEle,Ele_Dark,20;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)){
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)) {
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18093
+	AegisName: "Ghost_Elite_Armor"
+	Name: "Ghost Elite Armor"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,8,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,10;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,15;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)) {
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18094
+	AegisName: "Underworld_Naga_Armor"
+	Name: "Underworld Naga Armor"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,9,25;
+		bonus3 bMagicHpDrainRateRace,RC_DemiHuman,20,5;
+		bonus bDef,1;
+		bonus bMDef,1;
+		sc_start 34,90000000,10;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)) {
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},
+{
+	Id: 18095
+	AegisName: "Holy_Divine_Cloth"
+	Name: "Holy Divine Cloth"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,6,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bResEff,Eff_Blind,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Poison,10000;
+		bonus2 bResEff,Eff_DPoison,10000;
+		bonus2 bResEff,Eff_Curse,10000;
+		bonus2 bResEff,Eff_Confusion,10000;
+		bonus2 bResEff,Eff_Stun,10000;
+		bonus2 bResEff,Eff_Silence,10000;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)){
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+},
+{
+	Id: 18096
+	AegisName: "Huracan_Forest_Robe"
+	Name: "Huracan Forest Robe"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,4,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)){
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+},
+{
+	Id: 18097
+	AegisName: "Fire_Crimson_Robe"
+	Name: "Fire Crimson Robe"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,3,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Freeze,10000;
+		bonus2 bResEff,Eff_Bleeding,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)){
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+},
+{
+	Id: 18098
+	AegisName: "Earth_Golden_Lord_Robe"
+	Name: "Earth Golden Lord Robe"
+	Type: "IT_ARMOR"
+	Buy: 94000
+	Weight: 500
+	Slots: 4
+	Loc: "EQP_ARMOR"
+	EquipLv: 25
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMDef,getrefine();
+		bonus2 bSubEle,2,25;
+		bonus bDef,1;
+		bonus bMDef,1;
+		bonus2 bResEff,Eff_Sleep,10000;
+		bonus2 bResEff,Eff_Stone,10000;
+		bonus2 bResEff,Eff_Stun,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Silence,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Confusion,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Blind,readparam(bVit)*50;
+		bonus2 bResEff,Eff_Stone,readparam(bInt)*50;
+		bonus2 bResEff,Eff_Curse,readparam(bInt)*50;
+		if (readparam(bStr) > readparam(bInt)) {
+			bonus bAtkRate,15;
+			bonus bHit,50;
+		}
+		else if (readparam(bStr) < readparam(bInt)) {
+			bonus bMatkRate,10;
+			bonus bDelayRate,-5;
+		}
+		else if (readparam(bStr) == readparam(bInt)){
+			bonus bAtkRate,5;
+			bonus bMatkRate,5;
+			bonus bDelayRate,-2;
+		}
+		;
+	">
+	OnUnequipScript: <" sc_end 34; ">
+},

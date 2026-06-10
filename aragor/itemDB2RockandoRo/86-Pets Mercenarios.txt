@@ -1,0 +1,26 @@
+{
+	Id: 19108
+	AegisName: "Wing_Of_Butterfly"
+	Name: "Butterfly Wings of Death"
+	Type: "IT_HEALING"
+	Buy: 50
+	Sell: 5
+	Weight: 1
+	Trade: {
+		override: 60
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" atcommand "@die"; ">
+},
+{
+	Id: 19400
+	AegisName: "Poring_Summon_Scroll"
+	Name: "Poring Summon Scroll"
+	Type: "IT_USABLE"
+	Sell: 1
+	Script: <" callfunc "merc_summon",19400,4000,""; ">
+},

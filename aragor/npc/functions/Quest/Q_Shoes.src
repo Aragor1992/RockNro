@@ -7,7 +7,7 @@ function	script	Q_Sleipnir	{
 return;
 }
 /*------------------------------------------------------------*/
-function	script	Q_Shoes	{
+function	script	Q_SHOES	{
 	bonus bMaxHPrate,5;
 	bonus bMaxSPrate,5;
 	bonus bSpeedRate,15;	

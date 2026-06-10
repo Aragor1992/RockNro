@@ -1,0 +1,413 @@
+{
+	Id: 3001
+	AegisName: "naruto_uno"
+	Name: "Sasuke's Fire Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18002,18261,18027)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Fire,5;
+		}
+		else if(isequipped(18232,18261,18027)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Fire,5;
+		}
+		else if(isequipped(18097,18261,18027)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Fire,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Fire,5;
+	">
+},
+{
+	Id: 3002
+	AegisName: "naruto_uno"
+	Name: "Temari's Wind Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18004,18263,18028)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Wind,5;
+		}
+		else if(isequipped(18234,18263,18028)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Wind,5;
+		}
+		else if(isequipped(18096,18263,18028)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Wind,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Wind,5;
+	">
+},
+{
+	Id: 3003
+	AegisName: "naruto_uno"
+	Name: "Choji's Water Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18003,18262,18029)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Water,5;
+		}
+		else if(isequipped(18233,18262,18029)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Water,5;
+		}
+		else if(isequipped(18090,18262,18029)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Water,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Water,5;
+	">
+},
+{
+	Id: 3004
+	AegisName: "naruto_uno"
+	Name: "Shikamaru's Shadow Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18006,18266,18220)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Dark,5;
+		}
+		else if(isequipped(18236,18266,18220)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Dark,5;
+		}
+		else if(isequipped(18092,18266,18220)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Dark,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Dark,5;
+	">
+},
+{
+	Id: 3005
+	AegisName: "naruto_uno"
+	Name: "Gaara's Earth Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18005,18264,18026)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Earth,5;
+		}
+		else if(isequipped(18235,18264,18026)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Earth,5;
+		}
+		else if(isequipped(18098,18264,18026)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Earth,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Earth,5;
+	">
+},
+{
+	Id: 3006
+	AegisName: "naruto_uno"
+	Name: "Tsunade's Holy Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18007,18265,18012)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Holy,5;
+		}
+		else if(isequipped(18237,18265,18012)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Holy,5;
+		}
+		else if(isequipped(18095,18265,18012)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Holy,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Holy,5;
+	">
+},
+{
+	Id: 3007
+	AegisName: "naruto_uno"
+	Name: "Kakashi's Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		skill 84,5;
+		bonus2 bSubEle,Ele_Ghost,5;
+	">
+},
+{
+	Id: 3008
+	AegisName: "naruto_uno"
+	Name: "Naruto's Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubEle,Ele_Neutral,5;
+		bonus bAllStats,5;
+		skill 370,3;
+		skill 270,3;
+		bonus4 bAutoSpell,401,1,250,0;
+		if(Class==Job_Assassin||Class==Job_Assassin_Cross) bonus4 bAutoSpell,401,1,50,0;
+		if(Class==Job_Monk||Class==Job_Champion) bonus4 bAutoSpell,401,1,10,0;
+	">
+},
+{
+	Id: 3009
+	AegisName: "naruto_uno"
+	Name: "Sakura's Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skill "AL_HEAL",6;
+		bonus bAllStats,5;
+		bonus2 bSubEle,Ele_Undead,5;
+	">
+},
+{
+	Id: 3010
+	AegisName: "naruto_uno"
+	Name: "Shino's Venom Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18010,18268,18222)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Poison,5;
+		}
+		else if(isequipped(18240,18268,18222)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Poison,5;
+		}
+		else if(isequipped(18089,18268,18222)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Poison,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Poison,5;
+	">
+},
+{
+	Id: 3011
+	AegisName: "naruto_uno"
+	Name: "Rock Lee's Neutral Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18001,18260,18020)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Neutral,5;
+		}
+		else if(isequipped(18231,18260,18020)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Neutral,5;
+		}
+		else if(isequipped(18091,18260,18020)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Neutral,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Neutral,5;
+	">
+},
+{
+	Id: 3012
+	AegisName: "naruto_uno"
+	Name: "Orochimaru's Ghost Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18008,18269,18030)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Ghost,5;
+		}
+		else if(isequipped(18238,18269,18030)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Ghost,5;
+		}
+		else if(isequipped(18093,18269,18030)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Ghost,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Ghost,5;
+	">
+},
+{
+	Id: 3013
+	AegisName: "naruto_uno"
+	Name: "Sai's Undead Protector"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 508
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		if(isequipped(18009,18267,18221)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Undead,5;
+		}
+		else if(isequipped(18239,18267,18221)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Undead,5;
+		}
+		else if(isequipped(18094,18267,18221)) {
+			bonus bAllStats,10;
+			bonus2 bSubEle,Ele_Undead,5;
+		}
+		else bonus bAllStats,3;
+		bonus2 bSubEle,Ele_Undead,5;
+	">
+},

@@ -1,0 +1,270 @@
+{
+	Id: 16011
+	AegisName: "Masamune"
+	Name: "Masamune v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 600
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_neutral"; ">
+},
+{
+	Id: 16012
+	AegisName: "Claymore"
+	Name: "Ifrit Sword"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_fuego"; ">
+},
+{
+	Id: 16013
+	AegisName: "Bastard_Sword"
+	Name: "Shiva Sword"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_agua"; ">
+},
+{
+	Id: 16014
+	AegisName: "Broad_Sword"
+	Name: "Typhoon Sword"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_viento"; ">
+},
+{
+	Id: 16015
+	AegisName: "Dragon_Slayer"
+	Name: "Titan Sword"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_tierra"; ">
+},
+{
+	Id: 16016
+	AegisName: "Balmung"
+	Name: "Eden Sword"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_holy"; ">
+},
+{
+	Id: 16017
+	AegisName: "Katzbalger"
+	Name: "Odin Sword"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_shadow"; ">
+},
+{
+	Id: 16018
+	AegisName: "Dimension Slayer"
+	Name: "Dimension Slayer"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_ghost"; ">
+},
+{
+	Id: 16019
+	AegisName: "Infernal Slayer"
+	Name: "Infernal Slayer"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_undead"; ">
+},
+{
+	Id: 20003
+	AegisName: "Masamune"
+	Name: "Vandal Sable"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 1000
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Swordsman: true
+		Knight: true
+		Crusader: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_2HSWORD"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_2hespada_poison"; ">
+},

@@ -1,0 +1,108 @@
+//Cards Resistencia en Armor
+{
+	Id: 4442
+	AegisName: "Tatacho_Card"
+	Name: "Tatacho Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Earth,10; ">
+},
+{
+	Id: 4443
+	AegisName: "Aqua_Elemental_Card"
+	Name: "Aqua Elemental Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Water,10; ">
+},
+{
+	Id: 4444
+	AegisName: "Draco_Card"
+	Name: "Draco Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Fire,10; ">
+},
+{
+	Id: 4445
+	AegisName: "Luciola_Vespa_Card"
+	Name: "Luciola Vespa Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Ghost,10; ">
+},
+{
+	Id: 4446
+	AegisName: "Iara_Card"
+	Name: "Iara Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: 2
+},
+{
+	Id: 4447
+	AegisName: "Centipede_Card"
+	Name: "Centipede Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Poison,10; ">
+},
+{
+	Id: 4448
+	AegisName: "Cornus_Card"
+	Name: "Cornus Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Neutral,10; ">
+},
+{
+	Id: 4449
+	AegisName: "Dark_Shadow_Card"
+	Name: "Dark Shadow Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Dark,10; ">
+},
+{
+	Id: 4450
+	AegisName: "Dark_Pinguicula_Card"
+	Name: "Dark Pinguicula Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: "EQP_ARMOR"
+	Script: <" bonus2 bSubEle,Ele_Undead,10; ">
+},
+{
+	Id: 4452
+	AegisName: "Centipede_Larva_Card"
+	Name: "Centipede Larva Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: 2
+},
+{
+	Id: 4453
+	AegisName: "Hillslion_Card"
+	Name: "Hillslion Card"
+	Type: 6
+	Buy: 20
+	Weight: 10
+	Loc: 2
+},

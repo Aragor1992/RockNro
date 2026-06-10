@@ -1,0 +1,618 @@
+{
+	Id: 9626
+	AegisName: "black_bunny_band"
+	Name: "Black Bunny Band"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 551
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus3 bAutoSpellWhenHit,"AL_INCAGI",5,30;
+		bonus bAgi,10;
+	">
+},
+{
+	Id: 9642
+	AegisName: "drooping_leaf_cat"
+	Name: "Droping_leaf_cat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 594
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,10;
+		bonus3 bAutoSpellWhenHit,"AL_HEAL",3,10;
+	">
+},
+{
+	Id: 9690
+	AegisName: "BunnyPooHat"
+	Name: "Bunny Poo Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 637
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bLuk,10;
+		bonus2 bSubRace,RC_DemiHuman,5;
+	">
+},
+{
+	Id: 9696
+	AegisName: "CowHat"
+	Name: "Cow Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 643
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bDex,10;
+		bonus bFlee,5;
+	">
+},
+{
+	Id: 9709
+	AegisName: "DJHeadSet"
+	Name: "DJ Head Set"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 660
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus2 bSubRace,RC_DemiHuman,5; ">
+},
+{
+	Id: 9715
+	AegisName: "GrandAngelingHat"
+	Name: "Grand Angeling Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 682
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus2 bSubRace,RC_DemiHuman,5; ">
+},
+{
+	Id: 9717
+	AegisName: "GrandWeddingVeil"
+	Name: "Grand Wedding Veil"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 684
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9748
+	AegisName: "Aquaring_Hat"
+	Name: "Aquaring Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 759
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bStr,5;
+		bonus bMdef,10;
+		bonus2 bAddEle,Ele_Water,5;
+	">
+},
+{
+	Id: 9762
+	AegisName: "Deviling_Rucksack_hat"
+	Name: "Deviling Rucksack hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Slots: 4
+	Loc: 1
+	Refine: false
+	ViewSprite: 773
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 9763
+	AegisName: "Deviling_Party_hat"
+	Name: "Deviling Party hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 774
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bCritical,5;
+	">
+},
+{
+	Id: 9764
+	AegisName: "Metaling_Party_hat"
+	Name: "Metaling Party hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 775
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bCritical,5;
+	">
+},
+{
+	Id: 9773
+	AegisName: "Hopping_Flir"
+	Name: "Hopping Flir"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 784
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bShortWeaponDamageReturn,1; ">
+},
+{
+	Id: 9782
+	AegisName: "Pope_Mitre_Hat"
+	Name: "Pope Mitre Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 793
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bMaxHPrate,7;
+		bonus bMaxSPrate,10;
+	">
+},
+{
+	Id: 9793
+	AegisName: "Blue_Quiz_Hat"
+	Name: "Blue Quiz Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 804
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bSpeedAddRate,15; ">
+},
+{
+	Id: 9804
+	AegisName: "domo_kun_hat"
+	Name: "Domo Kun Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 815
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9814
+	AegisName: "brown_paper_bag_hat"
+	Name: "Paper Bag Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 825
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSubRace,RC_DemiHuman,5;
+		bonus2 bResEff,Eff_Stun,400;
+		bonus bMaxHP,100;
+	">
+},
+{
+	Id: 9815
+	AegisName: "chicken_hat"
+	Name: "Chicken Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 826
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bLuk,10;
+		bonus bMaxHP,500;
+		bonus bMaxSP,500;
+		bonus bDoubleRate,10;
+		bonus2 bSubRace,RC_DemiHuman,2;
+	">
+},
+{
+	Id: 9825
+	AegisName: "frog_king_hat"
+	Name: "Frog King Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 842
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAgi,10; ">
+},
+{
+	Id: 9830
+	AegisName: "magnolia_hat"
+	Name: "Magnolia Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 852
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bResEff,Eff_Stun,500;
+		skill "HT_FLASHER",1;
+	">
+},
+{
+	Id: 9866
+	AegisName: "Chicken_Hat"
+	Name: "Chicken Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 907
+},
+{
+	Id: 9869
+	AegisName: "Dropping_Angeling_Hat"
+	Name: "Dropping Angeling Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 910
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus2 bSubRace,RC_DemiHuman,5; ">
+},
+{
+	Id: 9874
+	AegisName: "marshmallow"
+	Name: "Marshmallow"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 915
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bFlee,3;
+		bonus bHit,3;
+	">
+},
+{
+	Id: 9875
+	AegisName: "Metallic_Band"
+	Name: "Metallic Band"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 916
+},
+{
+	Id: 9876
+	AegisName: "Nekoring_Hat"
+	Name: "Nekoring Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 917
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bLuk,10;
+		bonus bMdef,10;
+		bonus2 bSubRace,RC_Brute,5;
+	">
+},
+{
+	Id: 9880
+	AegisName: "Raidolito_Hat"
+	Name: "Raidolito Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 921
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9882
+	AegisName: "Shark_Hat"
+	Name: "Shark Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 923
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAgi,5;
+		bonus bStr,5;
+		bonus bMdef,10;
+		bonus2 bAddEle,Ele_Water,5;
+	">
+},
+{
+	Id: 9884
+	AegisName: "Black_Usakoring_Hat"
+	Name: "Black Usakoring Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 925
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+},
+{
+	Id: 9885
+	AegisName: "Yoshi_Hat"
+	Name: "Yoshi Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 926
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bAllStats,5;
+		bonus bLuk,5;
+		skill 26,2;
+	">
+},

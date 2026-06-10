@@ -1,0 +1,1572 @@
+{
+	Id: 9636
+	AegisName: "Cerberus"
+	Name: "Cerberus"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 584
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 9692
+	AegisName: "CelestialCloth"
+	Name: "Celestial Cloth"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 639
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 9701
+	AegisName: "DarkDevilingWings"
+	Name: "Dark Deviling Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 648
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 9702
+	AegisName: "DarkFluffWings"
+	Name: "Dark Fluff Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 649
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15000
+	AegisName: "white_fallen_angel"
+	Name: "White Fallen Angels"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 521
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15001
+	AegisName: "black_fallen_angel_wings"
+	Name: "Black Fallen Angels"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 539
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15003
+	AegisName: "harpy_wings"
+	Name: "Harpy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 644
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15004
+	AegisName: "dragon_wings"
+	Name: "Dragon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 543
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15005
+	AegisName: "bloody_butterfly_wings"
+	Name: "Bloody Butterfly Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 556
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15007
+	AegisName: "arcangel_wings"
+	Name: "Archangel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 547
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15008
+	AegisName: "orange_fairy_wings"
+	Name: "Orange Fairy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 535
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15009
+	AegisName: "blue_fairy_wings"
+	Name: "Blue Fairy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 518
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15010
+	AegisName: "mini_cute_wings"
+	Name: "Mini Cute Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 549
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15011
+	AegisName: "demon_wing"
+	Name: "Dark Devil Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 533
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15012
+	AegisName: "fairy_wings"
+	Name: "Fairy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 506
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15014
+	AegisName: "retribution_wings"
+	Name: "Retribution Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 532
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15015
+	AegisName: "pixie_wings"
+	Name: "Pixie Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 531
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15019
+	AegisName: "purple_dragonoid_wings"
+	Name: "Purple Dragonoid Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 520
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15021
+	AegisName: "white_arcangel_wings"
+	Name: "White Archangel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 546
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15022
+	AegisName: "green_insect_wings"
+	Name: "Green Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 504
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15023
+	AegisName: "cotton_wings"
+	Name: "Cotton Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 529
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15024
+	AegisName: "mini_angeling_wings"
+	Name: "Angeling Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 690
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15025
+	AegisName: "FallenAngelWings"
+	Name: "Pink Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 668
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15026
+	AegisName: "dark_fairy_wings"
+	Name: "Dark Fairy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 555
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15033
+	AegisName: "fenix_of_blood_wings"
+	Name: "Phoenix of blood Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 528
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15034
+	AegisName: "incubus_wings"
+	Name: "Incubus Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 530
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15035
+	AegisName: "black_fairy_wings"
+	Name: "Black Fairy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 534
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15036
+	AegisName: "demon_wings"
+	Name: "Demon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 552
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15037
+	AegisName: "mini_fenix_wings"
+	Name: "Mini Phoenix Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 541
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15038
+	AegisName: "fenix_of_death_wings"
+	Name: "Phoenix of Death Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 545
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15039
+	AegisName: "succubus_wings"
+	Name: "Succubus Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 544
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15040
+	AegisName: "dragonoid_wings"
+	Name: "Dragonoid Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 542
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15041
+	AegisName: "holy_wings"
+	Name: "Holy Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 691
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15042
+	AegisName: "CatTail"
+	Name: "Cat Tail"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 692
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15062
+	AegisName: "papa_roach_wings"
+	Name: "Papa Roach Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 571
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15065
+	AegisName: "Angelwings"
+	Name: "angelwings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 574
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15066
+	AegisName: "ArchAngeling"
+	Name: "ArchAngeling"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 576
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15071
+	AegisName: "AzureWings"
+	Name: "Azure Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 588
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15073
+	AegisName: "babyangelwings"
+	Name: "Baby_Angel_Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 608
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15074
+	AegisName: "BlackFlameWings"
+	Name: "Black Flame Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 613
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15076
+	AegisName: "FreyaWings"
+	Name: "Freya_Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 618
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15077
+	AegisName: "FreyaWingsv2"
+	Name: "Freya Wings v2"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 619
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15080
+	AegisName: "PassionateWings"
+	Name: "Passionate Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 623
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15081
+	AegisName: "BlueButterflyWings"
+	Name: "BlueButterfly Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 628
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15082
+	AegisName: "BlueFlameWings"
+	Name: "Blue Flame Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 629
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15085
+	AegisName: "DescendingWings"
+	Name: "Descending Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 656
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15086
+	AegisName: "BoneWings"
+	Name: "Bone Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 634
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15090
+	AegisName: "DoomWings"
+	Name: "Doom Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 661
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15091
+	AegisName: "DragonWings"
+	Name: "Dragon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 664
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15092
+	AegisName: "EternityWings"
+	Name: "Eternity Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 666
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15093
+	AegisName: "EvilWings"
+	Name: "Evil Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 667
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15095
+	AegisName: "FeatherWings"
+	Name: "Feather Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 670
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15099
+	AegisName: "GargoyleWings"
+	Name: "Gargoyle Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 674
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15104
+	AegisName: "GoldenShellWings"
+	Name: "Golden Shell Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 681
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15108
+	AegisName: "GryphonWings"
+	Name: "Gryphon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 688
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15109
+	AegisName: "GuardianAngelWings"
+	Name: "Guardian Angel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 689
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15111
+	AegisName: "Philippine_W"
+	Name: "Philippine Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 698
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15113
+	AegisName: "ArcAngel_W"
+	Name: "High ArcAngel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 700
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15120
+	AegisName: "Aerial_Wings"
+	Name: "Aerial Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 720
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15121
+	AegisName: "Blue_Angel_Wings"
+	Name: "Blue Angel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 721
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15122
+	AegisName: "Red_Angel_Wings"
+	Name: "Red Angel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 722
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15123
+	AegisName: "White_Angel_Wings"
+	Name: "White Angel Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 723
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15128
+	AegisName: "Black_Flaiming_wings"
+	Name: "Black Flaiming wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 728
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15129
+	AegisName: "Blue_Flaiming_wings"
+	Name: "Blue Flaiming wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 729
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15132
+	AegisName: "Fairys_wings"
+	Name: "Fairy´s wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 732
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15133
+	AegisName: "Frost_wings"
+	Name: "Frost wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 733
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15134
+	AegisName: "Gaia_wings"
+	Name: "Gaia wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 734
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15135
+	AegisName: "Guardian_Angel_wings"
+	Name: "guardian Angel wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 735
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15144
+	AegisName: "Pecopeco_wings"
+	Name: "Peco Peco wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 744
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15146
+	AegisName: "Queen_wings"
+	Name: "Queen wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 746
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15148
+	AegisName: "Red_Flaming_Wings"
+	Name: "Red Flaming wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 748
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15152
+	AegisName: "black_demon_wings"
+	Name: "Black Demon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 829
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15153
+	AegisName: "green_demon_wings"
+	Name: "Green Demon Wing"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 830
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15154
+	AegisName: "pink_demon_wings"
+	Name: "Pink Demon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 831
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15155
+	AegisName: "red_demon_wings"
+	Name: "Red Demon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 832
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15156
+	AegisName: "white_demon_wings"
+	Name: "White Demon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 833
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15157
+	AegisName: "yellow_demon_wings"
+	Name: "Yellow Demon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 834
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15170
+	AegisName: "bigangelwings"
+	Name: "Bigange Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 882
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15171
+	AegisName: "Black_Chakra"
+	Name: "Black Chakra Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 883
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15172
+	AegisName: "Black_Scarf"
+	Name: "Black Scarf"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 884
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15173
+	AegisName: "Bladed_Wings"
+	Name: "Bladed Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 885
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15174
+	AegisName: "chaos_aura"
+	Name: "Chaos Aura"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 886
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15178
+	AegisName: "darkness_wings"
+	Name: "Darkness Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 890
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15180
+	AegisName: "fireflywings"
+	Name: "Firefly Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 892
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15183
+	AegisName: "Ice_dragon"
+	Name: "Ice Dragon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 895
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15185
+	AegisName: "metawing"
+	Name: "Meta Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 897
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15186
+	AegisName: "moon_wings"
+	Name: "Moon Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 898
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},
+{
+	Id: 15188
+	AegisName: "sacred_wings"
+	Name: "Sacred Wings"
+	Type: "IT_ARMOR"
+	Weight: 50
+	Slots: 4
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 900
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_AlasQuest"; ">
+},

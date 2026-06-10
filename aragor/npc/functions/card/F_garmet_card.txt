@@ -1,36 +1,50 @@
-function	script	F_garmedc	{
+function	script	D_CARD_GARMET	{
 bonus bFlee,5;
 switch(getarg(0)+1){
-	case 1:
-		bonus2 bSubEle,Ele_Neutral,30;
-		break	
-	case 2:
-		bonus2 bSubEle,Ele_Water,30;
-		break	
-	case 3:
-		bonus2 bSubEle,Ele_Earth,30;
-		break	
-	case 4:
-		bonus2 bSubEle,Ele_Fire,30;
-		break	
-	case 5:
-		bonus2 bSubEle,Ele_Wind,30;
-		break	
-	case 6:
-		bonus2 bSubEle,Ele_Poison,30;
-		break	
-	case 7:
-		bonus2 bSubEle,Ele_Holy,30;
-		break	
-	case 8:
-		bonus2 bSubEle,Ele_Dark,30;
-		break	
-	case 9:
-		bonus2 bSubEle,Ele_Ghost,30;
-		break	
-	case 10:
-		bonus2 bSubEle,Ele_Undead,30;
-		break	
-	}
+case 1:	bonus2 bSubEle,Ele_Neutral,30; break	
+case 2:	bonus2 bSubEle,Ele_Water,30; break	
+case 3: bonus2 bSubEle,Ele_Earth,30; break	
+case 4: bonus2 bSubEle,Ele_Fire,30; break	
+case 5: bonus2 bSubEle,Ele_Wind,30; break	
+case 6: bonus2 bSubEle,Ele_Poison,30; break	
+case 7: bonus2 bSubEle,Ele_Holy,30; break	
+case 8: bonus2 bSubEle,Ele_Dark,30; break	
+case 9: bonus2 bSubEle,Ele_Ghost,30; break	
+case 10: bonus2 bSubEle,Ele_Undead,30; break	
+}
 return;
 }
+
+function	script	D_CARD_ARMOR	{
+switch(getarg(0)+1){
+case 1:	bonus2 bSubEle,Ele_Neutral,10; break	
+case 2:	bonus2 bSubEle,Ele_Water,10; break	
+case 3: bonus2 bSubEle,Ele_Earth,10; break	
+case 4: bonus2 bSubEle,Ele_Fire,10; break	
+case 5: bonus2 bSubEle,Ele_Wind,10; break	
+case 6: bonus2 bSubEle,Ele_Poison,10; break	
+case 7: bonus2 bSubEle,Ele_Holy,10; break	
+case 8: bonus2 bSubEle,Ele_Dark,10; break	
+case 9: bonus2 bSubEle,Ele_Ghost,10; break	
+case 10: bonus2 bSubEle,Ele_Undead,10; break	
+}
+return;
+}
+
+function	script	D_CARD_HAT	{
+switch(getarg(0)+1){
+case 1:	bonus2 bSubEle,Ele_Neutral,10; break	
+case 2:	bonus2 bSubEle,Ele_Water,10; bonus3 bAddMonsterDropItem,Crystal_Blue,RC_Fish,100; break
+case 3: bonus2 bSubEle,Ele_Earth,10; bonus3 bAddMonsterDropItem,Yellow_Live,RC_Plant,100; break
+case 4: bonus2 bSubEle,Ele_Fire,10; bonus3 bAddMonsterDropItem,Boody_Red,RC_Brute,100; break
+case 5: bonus2 bSubEle,Ele_Wind,10; bonus3 bAddMonsterDropItem,Wind_Of_Verdure,RC_Insect,100; break
+case 6: bonus2 bSubEle,Ele_Poison,10; bonus2 bResEff,Eff_Poison,1000; break
+case 7: bonus2 bSubEle,Ele_Holy,10; break
+case 8: bonus2 bSubEle,Ele_Dark,10; break
+case 9: bonus2 bSubEle,Ele_Ghost,10; break
+case 10: bonus2 bSubEle,Ele_Undead,10; break
+}
+return;
+}
+
+function	script	F_CARD_GARMET	{bonus bFlee,5; bonus2 bSubEle,getarg(0),20; return;}

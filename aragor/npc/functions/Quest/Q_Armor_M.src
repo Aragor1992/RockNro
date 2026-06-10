@@ -1,4 +1,4 @@
-function	script	M_Armor	{
+function	script	M_ARMOR	{
 	bonus bMdef,getrefine();
 	bonus bMatkRate,5;
 	bonus2 bResEff,Eff_Stun,readparam(bVit)*50;

@@ -1,0 +1,112 @@
+{
+	Id: 9030
+	AegisName: "Embryo_One"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9031
+	AegisName: "Embryo_Two"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9032
+	AegisName: "Embryo_Three"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9033
+	AegisName: "Embryo_Four"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9034
+	AegisName: "Embryo_Five"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9035
+	AegisName: "Embryo_Six"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9036
+	AegisName: "Embryo_Seven"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9037
+	AegisName: "Embryo_Eight"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9038
+	AegisName: "Embryo_Nine"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9039
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9040
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9041
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9042
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9043
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9044
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 9045
+	AegisName: "Embryo_Ten"
+	Name: "Embryo"
+	Type: "IT_PETEGG"
+	Buy: 20
+},

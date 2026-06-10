@@ -61,6 +61,16 @@ function	script	P_SamuraiHelm	{
 	bonus2 bIgnoreDefRate,RC_DemiHuman,50;
 return;
 }
+function	script	P_Tirayabon	{
+	bonus bUnstripableHelm,0;
+	bonus bDex,10;
+	bonus bVit,10;
+	bonus bInt,10;
+	bonus bMatkRate,15;
+	bonus bMaxHPrate,20;
+	bonus2 bIgnoreMdefRate,RC_DemiHuman,50;
+return;
+}
 // =================== Valkyrie Helm =================
 function	script	P_ValkyHelm	{
 	bonus bUnstripableHelm,0;

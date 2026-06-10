@@ -1,0 +1,117 @@
+{
+	Id: 15262
+	AegisName: "Dark_Magical_Wings"
+	Name: "Dark Magical Wings"
+	Type: "IT_ARMOR"
+	Buy: 10000
+	Weight: 1
+	Loc: "EQP_HEAD_LOW"
+	Refine: false
+	ViewSprite: 1128
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		partneroverride: true
+		nocart: true
+		nostorage: true
+		nogstorage: true
+	}
+	Script: <" callfunc "inicio_novice_alas"; ">
+},
+{
+	Id: 15620
+	AegisName: "Bright_Fury"
+	Name: "Bright Fury"
+	Type: "IT_ARMOR"
+	Buy: 10000
+	Weight: 1
+	Def: 1
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 1146
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		partneroverride: true
+		nocart: true
+		nostorage: true
+		nogstorage: true
+	}
+	Script: <" callfunc "inicio_novice_hat"; ">
+},
+{
+	Id: 18039
+	AegisName: "guyak_shield"
+	Name: "guyak shield"
+	Type: "IT_ARMOR"
+	Buy: 10000
+	Weight: 1
+	Def: 2
+	Loc: "EQP_SHIELD"
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		partneroverride: true
+		nocart: true
+		nostorage: true
+		nogstorage: true
+	}
+	Script: <" callfunc "inicio_novice_shield"; ">
+},
+{
+	Id: 18099
+	AegisName: "proteccion_mail"
+	Name: "proteccion mail"
+	Type: "IT_ARMOR"
+	Buy: 10000
+	Weight: 1
+	Def: 2
+	Loc: "EQP_ARMOR"
+	Refine: false
+	Script: <" callfunc "inicio_novice_armor"; ">
+},
+{
+	Id: 18223
+	AegisName: "heiden_cape"
+	Name: "heiden cape"
+	Type: "IT_ARMOR"
+	Buy: 10000
+	Weight: 1
+	Def: 1
+	Loc: "EQP_GARMENT"
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		partneroverride: true
+		nocart: true
+		nostorage: true
+		nogstorage: true
+	}
+	Script: <" callfunc "inicio_novice_vali"; ">
+},
+{
+	Id: 18270
+	AegisName: "golden_shoes"
+	Name: "golden shoes"
+	Type: "IT_ARMOR"
+	Buy: 10000
+	Weight: 1
+	Def: 1
+	Loc: "EQP_SHOES"
+	Refine: false
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		partneroverride: true
+		nocart: true
+		nostorage: true
+		nogstorage: true
+	}
+	Script: <" callfunc "inicio_novice_shoes"; ">
+},

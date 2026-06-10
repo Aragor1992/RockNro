@@ -1,0 +1,125 @@
+{
+	Id: 9777
+	AegisName: "Luxury_Hat"
+	Name: "Luxury Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 788
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,10;
+		bonus bLuk,5;
+		bonus bMaxHPrate,20;
+		bonus bCritical,15;
+		bonus bCritAtkRate,10;
+	">
+},
+{
+	Id: 9818
+	AegisName: "dinasty_mask"
+	Name: "Dinasty Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 835
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,10;
+		bonus bLuk,5;
+		bonus bMaxHPrate,20;
+		bonus bCritical,15;
+		bonus bCritAtkRate,10;
+	">
+},
+{
+	Id: 9836
+	AegisName: "mistic_horns"
+	Name: "Mistic_Horns"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 858
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,10;
+		bonus bLuk,5;
+		bonus bMaxHPrate,20;
+		bonus bCritical,15;
+		bonus bCritAtkRate,10;
+	">
+},
+{
+	Id: 9862
+	AegisName: "Apache_hat"
+	Name: "Apache Hat"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 903
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,10;
+		bonus bLuk,5;
+		bonus bMaxHPrate,20;
+		bonus bCritical,15;
+		bonus bCritAtkRate,10;
+	">
+},
+{
+	Id: 9883
+	AegisName: "Skull_hood"
+	Name: "Skull Hood"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 924
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bStr,10;
+		bonus bLuk,5;
+		bonus bMaxHPrate,20;
+		bonus bCritical,15;
+		bonus bCritAtkRate,10;
+	">
+},

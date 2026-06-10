@@ -1,0 +1,505 @@
+//Revolvers
+{
+	Id: 17021
+	AegisName: "Six_Shooter"
+	Name: "Fenrir"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_REVOLVER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_fenrir"; ">
+},
+{
+	Id: 17022
+	AegisName: "Crimson_Bolt"
+	Name: "Darkness"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_REVOLVER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_darkness"; ">
+},
+{
+	Id: 19110
+	AegisName: "Infernal_Revolver"
+	Name: "Infernal Revolver"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_REVOLVER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_infernalrevolver"; ">
+},
+{
+	Id: 19111
+	AegisName: "Vandal_Shooter"
+	Name: "Vandal Shooter"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_REVOLVER"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vandalshooter"; ">
+},
+//Riffles
+{
+	Id: 17023
+	AegisName: "Gold_Lux"
+	Name: "Tiamat"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_RIFLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_tiamat"; ">
+},
+{
+	Id: 17024
+	AegisName: "Branch"
+	Name: "Judgment"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 400
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_RIFLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_judgment"; ">
+},
+{
+	Id: 19112
+	AegisName: "Infernal_Rifle"
+	Name: "Infernal Rifle"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_RIFLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_infernalrifle"; ">
+},
+{
+	Id: 19113
+	AegisName: "Venom_Carbine"
+	Name: "Venom Carbine"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 350
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_RIFLE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_venomcarbine"; ">
+},
+//shotguns
+{
+	Id: 17025
+	AegisName: "Cyclone"
+	Name: "Beowulf"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 500
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	View: 20
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_beowulf"; ">
+},
+{
+	Id: 17026
+	AegisName: "Dusk"
+	Name: "Chaos"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 500
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	View: 20
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_chaos"; ">
+},
+{
+	Id: 19114
+	AegisName: "Black_Rose_V2"
+	Name: "Black Rose V2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	View: 20
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_blackrose"; ">
+},
+{
+	Id: 19115
+	AegisName: "Gatekeeper_V2"
+	Name: "Gatekeeper V2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	View: 20
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_gatekeeper"; ">
+},
+//Gatling Guns
+{
+	Id: 17027
+	AegisName: "Butcher_"
+	Name: "Cerberus"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GATLING"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_cerberus"; ">
+},
+{
+	Id: 17028
+	AegisName: "Drifter"
+	Name: "Calamity"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GATLING"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_calamity"; ">
+},
+{
+	Id: 19116
+	AegisName: "Infernal_Drifter"
+	Name: "Infernal Drifter"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GATLING"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_infernaldrifter"; ">
+},
+{
+	Id: 19117
+	AegisName: "Vandal_Butcher"
+	Name: "Vandal Butcher"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 400
+	Atk: 450
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GATLING"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vandalbutcher"; ">
+},
+//Granade LAuncher
+{
+	Id: 17029
+	AegisName: "Butcher_"
+	Name: "Dragon"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 500
+	Atk: 600
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_dragon"; ">
+},
+{
+	Id: 17030
+	AegisName: "Destroyer"
+	Name: "Catastrophe"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 600
+	Atk: 500
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_catastrophe"; ">
+},
+{
+	Id: 19118
+	AegisName: "Inferno_V2"
+	Name: "Inferno V2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 600
+	Atk: 500
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_infernov2"; ">
+},
+{
+	Id: 19119
+	AegisName: "Vandal_Destroyer"
+	Name: "Vandal Destroyer"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 600
+	Atk: 500
+	Range: 9
+	Slots: 4
+	Job: {
+		Gunslinger: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 1
+	Subtype: "W_GRENADE"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_vandaldestroyer"; ">
+},

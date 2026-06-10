@@ -1,4 +1,4 @@
-function	script	Q_whip	{
+function	script	W_WHIP	{
 	skill "HT_REMOVETRAP",1;
 	skill BA_POEMBRAGI,10;
 	skill BA_APPLEIDUN,10;

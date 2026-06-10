@@ -1,4 +1,4 @@
-function	script	Q_Axe	{
+function	script	W_1HAXE	{
 	bonus bStr,10;
 	bonus bInt,10;
 	bonus bHit,50;

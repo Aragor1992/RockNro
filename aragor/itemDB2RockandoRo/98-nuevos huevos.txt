@@ -1,0 +1,35 @@
+{
+	Id: 21000
+	AegisName: "Siroma_Egg"
+	Name: "Siroma Egg"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 21001
+	AegisName: "Bathory_Egg"
+	Name: "Bathory Egg"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 21002
+	AegisName: "Jakk_Egg"
+	Name: "Jakk Egg"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 21003
+	AegisName: "Zombie_Egg"
+	Name: "Zombie Egg"
+	Type: "IT_PETEGG"
+	Buy: 20
+},
+{
+	Id: 21005
+	AegisName: "Whisper Egg"
+	Name: "Whisper Egg"
+	Type: "IT_PETEGG"
+	Buy: 20
+},

@@ -1,0 +1,39 @@
+{
+	Id: 800
+	AegisName: "VIP_Gold_Coin"
+	Name: "Vip Gold Coin"
+	Buy: 10000
+	Weight: 40
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 801
+	AegisName: "VIP_Copper_Coin"
+	Name: "Vip Bronze Coin"
+	Buy: 100
+	Weight: 40
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},
+{
+	Id: 802
+	AegisName: "VIP_Silver_Coin"
+	Name: "Vip Silver Coin"
+	Buy: 5000
+	Weight: 40
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+},

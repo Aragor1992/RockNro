@@ -1,0 +1,250 @@
+{
+	Id: 16110
+	AegisName: "Katar_of_Frozen_Icicle"
+	Name: "Katar of Frozen Icicle v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Water); ">
+},
+{
+	Id: 16111
+	AegisName: "Katar_of_Quaking"
+	Name: "Katar of Quaking v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Earth); ">
+},
+{
+	Id: 16112
+	AegisName: "Katar_of_Raging_Blaze"
+	Name: "Katar of Raging Blaze v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Fire); ">
+},
+{
+	Id: 16113
+	AegisName: "Katar_of_Piercing_Wind"
+	Name: "Katar of Piercing Wind v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Wind); ">
+},
+{
+	Id: 16114
+	AegisName: "Infiltrator"
+	Name: "Holy Touch v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Holy); ">
+},
+{
+	Id: 16115
+	AegisName: "Loki's_Nail"
+	Name: "Loki's Talon v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Neutral); ">
+},
+{
+	Id: 16116
+	AegisName: "Unholy_Touch"
+	Name: "Unholy Touch v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Dark); ">
+},
+{
+	Id: 16117
+	AegisName: "Dimension_Katar"
+	Name: "Dimension Katar v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Ghost); ">
+},
+{
+	Id: 16118
+	AegisName: "Infernal_Katar"
+	Name: "Infernal Katar v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Undead); ">
+},
+{
+	Id: 20119
+	AegisName: "Katar_of_Frozen_Icicle"
+	Name: "Venom Katar v3"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_WEAPON"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 90
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc("f_kataresv3",Ele_Poison); ">
+},

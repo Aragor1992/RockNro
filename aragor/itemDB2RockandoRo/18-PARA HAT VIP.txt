@@ -1,0 +1,57 @@
+{
+	Id: 9928
+	AegisName: "Gold_Viking_Helm"
+	Name: "Gold Viking Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 5
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 962
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_gold_viking"; ">
+},
+{
+	Id: 9929
+	AegisName: "Purple_Viking_Helm"
+	Name: "Purple Viking Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 963
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9931
+	AegisName: "Viking_Helm"
+	Name: "Viking Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 965
+	Script: <" bonus bAllStats,2; ">
+},
+{
+	Id: 9932
+	AegisName: "White_Viking_Helm"
+	Name: "White Viking Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 966
+	Script: <" bonus bAllStats,2; ">
+},

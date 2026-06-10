@@ -1,0 +1,265 @@
+{
+	Id: 5325
+	AegisName: "Robo_Eye"
+	Name: "Robo Eye"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 200
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	EquipLv: 10
+	Refine: false
+	ViewSprite: 345
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9797
+	AegisName: "Black_Zealotus_Mask"
+	Name: "Black Zealotus Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 808
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9798
+	AegisName: "Blue_Zealotus_Mask"
+	Name: "Black Zealotus Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 809
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9799
+	AegisName: "Green_Zealotus_Mask"
+	Name: "Black Zealotus Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 810
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 9800
+	AegisName: "Pink_Zealotus_Mask"
+	Name: "Black Zealotus Mask"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 811
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20020
+	AegisName: "Zherlthsh_Mask"
+	Name: "Zherlthsh Mask Enchulado"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 200
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20021
+	AegisName: "Helm_of_Darkness"
+	Name: "Helm of Darkness Enchulado"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 233
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20024
+	AegisName: "Blinker"
+	Name: "Blinker v2"
+	Type: "IT_ARMOR"
+	Buy: 1500
+	Weight: 100
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 82
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20025
+	AegisName: "Cyclops_Visor"
+	Name: "Cyclop's Eye v2"
+	Type: "IT_ARMOR"
+	Buy: 0
+	Weight: 200
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 207
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20027
+	AegisName: "Machoman_Glasses"
+	Name: "Machoman's Glasses v2"
+	Type: "IT_ARMOR"
+	Buy: 36000
+	Weight: 100
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 92
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20029
+	AegisName: "Headphones_v2"
+	Name: "Headphones V2"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 220
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},
+{
+	Id: 20036
+	AegisName: "Blush"
+	Name: "Blush V2"
+	Type: "IT_ARMOR"
+	Buy: 20
+	Weight: 100
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_MID"
+	Refine: false
+	ViewSprite: 125
+	Trade: {
+		override: 90
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" bonus bAllStats,10; ">
+},

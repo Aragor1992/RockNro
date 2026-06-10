@@ -1,0 +1,36 @@
+{
+	Id: 9790
+	AegisName: "No_Piamette_Hairband"
+	Name: "No Piamette Hairband"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 801
+},
+{
+	Id: 9791
+	AegisName: "Piamette_Hairband"
+	Name: "Piamette Hairband"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 802
+},
+{
+	Id: 9792
+	AegisName: "Pink_Piamette_Hairband"
+	Name: "Pink Piamette Hairband"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 100
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	Refine: false
+	ViewSprite: 803
+},

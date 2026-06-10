@@ -1,0 +1,108 @@
+{
+	Id: 9683
+	AegisName: "WhiteBoysCap"
+	Name: "White Boys Cap"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 626
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+	">
+},
+{
+	Id: 9778
+	AegisName: "Master_Tailor_Hat"
+	Name: "Master Tailor Hat"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 789
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+	">
+},
+{
+	Id: 9785
+	AegisName: "Sea_King_Helm"
+	Name: "Sean King Helm"
+	Type: "IT_ARMOR"
+	Buy: 5000
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 796
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+	">
+},
+{
+	Id: 9861
+	AegisName: "Anubis_Helm"
+	Name: "Anubis Helm"
+	Type: "IT_ARMOR"
+	Sell: 10
+	Weight: 50
+	Def: 2
+	Slots: 4
+	Loc: "EQP_HEAD_TOP"
+	ViewSprite: 902
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bInt,5;
+		bonus bDex,5;
+		bonus bVit,5;
+		bonus bMaxHPrate,20;
+		bonus bMatkRate,5;
+		bonus3 bMagicDamageReturn2,100,1,10;
+		bonus3 bMagicDamageReturn2,100,0,10;
+	">
+},

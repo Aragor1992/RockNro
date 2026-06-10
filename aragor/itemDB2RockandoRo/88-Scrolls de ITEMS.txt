@@ -1,0 +1,411 @@
+{
+	Id: 19100
+	AegisName: "Piedras_Scroll"
+	Name: "Scroll de Piedras"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		override: 70
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_CashItemPiedras"; ">
+},
+{
+	Id: 19130
+	AegisName: "Essences_Scroll"
+	Name: "Scroll de Essences"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_CashItemEssences"; ">
+},
+{
+	Id: 19131
+	AegisName: "Armor_Scroll"
+	Name: "Scroll de Armors"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollArmor"; ">
+},
+{
+	Id: 19132
+	AegisName: "Garment_Scroll"
+	Name: "Scroll de Garments"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollGarment"; ">
+},
+{
+	Id: 19133
+	AegisName: "Shoes_Scroll"
+	Name: "Scroll de Shoes"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollShoes"; ">
+},
+{
+	Id: 19134
+	AegisName: "Shield_Scroll"
+	Name: "Scroll de Shields"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollShield"; ">
+},
+{
+	Id: 19135
+	AegisName: "Set_Armas_Scroll"
+	Name: "Scroll de Set de Armas"
+	Type: "IT_USABLE"
+	Weight: 10
+	Script: <" callfunc "F_ScrollSetArma"; ">
+},
+//----------
+{
+	Id: 19136
+	AegisName: "Espadas1h_Scroll"
+	Name: "Scroll de Espadas1h"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollEspadas"; ">
+},
+{
+	Id: 19137
+	AegisName: "Espadas2h_Scroll"
+	Name: "Scroll de Espadas2h"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollEspadas2h"; ">
+},
+{
+	Id: 19138
+	AegisName: "Maces_Scroll"
+	Name: "Scroll de Maces"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollMaces"; ">
+},
+{
+	Id: 19139
+	AegisName: "Books_Scroll"
+	Name: "Scroll de Books"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollBooks"; ">
+},
+{
+	Id: 19140
+	AegisName: "Staves_Scroll"
+	Name: "Scroll de Staves"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollStaves"; ">
+},
+{
+	Id: 19141
+	AegisName: "Spears_Scroll"
+	Name: "Scroll de Spears"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollSpears"; ">
+},
+{
+	Id: 19142
+	AegisName: "Axes_Scroll"
+	Name: "Scroll de Axes"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollAxes"; ">
+},
+{
+	Id: 19143
+	AegisName: "Dagas_Scroll"
+	Name: "Scroll de Dagas"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollDagas"; ">
+},
+{
+	Id: 19144
+	AegisName: "Katares_Scroll"
+	Name: "Scroll de Katares"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollKataresV2"; ">
+},
+{
+	Id: 19145
+	AegisName: "KataresV3_Scroll"
+	Name: "Scroll de KataresV3"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollKataresV3"; ">
+},
+{
+	Id: 19146
+	AegisName: "Bows_Scroll"
+	Name: "Scroll de Bows"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollBows"; ">
+},
+{
+	Id: 19147
+	AegisName: "Puños_Scroll"
+	Name: "Scroll de Puños"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollPuños"; ">
+},
+{
+	Id: 19148
+	AegisName: "Instrumentos_Scroll"
+	Name: "Scroll de Instrumentos"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollInstrumentos"; ">
+},
+{
+	Id: 19149
+	AegisName: "Whips_Scroll"
+	Name: "Scroll de Whips"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollWhips"; ">
+},
+{
+	Id: 19150
+	AegisName: "TaekwonWeapons_Scroll"
+	Name: "Scroll de Taekwon Weapons"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollTaekwon"; ">
+},
+{
+	Id: 19151
+	AegisName: "GunslingerWeapons_Scroll"
+	Name: "Scroll de Gunslinger Weapons"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollGuns"; ">
+},
+{
+	Id: 19152
+	AegisName: "Shurikens_Scroll"
+	Name: "Scroll de Shurikens"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollShurikens"; ">
+},
+{
+	Id: 19153
+	AegisName: "NoviceWeapons_Scroll"
+	Name: "Scroll de Novice Weapons"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollNovice"; ">
+},
+//------------
+{
+	Id: 19154
+	AegisName: "Rock_Card_Album"
+	Name: "Rock Card Album"
+	Type: "IT_USABLE"
+	Buy: 10000
+	Weight: 50
+	Script: <" getitem groupranditem(IG_RockCardAlbum),1; ">
+},
+{
+	Id: 19155
+	AegisName: "MVP_Card_Album"
+	Name: "MvP Card Album"
+	Type: "IT_USABLE"
+	Buy: 10000
+	Weight: 50
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" getitem groupranditem(IG_MVPCardAlbum),1; ">
+},
+{
+	Id: 19156
+	AegisName: "Album_Piedras"
+	Name: "Album de Piedras"
+	Type: "IT_USABLE"
+	Buy: 10000
+	Weight: 50
+	Script: <" getitem groupranditem(IG_AlbumPiedras),1; ">
+},
+{
+	Id: 19157
+	AegisName: "Album_Esencias"
+	Name: "Album de Esencias"
+	Type: "IT_USABLE"
+	Buy: 10000
+	Weight: 50
+	Script: <" getitem groupranditem(IG_AlbumEsencias),1; ">
+},
+{
+	Id: 19158
+	AegisName: "FP_Scroll"
+	Name: "Full Chemical Protect Scroll"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		skilleffect "CR_FULLPROTECTION",0;
+		sc_start SC_CP_HELM,300000,5;
+		sc_start SC_CP_SHIELD,300000,5;
+		sc_start SC_CP_ARMOR,300000,5;
+		sc_start SC_CP_WEAPON,300000,5;
+	">
+},
+{
+	Id: 19159
+	AegisName: "Set_KataresV3_Scroll"
+	Name: "Scroll Set de Katares V3"
+	Type: "IT_USABLE"
+	Weight: 10
+	Trade: {
+		nodrop: true
+		notrade: true
+		noselltonpc: true
+		nocart: true
+		nogstorage: true
+	}
+	Script: <" callfunc "F_ScrollSetV3"; ">
+},

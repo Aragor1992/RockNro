@@ -1,4 +1,4 @@
-function	script	Q_Instrument	{
+function	script	W_MUSICAL	{
 	skill HT_REMOVETRAP,1;
 	skill DC_DONTFORGETME,10;
 	bonus bAtkRate,50;

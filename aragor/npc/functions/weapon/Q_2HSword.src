@@ -1,4 +1,4 @@
-function	script	Q_2HSword	{
+function	script	W_2HSWORD	{
 	bonus bPerfectHitRate,20;
 	bonus bCritAtkRate,20;
 	bonus bAtkRange,4;

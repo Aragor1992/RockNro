@@ -1,0 +1,543 @@
+{
+	Id: 16071
+	AegisName: "Katar_of_Frozen_Icicle"
+	Name: "Katar of Frozen Icicle v"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Water;
+		bonus2 bAddEff,Eff_Freeze,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16072
+	AegisName: "Katar_of_Quaking"
+	Name: "Katar of Quaking v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Earth;
+		bonus2 bAddEff,Eff_Stone,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16073
+	AegisName: "Katar_of_Raging_Blaze"
+	Name: "Katar of Raging Blaze v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Fire;
+		bonus2 bAddEff,Eff_Bleeding,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16074
+	AegisName: "Katar_of_Piercing_Wind"
+	Name: "Katar of Piercing Wind v"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Wind;
+		bonus2 bAddEff,Eff_Sleep,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16075
+	AegisName: "Infiltrator"
+	Name: "Holy Touch"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Holy;
+		bonus2 bAddEff,Eff_Blind,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16076
+	AegisName: "Loki's_Nail"
+	Name: "Loki's Talon"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 500
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus bUnbreakableWeapon,0;
+		bonus bUnstripableWeapon,0;
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus2 bAddEff,Eff_Stun,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16077
+	AegisName: "Unholy_Touch"
+	Name: "Unholy Touch v2"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Dark;
+		bonus2 bAddEff,Eff_Silence,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16078
+	AegisName: "Dimension_Katar"
+	Name: "Dimension Katar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Ghost;
+		bonus2 bAddEff,Eff_Confuse,500;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 16079
+	AegisName: "Infernal_Katar"
+	Name: "Infernal Katar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Undead;
+		bonus2 bAddEff,Eff_Curse,500;
+		bonus2 bSkillAtk,139,50;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
+{
+	Id: 20010
+	AegisName: "Katar_of_Frozen_Icicle"
+	Name: "Venom Katar"
+	Type: "IT_WEAPON"
+	Sell: 10
+	Weight: 800
+	Atk: 400
+	Range: 1
+	Slots: 4
+	Job: {
+		Assassin: true
+	}
+	Loc: "EQP_ARMS"
+	WeaponLv: 4
+	EquipLv: 25
+	Subtype: "W_KATAR"
+	Trade: {
+		override: 50
+		nodrop: true
+		noselltonpc: true
+		nogstorage: true
+	}
+	Script: <"
+		bonus2 bSkillAtk,141,500;
+		bonus bNoGemStone,0;
+		bonus bCritical,10;
+		bonus2 bSkillAtk,406,70;
+		bonus2 bSkillAtk,379,-50;
+		bonus bAtkRate,-15;
+		bonus bHit,100;
+		bonus2 bSkillAtk,136,80;
+		bonus bAtkEle,Ele_Poison;
+		bonus2 bAddEff,Eff_Poison,500;
+		bonus2 bSkillAtk,139,50;
+		bonus2 bSkillAtk,137,25;
+		bonus bCritAtkRate,15;
+		if(isequipped(18200)|| isequipped(18208)){
+			bonus2 bSubEle,Ele_Neutral,10;
+			bonus2 bSubEle,Ele_Poison,10;
+			bonus2 bSubEle,Ele_Holy,10;
+			bonus2 bSubEle,Ele_Dark,10;
+			bonus2 bSubEle,Ele_Fire,10;
+			bonus2 bSubEle,Ele_Water,10;
+			bonus2 bSubEle,Ele_Wind,10;
+			bonus2 bSubEle,Ele_Earth,10;
+			bonus2 bSubEle,Ele_Undead,10;
+			bonus2 bSubEle,Ele_Ghost,10;
+			bonus bAtkRate,10;
+			bonus bFlee,50;
+			bonus bHit,50;
+			bonus2 bSubRace,RC_DemiHuman,10;
+		}
+	">
+},
